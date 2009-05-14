@@ -5,6 +5,7 @@
 package songscheduler;
 
 import gui.*;
+import javax.swing.*;
 /**
  *
  * @author kurtisschmidt
@@ -15,11 +16,27 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        testAll();
+    }
+
+
+    public static void testAll(){
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new SongSchedulerWindow().setVisible(true);
             }
         });
+    }
+
+    public static void testSchedulePanel(){
+        JFrame testWindow = new JFrame("Testing");
+
+        String[] testingStrings = {"one", "two", "three"};
+
+        HourSchedulePanel testPanel = new HourSchedulePanel( "title", testingStrings);
+
+        testWindow.getContentPane().add(testPanel);
+        testWindow.setVisible(true);
     }
 
 }

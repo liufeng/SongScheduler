@@ -15,12 +15,12 @@ package gui;
  *
  * @author jordan
  */
-public class hourSchedulePanel extends javax.swing.JPanel {
+public class HourSchedulePanel extends javax.swing.JPanel {
     private String buttonDisplay;
     private String[] songs;
 
     /** Creates new form hourSchedulePanel */
-    public hourSchedulePanel( String timePeriod, String[] songs ) {
+    public HourSchedulePanel( String timePeriod, String[] songs ) {
         this.buttonDisplay = timePeriod;
         this.songs = songs;
         initComponents();
