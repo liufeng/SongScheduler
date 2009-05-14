@@ -31,29 +31,36 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        dateChooserPanel1 = new datechooser.beans.DateChooserPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        calendar = new datechooser.beans.DateChooserPanel();
+        hourScrollPanel = new javax.swing.JScrollPane();
+        hourScrollPanelList = new javax.swing.JList();
+        MenuBar = new javax.swing.JMenuBar();
+        fileMenu = new javax.swing.JMenu();
+        fileMenuOpen = new javax.swing.JMenuItem();
+        fileMenuClose = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jList1.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
+        hourScrollPanelList.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        hourScrollPanel.setViewportView(hourScrollPanelList);
+
+        fileMenu.setText("File");
+
+        fileMenuOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.META_MASK));
+        fileMenuOpen.setText("Open");
+        fileMenu.add(fileMenuOpen);
+
+        fileMenuClose.setText("Close");
+        fileMenuClose.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fileMenuCloseActionPerformed(evt);
+            }
         });
-        jScrollPane1.setViewportView(jList1);
+        fileMenu.add(fileMenuClose);
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
+        MenuBar.add(fileMenu);
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
-
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(MenuBar);
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,9 +68,9 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .addContainerGap()
-                .add(dateChooserPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 569, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 569, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                 .add(18, 18, 18)
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
+                .add(hourScrollPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -71,13 +78,18 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, dateChooserPanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, hourScrollPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void fileMenuCloseActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_fileMenuCloseActionPerformed
+    {//GEN-HEADEREND:event_fileMenuCloseActionPerformed
+        System.exit(0);
+}//GEN-LAST:event_fileMenuCloseActionPerformed
 
     /**
     * @param args the command line arguments
@@ -91,12 +103,13 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private datechooser.beans.DateChooserPanel dateChooserPanel1;
-    private javax.swing.JList jList1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JMenuBar MenuBar;
+    private datechooser.beans.DateChooserPanel calendar;
+    private javax.swing.JMenu fileMenu;
+    private javax.swing.JMenuItem fileMenuClose;
+    private javax.swing.JMenuItem fileMenuOpen;
+    private javax.swing.JScrollPane hourScrollPanel;
+    private javax.swing.JList hourScrollPanelList;
     // End of variables declaration//GEN-END:variables
 
 }
