@@ -27,7 +27,7 @@ public class SchedulerListWindow extends javax.swing.JFrame {
 
         // Create a new hourSchedulePanel for every day in the array.
         for ( int i = 0; i < days.length; i++ ) {
-            scheduleTabPane.addTab( days[i], null, new javax.swing.JPanel(), "A panel of some sort" );
+            scheduleTabPane.addTab( days[i], null, new DayScheduleScrollPanel(), "A panel of some sort" );
         }
     }
 
