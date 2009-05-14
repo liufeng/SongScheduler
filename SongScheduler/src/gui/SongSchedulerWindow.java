@@ -11,6 +11,7 @@
 
 package gui;
 
+import java.sql.Time;
 /**
  *
  * @author kurtisschmidt
@@ -32,8 +33,8 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         calendar = new datechooser.beans.DateChooserPanel();
-        hourScrollPanel = new javax.swing.JScrollPane();
-        hourScrollPanelList = new javax.swing.JList();
+        makeListButton = new javax.swing.JButton();
+        viewSelectedButton = new javax.swing.JButton();
         MenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         fileMenuOpen = new javax.swing.JMenuItem();
@@ -41,55 +42,135 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        hourScrollPanelList.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-        hourScrollPanel.setViewportView(hourScrollPanelList);
+        calendar.setCurrentView(new datechooser.view.appearance.AppearancesList("Swing",
+            new datechooser.view.appearance.ViewAppearance("custom",
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
+                    new java.awt.Color(0, 0, 0),
+                    new java.awt.Color(0, 0, 255),
+                    false,
+                    true,
+                    new datechooser.view.appearance.swing.ButtonPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
+                    new java.awt.Color(0, 0, 0),
+                    new java.awt.Color(0, 0, 255),
+                    true,
+                    true,
+                    new datechooser.view.appearance.swing.ButtonPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
+                    new java.awt.Color(0, 0, 255),
+                    new java.awt.Color(0, 0, 255),
+                    false,
+                    true,
+                    new datechooser.view.appearance.swing.ButtonPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
+                    new java.awt.Color(128, 128, 128),
+                    new java.awt.Color(0, 0, 255),
+                    false,
+                    true,
+                    new datechooser.view.appearance.swing.LabelPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
+                    new java.awt.Color(0, 0, 0),
+                    new java.awt.Color(0, 0, 255),
+                    false,
+                    true,
+                    new datechooser.view.appearance.swing.LabelPainter()),
+                new datechooser.view.appearance.swing.SwingCellAppearance(new java.awt.Font("Lucida Grande", java.awt.Font.PLAIN, 13),
+                    new java.awt.Color(0, 0, 0),
+                    new java.awt.Color(255, 0, 0),
+                    false,
+                    false,
+                    new datechooser.view.appearance.swing.ButtonPainter()),
+                (datechooser.view.BackRenderer)null,
+                false,
+                true)));
+    calendar.setWeekStyle(datechooser.view.WeekDaysStyle.FULL);
+    calendar.setLocale(new java.util.Locale("en", "", ""));
+    calendar.addCommitListener(new datechooser.events.CommitListener() {
+        public void onCommit(datechooser.events.CommitEvent evt) {
+            calendarOnCommit(evt);
+        }
+    });
+    calendar.addSelectionChangedListener(new datechooser.events.SelectionChangedListener() {
+        public void onSelectionChange(datechooser.events.SelectionChangedEvent evt) {
+            calendarOnSelectionChange(evt);
+        }
+    });
 
-        fileMenu.setText("File");
+    makeListButton.setText("Make List");
 
-        fileMenuOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.META_MASK));
-        fileMenuOpen.setText("Open");
-        fileMenu.add(fileMenuOpen);
+    viewSelectedButton.setText("View Selected");
 
-        fileMenuClose.setText("Close");
-        fileMenuClose.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fileMenuCloseActionPerformed(evt);
-            }
-        });
-        fileMenu.add(fileMenuClose);
+    fileMenu.setText("File");
 
-        MenuBar.add(fileMenu);
+    fileMenuOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.META_MASK));
+    fileMenuOpen.setText("Open");
+    fileMenu.add(fileMenuOpen);
 
-        setJMenuBar(MenuBar);
+    fileMenuClose.setText("Close");
+    fileMenuClose.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            fileMenuCloseActionPerformed(evt);
+        }
+    });
+    fileMenu.add(fileMenuClose);
 
-        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .addContainerGap()
-                .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 569, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(18, 18, 18)
-                .add(hourScrollPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, hourScrollPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE))
-                .addContainerGap())
-        );
+    MenuBar.add(fileMenu);
 
-        pack();
+    setJMenuBar(MenuBar);
+
+    org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
+    getContentPane().setLayout(layout);
+    layout.setHorizontalGroup(
+        layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+        .add(layout.createSequentialGroup()
+            .addContainerGap()
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(layout.createSequentialGroup()
+                    .add(makeListButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                    .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 624, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+            .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+    );
+    layout.setVerticalGroup(
+        layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+        .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+            .addContainerGap()
+            .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 475, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                .add(makeListButton)
+                .add(viewSelectedButton))
+            .addContainerGap())
+    );
+
+    pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void fileMenuCloseActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_fileMenuCloseActionPerformed
     {//GEN-HEADEREND:event_fileMenuCloseActionPerformed
         System.exit(0);
 }//GEN-LAST:event_fileMenuCloseActionPerformed
+
+    private void calendarOnCommit(datechooser.events.CommitEvent evt)//GEN-FIRST:event_calendarOnCommit
+    {//GEN-HEADEREND:event_calendarOnCommit
+        // TODO add your handling code here:
+    }//GEN-LAST:event_calendarOnCommit
+
+    private void calendarOnSelectionChange(datechooser.events.SelectionChangedEvent evt)//GEN-FIRST:event_calendarOnSelectionChange
+    {//GEN-HEADEREND:event_calendarOnSelectionChange
+        // TODO: Update hourScrollPanelList with the hours form that
+        // day, highlighting ones which are already populated.
+//        hourScrollPanelList.setListData( new Object[]
+//                            { new Time(0,0,0),  new Time(1,0,0),  new Time(2,0,0),
+//                              new Time(3,0,0),  new Time(4,0,0),  new Time(5,0,0),
+//                              new Time(6,0,0),  new Time(7,0,0),  new Time(8,0,0),
+//                              new Time(9,0,0),  new Time(10,0,0), new Time(11,0,0),
+//                              new Time(12,0,0), new Time(13,0,0), new Time(14,0,0),
+//                              new Time(15,0,0), new Time(16,0,0), new Time(17,0,0),
+//                              new Time(18,0,0), new Time(19,0,0), new Time(20,0,0),
+//                              new Time(21,0,0), new Time(22,0,0), new Time(23,0,0)});
+    }//GEN-LAST:event_calendarOnSelectionChange
 
     /**
     * @param args the command line arguments
@@ -108,8 +189,8 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuItem fileMenuClose;
     private javax.swing.JMenuItem fileMenuOpen;
-    private javax.swing.JScrollPane hourScrollPanel;
-    private javax.swing.JList hourScrollPanelList;
+    private javax.swing.JButton makeListButton;
+    private javax.swing.JButton viewSelectedButton;
     // End of variables declaration//GEN-END:variables
 
 }
