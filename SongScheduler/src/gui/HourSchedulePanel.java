@@ -20,15 +20,12 @@ public class HourSchedulePanel extends javax.swing.JPanel {
     private String buttonDisplay;
     private String[] songs;
 
-    private ImageIcon icon_ddSelectedCheckedDown	= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedCheckedDown.png"));
-    private ImageIcon icon_ddSelectedCheckedRight	= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedCheckedRight.png"));
-    private ImageIcon icon_ddSelectedCheckedTitle	= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedCheckedTitle.png"));
-    private ImageIcon icon_ddSelectedUncheckedDown	= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedUncheckedDown.png"));
-    private ImageIcon icon_ddSelectedUncheckedRight	= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedUncheckedRight.png"));
-    private ImageIcon icon_ddSelectedUncheckedTitle	= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedUncheckedTitle.png"));
-    private ImageIcon icon_ddUnselectedDown			= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedDown.png"));
-    private ImageIcon icon_ddUnselectedRight		= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedRight.png"));
-    private ImageIcon icon_ddUnselectedTitle 		= new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedTitle.png"));
+    private ImageIcon icon_ddSelectedDown	 = new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedDown.png"));
+    private ImageIcon icon_ddSelectedRight	 = new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedRight.png"));
+    private ImageIcon icon_ddSelectedTitle	 = new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedTitle.png"));
+    private ImageIcon icon_ddUnselectedDown	 = new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedDown.png"));
+    private ImageIcon icon_ddUnselectedRight = new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedRight.png"));
+    private ImageIcon icon_ddUnselectedTitle = new ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedTitle.png"));
 
     private enum DROP_DOWN_STATE { RIGHT, DOWN };
     private DROP_DOWN_STATE dropDownState = DROP_DOWN_STATE.RIGHT;
@@ -37,6 +34,7 @@ public class HourSchedulePanel extends javax.swing.JPanel {
     public HourSchedulePanel( String timePeriod, String[] songs ) {
         this.buttonDisplay = timePeriod;
         this.songs = songs;
+
         initComponents();
     }
 
@@ -70,9 +68,17 @@ public class HourSchedulePanel extends javax.swing.JPanel {
         dropDownButton.setAlignmentY(0.0F);
         dropDownButton.setBorderPainted(false);
         dropDownButton.setIconTextGap(0);
+        dropDownButton.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                dropDownButtonFocusLost(evt);
+            }
+        });
         dropDownButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                dropDownButtonMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                dropDownButtonMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                dropDownButtonMouseReleased(evt);
             }
         });
         dropDownButton.setBounds(300, 0, 33, 30);
@@ -83,9 +89,9 @@ public class HourSchedulePanel extends javax.swing.JPanel {
         timeButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         timeButton.setMargin(new java.awt.Insets(2, 2, 2, 2));
         timeButton.setText( buttonDisplay );
-        timeButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                timeButtonActionPerformed(evt);
+        timeButton.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                timeButtonFocusLost(evt);
             }
         });
         timeButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -123,37 +129,63 @@ public class HourSchedulePanel extends javax.swing.JPanel {
 }//GEN-LAST:event_songListFocusLost
 
     private void timeButtonMousePressed (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_timeButtonMousePressed
-        // When mouse is pressed on first button, make the other button
-        // go down as well. This creates the illusion the buttons are
-        // attached to one another.
-        timeButton.setIcon( icon_ddSelectedUncheckedTitle );
-        
-        if ( dropDownState == DROP_DOWN_STATE.RIGHT )
-            dropDownButton.setIcon( icon_ddSelectedUncheckedRight );
-        else
-            dropDownButton.setIcon( icon_ddSelectedUncheckedDown );
+        timeButton.setIcon( icon_ddSelectedTitle );
+
+        setDropDownButtonIconFocused();
     }//GEN-LAST:event_timeButtonMousePressed
 
-    private void timeButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_timeButtonActionPerformed
-        // TODO add your handling code here:
+    private void dropDownButtonMousePressed (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dropDownButtonMousePressed
+        timeButton.setIcon( icon_ddSelectedTitle );
 
-    }//GEN-LAST:event_timeButtonActionPerformed
+        setDropDownButtonIconFocused();
+    }//GEN-LAST:event_dropDownButtonMousePressed
 
-    private void dropDownButtonMouseClicked (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dropDownButtonMouseClicked
+    private void dropDownButtonMouseReleased (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dropDownButtonMouseReleased
+        timeButton.setIcon( icon_ddSelectedTitle );
+
         if ( dropDownState == DROP_DOWN_STATE.RIGHT )
-        {
             dropDownState = DROP_DOWN_STATE.DOWN;
-            dropDownButton.setIcon( icon_ddSelectedUncheckedDown );
-        }
         else
-        {
             dropDownState = DROP_DOWN_STATE.RIGHT;
-            dropDownButton.setIcon( icon_ddSelectedUncheckedRight );
+
+        setDropDownButtonIconFocused();
+    }//GEN-LAST:event_dropDownButtonMouseReleased
+
+    private void timeButtonFocusLost (java.awt.event.FocusEvent evt) {//GEN-FIRST:event_timeButtonFocusLost
+        if ( dropDownButton.isFocusOwner() )
+            return;
+        
+        timeButton.setIcon( icon_ddUnselectedTitle );
+
+        setDropDownButtonIconUnfocused();
+    }//GEN-LAST:event_timeButtonFocusLost
+
+    private void dropDownButtonFocusLost (java.awt.event.FocusEvent evt) {//GEN-FIRST:event_dropDownButtonFocusLost
+        if ( timeButton.isFocusOwner() )
+            return;
+
+        timeButton.setIcon( icon_ddUnselectedTitle );
+
+        setDropDownButtonIconUnfocused();
+    }//GEN-LAST:event_dropDownButtonFocusLost
+
+    private void setDropDownButtonIconFocused() {
+        if ( dropDownState == DROP_DOWN_STATE.RIGHT ) {
+            dropDownButton.setIcon( icon_ddSelectedRight );
         }
+        else {
+            dropDownButton.setIcon( icon_ddSelectedDown );
+        }
+    }
 
-    }//GEN-LAST:event_dropDownButtonMouseClicked
-
-
+    private void setDropDownButtonIconUnfocused() {
+        if ( dropDownState == DROP_DOWN_STATE.RIGHT ) {
+            dropDownButton.setIcon( icon_ddUnselectedRight );
+        }
+        else {
+            dropDownButton.setIcon( icon_ddUnselectedDown );
+        }
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLayeredPane buttonLayeredPanel;
     private javax.swing.JToggleButton dropDownButton;
