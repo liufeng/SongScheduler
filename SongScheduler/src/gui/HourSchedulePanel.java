@@ -35,44 +35,75 @@ public class HourSchedulePanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList();
+        songList = new javax.swing.JList();
+        buttonLayeredPanel = new javax.swing.JLayeredPane();
+        dropDownButton = new javax.swing.JToggleButton();
+        timeButton = new javax.swing.JButton();
 
-        jToggleButton1.setText(buttonDisplay);
-
-        jList1.setBackground(new java.awt.Color(238, 238, 238));
-        jList1.setModel(new javax.swing.AbstractListModel() {
+        songList.setBackground(new java.awt.Color(238, 238, 238));
+        songList.setModel(new javax.swing.AbstractListModel() {
             String[] strings = songs;
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane1.setViewportView(jList1);
+        songList.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                songListFocusLost(evt);
+            }
+        });
+
+        dropDownButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedRight.png"))); // NOI18N
+        dropDownButton.setAlignmentY(0.0F);
+        dropDownButton.setBorderPainted(false);
+        dropDownButton.setContentAreaFilled(false);
+        dropDownButton.setIconTextGap(0);
+        dropDownButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        dropDownButton.setBounds(300, 0, 33, 30);
+        buttonLayeredPanel.add(dropDownButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        timeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedTitle.png"))); // NOI18N
+        timeButton.setBorderPainted(false);
+        timeButton.setContentAreaFilled(false);
+        timeButton.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        timeButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        timeButton.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddSelectedUncheckedTitle.png"))); // NOI18N
+        timeButton.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/gui/icons/HourScheduleDDButton/ddUnselectedTitle copy.png"))); // NOI18N
+        timeButton.setText( buttonDisplay );
+        timeButton.setBounds(0, 0, 310, 30);
+        buttonLayeredPanel.add(timeButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jToggleButton1)
-            .add(layout.createSequentialGroup()
-                .add(11, 11, 11)
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 115, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+            .add(buttonLayeredPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 539, Short.MAX_VALUE)
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(org.jdesktop.layout.GroupLayout.TRAILING, songList, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 539, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .add(jToggleButton1)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 149, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .add(buttonLayeredPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 30, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(303, Short.MAX_VALUE))
+            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+                    .add(34, 34, 34)
+                    .add(songList, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void songListFocusLost (java.awt.event.FocusEvent evt) {//GEN-FIRST:event_songListFocusLost
+        // TODO add your handling code here:
+        int blank[] = {};
+        songList.setSelectedIndices( blank );
+}//GEN-LAST:event_songListFocusLost
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JList jList1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JLayeredPane buttonLayeredPanel;
+    private javax.swing.JToggleButton dropDownButton;
+    private javax.swing.JList songList;
+    private javax.swing.JButton timeButton;
     // End of variables declaration//GEN-END:variables
 
 }
