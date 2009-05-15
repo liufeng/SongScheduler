@@ -30,6 +30,8 @@ public class HourSchedulePanel extends javax.swing.JPanel {
     private enum DROP_DOWN_STATE { RIGHT, DOWN };
     private DROP_DOWN_STATE dropDownState = DROP_DOWN_STATE.RIGHT;
 
+    private boolean isSelected = false;
+    
     /** Creates new form hourSchedulePanel */
     public HourSchedulePanel( String timePeriod, String[] songs ) {
         this.buttonDisplay = timePeriod;
@@ -77,8 +79,8 @@ public class HourSchedulePanel extends javax.swing.JPanel {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 dropDownButtonMousePressed(evt);
             }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                dropDownButtonMouseReleased(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dropDownButtonMouseClicked(evt);
             }
         });
         dropDownButton.setBounds(300, 0, 33, 30);
@@ -106,19 +108,19 @@ public class HourSchedulePanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(buttonLayeredPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 539, Short.MAX_VALUE)
+            .add(buttonLayeredPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 338, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                .add(org.jdesktop.layout.GroupLayout.TRAILING, songList, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 539, Short.MAX_VALUE))
+                .add(org.jdesktop.layout.GroupLayout.TRAILING, songList, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
                 .add(buttonLayeredPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 30, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(303, Short.MAX_VALUE))
+                .addContainerGap(297, Short.MAX_VALUE))
             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                 .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                     .add(34, 34, 34)
-                    .add(songList, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 299, Short.MAX_VALUE)))
+                    .add(songList, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -129,18 +131,40 @@ public class HourSchedulePanel extends javax.swing.JPanel {
 }//GEN-LAST:event_songListFocusLost
 
     private void timeButtonMousePressed (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_timeButtonMousePressed
+        isSelected = true;
         timeButton.setIcon( icon_ddSelectedTitle );
 
         setDropDownButtonIconFocused();
     }//GEN-LAST:event_timeButtonMousePressed
 
     private void dropDownButtonMousePressed (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dropDownButtonMousePressed
+        isSelected = true;
         timeButton.setIcon( icon_ddSelectedTitle );
 
         setDropDownButtonIconFocused();
     }//GEN-LAST:event_dropDownButtonMousePressed
 
-    private void dropDownButtonMouseReleased (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dropDownButtonMouseReleased
+    private void timeButtonFocusLost (java.awt.event.FocusEvent evt) {//GEN-FIRST:event_timeButtonFocusLost
+        if ( evt.getOppositeComponent() == dropDownButton )
+            return;
+
+        isSelected = false;
+
+        timeButton.setIcon( icon_ddUnselectedTitle );
+        setDropDownButtonIconUnfocused();
+    }//GEN-LAST:event_timeButtonFocusLost
+
+    private void dropDownButtonFocusLost (java.awt.event.FocusEvent evt) {//GEN-FIRST:event_dropDownButtonFocusLost
+        if ( evt.getOppositeComponent() == timeButton )
+            return;
+
+        isSelected = false;
+        
+        timeButton.setIcon( icon_ddUnselectedTitle );
+        setDropDownButtonIconUnfocused();
+    }//GEN-LAST:event_dropDownButtonFocusLost
+
+    private void dropDownButtonMouseClicked (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dropDownButtonMouseClicked
         timeButton.setIcon( icon_ddSelectedTitle );
 
         if ( dropDownState == DROP_DOWN_STATE.RIGHT )
@@ -149,25 +173,7 @@ public class HourSchedulePanel extends javax.swing.JPanel {
             dropDownState = DROP_DOWN_STATE.RIGHT;
 
         setDropDownButtonIconFocused();
-    }//GEN-LAST:event_dropDownButtonMouseReleased
-
-    private void timeButtonFocusLost (java.awt.event.FocusEvent evt) {//GEN-FIRST:event_timeButtonFocusLost
-        if ( dropDownButton.isFocusOwner() )
-            return;
-        
-        timeButton.setIcon( icon_ddUnselectedTitle );
-
-        setDropDownButtonIconUnfocused();
-    }//GEN-LAST:event_timeButtonFocusLost
-
-    private void dropDownButtonFocusLost (java.awt.event.FocusEvent evt) {//GEN-FIRST:event_dropDownButtonFocusLost
-        if ( timeButton.isFocusOwner() )
-            return;
-
-        timeButton.setIcon( icon_ddUnselectedTitle );
-
-        setDropDownButtonIconUnfocused();
-    }//GEN-LAST:event_dropDownButtonFocusLost
+    }//GEN-LAST:event_dropDownButtonMouseClicked
 
     private void setDropDownButtonIconFocused() {
         if ( dropDownState == DROP_DOWN_STATE.RIGHT ) {

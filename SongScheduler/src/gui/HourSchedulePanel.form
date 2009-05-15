@@ -16,9 +16,9 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="buttonLayeredPanel" alignment="0" pref="539" max="32767" attributes="0"/>
+          <Component id="buttonLayeredPanel" min="-2" pref="338" max="-2" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Component id="songList" alignment="1" pref="539" max="32767" attributes="0"/>
+              <Component id="songList" alignment="1" pref="338" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -26,12 +26,12 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Component id="buttonLayeredPanel" min="-2" pref="30" max="-2" attributes="1"/>
-              <EmptySpace pref="303" max="32767" attributes="0"/>
+              <EmptySpace pref="297" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="songList" pref="299" max="32767" attributes="0"/>
+                  <Component id="songList" pref="294" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -70,7 +70,7 @@
           <Events>
             <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="dropDownButtonFocusLost"/>
             <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="dropDownButtonMousePressed"/>
-            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="dropDownButtonMouseReleased"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="dropDownButtonMouseClicked"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JLayeredPaneSupportLayout$JLayeredPaneConstraintsDescription">
