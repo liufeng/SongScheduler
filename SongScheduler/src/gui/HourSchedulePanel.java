@@ -38,6 +38,7 @@ public class HourSchedulePanel extends javax.swing.JPanel {
         this.songs = songs;
 
         initComponents();
+        songList.setVisible(false);
     }
 
     /** This method is called from within the constructor to
@@ -167,10 +168,14 @@ public class HourSchedulePanel extends javax.swing.JPanel {
     private void dropDownButtonMouseClicked (java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dropDownButtonMouseClicked
         timeButton.setIcon( icon_ddSelectedTitle );
 
-        if ( dropDownState == DROP_DOWN_STATE.RIGHT )
+        if ( dropDownState == DROP_DOWN_STATE.RIGHT ){
+            songList.setVisible(true);
             dropDownState = DROP_DOWN_STATE.DOWN;
-        else
+        }
+        else{
+            songList.setVisible(false);
             dropDownState = DROP_DOWN_STATE.RIGHT;
+        }
 
         setDropDownButtonIconFocused();
     }//GEN-LAST:event_dropDownButtonMouseClicked
