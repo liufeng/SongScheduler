@@ -11,6 +11,8 @@
 
 package gui;
 
+import org.jdesktop.layout.GroupLayout;
+
 /**
  *
  * @author kurtisschmidt
@@ -24,13 +26,23 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
         javax.swing.JPanel innerPanel = new javax.swing.JPanel();
         innerPanel.setLayout( new javax.swing.BoxLayout( innerPanel, WIDTH ) );
 
+        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
+        innerPanel.setLayout(layout);
+        GroupLayout.ParallelGroup verticalGroup = layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING);
+
         // TODO: Get data for each hour or something.
         String data[] = {"Brittany Spears - Hit Me Baby, One More Time", "Aqua - Dr. Jones" };
         for ( int i = 0; i < 24; i++ ) {
             String time = new java.sql.Time( i, 0, 0) + " - " + new java.sql.Time( i+1, 0,0 );
-            innerPanel.add( new HourSchedulePanel( time, data ) );
+            verticalGroup = verticalGroup.add(new HourSchedulePanel( time, data ) );
         }
+        
+        layout.setVerticalGroup(verticalGroup);
         scrollPanel.setViewportView( innerPanel );
+
+
+
+
     }
 
     /** This method is called from within the constructor to
