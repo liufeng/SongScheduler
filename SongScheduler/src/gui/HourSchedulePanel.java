@@ -39,6 +39,8 @@ public class HourSchedulePanel extends javax.swing.JPanel {
 
         initComponents();
         songList.setVisible(false);
+        songList.setSize(338,0);
+        this.setSize(338, 34);
     }
 
     /** This method is called from within the constructor to
@@ -53,6 +55,8 @@ public class HourSchedulePanel extends javax.swing.JPanel {
         buttonLayeredPanel = new javax.swing.JLayeredPane();
         dropDownButton = new javax.swing.JToggleButton();
         timeButton = new javax.swing.JButton();
+
+        setPreferredSize(new java.awt.Dimension(348, 34));
 
         songList.setBackground(new java.awt.Color(238, 238, 238));
         songList.setModel(new javax.swing.AbstractListModel() {
@@ -110,17 +114,18 @@ public class HourSchedulePanel extends javax.swing.JPanel {
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(buttonLayeredPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 338, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                .add(org.jdesktop.layout.GroupLayout.TRAILING, songList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 338, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(layout.createSequentialGroup()
+                    .add(songList, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 326, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .add(buttonLayeredPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 30, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(298, Short.MAX_VALUE))
+            .add(buttonLayeredPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 30, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
+                .add(layout.createSequentialGroup()
                     .add(34, 34, 34)
-                    .add(songList, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 294, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                    .add(songList)
+                    .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }//GEN-END:initComponents
 
@@ -169,11 +174,14 @@ public class HourSchedulePanel extends javax.swing.JPanel {
 
         if ( dropDownState == DROP_DOWN_STATE.RIGHT ){
             songList.setVisible(true);
-            songList.setSize(100, 100);
+            songList.setSize(338, 294);
+            this.setSize(338, 328);
             dropDownState = DROP_DOWN_STATE.DOWN;
         }
         else{
             songList.setVisible(false);
+            songList.setSize(338,0);
+            this.setSize(338, 34);
             dropDownState = DROP_DOWN_STATE.RIGHT;
         }
 
