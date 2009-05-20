@@ -32,16 +32,8 @@ public class Time
     }
 
     public Time(int year, int month, int day, int hour, int minute, int second) {
-        /*
-        this.year = year;
-        this.month = month;
-        this.day = day;
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
-        */
         calendar = Calendar.getInstance();
-        calendar.set(year, month, day, hour, minute, second);
+        calendar.set(year, month-1, day, hour, minute, second);
     }
 
     /**
@@ -58,7 +50,7 @@ public class Time
     }
 
     public int getMonth() {
-        return calendar.get(Calendar.MONTH);
+        return calendar.get(Calendar.MONTH) + 1;
     }
 
     public int getDay() {
@@ -103,8 +95,18 @@ public class Time
         return calendar.getTimeInMillis();
     }
 
+    /**
+     * Compare this with time.
+     * @param time
+     * @return An integer:
+     * <ul>
+     *   <li><strong>Negative</strong> if <em>this</em> is earlier than <em>time</em></li>
+     *   <li><strong>0</strong> if <em>this</em> is equal to <em>time</em></li>
+     *   <li><strong>Positive</strong> if <em>this</em> is later than <em>time</em></li>
+     * </ul>
+     */
     public int compareTo(Time time) {
-        return 0;
+        return calendar.compareTo(time.getCalendar());
     }
 
     public Calendar getCalendar() {
