@@ -8,7 +8,6 @@ package model;
 import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-//import java.text.SimpleDateFormat;
 
 /**
  *
@@ -70,8 +69,8 @@ public class Time
     public void add(Time time) {
         calendar.add(Calendar.SECOND, time.getSecond());
         calendar.add(Calendar.MINUTE, time.getMinute());
-        calendar.add(Calendar.HOUR, time.getHour());
-        calendar.add(Calendar.DATE, time.getDay());
+        calendar.add(Calendar.HOUR_OF_DAY, time.getHour());
+        calendar.add(Calendar.DATE, time.getDay() + 1);
         calendar.add(Calendar.MONTH, time.getMonth());
         calendar.add(Calendar.YEAR, time.getYear());
     }
@@ -79,7 +78,7 @@ public class Time
     public int minus(Time time) {
         long end = time.getTimeInMillis();
         long start = this.getTimeInMillis();
-        return (int)((end - start) / (24 * 60 * 60 * 1000));
+        return (int)((end - start) / (24 * 60 * 60 * 1000)) + 1;
 
     }
 

@@ -80,6 +80,9 @@ public class TimeTest {
         int expResult = 19;
         int result = instance.getDay();
         assertEquals(expResult, result);
+
+        assertEquals(19, new Time(2009, 5, 19, 20, 20, 20).getDay());
+        assertEquals(1, new Time(2009, 5, 1, 20, 20, 20).getDay());
     }
 
     /**
@@ -88,8 +91,8 @@ public class TimeTest {
     @Test
     public void testGetHour() {
         System.out.println("getHour");
-        Time instance = new Time();
-        int expResult = 8;
+        Time instance = new Time(2014, 12, 25, 19, 28, 30);
+        int expResult = 19;
         int result = instance.getHour();
         assertEquals(expResult, result);
     }
@@ -97,12 +100,11 @@ public class TimeTest {
     /**
      * Test of getMinute method, of class Time.
      */
-    @Ignore
     @Test
     public void testGetMinute() {
         System.out.println("getMinute");
-        Time instance = new Time();
-        int expResult = 57;
+        Time instance = new Time(1987, 2, 8, 14, 10, 29);
+        int expResult = 10;
         int result = instance.getMinute();
         assertEquals(expResult, result);
     }
@@ -110,12 +112,11 @@ public class TimeTest {
     /**
      * Test of getSecond method, of class Time.
      */
-    @Ignore
     @Test
     public void testGetSecond() {
         System.out.println("getSecond");
-        Time instance = new Time();
-        int expResult = 14;
+        Time instance = new Time(1997, 12, 25, 12, 29, 36);
+        int expResult = 36;
         int result = instance.getSecond();
         assertEquals(expResult, result);
     }
@@ -123,14 +124,13 @@ public class TimeTest {
     /**
      * Test of add method, of class Time.
      */
-    @Ignore
     @Test
     public void testAdd() {
         System.out.println("add");
-        Time time = new Time(0, 0, 0, 0, 48, 0);
+        Time time = new Time(2, 0, 0, 0, 48, 0);
         Time instance = new Time(2009, 5, 19, 20, 0, 0);
         instance.add(time);
-        String expResult = "2009-5-19 20:48:0";
+        String expResult = "2011-5-19 20:48:0";
         String result = instance.toString();
         assertEquals(expResult, result);
     }
@@ -138,14 +138,15 @@ public class TimeTest {
     /**
      * Test of minus method, of class Time.
      */
-    @Ignore
     @Test
     public void testMinus() {
         System.out.println("minus");
-        Time time = null;
-        Time instance = new Time();
-        int expResult = 0;
+        Time time = new Time(2009, 5, 19, 20, 18, 20);
+        Time instance = new Time(2009, 5, 1, 22, 29, 30);
+        int expResult = 18;
         int result = instance.minus(time);
+        assertEquals(19, time.getDay());
+        assertEquals(1, instance.getDay());
         assertEquals(expResult, result);
     }
 
@@ -156,8 +157,8 @@ public class TimeTest {
     @Test
     public void testGetTimeInMillis() {
         System.out.println("getTimeInMillis");
-        Time instance = new Time();
-        long expResult = 0L;
+        Time instance = new Time(1987, 2, 8, 14, 10, 29);
+        long expResult = 53981342909907L;
         long result = instance.getTimeInMillis();
         assertEquals(expResult, result);
     }
@@ -253,8 +254,8 @@ public class TimeTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        Time instance = new Time(2009, 5, 19, 11, 6, 0);
-        String expResult = "2009-5-19 11:6:0";
+        Time instance = new Time(2009, 5, 19, 20, 6, 0);
+        String expResult = "2009-5-19 20:6:0";
         String result = instance.toString();
         assertEquals(expResult, result);
     }
