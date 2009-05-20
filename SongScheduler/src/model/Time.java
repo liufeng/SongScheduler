@@ -17,14 +17,6 @@ import java.util.logging.Logger;
 
 public class Time
 {
-    /*
-    private int year;
-    private int month;
-    private int day;
-    private int hour;
-    private int minute;
-    private int second;
-    */
     private Calendar calendar;
 
     public Time() {
@@ -58,7 +50,7 @@ public class Time
     }
 
     public int getHour() {
-        return calendar.get(Calendar.HOUR);
+        return calendar.get(Calendar.HOUR_OF_DAY);
     }
 
     public int getMinute() {
