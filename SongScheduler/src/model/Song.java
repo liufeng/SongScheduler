@@ -24,6 +24,33 @@ public class Song {
     private Time lastPlayed;
     private double priority;
 
+    // TODO: Add one or more constructors.
+    public Song(String title,
+                String performer,
+                String recordingTitle,
+                String recordingType,
+                String year,
+                Time   length,
+                int    accessNumber,
+                int    popularity,
+                int    playCount,
+                Time   addedTime,
+                Time   lastPlayed,
+                double priority) {
+        this.title = title;
+        this.performer = performer;
+        this.recordingTitle = recordingTitle;
+        this.recordingType = recordingType;
+        this.year = year;
+        this.length = length;
+        this.accessNumber = accessNumber;
+        this.popularity = popularity;
+        this.playCount = playCount;
+        this.addedTime = addedTime;
+        this.lastPlayed = lastPlayed;
+        this.priority = priority;
+    }
+
     public String getTitle() {
         return title;
     }
