@@ -11,38 +11,30 @@
 
 package gui;
 
-import org.jdesktop.layout.GroupLayout;
-
+import javax.swing.tree.DefaultMutableTreeNode;
 /**
  *
  * @author kurtisschmidt
  */
 public class DayScheduleScrollPanel extends javax.swing.JPanel {
 
+    private DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode("RootNode");
+    private DefaultMutableTreeNode timeNodes[] = new DefaultMutableTreeNode[24];
+
     /** Creates new form DayScheduleScrollPanel */
     public DayScheduleScrollPanel() {
-        initComponents();
-
-        javax.swing.JPanel innerPanel = new javax.swing.JPanel();
-        innerPanel.setLayout( new javax.swing.BoxLayout( innerPanel, WIDTH ) );
-
-        org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
-        innerPanel.setLayout(layout);
-        GroupLayout.ParallelGroup verticalGroup = layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING);
-
         // TODO: Get data for each hour or something.
-        String data[] = {"Brittany Spears - Hit Me Baby, One More Time", "Aqua - Dr. Jones" };
         for ( int i = 0; i < 24; i++ ) {
-            String time = new java.sql.Time( i, 0, 0) + " - " + new java.sql.Time( i+1, 0,0 );
-            verticalGroup = verticalGroup.add(new HourSchedulePanel( time, data ) );
+            String time = i + ":00 - " + (i+1) + ":00";
+            timeNodes[i] = new DefaultMutableTreeNode(time);
+            rootNode.add( timeNodes[i] );
         }
-        
-        layout.setVerticalGroup(verticalGroup);
-        scrollPanel.setViewportView( innerPanel );
+        for ( int i = 0; i < 24; i++ ) {
+            timeNodes[i].add( new DefaultMutableTreeNode("Hello World"));
+            timeNodes[i].add( new DefaultMutableTreeNode("Hello Jordan"));
+        }
 
-
-
-
+        initComponents();
     }
 
     /** This method is called from within the constructor to
@@ -54,25 +46,31 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        scrollPanel = new javax.swing.JScrollPane();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTree1 = new javax.swing.JTree();
 
-        scrollPanel.getVerticalScrollBar().setUnitIncrement(100);
+        jTree1.setModel(new javax.swing.tree.DefaultTreeModel(rootNode));
+        jTree1.setAlignmentX(0.0F);
+        jTree1.setAlignmentY(0.0F);
+        jTree1.setRootVisible(false);
+        jScrollPane1.setViewportView(jTree1);
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(scrollPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
+            .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(scrollPanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+            .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane scrollPanel;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
 
 }

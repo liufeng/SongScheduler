@@ -28,15 +28,4 @@ public class Main {
         });
     }
 
-    public static void testSchedulePanel(){
-        JFrame testWindow = new JFrame("Testing");
-
-        String[] testingStrings = {"one", "two", "three"};
-
-        HourSchedulePanel testPanel = new HourSchedulePanel( "title", testingStrings);
-
-        testWindow.getContentPane().add(testPanel);
-        testWindow.setVisible(true);
-    }
-
 }
