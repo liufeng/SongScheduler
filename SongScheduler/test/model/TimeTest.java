@@ -76,10 +76,6 @@ public class TimeTest {
     @Test
     public void testGetDay() {
         System.out.println("getDay");
-        Time instance = new Time();
-        int expResult = 19;
-        int result = instance.getDay();
-        assertEquals(expResult, result);
 
         assertEquals(19, new Time(2009, 5, 19, 20, 20, 20).getDay());
         assertEquals(1, new Time(2009, 5, 1, 20, 20, 20).getDay());
