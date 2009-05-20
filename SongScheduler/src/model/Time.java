@@ -6,8 +6,6 @@
 package model;
 
 import java.util.Calendar;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -32,7 +30,8 @@ public class Time
      */
 
     /**
-     * It will return 1 if the year has set to 0.
+     * 
+     * NOTE: It will return 1 if the year has set to 0.
      * 
      * @return
      */
@@ -75,6 +74,11 @@ public class Time
         calendar.add(Calendar.YEAR, time.getYear());
     }
 
+    /**
+     * Calculate how many days are there from <em>this</em> to <em>time</em>.
+     * @param time
+     * @return An integer represents number of days.
+     */
     public int minus(Time time) {
         long end = time.getTimeInMillis();
         long start = this.getTimeInMillis();
