@@ -42,6 +42,7 @@ public class InitialDB {
                 double priority = 0;
 
                 //statement.executeUpdate("insert into songlist (title, performer, recordingTitle, recordingType, year, length, popularity, playCount, addedTime, lastPlayed, priority) values (\"" + title + "\"" + ", \"" + performer + "\", \"" + recordingTitle + "\"" , recordingType, year, length, popularity, playCount, addedTime, lastPlayed, priority + "\");";");
+                line = in.readLine();
             }
 
             connection.close();
