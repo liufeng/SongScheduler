@@ -17,15 +17,15 @@ public class InitialDB {
      * Just trivial initial stuff.
      * not finished yet.
      */
-    private static void initialDB() {
+    public static void initialDB() {
         try {
-            Class.forName("java.sqlite.JDBC");
+            Class.forName("org.sqlite.JDBC");
 
-            Connection connection = DriverManager.getConnection("jdbc.sqlite:/Users/liufeng/prog/ss/song.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/liufeng/prog/ss/song.db");
             Statement statement = connection.createStatement();
-            statement.executeUpdate("create table songlist (title, performer, recordingTitle, recordingType, year, length, popularity, playCount, addedTime, lastPlayed, priority);");
+            statement.executeUpdate("create table songlist (id INTEGER PRIMARY KEY, title, performer, recordingTitle, recordingType, year, length, popularity, playCount, addedTime, lastPlayed, priority);");
 
-            BufferedReader in = new BufferedReader(new FileReader("library.txt"));
+            BufferedReader in = new BufferedReader(new FileReader("/Users/liufeng/prog/ss/library.txt"));
             String line = in.readLine();
             while (line != null) {
                 String[] token = line.split(";");
@@ -41,10 +41,43 @@ public class InitialDB {
                 Time lastPlayed = new Time(0, 0, 0, 0, 0, 0);
                 double priority = 0;
 
-                //statement.executeUpdate("insert into songlist (title, performer, recordingTitle, recordingType, year, length, popularity, playCount, addedTime, lastPlayed, priority) values (\"" + title + "\"" + ", \"" + performer + "\", \"" + recordingTitle + "\"" , recordingType, year, length, popularity, playCount, addedTime, lastPlayed, priority + "\");";");
+                /**
+                 * Adding the following 11 info into songlist:
+                 *
+                 * <ol>
+                 *   <li>title</li>
+                 *   <li>performer</li>
+                 *   <li>recordingTitle</li>
+                 *   <li>recordingType</li>
+                 *   <li>year</li>
+                 *   <li>length</li>
+                 *   <li>popularity</li>
+                 *   <li>playCount</li>
+                 *   <li>addedTime</li>
+                 *   <li>lastPlayed</li>
+                 *   <li>priority</li>
+                 * </ol>
+                 */
+                PreparedStatement prepStatement = connection.prepareStatement("insert into songlist values (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+                prepStatement.setString(1, title);
+                prepStatement.setString(2, performer);
+                prepStatement.setString(3, recordingTitle);
+                prepStatement.setString(4, recordingType);
+                prepStatement.setString(5, year);
+                prepStatement.setString(6, length);
+                prepStatement.setObject(7, popularity);
+                prepStatement.setObject(8, playCount);
+                prepStatement.setObject(9, addedTime);
+                prepStatement.setObject(10, lastPlayed);
+                prepStatement.setObject(11, priority);
+                prepStatement.addBatch();
+                connection.setAutoCommit(false);
+                prepStatement.executeBatch();
+                connection.setAutoCommit(true);
                 line = in.readLine();
             }
 
+            in.close();
             connection.close();
         } catch (Exception e) {
             e.printStackTrace();
