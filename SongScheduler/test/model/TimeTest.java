@@ -275,6 +275,7 @@ public class TimeTest {
     /**
      * Test of setting the initial time to 0.
      */
+    @Ignore
     @Test
     public void testSetToZero() {
         System.out.println("Set to zero");

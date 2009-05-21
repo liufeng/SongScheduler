@@ -45,10 +45,12 @@ public class SongSchedulerTest {
         System.out.println("generateOneHour");
         Time startTime = new Time();
         SongScheduler instance = new SongScheduler();
-        //Schedule expResult = null;
-        int expResult = 0;
         Schedule result = instance.generateOneHour(startTime);
-        assertEquals(expResult, result.getDuration());
+
+        // check the generated schedule is longer than 43 minutes
+        assertTrue(result.getDuration() >= 2580000);
+        // check the generated schedule is shorter than 48 minutes
+        assertTrue(result.getDuration() <= 2880000);
     }
 
 }
