@@ -23,7 +23,7 @@ public class InitialDB {
 
             Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/liufeng/prog/ss/song.db");
             Statement statement = connection.createStatement();
-            statement.executeUpdate("create table songlist (id INTEGER PRIMARY KEY, title, performer, recordingTitle, recordingType, year, length, popularity, playCount, addedTime, lastPlayed, priority);");
+            statement.executeUpdate("create table songlist (title, performer, recordingTitle, recordingType, year, length INTEGER, accessNumber INTEGER, popularity, playCount, addedTime, lastPlayed, priority REAL);");
 
             BufferedReader in = new BufferedReader(new FileReader("/Users/liufeng/prog/ss/library.txt"));
             String line = in.readLine();
@@ -34,15 +34,16 @@ public class InitialDB {
                 String recordingTitle = token[2];
                 String recordingType = token[3];
                 String year = token[4];
-                String length = token[5] + ":" + token[6];
+                String length = token[5]; // + ":" + token[6];
+                int accessNumber = Integer.parseInt(token[6]);
                 int popularity = Integer.parseInt(token[7]);
                 int playCount = Integer.parseInt(token[8]);
                 Time addedTime = new Time().getCurrentTime();
-                Time lastPlayed = new Time(0, 0, 0, 0, 0, 0);
+                Time lastPlayed = null; // new Time(0, 0, 0, 0, 0, 0);
                 double priority = 0;
 
                 /**
-                 * Adding the following 11 info into songlist:
+                 * Adding the following 12 info into songlist:
                  *
                  * <ol>
                  *   <li>title</li>
@@ -51,6 +52,7 @@ public class InitialDB {
                  *   <li>recordingType</li>
                  *   <li>year</li>
                  *   <li>length</li>
+                 *   <li>accessNumber</li>
                  *   <li>popularity</li>
                  *   <li>playCount</li>
                  *   <li>addedTime</li>
@@ -58,18 +60,19 @@ public class InitialDB {
                  *   <li>priority</li>
                  * </ol>
                  */
-                PreparedStatement prepStatement = connection.prepareStatement("insert into songlist values (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+                PreparedStatement prepStatement = connection.prepareStatement("insert into songlist values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
                 prepStatement.setString(1, title);
                 prepStatement.setString(2, performer);
                 prepStatement.setString(3, recordingTitle);
                 prepStatement.setString(4, recordingType);
                 prepStatement.setString(5, year);
                 prepStatement.setString(6, length);
-                prepStatement.setObject(7, popularity);
-                prepStatement.setObject(8, playCount);
-                prepStatement.setObject(9, addedTime);
-                prepStatement.setObject(10, lastPlayed);
-                prepStatement.setObject(11, priority);
+                prepStatement.setInt(7, accessNumber);
+                prepStatement.setObject(8, popularity);
+                prepStatement.setObject(9, playCount);
+                prepStatement.setObject(10, addedTime);
+                prepStatement.setObject(11, lastPlayed);
+                prepStatement.setObject(12, priority);
                 prepStatement.addBatch();
                 connection.setAutoCommit(false);
                 prepStatement.executeBatch();

@@ -15,7 +15,7 @@ public class Song {
     private String recordingTitle;
     private String recordingType;
     private String year;
-    private Time length;
+    private int length;
     private int accessNumber;
     private int popularity;
     //private int numberOfPlays;
@@ -30,7 +30,7 @@ public class Song {
                 String recordingTitle,
                 String recordingType,
                 String year,
-                Time   length,
+                int    length,
                 int    accessNumber,
                 int    popularity,
                 int    playCount,
@@ -71,7 +71,7 @@ public class Song {
         return year;
     }
 
-    public Time getLength() {
+    public int getLength() {
         return length;
     }
 

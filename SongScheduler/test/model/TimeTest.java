@@ -42,6 +42,22 @@ public class TimeTest {
     }
 
     /**
+     * Test of the constructor accept a String type param.
+     */
+    @Test
+    public void testStringConstructor() {
+        System.out.println("Time");
+        Time instance = new Time("2009-4-20 6:49:9");
+        assertEquals(2009, instance.getYear());
+        assertEquals(4, instance.getMonth());
+        assertEquals(20, instance.getDay());
+        assertEquals(6, instance.getHour());
+        assertEquals(49, instance.getMinute());
+        assertEquals(9, instance.getSecond());
+        assertEquals("2009-4-20 6:49:9", instance.toString());
+    }
+
+    /**
      * Test of getYear method, of class Time.
      */
     @Test
@@ -256,4 +272,15 @@ public class TimeTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Test of setting the initial time to 0.
+     */
+    @Test
+    public void testSetToZero() {
+        System.out.println("Set to zero");
+        Time instance = new Time(0, 0, 0, 0, 0, 0);
+        String expResult = "0-0-0 0:0:0";
+        String result = instance.toString();
+        assertEquals(expResult, result);
+    }
 }

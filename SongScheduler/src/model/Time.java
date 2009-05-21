@@ -8,8 +8,10 @@ package model;
 import java.util.Calendar;
 
 /**
+ * A Time type for all of the information about ``time''.
  *
  * @author liufeng
+ * 
  */
 
 public class Time
@@ -23,6 +25,29 @@ public class Time
     public Time(int year, int month, int day, int hour, int minute, int second) {
         calendar = Calendar.getInstance();
         calendar.set(year, month-1, day, hour, minute, second);
+    }
+
+    public Time(String datetime) {
+        if (datetime == null) {
+            calendar = Calendar.getInstance();
+        } else {
+            String[] token = datetime.split("\\s+");
+            String date = token[0];
+            String time = token[1];
+
+            token = date.split("-");
+            int year = Integer.parseInt(token[0]);
+            int month = Integer.parseInt(token[1]);
+            int day = Integer.parseInt(token[2]);
+
+            token = time.split(":");
+            int hour = Integer.parseInt(token[0]);
+            int minute = Integer.parseInt(token[1]);
+            int second = Integer.parseInt(token[2]);
+
+            calendar = Calendar.getInstance();
+            calendar.set(year, month-1, day, hour, minute, second);
+        }
     }
 
     /**
@@ -79,12 +104,17 @@ public class Time
      * @param time
      * @return An integer represents number of days.
      */
+    
     public int minus(Time time) {
-        long end = time.getTimeInMillis();
-        long start = this.getTimeInMillis();
-        return (int)((end - start) / (24 * 60 * 60 * 1000)) + 1;
-
+        if (time == null) {
+            return 0;
+        } else {
+            long end = time.getTimeInMillis();
+            long start = this.getTimeInMillis();
+            return (int)((end - start) / (24 * 60 * 60 * 1000)) + 1;
+        }
     }
+    
 
     public long getTimeInMillis() {
         return calendar.getTimeInMillis();
