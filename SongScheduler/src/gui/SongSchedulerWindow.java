@@ -209,7 +209,8 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             days = temp;
         }
 
-        new SchedulerListWindow( days ).setVisible(true);
+        new SchedulerListWindow( days, this ).setVisible(true);
+        this.setVisible(false);
 
 //        for ( int i = 0; i < days.length; i++ ){
 //            System.out.println(days[i]);
