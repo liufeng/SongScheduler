@@ -164,6 +164,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void calendarOnCommit(datechooser.events.CommitEvent evt)//GEN-FIRST:event_calendarOnCommit
     {//GEN-HEADEREND:event_calendarOnCommit
         // TODO add your handling code here:
+        openSelectedDates();
     }//GEN-LAST:event_calendarOnCommit
 
     private void calendarOnSelectionChange(datechooser.events.SelectionChangedEvent evt)//GEN-FIRST:event_calendarOnSelectionChange
@@ -182,6 +183,11 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_calendarOnSelectionChange
 
     private void viewSelectedButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_viewSelectedButtonMouseClicked
+        openSelectedDates();
+    }//GEN-LAST:event_viewSelectedButtonMouseClicked
+
+    private void openSelectedDates()
+    {
         // TODO add your handling code here:
         Iterator<Calendar> itterator = calendar.getSelectedPeriodSet().getDates().iterator();
         Calendar date;
@@ -215,8 +221,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 //        for ( int i = 0; i < days.length; i++ ){
 //            System.out.println(days[i]);
 //        }
-    }//GEN-LAST:event_viewSelectedButtonMouseClicked
-
+    }
     /**
     * @param args the command line arguments
     */
