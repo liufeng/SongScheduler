@@ -17,7 +17,7 @@ public class SongScheduler {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/liufeng/prog/ss/song.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
             Statement statement = connection.createStatement();
 
             ResultSet rs = statement.executeQuery("select * from songlist order by priority desc, length desc limit 50;");

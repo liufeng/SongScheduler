@@ -9,6 +9,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -40,6 +41,7 @@ public class InitialDBTest {
     /**
      * Test of initialDB method, of class InitialDB.
      */
+    @Ignore
     @Test
     public void testInitialDB() {
         System.out.println("initialDB");

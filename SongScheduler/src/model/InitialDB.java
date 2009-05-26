@@ -21,7 +21,8 @@ public class InitialDB {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/liufeng/prog/ss/song.db");
+            //Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/liufeng/prog/ss/song.db");
+            Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
             Statement statement = connection.createStatement();
             statement.executeUpdate("create table songlist (title, performer, recordingTitle, recordingType, year, length INTEGER, accessNumber INTEGER, popularity, playCount, addedTime, lastPlayed, priority REAL);");
 
