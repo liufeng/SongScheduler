@@ -12,6 +12,12 @@ import java.sql.*;
  * @author liufeng
  */
 public class SongScheduler {
+    private Schedule[][] tentativeSchedule = new Schedule[7][24];
+
+    public void commitSchedule(Time startTime) {
+        
+    }
+
     public Schedule generateOneHour(Time startTime) {
         Schedule result = new Schedule(startTime);
 
@@ -39,7 +45,10 @@ public class SongScheduler {
                     double priority = rs.getDouble("priority");
 
                     Song song = new Song(title, performer, recordingTitle, recordingType, year, length, accessNumber, popularity, playCount, addedTime, lastPlayed, priority);
-                    result.add(song);
+                    
+                    if (canAddThisSong(song, startTime, connection)) {
+                        result.add(song);
+                    }
 
                     if (result.overMax()) {
                         result.remove(song);
@@ -51,6 +60,26 @@ public class SongScheduler {
 
         } catch (Exception e) {
             e.printStackTrace();
+        }
+
+        return result;
+    }
+
+    private boolean canAddThisSong(Song song, Time startTime, Connection connection) {
+        Time previousHour = startTime.getPreviousHour();
+        Time nextHour = startTime.getNextHour();
+        boolean result = true;
+
+        if (tentativeSchedule[previousHour.getDay()][previousHour.getHour()] == null) {
+            //check db;
+        } else {
+            result &= tentativeSchedule[previousHour.getDay()][previousHour.getHour()].contains(song);
+        }
+
+        if (tentativeSchedule[nextHour.getDay()][nextHour.getHour()] == null) {
+            //check db;
+        } else {
+            result &= tentativeSchedule[nextHour.getDay()][nextHour.getHour()].contains(song);
         }
 
         return result;

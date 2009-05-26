@@ -53,4 +53,8 @@ public class Schedule {
     public int getDuration() {
         return duration;
     }
+
+    public boolean contains(Song song) {
+        return songList.contains(song);
+    }
 }

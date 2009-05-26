@@ -22,6 +22,10 @@ public class Time
         calendar = Calendar.getInstance();
     }
 
+    public Time(Calendar calendar) {
+        this.calendar = calendar;
+    }
+
     public Time(int year, int month, int day, int hour, int minute, int second) {
         calendar = Calendar.getInstance();
         calendar.set(year, month-1, day, hour, minute, second);
@@ -83,7 +87,10 @@ public class Time
     public int getSecond() {
         return calendar.get(Calendar.SECOND);
     }
-    
+
+    public int getDayInWeek() {
+        return calendar.get(Calendar.DAY_OF_WEEK) - 1;
+    }
 
     /**
      * Methods from interface Computable
@@ -157,6 +164,28 @@ public class Time
         return new Time(year, month, day, hour, minute, second);
     }
 
+    public Time getPreviousDay() {
+        Calendar result = (Calendar) calendar.clone();
+        result.add(Calendar.DAY_OF_MONTH, -1);
+        return new Time(result);
+    }
+
+    public Time getNextDay() {
+        Calendar result = (Calendar) calendar.clone();
+        result.add(Calendar.DAY_OF_MONTH, 1);
+        return new Time(result);
+    }
+    public Time getPreviousHour() {
+        Calendar result = (Calendar) calendar.clone();
+        result.add(Calendar.HOUR_OF_DAY, -1);
+        return new Time(result);
+    }
+    public Time getNextHour() {
+        Calendar result = (Calendar) calendar.clone();
+        result.add(Calendar.HOUR_OF_DAY, 1);
+        return new Time(result);
+    }
+    
     // YYYY-MM-DD HH:MM:SS
     public String toString() {
         return getYear() + "-" + getMonth() + "-" + getDay() + " "
