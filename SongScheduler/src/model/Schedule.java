@@ -6,12 +6,13 @@
 package model;
 
 import java.util.LinkedList;
+import java.util.Iterator;
 
 /**
  *
  * @author liufeng
  */
-public class Schedule {
+public class Schedule implements Iterable {
     private LinkedList songList;
     private Time startTime;
     private int duration;
@@ -56,5 +57,10 @@ public class Schedule {
 
     public boolean contains(Song song) {
         return songList.contains(song);
+    }
+
+    public Iterator<Song> iterator()
+    {
+        return songList.iterator();
     }
 }
