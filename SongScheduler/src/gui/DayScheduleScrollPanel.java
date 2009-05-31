@@ -11,7 +11,12 @@
 
 package gui;
 
+// Self contained packages
+import model.*;
+
+// Java packages
 import javax.swing.tree.DefaultMutableTreeNode;
+import java.util.Iterator;
 /**
  *
  * @author kurtisschmidt
@@ -20,6 +25,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
 
     private DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode("RootNode");
     private DefaultMutableTreeNode timeNodes[] = new DefaultMutableTreeNode[24];
+    private Schedule schedules[] = new Schedule[24];
 
     /** Creates new form DayScheduleScrollPanel */
     public DayScheduleScrollPanel() {
@@ -30,11 +36,21 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
             rootNode.add( timeNodes[i] );
         }
         for ( int i = 0; i < 24; i++ ) {
-            timeNodes[i].add( new DefaultMutableTreeNode("Hello World"));
-            timeNodes[i].add( new DefaultMutableTreeNode("Hello Jordan"));
+            // call object/function to get schedule for i hour.
+            schedules[i] = new Schedule(new Time(0,0,0,i,0,0));
+            Iterator<Song> iter = schedules[i].iterator();
+
+            if (!iter.hasNext())
+                timeNodes[i].add( new DefaultMutableTreeNode(""));
+            
+            while( iter.hasNext() )
+            {
+                timeNodes[i].add( new DefaultMutableTreeNode(iter.next()) );
+            }
         }
 
         initComponents();
+        jTree1.setCellRenderer( new DayTreeCellRenderer() );
     }
 
     /** This method is called from within the constructor to
@@ -53,6 +69,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
         jTree1.setAlignmentX(0.0F);
         jTree1.setAlignmentY(0.0F);
         jTree1.setRootVisible(false);
+        jTree1.setShowsRootHandles(true);
         jScrollPane1.setViewportView(jTree1);
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(this);
