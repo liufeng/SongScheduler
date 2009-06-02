@@ -26,7 +26,7 @@ public class InitialDB {
             Statement statement = connection.createStatement();
             statement.executeUpdate("create table songlist (title, performer, recordingTitle, recordingType, year, length INTEGER, accessNumber INTEGER, popularity, playCount, addedTime, lastPlayed, priority REAL);");
 
-            BufferedReader in = new BufferedReader(new FileReader("/Users/liufeng/prog/ss/library.txt"));
+            BufferedReader in = new BufferedReader(new FileReader("library.txt"));
             String line = in.readLine();
             while (line != null) {
                 String[] token = line.split(";");

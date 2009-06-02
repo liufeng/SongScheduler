@@ -41,7 +41,7 @@ public class InitialDBTest {
     /**
      * Test of initialDB method, of class InitialDB.
      */
-    @Ignore
+    
     @Test
     public void testInitialDB() {
         System.out.println("initialDB");

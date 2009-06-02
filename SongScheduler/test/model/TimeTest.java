@@ -76,7 +76,7 @@ public class TimeTest {
     public void testGetMonth() {
         System.out.println("getMonth");
         Time instance = new Time();
-        int expResult = 5;
+        int expResult = 6;
         int result = instance.getMonth();
         assertEquals(expResult, result);
 
