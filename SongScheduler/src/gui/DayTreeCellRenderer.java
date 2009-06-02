@@ -7,7 +7,6 @@ package gui;
 
 // Java packages
 import javax.swing.tree.DefaultTreeCellRenderer;
-import javax.swing.ImageIcon;
 import java.awt.Component;
 import javax.swing.JTree;
 
@@ -37,9 +36,6 @@ public class DayTreeCellRenderer extends DefaultTreeCellRenderer {
         
         if ( !leaf ) {
             setIcon(null);
-        }
-        else {
-            setIcon( null /*songIcon*/ );
         }
 
         return this;
