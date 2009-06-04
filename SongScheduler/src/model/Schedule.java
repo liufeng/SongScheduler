@@ -65,6 +65,24 @@ public class Schedule implements Iterable {
     }
 
     public String toString(){
-        return startTime.getHour() + ":00 - " + (startTime.getHour() + 1) + ":00";
+        int start = startTime.getHour();
+        int finish = start + 1;
+        String startAP = "am";
+        String finishAP = "am";
+
+        if (start == 0){
+            start = 12;
+            startAP = "pm";
+        } else if(start == 12) {
+            finish = 1;
+            finishAP = "pm";
+        } else if(start > 12) {
+            start = start - 12;
+            finish = finish - 12;
+            startAP = "pm";
+            finishAP = "pm";
+        }
+
+        return start + ":00" + startAP + " - " + finish + ":00" + finishAP;
     }
 }

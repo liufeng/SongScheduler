@@ -95,6 +95,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
             schedule.add( song );
 
             scheduleNode = selectedNode;
+            System.out.println( schedule.toString() + " schedule");
         }
         else if ( selectedItem instanceof Song )
         {
@@ -105,6 +106,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
             schedule.add( song );
 
             scheduleNode = (DefaultMutableTreeNode)selectedNode.getParent();
+            System.out.println( schedule.toString() + " song");
         }
 
         scheduleNode.add( new DefaultMutableTreeNode(song) );
