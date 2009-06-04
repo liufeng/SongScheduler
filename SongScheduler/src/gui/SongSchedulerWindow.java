@@ -111,6 +111,11 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     });
 
     browseSongsButton.setText("Browse Songs");
+    browseSongsButton.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            browseSongsButtonActionPerformed(evt);
+        }
+    });
 
     fileMenu.setText("File");
 
@@ -141,7 +146,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                     .add(makeListButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                     .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 197, Short.MAX_VALUE)
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 200, Short.MAX_VALUE)
                     .add(browseSongsButton))
                 .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 624, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
             .addContainerGap())
@@ -191,6 +196,11 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void viewSelectedButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_viewSelectedButtonMouseClicked
         openSelectedDates();
     }//GEN-LAST:event_viewSelectedButtonMouseClicked
+
+    private void browseSongsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseSongsButtonActionPerformed
+        // TODO add your handling code here:
+        new SongBrowserWindow().setVisible(true);
+    }//GEN-LAST:event_browseSongsButtonActionPerformed
 
     private void openSelectedDates()
     {
