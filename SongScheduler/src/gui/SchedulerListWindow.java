@@ -146,7 +146,7 @@ public class SchedulerListWindow extends javax.swing.JFrame {
             currentTab.addSong( song );
         }
         catch (Exception exp) {
-            System.out.println(exp);
+            System.out.println(exp.getMessage());
         }
     }//GEN-LAST:event_addSongButtonActionPerformed
 

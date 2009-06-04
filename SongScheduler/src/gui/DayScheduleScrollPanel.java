@@ -16,6 +16,7 @@ import model.*;
 
 // Java packages
 import javax.swing.tree.*;
+import javax.swing.tree.DefaultTreeModel;
 import java.util.Iterator;
 /**
  *
@@ -23,12 +24,17 @@ import java.util.Iterator;
  */
 public class DayScheduleScrollPanel extends javax.swing.JPanel {
 
-    private DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode("RootNode");
-    private DefaultMutableTreeNode timeNodes[] = new DefaultMutableTreeNode[24];
-    private Schedule schedules[] = new Schedule[24];
+    private DefaultMutableTreeNode rootNode;
+    private DefaultMutableTreeNode timeNodes[];
+    private DefaultTreeModel treeModel;
+    private Schedule schedules[];
 
     /** Creates new form DayScheduleScrollPanel */
     public DayScheduleScrollPanel() {
+        rootNode  = new DefaultMutableTreeNode("RootNode");
+        timeNodes = new DefaultMutableTreeNode[24];
+        schedules = new Schedule[24];
+
         // TODO: Get data for each hour or something.
         for ( int i = 0; i < 24; i++ ) {
             schedules[i] = new Schedule(new Time(0,0,0,i,0,0));
@@ -37,8 +43,8 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
 
             Iterator<Song> iter = schedules[i].iterator();
 
-            if (!iter.hasNext())
-                timeNodes[i].add( new DefaultMutableTreeNode(""));
+           // if (!iter.hasNext())
+           //     timeNodes[i].add( new DefaultMutableTreeNode(""));
             
             while( iter.hasNext() )
             {
@@ -48,6 +54,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
 
         initComponents();
         jTree1.setCellRenderer( new DayTreeCellRenderer() );
+        treeModel = (DefaultTreeModel)jTree1.getModel();
     }
 
     public void deleteSelectedSongs() {
@@ -67,7 +74,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
                 Song song = (Song)selected[i].getUserObject();
 
                 schedule.remove( song );
-                parent.remove( selected[i] );
+                treeModel.removeNodeFromParent( selected[i] );
             }
         }
     }
@@ -95,7 +102,6 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
             schedule.add( song );
 
             scheduleNode = selectedNode;
-            System.out.println( schedule.toString() + " schedule");
         }
         else if ( selectedItem instanceof Song )
         {
@@ -106,10 +112,10 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
             schedule.add( song );
 
             scheduleNode = (DefaultMutableTreeNode)selectedNode.getParent();
-            System.out.println( schedule.toString() + " song");
         }
 
-        scheduleNode.add( new DefaultMutableTreeNode(song) );
+        DefaultMutableTreeNode childNode = new DefaultMutableTreeNode(song);
+        treeModel.insertNodeInto( childNode, scheduleNode, scheduleNode.getChildCount());
     }
     
     public DefaultMutableTreeNode[] getSelected()
