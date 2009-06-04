@@ -39,6 +39,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         calendar = new datechooser.beans.DateChooserPanel();
         makeListButton = new javax.swing.JButton();
         viewSelectedButton = new javax.swing.JButton();
+        browseSongsButton = new javax.swing.JButton();
         MenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         fileMenuOpen = new javax.swing.JMenuItem();
@@ -109,6 +110,8 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         }
     });
 
+    browseSongsButton.setText("Browse Songs");
+
     fileMenu.setText("File");
 
     fileMenuOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.META_MASK));
@@ -137,9 +140,11 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                 .add(layout.createSequentialGroup()
                     .add(makeListButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                    .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 197, Short.MAX_VALUE)
+                    .add(browseSongsButton))
                 .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 624, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-            .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addContainerGap())
     );
     layout.setVerticalGroup(
         layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -149,7 +154,8 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                 .add(makeListButton)
-                .add(viewSelectedButton))
+                .add(viewSelectedButton)
+                .add(browseSongsButton))
             .addContainerGap())
     );
 
@@ -236,6 +242,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar MenuBar;
+    private javax.swing.JButton browseSongsButton;
     private datechooser.beans.DateChooserPanel calendar;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuItem fileMenuClose;
