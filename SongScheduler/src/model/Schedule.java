@@ -64,6 +64,10 @@ public class Schedule implements Iterable {
         return songList.iterator();
     }
 
+    public Time getTime() {
+        return startTime;
+    }
+
     public String toString(){
         int start = startTime.getHour();
         int finish = start + 1;
