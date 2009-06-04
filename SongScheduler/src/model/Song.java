@@ -143,4 +143,12 @@ public class Song {
                 - 16 / (new Time().getCurrentTime().minus(lastPlayed));
         priority = newPriority;
     }
+
+
+    /**
+     * Return the name of the song
+     */
+    public String toString(){
+        return title;
+    }
 }
