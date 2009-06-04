@@ -34,9 +34,7 @@ public class DayTreeCellRenderer extends DefaultTreeCellRenderer {
                         expanded, leaf, row,
                         hasFocus);
         
-        if ( !leaf ) {
-            setIcon(null);
-        }
+        setIcon(null);
 
         return this;
     }
