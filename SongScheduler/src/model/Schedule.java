@@ -63,4 +63,8 @@ public class Schedule implements Iterable {
     {
         return songList.iterator();
     }
+
+    public String toString(){
+        return startTime.getHour() + ":00 - " + (startTime.getHour() + 1) + ":00";
+    }
 }
