@@ -99,7 +99,6 @@
       </Properties>
       <Events>
         <EventHandler event="onCommit" listener="datechooser.events.CommitListener" parameters="datechooser.events.CommitEvent" handler="calendarOnCommit"/>
-        <EventHandler event="onSelectionChange" listener="datechooser.events.SelectionChangedListener" parameters="datechooser.events.SelectionChangedEvent" handler="calendarOnSelectionChange"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="makeListButton">
