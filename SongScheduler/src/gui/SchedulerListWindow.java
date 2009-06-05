@@ -142,17 +142,20 @@ public class SchedulerListWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_doneButtonActionPerformed
 
     private void addSongButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addSongButtonActionPerformed
-        DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getSelectedComponent();
+        new SongBrowserWindow(this).setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_addSongButtonActionPerformed
 
-        String a = JOptionPane.showInputDialog( "Input a song name or something" );
-        Song song = new Song( a, "", "", "", "", 0, 0, 50, 0, new Time(), new Time(), 1.0 );
+    public void addSong(Song song){
+        DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getSelectedComponent();
 
         try {
             currentTab.addSong( song );
         } catch ( Exception exp ) {
             System.out.println( exp.getMessage() );
         }
-    }//GEN-LAST:event_addSongButtonActionPerformed
+    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addScheduleButton;

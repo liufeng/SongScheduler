@@ -11,7 +11,7 @@
 
 package gui;
 import java.util.ArrayList;
-import javax.swing.DefaultListModel;
+import javax.swing.*;
 import model.*;
 
 /**
@@ -21,10 +21,10 @@ import model.*;
 public class SongBrowserWindow extends javax.swing.JFrame {
     private ArrayList songs;
     private DefaultListModel listModel;
-    private SongSchedulerWindow parentWindow;
+    private JFrame parentWindow;
 
     /** Creates new form SongBrowserWindow */
-    public SongBrowserWindow(SongSchedulerWindow parentWindow) {
+    public SongBrowserWindow(JFrame parentWindow) {
         this.parentWindow = parentWindow;
         Song currSong;
         songs = SongDBI.getSongs(null);
@@ -257,6 +257,11 @@ public class SongBrowserWindow extends javax.swing.JFrame {
         this.dispose();
         if( parentWindow != null){
             parentWindow.setVisible(true);
+            if(parentWindow instanceof SchedulerListWindow){
+                if(songList.getSelectedIndex() != -1){
+                    ((SchedulerListWindow)parentWindow).addSong((Song)songs.get(songList.getSelectedIndex()));
+                }
+            }
         }else{
             System.exit(0);
         }
