@@ -114,6 +114,11 @@ public class SongBrowserWindow extends javax.swing.JFrame {
         jLabel9.setText("Popularity:");
 
         saveNewPopularity.setText("Save");
+        saveNewPopularity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveNewPopularityActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout selectedSongInfoPanelLayout = new org.jdesktop.layout.GroupLayout(selectedSongInfoPanel);
         selectedSongInfoPanel.setLayout(selectedSongInfoPanelLayout);
@@ -324,6 +329,19 @@ public class SongBrowserWindow extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_songSearchButtonActionPerformed
+
+    private void saveNewPopularityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveNewPopularityActionPerformed
+        // TODO add your handling code here:
+        try{
+            int newPopularity = Integer.parseInt(songPopularityDisplay.getText());
+            if(songList.getSelectedIndex() != -1){
+                ((Song)songs.get(songList.getSelectedIndex())).updatePopularity(newPopularity);
+            }
+        }catch(NumberFormatException e){
+            e.printStackTrace();
+        }
+
+    }//GEN-LAST:event_saveNewPopularityActionPerformed
 
     /**
     * @param args the command line arguments

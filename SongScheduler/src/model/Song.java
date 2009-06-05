@@ -143,7 +143,10 @@ public class Song {
         priority = newPriority;
     }
 
-
+    public void updatePopularity(int newPopularity){
+        popularity = newPopularity;
+        SongDBI.changeSongPriority(title, newPopularity);
+    }
     /**
      * Return the name of the song
      */

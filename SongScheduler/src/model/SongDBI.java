@@ -19,9 +19,9 @@ public class SongDBI {
         String sqlStatement;
 
         if(songName == null){
-            sqlStatement = "select * from song order by title;";
+            sqlStatement = "SELECT * FROM song ORDER BY title;";
         }else{
-            sqlStatement = "select * from song where title = \'" + songName + "\' order by title;";
+            sqlStatement = "SELECT * FROM song WHERE title = \'" + songName + "\' ORDER BY title;";
         }
 
         try {
@@ -55,5 +55,24 @@ public class SongDBI {
         }
 
         return theSongs;
+    }
+
+    public static void changeSongPriority( String title, int newPopularity){
+        if(title != null && !title.equals("")){
+            String sql = "UPDATE song SET popularity = " + newPopularity + " WHERE title = \'" + title + "\';";
+
+
+            try {
+                Class.forName("org.sqlite.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+                Statement statement = connection.createStatement();
+                statement.executeQuery(sql);
+
+                statement.close();
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
