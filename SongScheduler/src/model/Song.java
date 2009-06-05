@@ -98,10 +98,9 @@ public class Song {
 
     /**
      * Set the number of plays in the current week
-     * @param number The number to add to.
      */
-    public void addNumberOfPlays(int number) {
-        this.accessNumber += number;
+    public void addNumberOfPlays() {
+        this.accessNumber++;
     }
 
     /**
@@ -138,7 +137,7 @@ public class Song {
      * Happens every time the user alter the popularity and every time the
      * system makes schedule.
      */
-    private void updatePriority() {
+    public void updatePriority() {
         double newPriority = 10 * popularity - 7 * getAveragePlays()
                 - 16 / (new Time().getCurrentTime().minus(lastPlayed));
         priority = newPriority;

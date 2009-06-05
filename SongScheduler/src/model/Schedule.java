@@ -59,8 +59,7 @@ public class Schedule implements Iterable {
         return songList.contains(song);
     }
 
-    public Iterator<Song> iterator()
-    {
+    public Iterator<Song> iterator() {
         return songList.iterator();
     }
 

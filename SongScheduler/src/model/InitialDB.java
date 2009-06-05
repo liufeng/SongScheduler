@@ -24,8 +24,19 @@ public class InitialDB {
             //Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/liufeng/prog/ss/song.db");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
             Statement statement = connection.createStatement();
-            statement.executeUpdate("create table songlist (title, performer, recordingTitle, recordingType, year, length INTEGER, accessNumber INTEGER, popularity, playCount, addedTime, lastPlayed, priority REAL);");
-
+            //statement.executeUpdate("create table songlist (title, performer, recordingTitle, recordingType, year, length INTEGER, accessNumber INTEGER, popularity, playCount, addedTime, lastPlayed, priority REAL);");
+            
+            statement.addBatch(" CREATE TABLE song(accessNumber INTEGER PRIMARY KEY, title TEXT, performer TEXT, recordingTitle TEXT, recordingType TEXT, year TEXT, length INTEGER, popularity INTEGER, playCount INTEGER, addedTime DATETIME, lastPlayed DATETIME, priority REAL);");
+            statement.addBatch("  CREATE TABLE schedule(startTime DATETIME PRIMARY KEY, duration INTEGER);");
+            statement.addBatch("  CREATE TABLE songSchedule(accessNumber INTEGER CONSTRAINT fk_song_id REFERENCES song(accessNumber), startTime DATETIME CONSTRAINT fk_schedule_id REFERENCES schedule(startTime) ON DELETE CASCADE, trackNumber INTEGER, PRIMARY KEY(startTime, trackNumber));");
+            statement.addBatch("  CREATE TRIGGER fki_songSchedule_accessNumber_song_accessNumber BEFORE INSERT ON [songSchedule] FOR EACH ROW BEGIN   SELECT RAISE(ROLLBACK, 'insert on table \"songSchedule\" violates foreign key constraint \"fki_songSchedule_accessNumber_song_accessNumber\"')   WHERE NEW.accessNumber IS NOT NULL AND (SELECT accessNumber FROM song WHERE accessNumber = NEW.accessNumber) IS NULL;END;");
+            statement.addBatch("  CREATE TRIGGER fku_songSchedule_accessNumber_song_accessNumber BEFORE UPDATE ON [songSchedule]  FOR EACH ROW BEGIN     SELECT RAISE(ROLLBACK, 'update on table \"songSchedule\" violates foreign key constraint \"fku_songSchedule_accessNumber_song_accessNumber\"')       WHERE NEW.accessNumber IS NOT NULL AND (SELECT accessNumber FROM song WHERE accessNumber = NEW.accessNumber) IS NULL;END;");
+            statement.addBatch("  CREATE TRIGGER fkd_songSchedule_accessNumber_song_accessNumber BEFORE DELETE ON song FOR EACH ROW BEGIN   SELECT RAISE(ROLLBACK, 'delete on table \"song\" violates foreign key constraint \"fkd_songSchedule_accessNumber_song_accessNumber\"')   WHERE (SELECT accessNumber FROM songSchedule WHERE accessNumber = OLD.accessNumber) IS NOT NULL;END;");
+            statement.addBatch("  CREATE TRIGGER fki_songSchedule_startTime_schedule_startTime BEFORE INSERT ON [songSchedule] FOR EACH ROW BEGIN   SELECT RAISE(ROLLBACK, 'insert on table \"songSchedule\" violates foreign key constraint \"fki_songSchedule_startTime_schedule_startTime\"')   WHERE NEW.startTime IS NOT NULL AND (SELECT startTime FROM schedule WHERE startTime = NEW.startTime) IS NULL;END;");
+            statement.addBatch("  CREATE TRIGGER fku_songSchedule_startTime_schedule_startTime BEFORE UPDATE ON [songSchedule]  FOR EACH ROW BEGIN     SELECT RAISE(ROLLBACK, 'update on table \"songSchedule\" violates foreign key constraint \"fku_songSchedule_startTime_schedule_startTime\"')       WHERE NEW.startTime IS NOT NULL AND (SELECT startTime FROM schedule WHERE startTime = NEW.startTime) IS NULL;END;");
+            statement.addBatch("  CREATE TRIGGER fkdc_songSchedule_startTime_schedule_startTime BEFORE DELETE ON schedule FOR EACH ROW BEGIN      DELETE FROM songSchedule WHERE songSchedule.startTime = OLD.startTime;END;");
+            statement.executeBatch();
+            
             BufferedReader in = new BufferedReader(new FileReader("library.txt"));
             String line = in.readLine();
             while (line != null) {
@@ -35,7 +46,7 @@ public class InitialDB {
                 String recordingTitle = token[2];
                 String recordingType = token[3];
                 String year = token[4];
-                String length = token[5]; // + ":" + token[6];
+                int length = Integer.parseInt(token[5]);
                 int accessNumber = Integer.parseInt(token[6]);
                 int popularity = Integer.parseInt(token[7]);
                 int playCount = Integer.parseInt(token[8]);
@@ -61,19 +72,20 @@ public class InitialDB {
                  *   <li>priority</li>
                  * </ol>
                  */
-                PreparedStatement prepStatement = connection.prepareStatement("insert into songlist values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
-                prepStatement.setString(1, title);
-                prepStatement.setString(2, performer);
-                prepStatement.setString(3, recordingTitle);
-                prepStatement.setString(4, recordingType);
-                prepStatement.setString(5, year);
-                prepStatement.setString(6, length);
-                prepStatement.setInt(7, accessNumber);
-                prepStatement.setObject(8, popularity);
-                prepStatement.setObject(9, playCount);
+                PreparedStatement prepStatement = connection.prepareStatement("insert into song values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
+                prepStatement.setInt(1, accessNumber);
+                prepStatement.setString(2, title);
+                prepStatement.setString(3, performer);
+                prepStatement.setString(4, recordingTitle);
+                prepStatement.setString(5, recordingType);
+                prepStatement.setString(6, year);
+                prepStatement.setInt(7, length);
+                //prepStatement.setInt(7, accessNumber);
+                prepStatement.setInt(8, popularity);
+                prepStatement.setInt(9, playCount);
                 prepStatement.setObject(10, addedTime);
                 prepStatement.setObject(11, lastPlayed);
-                prepStatement.setObject(12, priority);
+                prepStatement.setDouble(12, priority);
                 prepStatement.addBatch();
                 connection.setAutoCommit(false);
                 prepStatement.executeBatch();

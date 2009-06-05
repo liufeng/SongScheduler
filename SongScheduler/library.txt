@@ -102,7 +102,6 @@ Coconut Skins;Damien Rice;9;CD;2006;341040;101;50;0;0;0;0
 Dogs;Damien Rice;9;CD;2006;225373;102;50;0;0;0;0
 Elephant;Damien Rice;9;CD;2006;250933;103;50;0;0;0;0
 Grey Room;Damien Rice;9;CD;2006;357400;104;50;0;0;0;0
-Me, My Yoke &#38; I;Damien Rice;9;CD;2006;343573;105;50;0;0;0;0
 Rootless Tree;Damien Rice;9;CD;2006;357560;106;50;0;0;0;0
 Sleep Don't Weep;Damien Rice;9;CD;2006;262760;107;50;0;0;0;0
 9 Crimes;Damien Rice;9;CD;2006;1314493;108;50;0;0;0;0
@@ -181,7 +180,6 @@ Hana-Bi (Hana-Bi);Joe Hisaishi;Joe Hisaishi meets Kitano films;CD;2005;221813;18
 Concerto in E, BWV. 1042 - II. Adagio;Johann Sebastian Bach;Violin, Strings and Continuous Concertos  - Perlman - Zukerman - Barenboim;CD;2005;540973;181;50;0;0;0;0
 Concerto in E, BWV. 1042 - III. Allegro assai;Johann Sebastian Bach;Violin, Strings and Continuous Concertos  - Perlman - Zukerman - Barenboim;CD;2005;492440;182;50;0;0;0;0
 Concerto in G Minor, BWV. 1056 - I. (Allegro);Johann Sebastian Bach;Violin, Strings and Continuous Concertos  - Perlman - Zukerman - Barenboim;CD;2005;188106;183;50;0;0;0;0
-Concerto in G Minor, BWV. 1056 - II. Largo &#38; III. Presto;Johann Sebastian Bach;Violin, Strings and Continuous Concertos  - Perlman - Zukerman - Barenboim;CD;2005;449040;184;50;0;0;0;0
 Concerto in A Minor, BWV. 1041 - II. Andante;Johann Sebastian Bach;Violin, Strings and Continuous Concertos  - Perlman - Zukerman - Barenboim;CD;2005;250933;185;50;0;0;0;0
 Concerto in A Minor, BWV. 1041 - III. Allegro assai;Johann Sebastian Bach;Violin, Strings and Continuous Concertos  - Perlman - Zukerman - Barenboim;CD;2005;466573;186;50;0;0;0;0
 Concerto (2 Violins) in D Minor, BWV. 1043 - I. Vivace;Johann Sebastian Bach;Violin, Strings and Continuous Concertos  - Perlman - Zukerman - Barenboim;CD;2005;248573;187;50;0;0;0;0

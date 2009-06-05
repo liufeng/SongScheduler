@@ -175,11 +175,13 @@ public class Time
         result.add(Calendar.DAY_OF_MONTH, 1);
         return new Time(result);
     }
+
     public Time getPreviousHour() {
         Calendar result = (Calendar) calendar.clone();
         result.add(Calendar.HOUR_OF_DAY, -1);
         return new Time(result);
     }
+    
     public Time getNextHour() {
         Calendar result = (Calendar) calendar.clone();
         result.add(Calendar.HOUR_OF_DAY, 1);
