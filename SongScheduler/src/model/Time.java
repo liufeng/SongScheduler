@@ -13,7 +13,6 @@ import java.util.Calendar;
  * @author liufeng
  * 
  */
-
 public class Time
 {
     private Calendar calendar;
@@ -186,6 +185,10 @@ public class Time
         Calendar result = (Calendar) calendar.clone();
         result.add(Calendar.HOUR_OF_DAY, 1);
         return new Time(result);
+    }
+
+    public String getDateAsString() {
+        return getDay() + "/" + getMonth() + "/" + getYear();
     }
     
     // YYYY-MM-DD HH:MM:SS
