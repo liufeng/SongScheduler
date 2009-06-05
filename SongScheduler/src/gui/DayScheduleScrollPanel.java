@@ -18,6 +18,7 @@ import model.*;
 import javax.swing.tree.*;
 import javax.swing.tree.DefaultTreeModel;
 import java.util.Iterator;
+import java.util.Calendar;
 /**
  *
  * @author kurtisschmidt
@@ -30,26 +31,27 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
     private Schedule schedules[];
 
     /** Creates new form DayScheduleScrollPanel */
-    public DayScheduleScrollPanel() {
+    public DayScheduleScrollPanel( SongScheduler songScheduler, Time day ) {
         rootNode  = new DefaultMutableTreeNode("RootNode");
         timeNodes = new DefaultMutableTreeNode[24];
         schedules = new Schedule[24];
 
         // TODO: Get data for each hour or something.
+        Time currentTime = day;
         for ( int i = 0; i < 24; i++ ) {
-            schedules[i] = new Schedule(new Time(0,0,0,i,0,0));
+            schedules[i] = songScheduler.getSchedule( currentTime );
             timeNodes[i] = new DefaultMutableTreeNode(schedules[i]);
             rootNode.add( timeNodes[i] );
 
             Iterator<Song> iter = schedules[i].iterator();
-
-           // if (!iter.hasNext())
-           //     timeNodes[i].add( new DefaultMutableTreeNode(""));
             
             while( iter.hasNext() )
             {
                 timeNodes[i].add( new DefaultMutableTreeNode(iter.next()) );
             }
+
+            // Move to the next hour
+            currentTime = currentTime.getNextHour();
         }
 
         initComponents();
