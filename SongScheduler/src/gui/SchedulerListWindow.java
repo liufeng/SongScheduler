@@ -136,6 +136,8 @@ public class SchedulerListWindow extends javax.swing.JFrame {
         this.dispose();
         if ( parentWindow != null ) {
             parentWindow.setVisible( true );
+        }else{
+            System.exit(0);
         }
     }//GEN-LAST:event_doneButtonActionPerformed
 

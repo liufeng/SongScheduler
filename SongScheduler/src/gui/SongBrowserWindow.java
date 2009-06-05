@@ -21,9 +21,11 @@ import model.*;
 public class SongBrowserWindow extends javax.swing.JFrame {
     private ArrayList songs;
     private DefaultListModel listModel;
+    private SongSchedulerWindow parentWindow;
 
     /** Creates new form SongBrowserWindow */
-    public SongBrowserWindow() {
+    public SongBrowserWindow(SongSchedulerWindow parentWindow) {
+        this.parentWindow = parentWindow;
         Song currSong;
         songs = SongDBI.getSongs(null);
         listModel = new DefaultListModel();
@@ -85,6 +87,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
             }
         });
 
+        songList.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         songList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 songListValueChanged(evt);
@@ -251,6 +254,12 @@ public class SongBrowserWindow extends javax.swing.JFrame {
     private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
+        this.dispose();
+        if( parentWindow != null){
+            parentWindow.setVisible(true);
+        }else{
+            System.exit(0);
+        }
     }//GEN-LAST:event_doneButtonActionPerformed
 
     private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
@@ -268,7 +277,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
         if(seconds < 10){
             length += "0" + seconds;
         }else{
-            length +=  seconds;
+            length += seconds;
         }
 
         songLengthDisplay.setText(length);
@@ -317,7 +326,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SongBrowserWindow().setVisible(true);
+                new SongBrowserWindow(null).setVisible(true);
             }
         });
     }
