@@ -147,6 +147,9 @@ public class Song {
         popularity = newPopularity;
         SongDBI.changeSongPriority(title, newPopularity);
     }
+    public boolean equals(Song song) {
+        return this.title.equalsIgnoreCase( song.title );
+    }
     /**
      * Return the name of the song
      */

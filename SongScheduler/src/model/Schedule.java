@@ -67,6 +67,20 @@ public class Schedule implements Iterable {
         return startTime;
     }
 
+    public void clear() {
+        songList.clear();
+    }
+
+    public boolean find(Song song) {
+        Iterator<Song> iter = iterator();
+
+        while ( iter.hasNext() )
+            if ( ((Song)iter.next()).equals( song ) )
+                return false;
+
+        return true;
+    }
+
     public String toString(){
         int start = startTime.getHour();
         int finish = start + 1;
