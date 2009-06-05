@@ -81,6 +81,10 @@ public class Schedule implements Iterable {
         return true;
     }
 
+    public boolean isEmpty(){
+        return songList.isEmpty();
+    }
+
     public String toString(){
         int start = startTime.getHour();
         int finish = start + 1;
