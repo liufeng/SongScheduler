@@ -10,16 +10,31 @@
  */
 
 package gui;
+import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+import model.*;
 
 /**
  *
  * @author jordan
  */
 public class SongBrowserWindow extends javax.swing.JFrame {
+    private ArrayList songs;
+    private DefaultListModel listModel;
 
     /** Creates new form SongBrowserWindow */
     public SongBrowserWindow() {
+        Song currSong;
+        songs = SongDBI.getSongs(null);
+        listModel = new DefaultListModel();
         initComponents();
+
+        for (int i = 0; i < songs.size(); i++){
+            currSong = (Song)songs.get(i);
+            listModel.add(i, currSong);
+        }
+        
+        songList.setModel(listModel);
     }
 
     /** This method is called from within the constructor to
@@ -32,7 +47,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
 
         songNameText = new javax.swing.JTextField();
         songNameLabel = new javax.swing.JLabel();
-        songFilterButton = new javax.swing.JButton();
+        songSearchButton = new javax.swing.JButton();
         songListScrollPane = new javax.swing.JScrollPane();
         songList = new javax.swing.JList();
         selectedSongInfoPanel = new javax.swing.JPanel();
@@ -56,15 +71,25 @@ public class SongBrowserWindow extends javax.swing.JFrame {
         songArtistDisplay = new javax.swing.JLabel();
         songNameDisplay = new javax.swing.JLabel();
         saveNewPopularity = new javax.swing.JButton();
-        newSongButton = new javax.swing.JButton();
+        doneButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         songNameLabel.setText("Song Name: ");
 
-        songFilterButton.setText("Filter");
+        songSearchButton.setText("Search");
+        songSearchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                songSearchButtonActionPerformed(evt);
+            }
+        });
 
+        songList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                songListValueChanged(evt);
+            }
+        });
         songListScrollPane.setViewportView(songList);
 
         jLabel1.setText("Song Name:");
@@ -102,15 +127,15 @@ public class SongBrowserWindow extends javax.swing.JFrame {
                     .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(songYearDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                    .add(songYearDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
                     .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                         .add(songGenreDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .add(songAlbumDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .add(songLengthDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .add(songArtistDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .add(songNameDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)))
-                .addContainerGap(78, Short.MAX_VALUE))
-            .add(jSeparator1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE)
+                .addContainerGap(251, Short.MAX_VALUE))
+            .add(jSeparator1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 634, Short.MAX_VALUE)
             .add(selectedSongInfoPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
@@ -124,7 +149,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
                     .add(songPopularityDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(saveNewPopularity)
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(361, Short.MAX_VALUE))
         );
         selectedSongInfoPanelLayout.setVerticalGroup(
             selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -168,10 +193,15 @@ public class SongBrowserWindow extends javax.swing.JFrame {
                     .add(jLabel9)
                     .add(songPopularityDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(saveNewPopularity))
-                .addContainerGap(148, Short.MAX_VALUE))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        newSongButton.setText("Add New Song");
+        doneButton.setText("Done");
+        doneButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                doneButtonActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -180,45 +210,106 @@ public class SongBrowserWindow extends javax.swing.JFrame {
             .add(layout.createSequentialGroup()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                            .add(layout.createSequentialGroup()
-                                .add(newSongButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(songFilterButton))
-                            .add(org.jdesktop.layout.GroupLayout.LEADING, layout.createSequentialGroup()
-                                .add(songNameLabel)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(songNameText, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 139, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
-                    .add(layout.createSequentialGroup()
                         .add(28, 28, 28)
-                        .add(songListScrollPane, 0, 0, Short.MAX_VALUE)))
+                        .add(songListScrollPane, 0, 0, Short.MAX_VALUE))
+                    .add(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(songNameLabel)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(songNameText, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 139, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(layout.createSequentialGroup()
+                        .add(79, 79, 79)
+                        .add(songSearchButton)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                        .add(doneButton)))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(20, 20, 20)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                     .add(layout.createSequentialGroup()
-                        .add(20, 20, 20)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(songNameLabel)
                             .add(songNameText, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(newSongButton)
-                            .add(songFilterButton))
+                            .add(doneButton)
+                            .add(songSearchButton))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 332, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                    .add(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .add(songListScrollPane))
+                    .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }//GEN-END:initComponents
+
+    private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_doneButtonActionPerformed
+
+    private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
+        // TODO add your handling code here:
+        updateViewPanel();
+    }//GEN-LAST:event_songListValueChanged
+
+
+    private void updateViewPanel(){
+        Song selection = (Song)songs.get(songList.getSelectedIndex());
+        int milliseconds = selection.getLength();
+        int minutes = milliseconds / 60000;
+        int seconds = (milliseconds - (minutes * 60000)) / 1000;
+        String length = minutes + ":";
+        if(seconds < 10){
+            length += "0" + seconds;
+        }else{
+            length +=  seconds;
+        }
+
+        songLengthDisplay.setText(length);
+        songAlbumDisplay.setText(selection.getRecordingTitle());
+        songArtistDisplay.setText(selection.getPerformer());
+        songGenreDisplay.setText(selection.getRecordingType());
+        songLastPlayedDisplay.setText(selection.getLastPlayed().toString());
+        songNameDisplay.setText(selection.getTitle());
+        songNameText.setText(selection.getTitle());
+        songPlayCountDisplay.setText(selection.getNumberOfPlays() + "");
+        songPopularityDisplay.setText(selection.getPopularity() + "");
+        songYearDisplay.setText(selection.getYear());
+    }
+
+    private void songSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_songSearchButtonActionPerformed
+        // TODO add your handling code here:
+        String searchTerm = songNameText.getText();
+        ArrayList searchResults;
+        Song songFound;
+        int index = 0;
+
+        if(!searchTerm.equals("")){
+            searchResults = SongDBI.getSongs(searchTerm);
+            if(!searchResults.isEmpty()){
+                songFound = (Song)searchResults.get(0);
+                
+                while(index < songs.size()){
+                    if(songFound.getTitle().equals(((Song)songs.get(index)).getTitle())){
+                        songList.setSelectedIndex(index);
+                        index = songs.size();
+                    }
+                    index++;
+                }
+            }else{
+                System.out.println("No Song Found");
+            }
+        }else{
+            System.out.println("No song title entered");
+        }
+        
+    }//GEN-LAST:event_songSearchButtonActionPerformed
 
     /**
     * @param args the command line arguments
@@ -232,6 +323,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton doneButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -242,12 +334,10 @@ public class SongBrowserWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JButton newSongButton;
     private javax.swing.JButton saveNewPopularity;
     private javax.swing.JPanel selectedSongInfoPanel;
     private javax.swing.JLabel songAlbumDisplay;
     private javax.swing.JLabel songArtistDisplay;
-    private javax.swing.JButton songFilterButton;
     private javax.swing.JLabel songGenreDisplay;
     private javax.swing.JLabel songLastPlayedDisplay;
     private javax.swing.JLabel songLengthDisplay;
@@ -258,6 +348,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
     private javax.swing.JTextField songNameText;
     private javax.swing.JLabel songPlayCountDisplay;
     private javax.swing.JTextField songPopularityDisplay;
+    private javax.swing.JButton songSearchButton;
     private javax.swing.JLabel songYearDisplay;
     // End of variables declaration//GEN-END:variables
 
