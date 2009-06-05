@@ -22,10 +22,13 @@ import java.util.Iterator;
  * @author kurtisschmidt
  */
 public class SongSchedulerWindow extends javax.swing.JFrame {
+    private SongBrowserWindow songBrowser;
 
     /** Creates new form SongSchedulerWindow */
     public SongSchedulerWindow() {
         initComponents();
+        songBrowser = new SongBrowserWindow();
+        songBrowser.setVisible(false);
     }
 
     /** This method is called from within the constructor to
@@ -199,7 +202,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
     private void browseSongsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseSongsButtonActionPerformed
         // TODO add your handling code here:
-        new SongBrowserWindow().setVisible(true);
+        songBrowser.setVisible(true);
     }//GEN-LAST:event_browseSongsButtonActionPerformed
 
     private void openSelectedDates()
