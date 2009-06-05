@@ -26,34 +26,48 @@ public class SongScheduler {
             }
         }
     }
-    
-    public void commitSchedule(Time startTime) {
-        Schedule candidate = tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()];
-        try {
-            Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-            PreparedStatement prepStatement = connection.prepareStatement("insert into schedule values (?, ?);");
-            prepStatement.setObject(1, startTime);
-            prepStatement.setInt(2, candidate.getDuration());
-            prepStatement.executeUpdate();
 
-            prepStatement = connection.prepareStatement("insert into songSchedule values (?, ?, ?);");
-
-            Iterator<Song> songList = candidate.iterator();
-            int trackNumber = 1;
-            while (songList.hasNext()) {
-                prepStatement.setObject(1, startTime);
-                prepStatement.setInt(2, trackNumber);
-                trackNumber++;
-                Song song = songList.next();
-                prepStatement.setInt(3, song.getAccessNumber());
-                updateSongData(song, connection);
-                prepStatement.executeUpdate();
+    public void commit(){
+        //commit the schedules for each day
+        for(int i=0; i < tentativeSchedule.length; i++){
+            //commit the schedules for each hour of a day
+            for(int j=0; j < tentativeSchedule[i].length; j++){
+                //if the schdule is not empty then commit it
+                if(!tentativeSchedule[i][j].isEmpty())
+                    commitSchedule(tentativeSchedule[i][j]);
             }
+        }
+    }
 
-            prepStatement.close();
-        } catch (Exception e) {
-            e.printStackTrace();
+    private void commitSchedule(Schedule candidate) {
+        //if the schedule that if trying to be committed is a null pointer don't commit
+        if(candidate != null){
+            try {
+                Class.forName("org.sqlite.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+                PreparedStatement prepStatement = connection.prepareStatement("insert into schedule values (?, ?);");
+                prepStatement.setObject(1, candidate.getTime());
+                prepStatement.setInt(2, candidate.getDuration());
+                prepStatement.executeUpdate();
+
+                prepStatement = connection.prepareStatement("insert into songSchedule values (?, ?, ?);");
+
+                Iterator<Song> songList = candidate.iterator();
+                int trackNumber = 1;
+                while (songList.hasNext()) {
+                    prepStatement.setObject(1, candidate.getTime());
+                    prepStatement.setInt(2, trackNumber);
+                    trackNumber++;
+                    Song song = songList.next();
+                    prepStatement.setInt(3, song.getAccessNumber());
+                    updateSongData(song, connection);
+                    prepStatement.executeUpdate();
+                }
+
+                prepStatement.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 

@@ -132,6 +132,7 @@ public class SchedulerListWindow extends javax.swing.JFrame {
 
     private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
         // TODO add your handling code here:
+        songScheduler.commit();
         this.setVisible( false );
         this.dispose();
         if ( parentWindow != null ) {
