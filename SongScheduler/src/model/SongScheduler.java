@@ -84,8 +84,9 @@ public class SongScheduler {
      * @param startTime
      * @return Schedule
      */
-    public Schedule generateOneHour(Time startTime) {
-        Schedule result = new Schedule(startTime);
+    public void generateOneHour(Time startTime) {
+        Schedule result = tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()];
+        result.clear();
 
         try {
             Class.forName("org.sqlite.JDBC");
@@ -93,7 +94,7 @@ public class SongScheduler {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("select * from song order by priority desc, length desc limit 50;");
             while (result.underMin()) {
-                
+
                 if (rs.next()) {
                     String title = rs.getString("title");
                     String performer = rs.getString("performer");
@@ -109,7 +110,7 @@ public class SongScheduler {
                     double priority = rs.getDouble("priority");
 
                     Song song = new Song(title, performer, recordingTitle, recordingType, year, length, accessNumber, popularity, playCount, addedTime, lastPlayed, priority);
-                    
+
                     if (canAddThisSong(song, startTime, connection)) {
                         result.add(song);
                     }
@@ -125,32 +126,20 @@ public class SongScheduler {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
-        // add to tentativeSchedule
-        tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()] = result;
-        return result;
     }
 
-    public Schedule[] generateMultipleHours(Time startTime, int hours) {
-        Schedule[] result = new Schedule[hours];
-
+    public void generateMultipleHours(Time startTime, int hours) {
         for (int i = 0; i < hours; i++) {
-            result[i] = generateOneHour(startTime);
+            generateOneHour(startTime);
             startTime = startTime.getNextHour();
         }
-
-        return result;
     }
 
-    public Schedule[] generateDays(Time startTime, int days) {
-        Schedule[] result = new Schedule[24 * days];
-
+    public void generateDays(Time startTime, int days) {
         for (int i = 0; i < 24 * days; i++) {
-            result[i] = generateOneHour(startTime);
+            generateOneHour(startTime);
             startTime = startTime.getNextHour();
         }
-
-        return result;
     }
 
     /**
@@ -170,42 +159,32 @@ public class SongScheduler {
     private boolean canAddThisSong(Song song, Time startTime, Connection connection) throws SQLException {
         Time previousHour = startTime.getPreviousHour();
         Time nextHour = startTime.getNextHour();
+        Schedule previousSchedule;
+        Schedule nextSchedule;
         boolean result = true;
 
-        if (tentativeSchedule[previousHour.getDay()][previousHour.getHour()] == null) {
-            //check db;
-            try {
-                PreparedStatement prepStatement = connection.prepareStatement("select * from songSchedule where startTime = ? and accessNumber = ?;");
-                prepStatement.setObject(1, previousHour);
-                prepStatement.setInt(2, song.getAccessNumber());
-                if (prepStatement.execute()) {
-                    result = false;
-                }
-            } catch (SQLException e) {
-                //connection.rollback();
-                e.printStackTrace();
-            }
-
-        } else {
-            result &= tentativeSchedule[previousHour.getDay()][previousHour.getHour()].contains(song);
+        if ( startTime.before( tentativeSchedule[0][0].getTime() ) )
+        {
+            previousSchedule = getScheduleFromDB(startTime.getPreviousHour());
+        }
+        else
+        {
+            previousSchedule = tentativeSchedule[previousHour.getDay() - this.startTime.getDay()][previousHour.getHour() - this.startTime.getHour()];
         }
 
-        if (tentativeSchedule[nextHour.getDay()][nextHour.getHour()] == null) {
-            //check db;
-            try {
-                PreparedStatement prepStatement = connection.prepareStatement("select * from songSchedule where startTime = ? and accessNumber = ?;");
-                prepStatement.setObject(1, nextHour);
-                prepStatement.setInt(2, song.getAccessNumber());
-                if (prepStatement.execute()) {
-                    result = false;
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
-        } else {
-            result &= tentativeSchedule[nextHour.getDay()][nextHour.getHour()].contains(song);
+        if ( startTime.after( tentativeSchedule[6][23].getTime() ) )
+        {
+            nextSchedule = getScheduleFromDB(startTime.getNextHour());
         }
+        else
+        {
+            nextSchedule = tentativeSchedule[nextHour.getDay() - this.startTime.getDay()][nextHour.getHour() - this.startTime.getHour()];
+        }
+
+        if ( previousSchedule.find(song) )
+            result = false;
+        if ( nextSchedule.find(song) )
+            result = false;
 
         return result;
     }
@@ -224,46 +203,47 @@ public class SongScheduler {
     public Schedule getScheduleFromDB(Time startTime) {
         Schedule result = null;
 
+        return new Schedule(startTime);
         // get the schedule from db
-          try {
-                Class.forName("org.sqlite.JDBC");
-
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-                
-                PreparedStatement prepStatement = connection.prepareStatement("select song.* from song inner join songSchedule on song.accessNumber = songSchedule.accessNumber where startTime = ?;");
-                prepStatement.setObject(1, startTime);
-                ResultSet rs = prepStatement.executeQuery();
-
-                if (rs != null) {
-                    result = new Schedule(startTime);
-
-                    while (rs.next()) {
-                        Song song = new Song(
-                                rs.getString("title"),
-                                rs.getString("performer"),
-                                rs.getString("recordingTitle"),
-                                rs.getString("recordingType"),
-                                rs.getString("year"),
-                                rs.getInt("length"),
-                                rs.getInt("accessNumber"),
-                                rs.getInt("popularity"),
-                                rs.getInt("playCount"),
-                                (Time)rs.getObject("addedTime"),
-                                (Time)rs.getObject("lastPlayed"),
-                                rs.getDouble("priority"));
-
-                        result.add(song);
-                    }
-                }
-
-                rs.close();
-                prepStatement.close();
-                connection.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        
-        return result;
+//          try {
+//                Class.forName("org.sqlite.JDBC");
+//
+//                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+//
+//                PreparedStatement prepStatement = connection.prepareStatement("select song.* from song inner join songSchedule on song.accessNumber = songSchedule.accessNumber where startTime = ?;");
+//                prepStatement.setObject(1, startTime);
+//                ResultSet rs = prepStatement.executeQuery();
+//
+//                if (rs != null) {
+//                    result = new Schedule(startTime);
+//
+//                    while (rs.next()) {
+//                        Song song = new Song(
+//                                rs.getString("title"),
+//                                rs.getString("performer"),
+//                                rs.getString("recordingTitle"),
+//                                rs.getString("recordingType"),
+//                                rs.getString("year"),
+//                                rs.getInt("length"),
+//                                rs.getInt("accessNumber"),
+//                                rs.getInt("popularity"),
+//                                rs.getInt("playCount"),
+//                                (Time)rs.getObject("addedTime"),
+//                                (Time)rs.getObject("lastPlayed"),
+//                                rs.getDouble("priority"));
+//
+//                        result.add(song);
+//                    }
+//                }
+//
+//                rs.close();
+//                prepStatement.close();
+//                connection.close();
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//
+//        return result;
     }
 
     /*
