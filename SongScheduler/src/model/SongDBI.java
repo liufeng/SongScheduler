@@ -13,8 +13,8 @@ import java.util.ArrayList;
  */
 public class SongDBI {
 
-    public static ArrayList getSongsByPopularity(){
-        String sqlStatement = "SELECT * FROM song ORDER BY popularity, title;";
+    public static ArrayList getSongsByPriority(){
+        String sqlStatement = "SELECT * FROM song ORDER BY priority, title;";
 
         return getSongsFromDB(sqlStatement);
     }
