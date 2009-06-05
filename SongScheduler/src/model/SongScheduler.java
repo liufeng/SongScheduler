@@ -14,7 +14,19 @@ import java.util.Iterator;
  */
 public class SongScheduler {
     private Schedule[][] tentativeSchedule = new Schedule[7][24];
+    private Time startTime;
 
+    public SongScheduler( Time firstDay ) {
+        startTime = firstDay;
+        for (int i = 0; i < 7; i++ )
+        {
+            for ( int j = 0; j < 24; j++ ) {
+                tentativeSchedule[i][j] = getScheduleFromDB(firstDay);
+                firstDay = firstDay.getNextHour();
+            }
+        }
+    }
+    
     public void commitSchedule(Time startTime) {
         Schedule candidate = tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()];
         try {
@@ -199,7 +211,7 @@ public class SongScheduler {
     }
 
     /**
-     * getSchedule
+     * getScheduleFromDB
      *
      * If a tentative schedule exists for the specified time -- first check tentative schedule,
      * then check database -- return this Schedule object;
@@ -209,12 +221,11 @@ public class SongScheduler {
      * @param startTime
      * @return Schedule of the specified time, or null if no schedule exists
      */
-    public Schedule getSchedule(Time startTime) {
+    public Schedule getScheduleFromDB(Time startTime) {
         Schedule result = null;
 
-        if (tentativeSchedule[startTime.getDay()][startTime.getHour()] == null) {
-            // get the schedule from db
-            try {
+        // get the schedule from db
+          try {
                 Class.forName("org.sqlite.JDBC");
 
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
@@ -251,11 +262,14 @@ public class SongScheduler {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-        } else {
-            result = tentativeSchedule[startTime.getDay()][startTime.getHour()];
-        }
         
         return result;
+    }
+
+    /*
+     * Returns the Schedule held at the specified time.
+     */
+    public Schedule getSchedule( Time time ) {
+        return tentativeSchedule[time.getDay()- startTime.getDay()][time.getHour()];
     }
 }
