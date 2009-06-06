@@ -6,6 +6,7 @@
 package model;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
@@ -100,45 +101,25 @@ public class SongScheduler {
      */
     public void generateOneHour(Time startTime) {
         Schedule result = tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()];
+        ArrayList songs = SongDBI.getSongsByPriority();
+        Iterator<Object> iter = songs.iterator();
+
         result.clear();
 
-        try {
-            Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-            Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("select * from song order by priority desc, length desc limit 50;");
-            while (result.underMin()) {
+        while ( result.underMin() && iter.hasNext() )
+        {
+            Song current = (Song)iter.next();
 
-                if (rs.next()) {
-                    String title = rs.getString("title");
-                    String performer = rs.getString("performer");
-                    String recordingTitle = rs.getString("recordingTitle");
-                    String recordingType = rs.getString("recordingType");
-                    String year = rs.getString("year");
-                    int    length = rs.getInt("length");
-                    int    accessNumber = rs.getInt("accessNumber");
-                    int    popularity = rs.getInt("popularity");
-                    int    playCount = rs.getInt("playCount");
-                    Time   addedTime = new Time(rs.getString("addedTime"));
-                    Time   lastPlayed = new Time(rs.getString("lastPlayed"));
-                    double priority = rs.getDouble("priority");
-
-                    Song song = new Song(title, performer, recordingTitle, recordingType, year, length, accessNumber, popularity, playCount, addedTime, lastPlayed, priority);
-
-                    if (canAddThisSong(song, startTime, connection)) {
-                        result.add(song);
-                    }
-
-                    if (result.overMax()) {
-                        result.remove(song);
-                    }
-                }
+            if ( canAddThisSong( current, startTime) )
+            {
+                result.add( current );
             }
-            rs.close();
-            statement.close();
-            connection.close();
-        } catch (Exception e) {
-            e.printStackTrace();
+        }
+
+        Iterator<Song> iter2 = result.iterator();
+        while ( iter2.hasNext() )
+        {
+            System.out.println(iter2.next());
         }
     }
 
@@ -170,7 +151,7 @@ public class SongScheduler {
      * @param connection
      * @return boolean
      */
-    private boolean canAddThisSong(Song song, Time startTime, Connection connection) throws SQLException {
+    private boolean canAddThisSong(Song song, Time startTime) {
         Time previousHour = startTime.getPreviousHour();
         Time nextHour = startTime.getNextHour();
         Schedule previousSchedule;

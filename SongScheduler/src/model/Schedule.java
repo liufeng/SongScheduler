@@ -16,8 +16,8 @@ public class Schedule implements Iterable {
     private LinkedList songList;
     private Time startTime;
     private int duration;
-    final private int MIN_SCHEDULE_LENGTH = 2580000; //new Time(0, 0, 0, 0, 43, 0);
-    final private int MAX_SCHEDULE_LENGTH = 2880000; //new Time(0, 0, 0, 0, 48, 0);
+    final static private int MIN_SCHEDULE_LENGTH = 2580000; //new Time(0, 0, 0, 0, 43, 0);
+    final static private int MAX_SCHEDULE_LENGTH = 2880000; //new Time(0, 0, 0, 0, 48, 0);
 
     public Schedule(Time startTime) {
         this.startTime = startTime;
@@ -76,9 +76,9 @@ public class Schedule implements Iterable {
 
         while ( iter.hasNext() )
             if ( ((Song)iter.next()).equals( song ) )
-                return false;
+                return true;
 
-        return true;
+        return false;
     }
 
     public boolean isEmpty(){

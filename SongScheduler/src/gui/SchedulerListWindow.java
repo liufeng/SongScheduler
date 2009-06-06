@@ -11,8 +11,6 @@
 package gui;
 
 import model.*;
-import javax.swing.JOptionPane;
-import java.util.Calendar;
 
 /**
  *
@@ -49,7 +47,7 @@ public class SchedulerListWindow extends javax.swing.JFrame {
         scheduleTabPane = new javax.swing.JTabbedPane();
         deleteButton = new javax.swing.JButton();
         addSongButton = new javax.swing.JButton();
-        addScheduleButton = new javax.swing.JButton();
+        generateScheduleButton = new javax.swing.JButton();
         doneButton = new javax.swing.JButton();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
@@ -71,7 +69,12 @@ public class SchedulerListWindow extends javax.swing.JFrame {
             }
         });
 
-        addScheduleButton.setText("Add Schedule");
+        generateScheduleButton.setText("Generate Schedule");
+        generateScheduleButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                generateScheduleButtonActionPerformed(evt);
+            }
+        });
 
         doneButton.setText("Done");
         doneButton.addActionListener(new java.awt.event.ActionListener() {
@@ -100,7 +103,7 @@ public class SchedulerListWindow extends javax.swing.JFrame {
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(addSongButton)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(addScheduleButton)
+                        .add(generateScheduleButton)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(doneButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 100, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
@@ -117,7 +120,7 @@ public class SchedulerListWindow extends javax.swing.JFrame {
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(deleteButton)
                     .add(addSongButton)
-                    .add(addScheduleButton)
+                    .add(generateScheduleButton)
                     .add(doneButton))
                 .addContainerGap(34, Short.MAX_VALUE))
         );
@@ -157,14 +160,26 @@ public class SchedulerListWindow extends javax.swing.JFrame {
         }
     }
 
+    private void generateScheduleButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generateScheduleButtonActionPerformed
+        // Get the current tab, and tell it to generate schedules
+        DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getSelectedComponent();
+
+        try {
+            currentTab.generateSchedules();
+        }
+        catch( Exception exp )
+        {
+            System.out.println(exp.getMessage());
+        }
+}//GEN-LAST:event_generateScheduleButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addScheduleButton;
     private javax.swing.JButton addSongButton;
     private javax.swing.JButton deleteButton;
     private javax.swing.JButton doneButton;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenu fileMenu;
+    private javax.swing.JButton generateScheduleButton;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JTabbedPane scheduleTabPane;
     // End of variables declaration//GEN-END:variables

@@ -47,7 +47,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="addSongButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="addScheduleButton" min="-2" max="-2" attributes="0"/>
+                      <Component id="generateScheduleButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="doneButton" min="-2" pref="100" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -69,7 +69,7 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="deleteButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="addSongButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="addScheduleButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="generateScheduleButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="doneButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="34" max="32767" attributes="0"/>
@@ -98,10 +98,13 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addSongButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="addScheduleButton">
+    <Component class="javax.swing.JButton" name="generateScheduleButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Add Schedule"/>
+        <Property name="text" type="java.lang.String" value="Generate Schedule"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="generateScheduleButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="doneButton">
       <Properties>

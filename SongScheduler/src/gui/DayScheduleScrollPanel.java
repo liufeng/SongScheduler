@@ -28,13 +28,15 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
     private DefaultMutableTreeNode rootNode;
     private DefaultMutableTreeNode timeNodes[];
     private DefaultTreeModel treeModel;
+    private SongScheduler songScheduler;
     private Schedule schedules[];
 
     /** Creates new form DayScheduleScrollPanel */
     public DayScheduleScrollPanel( SongScheduler songScheduler, Time day ) {
-        rootNode  = new DefaultMutableTreeNode("RootNode");
-        timeNodes = new DefaultMutableTreeNode[24];
-        schedules = new Schedule[24];
+        this.rootNode  = new DefaultMutableTreeNode("RootNode");
+        this.timeNodes = new DefaultMutableTreeNode[24];
+        this.schedules = new Schedule[24];
+        this.songScheduler = songScheduler;
 
         // TODO: Get data for each hour or something.
         Time currentTime = day;
@@ -61,6 +63,9 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
 
     public void deleteSelectedSongs() {
         DefaultMutableTreeNode selected[] = getSelected();
+
+        if (selected == null)
+            return;
 
         for (int i = 0; i < selected.length; i++ ) {
             DefaultMutableTreeNode parent = (DefaultMutableTreeNode)selected[i].getParent();
@@ -108,7 +113,6 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
         else if ( selectedItem instanceof Song )
         {
             Schedule schedule = (Schedule)((DefaultMutableTreeNode)selectedNode.getParent()).getUserObject();
-            Song selectedSong = (Song)selectedItem;
 
             // TODO: Create a function to add to arbitrary places.
             schedule.add( song );
@@ -119,10 +123,46 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
         DefaultMutableTreeNode childNode = new DefaultMutableTreeNode(song);
         treeModel.insertNodeInto( childNode, scheduleNode, scheduleNode.getChildCount());
     }
+
+    public void generateSchedules() throws Exception {
+        DefaultMutableTreeNode selected[] = getSelected();
+
+        /**********************************************************************
+         * This section checks for error and ends the function if one is found.
+         *********************************************************************/
+        if ( selected.length < 1 )
+        {
+            throw new Exception("Error: Please select an hour or position to add the song.");
+        }
+
+        // Check each DefaultMutableTree, if one is a song, return error.
+        for ( int i = 0; i < selected.length; i++ ) {
+            if ( selected[i].getUserObject() instanceof Song )
+                throw new Exception("Error: You must select only hours, not songs before generating.");
+        }
+
+        /**********************************************************************
+         * This section generates the schedules for each selected hour
+         *********************************************************************/
+        for ( int i = 0; i < selected.length; i++ ) {
+            Schedule schedule = (Schedule)selected[i].getUserObject();
+            songScheduler.generateOneHour( schedule.getTime() );
+
+            Iterator<Song> iter = schedule.iterator();
+            while ( iter.hasNext() )
+            {
+                treeModel.insertNodeInto( new DefaultMutableTreeNode( iter.next() ), selected[i], selected[i].getChildCount() );
+            }
+        }
+    }
     
     public DefaultMutableTreeNode[] getSelected()
     {
         javax.swing.tree.TreePath paths[] = jTree1.getSelectionPaths();
+
+        if (paths == null)
+            return null;
+        
         DefaultMutableTreeNode selected[] = new DefaultMutableTreeNode[paths.length];
 
         for ( int i = 0; i < selected.length; i++ )
