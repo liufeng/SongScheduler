@@ -148,10 +148,12 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
             Schedule schedule = (Schedule)selected[i].getUserObject();
             songScheduler.generateOneHour( schedule.getTime() );
 
+            selected[i].removeAllChildren();
+            treeModel.reload( selected[i] );
             Iterator<Song> iter = schedule.iterator();
             while ( iter.hasNext() )
             {
-                treeModel.insertNodeInto( new DefaultMutableTreeNode( iter.next() ), selected[i], selected[i].getChildCount() );
+                treeModel.insertNodeInto( new DefaultMutableTreeNode( (Song)iter.next() ), selected[i], selected[i].getChildCount() );
             }
         }
     }
