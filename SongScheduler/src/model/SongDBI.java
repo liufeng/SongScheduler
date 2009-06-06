@@ -68,7 +68,7 @@ public class SongDBI {
         return songs;
     }
 
-    public static void changeSongPriority( String title, int newPopularity){
+    public static void changeSongPopularity( String title, int newPopularity){
         if(title != null && !title.equals("")){
             String sql = "UPDATE song SET popularity = " + newPopularity + " WHERE title = \'" + title + "\';";
 
