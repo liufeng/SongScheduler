@@ -93,11 +93,9 @@ public class SongScheduler {
      *
      * Assuming no schedule exists at the given time, generates a one hour schedule
      * of eligible random songs.
-     * Returns the generated Schedule
      *
      * @author liufeng & aprilbugnot
      * @param startTime
-     * @return Schedule
      */
     public void generateOneHour(Time startTime) {
         Schedule result = tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()];
@@ -113,6 +111,12 @@ public class SongScheduler {
             if ( canAddThisSong( current, startTime) )
             {
                 result.add( current );
+            }
+
+            // do this check for preventing a song is too long that makes
+            // the schedule longer than 48 minutes.
+            if (result.overMax()) {
+                result.remove(current);
             }
         }
 
