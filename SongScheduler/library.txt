@@ -1,4 +1,5 @@
 Neptun;Bandari;Forest Mist;CD;;348228;1;50;0;0;0;0
+I Love Java;Sun;Song of Sun;CD;;209476;299;50;0;0;0;0
 Diamonds;Bandari;Forest Mist;CD;;242706;2;50;0;0;0;0
 New Morning;Bandari;Forest Mist;CD;;253613;3;50;0;0;0;0
 Starry Sky;Bandari;Forest Mist;CD;;262706;4;50;0;0;0;0
