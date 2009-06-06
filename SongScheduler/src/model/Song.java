@@ -145,7 +145,7 @@ public class Song {
 
     public void updatePopularity(int newPopularity){
         popularity = newPopularity;
-        SongDBI.changeSongPriority(title, newPopularity);
+        SongDBI.changeSongPopularity(title, newPopularity);
     }
     public boolean equals(Song song) {
         return this.title.equalsIgnoreCase( song.title );
