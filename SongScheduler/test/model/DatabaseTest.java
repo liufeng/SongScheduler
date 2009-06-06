@@ -5,11 +5,8 @@
 
 package model;
 
-import org.junit.After;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -17,9 +14,9 @@ import static org.junit.Assert.*;
  *
  * @author liufeng
  */
-public class InitialDBTest {
+public class DatabaseTest {
 
-    public InitialDBTest() {
+    public DatabaseTest() {
     }
 
     @BeforeClass
@@ -30,23 +27,22 @@ public class InitialDBTest {
     public static void tearDownClass() throws Exception {
     }
 
-    @Before
-    public void setUp() {
-    }
-
-    @After
-    public void tearDown() {
+    /**
+     * Test of init method, of class Database.
+     */
+    @Test
+    public void testInit() {
+        System.out.println("init");
+        Database.init();
     }
 
     /**
-     * Test of initialDB method, of class InitialDB.
+     * Test of updateSongInfo method, of class Database.
      */
-    
     @Test
-    public void testInitialDB() {
-        System.out.println("initialDB");
-        InitialDB.initialDB();
-        assertEquals(0, 0);
+    public void testUpdateSongInfo() {
+        System.out.println("updateSongInfo");
+        Database.updateSongInfo();
     }
 
 }
