@@ -105,8 +105,8 @@ public class Database {
                 prepStatement.addBatch();
 
                 Statement statement = connection.createStatement();
-                String sql = "select * from song where accessNumber = " + accessNumber + ";";
-                ResultSet rs = statement.executeQuery(sql);
+                //String sql = "select * from song where accessNumber = " + accessNumber + ";";
+                ResultSet rs = statement.executeQuery("select * from song where accessNumber = " + accessNumber + ";");
                 if (!rs.next()) {
 
                     connection.setAutoCommit(false);
