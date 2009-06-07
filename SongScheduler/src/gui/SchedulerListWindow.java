@@ -23,7 +23,7 @@ public class SchedulerListWindow extends javax.swing.JFrame {
 
     /** Creates new form SchedulerListWindow */
     public SchedulerListWindow ( Time days[], SongSchedulerWindow parentWindow ) {
-        songScheduler = new SongScheduler( days[0] );
+        SongScheduler songScheduler = new SongScheduler( days[0] );
         setupWindow( days, songScheduler, parentWindow );
     }
     public SchedulerListWindow ( Time days[], SongScheduler songScheduler, SongSchedulerWindow parentWindow ) {
@@ -32,6 +32,7 @@ public class SchedulerListWindow extends javax.swing.JFrame {
 
     private void setupWindow ( Time days[], SongScheduler songScheduler, SongSchedulerWindow parentWindow ) {
         this.parentWindow = parentWindow;
+        this.songScheduler = songScheduler;
 
         initComponents();
 
