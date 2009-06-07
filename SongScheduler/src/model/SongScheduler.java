@@ -124,12 +124,14 @@ public class SongScheduler {
      * @param startTime The start time of the schedule.
      */
     public void generateOneHour(Time startTime) {
-        Schedule result = tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()];
+        Schedule result = getSchedule(startTime);
         ArrayList songs = Database.getSongsByPriority();
         Iterator<Object> iter = songs.iterator();
 
         result.clear();
 
+        System.out.println(result.getTime());
+        
         while ( result.underMin() && iter.hasNext() )
         {
             Song current = (Song)iter.next();
@@ -141,8 +143,8 @@ public class SongScheduler {
 
             // do this check for preventing a song is too long that makes
             // the schedule longer than 48 minutes.
-            if (result.overMax()) {
-                result.remove(current);
+            if ( result.overMax() ) {
+                result.remove( current );
             }
         }
 
@@ -209,29 +211,33 @@ public class SongScheduler {
         Schedule nextSchedule;
         boolean result = true;
 
-        if ( startTime.before( tentativeSchedule[0][0].getTime() ) )
+        if ( previousHour.before( this.startTime) )
         {
-            previousSchedule = getScheduleFromDB(startTime.getPreviousHour());
+            System.out.println("hello");
+            previousSchedule = getScheduleFromDB( previousHour );
         }
         else
         {
-            previousSchedule = tentativeSchedule[previousHour.getDay() - this.startTime.getDay()][previousHour.getHour() - this.startTime.getHour()];
+            System.out.println("NotHello");
+            previousSchedule = getSchedule( previousHour );
         }
 
-        if ( startTime.after( tentativeSchedule[6][23].getTime() ) )
+        if ( nextHour.after( tentativeSchedule[6][23].getTime() ) )
         {
-            nextSchedule = getScheduleFromDB(startTime.getNextHour());
+            nextSchedule = getScheduleFromDB( nextHour );
         }
         else
         {
-            nextSchedule = tentativeSchedule[nextHour.getDay() - this.startTime.getDay()][nextHour.getHour() - this.startTime.getHour()];
+            nextSchedule = getSchedule( nextHour );
         }
 
+        System.out.println("PreviousSchedule: " + previousSchedule.getTime());
+        System.out.println("NextSchedule: " + nextSchedule.getTime());
         if ( previousSchedule.contains(song) )
             result = false;
         if ( nextSchedule.contains(song) )
             result = false;
-
+        System.out.println("Result: " + result);
         return result;
     }
 
@@ -296,6 +302,6 @@ public class SongScheduler {
      * @param time 
      */
     public Schedule getSchedule( Time time ) {
-        return tentativeSchedule[time.getDay()- startTime.getDay()][time.getHour()];
+        return tentativeSchedule[time.getDay() - this.startTime.getDay()][time.getHour()];
     }
 }
