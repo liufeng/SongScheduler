@@ -18,7 +18,7 @@ import model.*;
 import javax.swing.tree.*;
 import javax.swing.tree.DefaultTreeModel;
 import java.util.Iterator;
-import java.util.Calendar;
+
 /**
  *
  * @author kurtisschmidt
@@ -73,7 +73,11 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
             // This is an hour node, delete it from the database.
             if ( parent == rootNode )
             {
-                // TODO: Delete schedule from database.
+                Schedule schedule = (Schedule)selected[i].getUserObject();
+
+                schedule.clear();
+                selected[i].removeAllChildren();
+                treeModel.reload( selected[i] );
             }
             else
             {
@@ -150,6 +154,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
 
             selected[i].removeAllChildren();
             treeModel.reload( selected[i] );
+            
             Iterator<Song> iter = schedule.iterator();
             while ( iter.hasNext() )
             {
