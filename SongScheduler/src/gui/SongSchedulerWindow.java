@@ -10,7 +10,6 @@
  */
 package gui;
 
-import java.awt.MenuBar;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
@@ -91,6 +90,12 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                 true)));
     calendar.setWeekStyle(datechooser.view.WeekDaysStyle.FULL);
     calendar.setLocale(new java.util.Locale("en", "", ""));
+    Calendar min = Calendar.getInstance();
+    min.add( Calendar.DATE, -1 );
+    calendar.setMinDate( min );
+    Calendar max = (Calendar)min.clone();
+    max.add( Calendar.DATE, 7 );
+    calendar.setMaxDate( max );
     calendar.addCommitListener(new datechooser.events.CommitListener() {
         public void onCommit(datechooser.events.CommitEvent evt) {
             calendarOnCommit(evt);
