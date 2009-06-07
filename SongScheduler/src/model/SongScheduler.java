@@ -130,8 +130,6 @@ public class SongScheduler {
 
         result.clear();
 
-        System.out.println(result.getTime());
-        
         while ( result.underMin() && iter.hasNext() )
         {
             Song current = (Song)iter.next();
@@ -146,12 +144,6 @@ public class SongScheduler {
             if ( result.overMax() ) {
                 result.remove( current );
             }
-        }
-
-        Iterator<Song> iter2 = result.iterator();
-        while ( iter2.hasNext() )
-        {
-            System.out.println(iter2.next());
         }
     }
 
@@ -211,14 +203,12 @@ public class SongScheduler {
         Schedule nextSchedule;
         boolean result = true;
 
-        if ( previousHour.before( this.startTime) )
+        if ( previousHour.before( this.startTime ) )
         {
-            System.out.println("hello");
             previousSchedule = getScheduleFromDB( previousHour );
         }
         else
         {
-            System.out.println("NotHello");
             previousSchedule = getSchedule( previousHour );
         }
 
@@ -231,13 +221,10 @@ public class SongScheduler {
             nextSchedule = getSchedule( nextHour );
         }
 
-        System.out.println("PreviousSchedule: " + previousSchedule.getTime());
-        System.out.println("NextSchedule: " + nextSchedule.getTime());
         if ( previousSchedule.contains(song) )
             result = false;
         if ( nextSchedule.contains(song) )
             result = false;
-        System.out.println("Result: " + result);
         return result;
     }
 
