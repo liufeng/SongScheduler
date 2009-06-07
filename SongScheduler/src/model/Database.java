@@ -259,4 +259,28 @@ public abstract class Database {
             }
         }
     }
+
+    /**
+     * Saves the current play count for a song to the database
+     * @param song the song for which the play count is to be saved to the database
+     */
+    public static void saveLastPlayed(Song song){
+        if(song != null){
+            String sql = "update song set lastPlayed = \"" + song.getLastPlayed().toString() +
+                    "\" where title = \"" + song.getTitle() + "\";";
+
+            try {
+                Class.forName("org.sqlite.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+                Statement statement = connection.createStatement();
+                statement.executeQuery(sql);
+
+                statement.close();
+                connection.close();
+            } catch (Exception e) {
+                if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
+                    e.printStackTrace();
+            }
+        }
+    }
 }

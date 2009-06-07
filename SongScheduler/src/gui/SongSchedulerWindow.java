@@ -225,7 +225,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         for ( int i = 0; i < days.size(); i++ )
         {
             Calendar currentDay = (Calendar)days.get( i );
-            daysArray[i] = new Time( currentDay.get(Calendar.YEAR), currentDay.get(Calendar.MONTH), currentDay.get( Calendar.DATE), 0,0,0 );
+            daysArray[i] = new Time( currentDay.get(Calendar.YEAR), (currentDay.get(Calendar.MONTH) + 1), currentDay.get( Calendar.DATE), 0,0,0 );
         }
 
         return daysArray;

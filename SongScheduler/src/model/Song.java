@@ -133,8 +133,10 @@ public class Song {
      * @param lastPlayed
      */
     public void setLastPlayed(Time lastPlayed) {
-        if(lastPlayed.minus(this.lastPlayed) < 0)
+        if(lastPlayed.minus(this.lastPlayed) > 0){
             this.lastPlayed = lastPlayed;
+            Database.saveLastPlayed(this);
+        }
     }
 
     public double getPriority() {

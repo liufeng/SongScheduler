@@ -135,6 +135,7 @@ public class Schedule implements Iterable {
     public void updateSongsInSchedule(){
         for (int i=0; i < songList.size(); i++){
             Song song = (Song)songList.get(i);
+            //System.out.println(song.toString());
             song.setLastPlayed(startTime);
             song.addNumberOfPlays();
             song.updatePriority();
