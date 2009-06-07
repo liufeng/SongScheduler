@@ -17,7 +17,7 @@ public class SongScheduler {
      * Constructor for initialize the tentativeSchedule array.
      * 
      * @author kurtisschmidt & jordan
-     * @param firstDay the start time of tentativeSchedule[0][0];
+     * @param firstHour the start hour of tentativeSchedule[0][0];
      */
     public SongScheduler( Time firstHour ) {
         startTime = firstHour;

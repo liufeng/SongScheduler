@@ -77,7 +77,7 @@ public abstract class Database {
                 int popularity = Integer.parseInt(token[7]);
                 int playCount = Integer.parseInt(token[8]);
                 Time addedTime = new Time().getCurrentTime();
-                Time lastPlayed = null; // new Time(0, 0, 0, 0, 0, 0);
+                Time lastPlayed = null;
                 double priority = 0;
 
                 PreparedStatement prepStatement = connection.prepareStatement("insert into song values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
