@@ -23,11 +23,18 @@ public class SchedulerListWindow extends javax.swing.JFrame {
 
     /** Creates new form SchedulerListWindow */
     public SchedulerListWindow ( Time days[], SongSchedulerWindow parentWindow ) {
+        songScheduler = new SongScheduler( days[0] );
+        setupWindow( days, songScheduler, parentWindow );
+    }
+    public SchedulerListWindow ( Time days[], SongScheduler songScheduler, SongSchedulerWindow parentWindow ) {
+        setupWindow( days, songScheduler, parentWindow );
+    }
+
+    private void setupWindow ( Time days[], SongScheduler songScheduler, SongSchedulerWindow parentWindow ) {
         this.parentWindow = parentWindow;
 
         initComponents();
 
-        songScheduler = new SongScheduler( days[0] );
         // Create a new hourSchedulePanel for every day in the array.
         for ( int i = 0; i < days.length; i++ ) {
             Time currentTime = days[i];

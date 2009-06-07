@@ -10,10 +10,12 @@
  */
 package gui;
 
+import java.awt.MenuBar;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 import model.Time;
+import model.SongScheduler;
 
 /**
  *
@@ -96,6 +98,11 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     });
 
     makeListButton.setText("Make List");
+    makeListButton.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            makeListButtonActionPerformed(evt);
+        }
+    });
 
     viewSelectedButton.setText("View Selected");
     viewSelectedButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -182,15 +189,27 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_browseSongsButtonActionPerformed
 
-    private void openSelectedDates () {
-        // TODO add your handling code here:
+    private void makeListButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_makeListButtonActionPerformed
+        Time daysArray[] = getSelectedDates();
+        SongScheduler scheduler = new SongScheduler( daysArray[0] );
+
+        for ( int i = 0; i < daysArray.length; i++ )
+        {
+            scheduler.generateMultipleHours( daysArray[i], 24);
+        }
+
+        new SchedulerListWindow( daysArray, scheduler , this ).setVisible( true );
+        this.setVisible( false );
+    }//GEN-LAST:event_makeListButtonActionPerformed
+
+        private Time[] getSelectedDates () {
         Iterator<Calendar> iterator = calendar.getSelectedPeriodSet().getDates().iterator();
         ArrayList days = new ArrayList();
         Time daysArray[];
 
         // If nothing selected, then return
         if ( !iterator.hasNext() ) {
-            return;
+            return null;
         }
 
         while ( iterator.hasNext() ) {
@@ -202,22 +221,20 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         {
             Calendar currentDay = (Calendar)days.get( i );
             daysArray[i] = new Time( currentDay.get(Calendar.YEAR), currentDay.get(Calendar.MONTH), currentDay.get( Calendar.DATE), 0,0,0 );
-            System.out.println(daysArray[i]);
         }
-        new SchedulerListWindow( daysArray, this ).setVisible( true );
-        this.setVisible( false );
+
+        return daysArray;
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main ( String args[] ) {
-        java.awt.EventQueue.invokeLater( new Runnable() {
+    private void openSelectedDates () {
+        Time daysArray[] = getSelectedDates();
 
-            public void run () {
-                new SongSchedulerWindow().setVisible( true );
-            }
-        } );
+        // No days selected, just stop now
+        if ( daysArray == null )
+            return;
+
+        new SchedulerListWindow( daysArray, this ).setVisible( true );
+        this.setVisible( false );
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
