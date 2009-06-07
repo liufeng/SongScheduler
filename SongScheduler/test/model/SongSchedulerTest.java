@@ -46,8 +46,9 @@ public class SongSchedulerTest {
     public void testGenerateOneHour() {
         System.out.println("generateOneHour");
         Time startTime = new Time();
-        SongScheduler instance = new SongScheduler();
-        Schedule result = instance.generateOneHour(startTime);
+        SongScheduler instance = new SongScheduler(startTime);
+        instance.generateOneHour(startTime);
+        Schedule result = instance.getSchedule(startTime);
 
         // check the generated schedule is longer than 43 minutes
         assertTrue(result.getDuration() >= 2580000);
