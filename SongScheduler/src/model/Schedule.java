@@ -93,7 +93,12 @@ public class Schedule implements Iterable {
      * <code>song</code>; <code>false</code> otherwise.
      */
     public boolean contains(Song song) {
-        return songList.contains(song);
+        Iterator<Song> iter = songList.iterator();
+        while ( iter.hasNext() )
+            if ( song.equals( (Song)iter.next() ) )
+                return true;
+
+        return false;
     }
 
     public Iterator<Song> iterator() {
@@ -114,6 +119,7 @@ public class Schedule implements Iterable {
      */
     public void clear() {
         songList.clear();
+        duration = 0;
     }
 
     /**
