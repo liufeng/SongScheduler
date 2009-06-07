@@ -79,7 +79,6 @@ public class Time
      * 
      * NOTE: It will return 1 if the year has set to 0.
      * 
-     * @return
      */
     public int getYear() {
         return calendar.get(Calendar.YEAR);
@@ -113,7 +112,7 @@ public class Time
      * Adds the <code>time</code> to the time in <code>this</code>.
      * This methods is from interface Computable.
      *
-     * @param Time time
+     * @param time
      */
     public void add(Time time) {
         calendar.add(Calendar.SECOND, time.getSecond());
@@ -166,7 +165,7 @@ public class Time
 
     /**
      * Get the instance of <code>calendar</code> in <code>this</code> object.
-     * @return
+     * @return A <code>Calendar</code> instance.
      */
     public Calendar getCalendar() {
         return calendar;
