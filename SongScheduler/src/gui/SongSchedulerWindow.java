@@ -37,7 +37,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         calendar = new datechooser.beans.DateChooserPanel();
-        makeListButton = new javax.swing.JButton();
+        generateSchedulerButton = new javax.swing.JButton();
         viewSelectedButton = new javax.swing.JButton();
         browseSongsButton = new javax.swing.JButton();
         MenuBar = new javax.swing.JMenuBar();
@@ -102,10 +102,10 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         }
     });
 
-    makeListButton.setText("Make List");
-    makeListButton.addActionListener(new java.awt.event.ActionListener() {
+    generateSchedulerButton.setText("Generate Schedule");
+    generateSchedulerButton.addActionListener(new java.awt.event.ActionListener() {
         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            makeListButtonActionPerformed(evt);
+            generateSchedulerButtonActionPerformed(evt);
         }
     });
 
@@ -149,10 +149,10 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             .addContainerGap()
             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                 .add(layout.createSequentialGroup()
-                    .add(makeListButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(generateSchedulerButton)
                     .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                     .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 203, Short.MAX_VALUE)
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 191, Short.MAX_VALUE)
                     .add(browseSongsButton))
                 .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 624, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
             .addContainerGap())
@@ -164,7 +164,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 475, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                .add(makeListButton)
+                .add(generateSchedulerButton)
                 .add(viewSelectedButton)
                 .add(browseSongsButton))
             .addContainerGap())
@@ -194,7 +194,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_browseSongsButtonActionPerformed
 
-    private void makeListButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_makeListButtonActionPerformed
+    private void generateSchedulerButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generateSchedulerButtonActionPerformed
         Time daysArray[] = getSelectedDates();
         SongScheduler scheduler = new SongScheduler( daysArray[0] );
 
@@ -205,7 +205,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
         new SchedulerListWindow( daysArray, scheduler , this ).setVisible( true );
         this.setVisible( false );
-    }//GEN-LAST:event_makeListButtonActionPerformed
+}//GEN-LAST:event_generateSchedulerButtonActionPerformed
 
         private Time[] getSelectedDates () {
         Iterator<Calendar> iterator = calendar.getSelectedPeriodSet().getDates().iterator();
@@ -249,7 +249,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuItem fileMenuClose;
     private javax.swing.JMenuItem fileMenuOpen;
-    private javax.swing.JButton makeListButton;
+    private javax.swing.JButton generateSchedulerButton;
     private javax.swing.JButton viewSelectedButton;
     // End of variables declaration//GEN-END:variables
 }
