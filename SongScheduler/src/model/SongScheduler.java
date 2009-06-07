@@ -56,6 +56,7 @@ public class SongScheduler {
     private void commitSchedule(Schedule candidate) {
         //if the schedule that if trying to be committed is a null pointer don't commit
         if(candidate != null){
+            candidate.updateSongsInSchedule();
             try {
                 Class.forName("org.sqlite.JDBC");
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");

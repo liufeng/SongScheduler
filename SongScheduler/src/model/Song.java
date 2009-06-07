@@ -118,14 +118,6 @@ public class Song {
     }
 
     /**
-     * decrement the <code>playCount</code> by 1.
-     */
-    public void decreaseNumberOfPlays() {
-        this.playCount++;
-        Database.savePlayCount(this);
-    }
-
-    /**
      * set the plays in week to 0 for a new week.
      */
     public void resetNumberOfPlays() {
@@ -137,11 +129,12 @@ public class Song {
     }
 
     /**
-     * Set a new last played date.
+     * Set a new last played date if it is more recent than the current lastPlayed time
      * @param lastPlayed
      */
     public void setLastPlayed(Time lastPlayed) {
-        this.lastPlayed = lastPlayed;
+        if(lastPlayed.minus(this.lastPlayed) < 0)
+            this.lastPlayed = lastPlayed;
     }
 
     public double getPriority() {

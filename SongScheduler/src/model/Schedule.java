@@ -35,7 +35,6 @@ public class Schedule implements Iterable {
     public void add(Song song) {
         songList.add(song);
         duration += song.getLength();
-        song.addNumberOfPlays();
     }
 
     /**
@@ -45,7 +44,6 @@ public class Schedule implements Iterable {
     public void remove(Song song) {
         songList.remove(song);
         duration -= song.getLength();
-        song.decreaseNumberOfPlays();
     }
 
     /**
@@ -132,6 +130,15 @@ public class Schedule implements Iterable {
      */
     public boolean isEmpty(){
         return songList.isEmpty();
+    }
+
+    public void updateSongsInSchedule(){
+        for (int i=0; i < songList.size(); i++){
+            Song song = (Song)songList.get(i);
+            song.setLastPlayed(startTime);
+            song.addNumberOfPlays();
+            song.updatePriority();
+        }
     }
 
     public String toString(){
