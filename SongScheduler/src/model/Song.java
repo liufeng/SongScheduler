@@ -114,6 +114,15 @@ public class Song {
      */
     public void addNumberOfPlays() {
         this.playCount++;
+        Database.savePlayCount(this);
+    }
+
+    /**
+     * decrement the <code>playCount</code> by 1.
+     */
+    public void decreaseNumberOfPlays() {
+        this.playCount++;
+        Database.savePlayCount(this);
     }
 
     /**

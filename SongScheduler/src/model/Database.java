@@ -221,7 +221,7 @@ public abstract class Database {
                     " where title = \'" + title + "\';";
 
             try {
-                Class.forName("org.sqlit.JDBC");
+                Class.forName("org.sqlite.JDBC");
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
                 Statement statement = connection.createStatement();
                 statement.executeQuery(sql);
@@ -229,7 +229,32 @@ public abstract class Database {
                 statement.close();
                 connection.close();
             } catch (Exception e) {
-                e.printStackTrace();
+                if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
+                    e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Saves the current play count for a song to the database
+     * @param song the song for which the play count is to be saved to the database
+     */
+    public static void savePlayCount(Song song){
+        if(song != null){
+            String sql = "update song set playCount = " + song.getNumberOfPlays() +
+                    " where title = \'" + song.getTitle() + "\';";
+
+            try {
+                Class.forName("org.sqlite.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+                Statement statement = connection.createStatement();
+                statement.executeQuery(sql);
+
+                statement.close();
+                connection.close();
+            } catch (Exception e) {
+                if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
+                    e.printStackTrace();
             }
         }
     }

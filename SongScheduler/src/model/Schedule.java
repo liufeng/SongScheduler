@@ -35,6 +35,7 @@ public class Schedule implements Iterable {
     public void add(Song song) {
         songList.add(song);
         duration += song.getLength();
+        song.addNumberOfPlays();
     }
 
     /**
@@ -44,6 +45,7 @@ public class Schedule implements Iterable {
     public void remove(Song song) {
         songList.remove(song);
         duration -= song.getLength();
+        song.decreaseNumberOfPlays();
     }
 
     /**
