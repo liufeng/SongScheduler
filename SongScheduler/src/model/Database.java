@@ -138,7 +138,7 @@ public abstract class Database {
         if(title == null){
             sqlStatement = "SELECT * FROM song ORDER BY title;";
         }else{
-            sqlStatement = "SELECT * FROM song WHERE title = \'" + title + "\' ORDER BY title;";
+            sqlStatement = "SELECT * FROM song WHERE title = \"" + title + "\" ORDER BY title;";
         }
 
         return getSongsFromDB(sqlStatement);
@@ -194,7 +194,7 @@ public abstract class Database {
     public static void changeSongPopularity( String title, int newPopularity){
         if(title != null && !title.equals("")){
             String sql = "UPDATE song SET popularity = " + newPopularity +
-                    " WHERE title = \'" + title + "\';";
+                    " WHERE title = \"" + title + "\";";
 
             try {
                 Class.forName("org.sqlite.JDBC");
@@ -219,7 +219,7 @@ public abstract class Database {
     static void changeSongPriority(String title, double priority) {
         if (title != null && !title.equals("")) {
             String sql = "update song set priority = " + priority +
-                    " where title = \'" + title + "\';";
+                    " where title = \"" + title + "\";";
 
             try {
                 Class.forName("org.sqlite.JDBC");
@@ -243,7 +243,7 @@ public abstract class Database {
     public static void savePlayCount(Song song){
         if(song != null){
             String sql = "update song set playCount = " + song.getNumberOfPlays() +
-                    " where title = \'" + song.getTitle() + "\';";
+                    " where title = \"" + song.getTitle() + "\";";
 
             try {
                 Class.forName("org.sqlite.JDBC");
@@ -254,6 +254,7 @@ public abstract class Database {
                 statement.close();
                 connection.close();
             } catch (Exception e) {
+                System.out.println(sql);
                 if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
                     e.printStackTrace();
             }
