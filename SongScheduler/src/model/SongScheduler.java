@@ -180,9 +180,9 @@ public class SongScheduler {
             nextSchedule = tentativeSchedule[nextHour.getDay() - this.startTime.getDay()][nextHour.getHour() - this.startTime.getHour()];
         }
 
-        if ( previousSchedule.find(song) )
+        if ( previousSchedule.contains(song) )
             result = false;
-        if ( nextSchedule.find(song) )
+        if ( nextSchedule.contains(song) )
             result = false;
 
         return result;
