@@ -139,8 +139,20 @@ public class Song {
         return priority;
     }
 
+    /**
+     * Get the average played time of the song.
+     * If the song hasn't added for 1 week, return the number
+     * of plays of the song. (otherwise will get a <em>Divide
+     * by zero</em> error.
+     * @return an <code>int</code> value.
+     */
     private int getAveragePlays() {
-        return playCount / ((new Time().getCurrentTime().minus(addedTime)) / 7);
+        int weeks = (new Time().getCurrentTime().minus(addedTime)) / 7;
+        if (weeks == 0) {
+            return playCount;
+        } else {
+            return playCount / weeks;
+        }
     }
 
     /**
@@ -154,7 +166,7 @@ public class Song {
         double newPriority = 10 * popularity - 7 * getAveragePlays()
                 - 16 / (new Time().getCurrentTime().minus(lastPlayed));
         priority = newPriority;
-        SongDBI.changeSongPriority(title, priority);
+        Database.changeSongPriority(title, priority);
     }
 
     /**
@@ -164,7 +176,7 @@ public class Song {
     public void updatePopularity(int newPopularity){
         popularity = newPopularity;
         this.updatePriority();
-        SongDBI.changeSongPopularity(title, newPopularity);
+        Database.changeSongPopularity(title, newPopularity);
     }
 
     /**

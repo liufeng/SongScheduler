@@ -2,11 +2,13 @@ package model;
 
 import java.sql.*;
 import java.io.*;
+import java.util.ArrayList;
 
 /**
  * A bunch of methods for operating the database.
  *
  * @author liufeng & aprilbugnot
+ * @author jordan & kurtisschmidt
  */
 public abstract class Database {
     /**
@@ -109,6 +111,126 @@ public abstract class Database {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
 
+    /**
+     * Get song from database ordered by priority and title
+     *
+     * @return an <code>ArrayList</code> instance.
+     */
+    public static ArrayList getSongsByPriority(){
+        String sqlStatement = "SELECT * FROM song ORDER BY priority, title;";
+
+        return getSongsFromDB(sqlStatement);
+    }
+
+    /**
+     * Get a list of songs from database by the title of the song.
+     * @param titls <code>String</code> instance of the titls of the song
+     * @return If <code>title</code> is null, return an <code>ArrayList</code>
+     *         holding all songs in database ordered by title;
+     *         otherwise return an <code>ArrayList</code> holding only
+     *         the song with the title in param.
+     */
+    public static ArrayList getSongs( String title ){
+        String sqlStatement;
+
+        if(title == null){
+            sqlStatement = "SELECT * FROM song ORDER BY title;";
+        }else{
+            sqlStatement = "SELECT * FROM song WHERE title = \'" + title + "\' ORDER BY title;";
+        }
+
+        return getSongsFromDB(sqlStatement);
+    }
+
+    /**
+     * Get songs from database by the SQL statement supplied in param.
+     * @param sqlStatement
+     * @return an <code>ArrayList</code>
+     */
+    private static ArrayList getSongsFromDB(String sqlStatement){
+        ArrayList songs = new ArrayList();
+        Song currSong;
+        if(sqlStatement != null && !sqlStatement.equals("")){
+            try {
+                Class.forName("org.sqlite.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+                Statement statement = connection.createStatement();
+                ResultSet rs = statement.executeQuery(sqlStatement);
+
+                while (rs.next()) {
+                    String title = rs.getString("title");
+                    String performer = rs.getString("performer");
+                    String recordingTitle = rs.getString("recordingTitle");
+                    String recordingType = rs.getString("recordingType");
+                    String year = rs.getString("year");
+                    int    length = rs.getInt("length");
+                    int    accessNumber = rs.getInt("accessNumber");
+                    int    popularity = rs.getInt("popularity");
+                    int    playCount = rs.getInt("playCount");
+                    Time   addedTime = new Time(rs.getString("addedTime"));
+                    Time   lastPlayed = new Time(rs.getString("lastPlayed"));
+                    double priority = rs.getDouble("priority");
+
+                    currSong = new Song(title, performer, recordingTitle, recordingType, year, length, accessNumber, popularity, playCount, addedTime, lastPlayed, priority);
+                    songs.add(currSong);
+                }
+                rs.close();
+                statement.close();
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return songs;
+    }
+
+    /**
+     * Modify the <code>popularity</code> of the song in the database.
+     * @param title the title of the song to be modified.
+     * @param newPopularity the new popularity of the song.
+     */
+    public static void changeSongPopularity( String title, int newPopularity){
+        if(title != null && !title.equals("")){
+            String sql = "UPDATE song SET popularity = " + newPopularity +
+                    " WHERE title = \'" + title + "\';";
+
+            try {
+                Class.forName("org.sqlite.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+                Statement statement = connection.createStatement();
+                statement.executeQuery(sql);
+
+                statement.close();
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Modify the <code>priority</code> of the song to the database.
+     * @param title the title of the song to be modified.
+     * @param priority
+     */
+    static void changeSongPriority(String title, double priority) {
+        if (title != null && !title.equals("")) {
+            String sql = "update song set priority = " + priority +
+                    " where title = \'" + title + "\';";
+
+            try {
+                Class.forName("org.sqlit.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+                Statement statement = connection.createStatement();
+                statement.executeQuery(sql);
+
+                statement.close();
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

@@ -125,7 +125,7 @@ public class SongScheduler {
      */
     public void generateOneHour(Time startTime) {
         Schedule result = tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()];
-        ArrayList songs = SongDBI.getSongsByPriority();
+        ArrayList songs = Database.getSongsByPriority();
         Iterator<Object> iter = songs.iterator();
 
         result.clear();
