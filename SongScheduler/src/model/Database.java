@@ -1,31 +1,23 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package model;
 
 import java.sql.*;
 import java.io.*;
 
 /**
+ * A bunch of methods for operating the database.
  *
- * @author liufeng
+ * @author liufeng & aprilbugnot
  */
-public class Database {
+public abstract class Database {
     /**
      * Initialize the database. Creates three tables.
-     *
-     * NOTE: this method is supposed to run at the first time of the program runs.
      */
     public static void init() {
         try {
             Class.forName("org.sqlite.JDBC");
 
-            //Connection connection = DriverManager.getConnection("jdbc:sqlite:/Users/liufeng/prog/ss/song.db");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
             Statement statement = connection.createStatement();
-            //statement.executeUpdate("create table songlist (title, performer, recordingTitle, recordingType, year, length INTEGER, accessNumber INTEGER, popularity, playCount, addedTime, lastPlayed, priority REAL);");
             
             statement.addBatch("CREATE TABLE IF NOT EXISTS song(accessNumber INTEGER PRIMARY KEY, title TEXT, performer TEXT, recordingTitle TEXT, recordingType TEXT, year TEXT, length INTEGER, popularity INTEGER, playCount INTEGER, addedTime DATETIME, lastPlayed DATETIME, priority REAL);");
             statement.addBatch("CREATE TABLE IF NOT EXISTS schedule(startTime DATETIME PRIMARY KEY, duration INTEGER);");
@@ -46,6 +38,23 @@ public class Database {
 
     /**
      * updates the new song data from the library text file.
+     * 
+     * Adds the following 12 info into the song table:
+     *
+     * <ol>
+     *   <li>accessNumber</li>
+     *   <li>title</li>
+     *   <li>performer</li>
+     *   <li>recordingTitle</li>
+     *   <li>recordingType</li>
+     *   <li>year</li>
+     *   <li>length</li>
+     *   <li>popularity</li>
+     *   <li>playCount</li>
+     *   <li>addedTime</li>
+     *   <li>lastPlayed</li>
+     *   <li>priority</li>
+     * </ol>
      *
      * NOTE: should be executed at least once a week.
      */
@@ -71,24 +80,6 @@ public class Database {
                 Time lastPlayed = null; // new Time(0, 0, 0, 0, 0, 0);
                 double priority = 0;
 
-                /**
-                 * Adding the following 12 info into songlist:
-                 *
-                 * <ol>
-                 *   <li>accessNumber</li>
-                 *   <li>title</li>
-                 *   <li>performer</li>
-                 *   <li>recordingTitle</li>
-                 *   <li>recordingType</li>
-                 *   <li>year</li>
-                 *   <li>length</li>
-                 *   <li>popularity</li>
-                 *   <li>playCount</li>
-                 *   <li>addedTime</li>
-                 *   <li>lastPlayed</li>
-                 *   <li>priority</li>
-                 * </ol>
-                 */
                 PreparedStatement prepStatement = connection.prepareStatement("insert into song values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
                 prepStatement.setInt(1, accessNumber);
                 prepStatement.setString(2, title);
@@ -105,7 +96,6 @@ public class Database {
                 prepStatement.addBatch();
 
                 Statement statement = connection.createStatement();
-                //String sql = "select * from song where accessNumber = " + accessNumber + ";";
                 ResultSet rs = statement.executeQuery("select * from song where accessNumber = " + accessNumber + ";");
                 if (!rs.next()) {
 

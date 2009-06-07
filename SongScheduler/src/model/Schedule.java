@@ -19,7 +19,7 @@ public class Schedule implements Iterable {
     final static private int MAX_SCHEDULE_LENGTH = 2880000; // 48 minutes
 
     /**
-     * Create an empty song schedule starts from <em>startTime</em>.
+     * Constructs an empty schedule starts from <em>startTime</em>.
      * @param startTime
      */
     public Schedule(Time startTime) {

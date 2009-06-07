@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package model;
 import java.sql.*;
 import java.util.ArrayList;
@@ -75,6 +70,31 @@ public class SongDBI {
 
             try {
                 Class.forName("org.sqlite.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+                Statement statement = connection.createStatement();
+                statement.executeQuery(sql);
+
+                statement.close();
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Modify the <code>priority</code> of the song to the database.
+     * @param title the title of the song to be modified.
+     * @param priority
+     * @aurhor liufeng
+     */
+    static void changeSongPriority(String title, double priority) {
+        if (title != null && !title.equals("")) {
+            String sql = "update song set priority = " + priority +
+                    " where title = \'" + title + "\';";
+
+            try {
+                Class.forName("org.sqlit.JDBC");
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
                 Statement statement = connection.createStatement();
                 statement.executeQuery(sql);

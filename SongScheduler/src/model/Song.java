@@ -1,13 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package model;
 
 /**
- *
- * @author liufeng
+ * For holding song data.
+ * 
+ * @author liufeng & aprilbugnot
  */
 public class Song {
     private String title;
@@ -18,13 +14,28 @@ public class Song {
     private int length;
     private int accessNumber;
     private int popularity;
-    //private int numberOfPlays;
     private int playCount;
     private Time addedTime;
     private Time lastPlayed;
     private double priority;
 
-    // TODO: Add one or more constructors.
+    /**
+     * Constructs a <code>Song</code> instance with the information
+     * supplied by the params.
+     * 
+     * @param title
+     * @param performer
+     * @param recordingTitle
+     * @param recordingType
+     * @param year
+     * @param length
+     * @param accessNumber
+     * @param popularity
+     * @param playCount
+     * @param addedTime
+     * @param lastPlayed
+     * @param priority
+     */
     public Song(String title,
                 String performer,
                 String recordingTitle,
@@ -51,6 +62,8 @@ public class Song {
         this.priority = priority;
     }
 
+    // Accessors
+    
     public String getTitle() {
         return title;
     }
@@ -97,17 +110,17 @@ public class Song {
     }
 
     /**
-     * Set the number of plays in the current week
+     * Increment the <code>playCount</code> by 1.
      */
     public void addNumberOfPlays() {
-        this.accessNumber++;
+        this.playCount++;
     }
 
     /**
      * set the plays in week to 0 for a new week.
      */
     public void resetNumberOfPlays() {
-        this.accessNumber = 0;
+        this.playCount = 0;
     }
 
     public Time getLastPlayed() {
@@ -141,17 +154,33 @@ public class Song {
         double newPriority = 10 * popularity - 7 * getAveragePlays()
                 - 16 / (new Time().getCurrentTime().minus(lastPlayed));
         priority = newPriority;
+        SongDBI.changeSongPriority(title, priority);
     }
 
+    /**
+     * Modify the popularity of the song to <code>newPopularity</code>.
+     * @param newPopularity
+     */
     public void updatePopularity(int newPopularity){
         popularity = newPopularity;
+        this.updatePriority();
         SongDBI.changeSongPopularity(title, newPopularity);
     }
+
+    /**
+     * Decide if the <code>song</code> is the same song to <code>this</code>.
+     * @param song
+     * @return <code>true</code> if <code>song</code> is the same song
+     *         to <code>this</code>; <code>false</code> otherwise.
+     * @author kurtisschmidt & jordan
+     */
     public boolean equals(Song song) {
         return this.title.equalsIgnoreCase( song.title );
     }
+
     /**
      * Return the name of the song
+     * @author kurtisschmidt & jordan
      */
     public String toString(){
         return title;

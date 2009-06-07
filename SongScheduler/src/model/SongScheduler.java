@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package model;
 
 import java.sql.*;
@@ -10,24 +5,37 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- *
- * @author liufeng
+ * A bunch of methods for generating schedules.
+ * 
+ * @author liufeng & aprilbugnot
  */
 public class SongScheduler {
     private Schedule[][] tentativeSchedule = new Schedule[7][24];
     private Time startTime;
 
-    public SongScheduler( Time firstDay ) {
-        startTime = firstDay;
+    /**
+     * Constructor for initialize the tentativeSchedule array.
+     * 
+     * @author kurtisschmidt & jordan
+     * @param firstDay the start time of tentativeSchedule[0][0];
+     */
+    public SongScheduler( Time firstHour ) {
+        startTime = firstHour;
         for (int i = 0; i < 7; i++ )
         {
             for ( int j = 0; j < 24; j++ ) {
-                tentativeSchedule[i][j] = getScheduleFromDB(firstDay);
-                firstDay = firstDay.getNextHour();
+                tentativeSchedule[i][j] = getScheduleFromDB(firstHour);
+                firstHour = firstHour.getNextHour();
             }
         }
     }
 
+    /**
+     * Commit the each schedules in the tentativeSchedule array
+     * to the database.
+     *
+     * @author kurtisschmidt & jordan
+     */
     public void commit(){
         //commit the schedules for each day
         for(int i=0; i < tentativeSchedule.length; i++){
@@ -40,6 +48,11 @@ public class SongScheduler {
         }
     }
 
+    /**
+     * Commit the <code>candidate</code> schedule to the database.
+     *
+     * @param candidate the schedule to be commited.
+     */
     private void commitSchedule(Schedule candidate) {
         //if the schedule that if trying to be committed is a null pointer don't commit
         if(candidate != null){
@@ -72,6 +85,19 @@ public class SongScheduler {
         }
     }
 
+    /**
+     * Update some of the property values for <code>song</code> to
+     * the database. The changed property values are:
+     *
+     * <ul>
+     *   <li>Increase <code>playCount</code> by 1.</li>
+     *   <li>Set <code>lastPlayed</code> to the current time.</li>
+     *   <li>Update the <code>priority</code>.</li>
+     * </ul>
+     *
+     * @param song The Song object indicates the song to be updated.
+     * @param connection The connection to the database.
+     */
     private void updateSongData(Song song, Connection connection) {
         try {
             PreparedStatement prepStatement = connection.prepareStatement("update song set lastPlayed = ?, priority = ?, playCount = ? where accessNumber = ?;");
@@ -91,11 +117,11 @@ public class SongScheduler {
     /**
      * generateOneHour
      *
-     * Assuming no schedule exists at the given time, generates a one hour schedule
-     * of eligible random songs.
+     * Assuming no schedule exists at the given time, generates an
+     * one-hour schedule of eligible random songs.
      *
      * @author liufeng & aprilbugnot
-     * @param startTime
+     * @param startTime The start time of the schedule.
      */
     public void generateOneHour(Time startTime) {
         Schedule result = tentativeSchedule[startTime.getDayInWeek()][startTime.getHour()];
@@ -127,6 +153,17 @@ public class SongScheduler {
         }
     }
 
+    /**
+     * Generate a schedule starts from <code>startTime</code> with
+     * the length of <code>hours</code> hours.
+     * 
+     * NOTE: it simply calls the <code>generateOneHour()</code>
+     *       method several times. Maybe we need to change it to
+     *       a better way.
+     *
+     * @param startTime
+     * @param hours
+     */
     public void generateMultipleHours(Time startTime, int hours) {
         for (int i = 0; i < hours; i++) {
             generateOneHour(startTime);
@@ -134,6 +171,16 @@ public class SongScheduler {
         }
     }
 
+    /**
+     * Generate a schedule starts from <code>startTime</code> with
+     * the length of <code>days</code> days.
+     *
+     * NOTE: we have the same problem as the
+     * <code>generateMultipleHours()</code> method.
+     *
+     * @param startTime
+     * @param days
+     */
     public void generateDays(Time startTime, int days) {
         for (int i = 0; i < 24 * days; i++) {
             generateOneHour(startTime);
@@ -200,9 +247,8 @@ public class SongScheduler {
      * @return Schedule of the specified time, or null if no schedule exists
      */
     public Schedule getScheduleFromDB(Time startTime) {
-        Schedule result = null;
-
-        return new Schedule(startTime);
+        Schedule result = new Schedule(startTime);
+        
         // get the schedule from db
 //          try {
 //                Class.forName("org.sqlite.JDBC");
@@ -241,12 +287,13 @@ public class SongScheduler {
 //            } catch (Exception e) {
 //                e.printStackTrace();
 //            }
-//
-//        return result;
+
+        return result;
     }
 
-    /*
+    /**
      * Returns the Schedule held at the specified time.
+     * @param time 
      */
     public Schedule getSchedule( Time time ) {
         return tentativeSchedule[time.getDay()- startTime.getDay()][time.getHour()];
