@@ -242,44 +242,44 @@ public class SongScheduler {
     public Schedule getScheduleFromDB(Time startTime) {
         Schedule result = new Schedule(startTime);
         
-        // get the schedule from db
-//          try {
-//                Class.forName("org.sqlite.JDBC");
-//
-//                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-//
-//                PreparedStatement prepStatement = connection.prepareStatement("select song.* from song inner join songSchedule on song.accessNumber = songSchedule.accessNumber where startTime = ?;");
-//                prepStatement.setObject(1, startTime);
-//                ResultSet rs = prepStatement.executeQuery();
-//
-//                if (rs != null) {
-//                    result = new Schedule(startTime);
-//
-//                    while (rs.next()) {
-//                        Song song = new Song(
-//                                rs.getString("title"),
-//                                rs.getString("performer"),
-//                                rs.getString("recordingTitle"),
-//                                rs.getString("recordingType"),
-//                                rs.getString("year"),
-//                                rs.getInt("length"),
-//                                rs.getInt("accessNumber"),
-//                                rs.getInt("popularity"),
-//                                rs.getInt("playCount"),
-//                                (Time)rs.getObject("addedTime"),
-//                                (Time)rs.getObject("lastPlayed"),
-//                                rs.getDouble("priority"));
-//
-//                        result.add(song);
-//                    }
-//                }
-//
-//                rs.close();
-//                prepStatement.close();
-//                connection.close();
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
+          //get the schedule from db
+          try {
+                Class.forName("org.sqlite.JDBC");
+
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+
+                PreparedStatement prepStatement = connection.prepareStatement("select song.* from song inner join songSchedule on song.accessNumber = songSchedule.accessNumber where startTime = ?;");
+                prepStatement.setObject(1, startTime);
+                ResultSet rs = prepStatement.executeQuery();
+
+                if (rs != null) {
+                    result = new Schedule(startTime);
+
+                    while (rs.next()) {
+                        Song song = new Song(
+                                rs.getString("title"),
+                                rs.getString("performer"),
+                                rs.getString("recordingTitle"),
+                                rs.getString("recordingType"),
+                                rs.getString("year"),
+                                rs.getInt("length"),
+                                rs.getInt("accessNumber"),
+                                rs.getInt("popularity"),
+                                rs.getInt("playCount"),
+                                (Time)rs.getObject("addedTime"),
+                                (Time)rs.getObject("lastPlayed"),
+                                rs.getDouble("priority"));
+
+                        result.add(song);
+                    }
+                }
+
+                rs.close();
+                prepStatement.close();
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
         return result;
     }
