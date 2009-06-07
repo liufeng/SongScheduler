@@ -205,7 +205,8 @@ public abstract class Database {
                 statement.close();
                 connection.close();
             } catch (Exception e) {
-                e.printStackTrace();
+                if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
+                    e.printStackTrace();
             }
         }
     }
