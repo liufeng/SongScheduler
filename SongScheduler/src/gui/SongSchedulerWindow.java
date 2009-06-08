@@ -42,7 +42,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         browseSongsButton = new javax.swing.JButton();
         MenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
-        fileMenuOpen = new javax.swing.JMenuItem();
         fileMenuClose = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -124,10 +123,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     });
 
     fileMenu.setText("File");
-
-    fileMenuOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.META_MASK));
-    fileMenuOpen.setText("Open");
-    fileMenu.add(fileMenuOpen);
 
     fileMenuClose.setText("Close");
     fileMenuClose.addActionListener(new java.awt.event.ActionListener() {
@@ -248,7 +243,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private datechooser.beans.DateChooserPanel calendar;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuItem fileMenuClose;
-    private javax.swing.JMenuItem fileMenuOpen;
     private javax.swing.JButton generateSchedulerButton;
     private javax.swing.JButton viewSelectedButton;
     // End of variables declaration//GEN-END:variables
