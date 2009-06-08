@@ -136,6 +136,7 @@ public class Song {
         if(lastPlayed.minus(this.lastPlayed) > 0){
             this.lastPlayed = lastPlayed;
             Database.saveLastPlayed(this);
+            updatePriority();
         }
     }
 
