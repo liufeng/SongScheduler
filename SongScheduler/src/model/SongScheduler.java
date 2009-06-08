@@ -79,7 +79,11 @@ public class SongScheduler {
                     prepStatement.executeUpdate();
                 }
 
-                prepStatement = connection.prepareStatement("insert into songSchedule values (?, ?, ?);");
+                prepStatement = connection.prepareStatement("DELETE FROM songSchedule WHERE startTime = ?;");
+                prepStatement.setObject(1, candidate.getTime());
+                prepStatement.executeUpdate();
+
+                prepStatement = connection.prepareStatement("INSERT INTO songSchedule VALUES (?, ?, ?);");
                 prepStatement.setObject(2, candidate.getTime());
 
                 Iterator<Song> songList = candidate.iterator();
@@ -338,8 +342,8 @@ public class SongScheduler {
                                 rs.getInt("accessNumber"),
                                 rs.getInt("popularity"),
                                 rs.getInt("playCount"),
-                                (Time)rs.getObject("addedTime"),
-                                (Time)rs.getObject("lastPlayed"),
+                                new Time(rs.getString("addedTime")),
+                                new Time(rs.getString("lastPlayed")),
                                 rs.getDouble("priority"));
 
                         result.add(song);
