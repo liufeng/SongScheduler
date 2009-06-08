@@ -1,6 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * DayTreeCellRenderer.java
+ *
+ * A custom renderer for the jTree in DayScheduleScrollPanel.
+ * All this does is remove the icons from the jTree.
+ * 
+ * @author Kurtis Schmidt
  */
 
 package gui;
@@ -10,17 +14,14 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 import java.awt.Component;
 import javax.swing.JTree;
 
-/**
- *
- * @author kurtisschmidt
- */
 public class DayTreeCellRenderer extends DefaultTreeCellRenderer {
 
     public DayTreeCellRenderer() {
         super();
     }
 
-    @Override public Component getTreeCellRendererComponent(
+    @Override
+    public Component getTreeCellRendererComponent(
                         JTree tree,
                         Object value,
                         boolean sel,
