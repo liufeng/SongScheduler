@@ -184,6 +184,63 @@ public class SongScheduler {
     }
 
     /**
+     * autoCorrect
+     *
+     * This function will automatically add and remove elements from a list
+     * until it fits the 43-48 minute mark.  
+     * 
+     * Right now it is lazy by only adding the first song it finds that fits the criteria.
+     * As well, the implementation has some serious downfalls. It cannot handle any
+     * problems where it relies on finding songs that work.
+     * @param startTime
+     */
+    public void autoCorrect( Time startTime )
+    {
+        Schedule schedule = getSchedule( startTime );
+        Iterator<Song> iter = schedule.iterator();
+        ArrayList songs = Database.getSongsByPriority();
+        int duration;
+        int postAdd;
+        int postRemove;
+        Song song;
+
+        while ( schedule.underMin() || schedule.overMax() )
+        {
+            duration = schedule.getDuration();
+
+            if ( schedule.underMin() )
+            {
+                for ( int i = 0; i < songs.size(); i++ )
+                {
+                    song = (Song)songs.get( i );
+                    postAdd = duration + song.getLength();
+
+                    if ( postAdd < schedule.MAX_SCHEDULE_LENGTH && canAddThisSong( song, startTime ))
+                    {
+                        schedule.add( song );
+                        duration = schedule.getDuration();
+                    }
+                }
+            }
+            else if ( schedule.overMax() )
+            {
+
+                while( iter.hasNext() )
+                {
+                    song = iter.next();
+                    postRemove = duration - song.getLength();
+
+                    if ( postRemove > schedule.MIN_SCHEDULE_LENGTH )
+                    {
+                        schedule.remove( song );
+                        duration = schedule.getDuration();
+                    }
+                }
+            }
+        }
+    }
+
+    /**
      * canAddThisSong
      *
      * Checks schedules before and after the startTime -- among the tentative schedules,

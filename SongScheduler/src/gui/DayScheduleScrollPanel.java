@@ -12,6 +12,7 @@
 package gui;
 
 // Self contained packages
+import java.util.ArrayList;
 import model.*;
 
 // Java packages
@@ -55,7 +56,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
             // Move to the next hour
             currentTime = currentTime.getNextHour();
         }
-
+        
         initComponents();
         jTree1.setCellRenderer( new DayTreeCellRenderer() );
         treeModel = (DefaultTreeModel)jTree1.getModel();
@@ -163,7 +164,7 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
         }
     }
     
-    public DefaultMutableTreeNode[] getSelected()
+    private DefaultMutableTreeNode[] getSelected()
     {
         javax.swing.tree.TreePath paths[] = jTree1.getSelectionPaths();
 
@@ -178,6 +179,45 @@ public class DayScheduleScrollPanel extends javax.swing.JPanel {
         }
 
         return selected;
+    }
+
+    public boolean checkStatus() {
+        boolean result = true;
+        
+        for ( int i = 0; i < 24; i++ )
+        {
+            DefaultMutableTreeNode currentNode = (DefaultMutableTreeNode)rootNode.getChildAt( i );
+            Schedule currentSchedule = (Schedule)currentNode.getUserObject();
+
+            if ( !currentSchedule.isEmpty() && (currentSchedule.underMin() || currentSchedule.overMax()) )
+            {
+                result = false;
+            }
+        }
+
+        return result;
+    }
+
+    public void autoCorrect() {
+        for ( int i = 0; i < 24; i++ )
+        {
+            DefaultMutableTreeNode currentNode = (DefaultMutableTreeNode)rootNode.getChildAt( i );
+            Schedule currentSchedule = (Schedule)currentNode.getUserObject();
+
+            if ( !currentSchedule.isEmpty() && (currentSchedule.underMin() || currentSchedule.overMax()) )
+            {
+                songScheduler.autoCorrect( currentSchedule.getTime() );
+            }
+
+            currentNode.removeAllChildren();
+            treeModel.reload( currentNode );
+
+            Iterator<Song> iter = currentSchedule.iterator();
+            while ( iter.hasNext() )
+            {
+                treeModel.insertNodeInto( new DefaultMutableTreeNode( (Song)iter.next() ), currentNode, currentNode.getChildCount() );
+            }
+        }
     }
     /**
      * This method is called from within the constructor to

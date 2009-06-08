@@ -10,6 +10,7 @@
  */
 package gui;
 
+import javax.swing.JOptionPane;
 import model.*;
 
 /**
@@ -143,14 +144,27 @@ public class SchedulerListWindow extends javax.swing.JFrame {
 }//GEN-LAST:event_deleteButtonActionPerformed
 
     private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
-        // TODO add your handling code here:
-        songScheduler.commit();
-        this.setVisible( false );
-        this.dispose();
-        if ( parentWindow != null ) {
-            parentWindow.setVisible( true );
-        }else{
-            System.exit(0);
+
+        if ( !checkSchedules() )
+        {
+            int result = JOptionPane.showConfirmDialog( this, "There are schedules which are either too long or too short.  " +
+                    "Would you like the system to fix this?", "Schedule Error", JOptionPane.YES_NO_OPTION);
+
+            if ( result == 0 )
+            {
+                autoCorrect();
+            }
+        }
+        else
+        {
+            songScheduler.commit();
+            this.setVisible( false );
+            this.dispose();
+            if ( parentWindow != null ) {
+                parentWindow.setVisible( true );
+            }else{
+                System.exit(0);
+            }
         }
     }//GEN-LAST:event_doneButtonActionPerformed
 
@@ -183,6 +197,27 @@ public class SchedulerListWindow extends javax.swing.JFrame {
         }
 }//GEN-LAST:event_generateScheduleButtonActionPerformed
 
+    private boolean checkSchedules() {
+        boolean result = true;
+        for ( int i = 0; i < scheduleTabPane.getComponentCount(); i++ )
+        {
+            DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel)scheduleTabPane.getComponentAt( i );
+
+            if ( !currentTab.checkStatus() )
+                result = false;
+        }
+
+        return result;
+    }
+
+    private void autoCorrect()
+    {
+        for ( int i = 0; i < scheduleTabPane.getComponentCount(); i++ )
+        {
+            DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel)scheduleTabPane.getComponentAt( i );
+            currentTab.autoCorrect();
+        }
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addSongButton;
     private javax.swing.JButton deleteButton;

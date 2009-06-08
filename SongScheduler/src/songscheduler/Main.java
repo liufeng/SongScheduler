@@ -5,7 +5,6 @@
 package songscheduler;
 
 import gui.*;
-import javax.swing.*;
 /**
  *
  * @author kurtisschmidt

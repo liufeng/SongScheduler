@@ -255,6 +255,11 @@ public class Time
     public String getDateAsString() {
         return getDay() + "/" + getMonth() + "/" + getYear();
     }
+
+    public String getSQLString() {
+        return getYear() + "-" + getMonth() + "-" + getDay() + " "
+                + getHour() + ":" + getMinute() + ":" + getSecond();
+    }
     
     /**
      * Get the date and time in <code>String</code> type.

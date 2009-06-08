@@ -15,8 +15,8 @@ public class Schedule implements Iterable {
     private LinkedList songList;
     private Time startTime;
     private int duration; // in millisecond
-    final static private int MIN_SCHEDULE_LENGTH = 2580000; // 43 minutes
-    final static private int MAX_SCHEDULE_LENGTH = 2880000; // 48 minutes
+    final static public int MIN_SCHEDULE_LENGTH = 2580000; // 43 minutes
+    final static public int MAX_SCHEDULE_LENGTH = 2880000; // 48 minutes
 
     /**
      * Constructs an empty schedule starts from <em>startTime</em>.
