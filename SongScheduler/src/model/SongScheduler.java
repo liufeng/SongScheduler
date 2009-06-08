@@ -60,21 +60,35 @@ public class SongScheduler {
             try {
                 Class.forName("org.sqlite.JDBC");
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-                PreparedStatement prepStatement = connection.prepareStatement("insert into schedule values (?, ?);");
+
+                PreparedStatement prepStatement = connection.prepareStatement("SELECT * FROM schedule WHERE startTime = ?;");
                 prepStatement.setObject(1, candidate.getTime());
-                prepStatement.setInt(2, candidate.getDuration());
-                prepStatement.executeUpdate();
+                ResultSet rs = prepStatement.executeQuery();
+
+                if(rs.getRow() > 0){
+                    rs.close();
+                    prepStatement = connection.prepareStatement("UPDATE schedule SET duration = ? WHERE startTime = ?;");
+                    prepStatement.setInt(1, candidate.getDuration());
+                    prepStatement.setObject(2, candidate.getTime());
+                    prepStatement.executeUpdate();
+                }else{
+                    rs.close();
+                    prepStatement = connection.prepareStatement("INSERT INTO schedule VALUES (?, ?);");
+                    prepStatement.setObject(1, candidate.getTime());
+                    prepStatement.setInt(2, candidate.getDuration());
+                    prepStatement.executeUpdate();
+                }
 
                 prepStatement = connection.prepareStatement("insert into songSchedule values (?, ?, ?);");
+                prepStatement.setObject(2, candidate.getTime());
 
                 Iterator<Song> songList = candidate.iterator();
                 int trackNumber = 1;
                 while (songList.hasNext()) {
-                    prepStatement.setObject(1, candidate.getTime());
-                    prepStatement.setInt(2, trackNumber);
+                    prepStatement.setInt(3, trackNumber);
                     trackNumber++;
                     Song song = songList.next();
-                    prepStatement.setInt(3, song.getAccessNumber());
+                    prepStatement.setInt(1, song.getAccessNumber());
                     updateSongData(song, connection);
                     prepStatement.executeUpdate();
                 }
