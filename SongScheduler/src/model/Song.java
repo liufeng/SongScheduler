@@ -1,11 +1,14 @@
-package model;
-
 /**
+ * Song.java
+ *
  * For holding song data.
- * 
+ *
  * @author liufeng & aprilbugnot
  */
+package model;
+
 public class Song {
+
     private String title;
     private String performer;
     private String recordingTitle;
@@ -36,18 +39,18 @@ public class Song {
      * @param lastPlayed
      * @param priority
      */
-    public Song(String title,
-                String performer,
-                String recordingTitle,
-                String recordingType,
-                String year,
-                int    length,
-                int    accessNumber,
-                int    popularity,
-                int    playCount,
-                Time   addedTime,
-                Time   lastPlayed,
-                double priority) {
+    public Song ( String title,
+            String performer,
+            String recordingTitle,
+            String recordingType,
+            String year,
+            int length,
+            int accessNumber,
+            int popularity,
+            int playCount,
+            Time addedTime,
+            Time lastPlayed,
+            double priority ) {
         this.title = title;
         this.performer = performer;
         this.recordingTitle = recordingTitle;
@@ -63,84 +66,48 @@ public class Song {
     }
 
     // Accessors
-    
-    public String getTitle() {
+    public String getTitle () {
         return title;
     }
 
-    public String getPerformer() {
+    public String getPerformer () {
         return performer;
     }
 
-    public String getRecordingTitle() {
+    public String getRecordingTitle () {
         return recordingTitle;
     }
 
-    public String getRecordingType() {
+    public String getRecordingType () {
         return recordingType;
     }
 
-    public String getYear() {
+    public String getYear () {
         return year;
     }
 
-    public int getLength() {
+    public int getLength () {
         return length;
     }
 
-    public int getAccessNumber() {
+    public int getAccessNumber () {
         return accessNumber;
     }
 
-    public int getPopularity() {
+    public int getPopularity () {
         return popularity;
     }
 
-    /**
-     * Set the popularity. User may alter it.
-     * @param popularity
-     */
-    public void setPopularity(int popularity) {
-        this.popularity = popularity;
-    }
-
-    public int getNumberOfPlays() {
+    public int getNumberOfPlays () {
         //return numberOfPlays;
         return playCount;
     }
 
-    /**
-     * Increment the <code>playCount</code> by 1.
-     */
-    public void addNumberOfPlays() {
-        this.playCount++;
-        Database.savePlayCount(this);
-    }
-
-    /**
-     * set the plays in week to 0 for a new week.
-     */
-    public void resetNumberOfPlays() {
-        this.playCount = 0;
-    }
-
-    public Time getLastPlayed() {
+    public Time getLastPlayed () {
         return lastPlayed;
     }
 
-    /**
-     * Set a new last played date if it is more recent than the current lastPlayed time
-     * @param lastPlayed
-     */
-    public void setLastPlayed(Time lastPlayed) {
-        if(lastPlayed.minus(this.lastPlayed) > 0){
-            this.lastPlayed = lastPlayed;
-            Database.saveLastPlayed(this);
-            updatePriority();
-        }
-    }
-
-    public double getPriority() {
+    public double getPriority () {
         return priority;
     }
 
@@ -151,9 +118,9 @@ public class Song {
      * by zero</em> error.
      * @return an <code>int</code> value.
      */
-    private int getAveragePlays() {
-        int weeks = (new Time().getCurrentTime().minus(addedTime)) / 7;
-        if (weeks == 0) {
+    private int getAveragePlays () {
+        int weeks = ( new Time().getCurrentTime().minus( addedTime ) ) / 7;
+        if ( weeks == 0 ) {
             return playCount;
         } else {
             return playCount / weeks;
@@ -161,27 +128,60 @@ public class Song {
     }
 
     /**
+     * Set the popularity. User may alter it.
+     * @param popularity
+     */
+    public void setPopularity ( int popularity ) {
+        this.popularity = popularity;
+    }
+
+    /**
+     * Set a new last played date if it is more recent than the current lastPlayed time
+     * @param lastPlayed
+     */
+    
+    public void setLastPlayed ( Time lastPlayed ) {
+        if ( lastPlayed.minus( this.lastPlayed ) > 0 ) {
+            this.lastPlayed = lastPlayed;
+            Database.saveLastPlayed( this );
+            updatePriority();
+        }
+    }
+    /**
+     * Increment the <code>playCount</code> by 1.
+     */
+    public void addNumberOfPlays () {
+        this.playCount++;
+        Database.savePlayCount( this );
+    }
+
+    /**
+     * set the plays in week to 0 for a new week.
+     */
+    public void resetNumberOfPlays () {
+        this.playCount = 0;
+    }
+    /**
      * update the priority by the algorithm in the
      * <em>user Requirement</em>.
      *
      * Happens every time the user alter the popularity and every time the
      * system makes schedule.
      */
-    public void updatePriority() {
-        double newPriority = 10 * popularity - 7 * getAveragePlays()
-                - 16 / (new Time().getCurrentTime().minus(lastPlayed));
+    public void updatePriority () {
+        double newPriority = 10 * popularity - 7 * getAveragePlays() - 16 / ( new Time().getCurrentTime().minus( lastPlayed ) );
         priority = newPriority;
-        Database.changeSongPriority(title, priority);
+        Database.changeSongPriority( title, priority );
     }
 
     /**
      * Modify the popularity of the song to <code>newPopularity</code>.
      * @param newPopularity
      */
-    public void updatePopularity(int newPopularity){
+    public void updatePopularity ( int newPopularity ) {
         popularity = newPopularity;
         this.updatePriority();
-        Database.changeSongPopularity(title, newPopularity);
+        Database.changeSongPopularity( title, newPopularity );
     }
 
     /**
@@ -189,17 +189,17 @@ public class Song {
      * @param song
      * @return <code>true</code> if <code>song</code> is the same song
      *         to <code>this</code>; <code>false</code> otherwise.
-     * @author kurtisschmidt & jordan
+     * @author Kurtis Schmidt
      */
-    public boolean equals(Song song) {
+    public boolean equals ( Song song ) {
         return this.title.equalsIgnoreCase( song.title );
     }
 
     /**
      * Return the name of the song
-     * @author kurtisschmidt & jordan
+     * @author Kurtis Schmidt
      */
-    public String toString(){
+    public String toString () {
         return title;
     }
 }
