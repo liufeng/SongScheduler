@@ -1,30 +1,22 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Main.java
+ *
+ * @author Kurtis Schmidt
  */
 package songscheduler;
 
 import gui.*;
-/**
- *
- * @author kurtisschmidt
- */
+
 public class Main {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        testAll();
-    }
-
-
-    public static void testAll(){
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SongSchedulerWindow().setVisible(true);
+    public static void main ( String args[] ) {
+        java.awt.EventQueue.invokeLater( new Runnable() {
+            public void run () {
+                new SongSchedulerWindow().setVisible( true );
             }
-        });
+        } );
     }
-
 }
