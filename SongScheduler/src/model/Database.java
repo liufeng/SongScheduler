@@ -11,6 +11,7 @@ import java.util.ArrayList;
  * @author jordan & kurtisschmidt
  */
 public abstract class Database {
+    
     /**
      * Initialize the database. Creates three tables.
      */
