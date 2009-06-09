@@ -1,50 +1,125 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
+/**
  * SchedulerListWindow.java
  *
- * Created on May 14, 2009, 2:21:35 PM
+ * Window contains a tabbed pane which holds a DayScheduleScrollPanel for each
+ * day sent to the constructor.
+ *
+ * Passes messages to the appropriate dayScheduleScrollPanel when buttons are
+ * pushed. Includes: delete selected, add song, and generate schedule.
+ *
+ * Also passes commit functions to each DayScheduleScrollPanel when the done
+ * button is pressed.  If all functions return fine then window will return.
+ * Otherwise user is left to fix the errors or have the system do it for them.
+ *
+ * @author Kurtis Schmidt & Jordan Wiebe
  */
 package gui;
 
-import javax.swing.JOptionPane;
+// local imports
 import model.*;
 
-/**
- *
- * @author kurtisschmidt
- */
+// Java imports
+import javax.swing.JOptionPane;
+
 public class SchedulerListWindow extends javax.swing.JFrame {
 
     private SongSchedulerWindow parentWindow;
     private SongScheduler songScheduler;
 
-    /** Creates new form SchedulerListWindow */
+    /**
+     * Constructor
+     *
+     * @param days - Array of days that should be displayed.
+     * @param parentWindow - Parent window of this container.
+     */
     public SchedulerListWindow ( Time days[], SongSchedulerWindow parentWindow ) {
-        this.songScheduler = new SongScheduler( days[0] );
-        this.parentWindow = parentWindow;
-        setupWindow( days, songScheduler, parentWindow );
+        setupWindow( days, new SongScheduler( days[0] ), parentWindow );
     }
-    
+
+    /**
+     * Constructor
+     *
+     * @param days - Array of days that should be displayed.
+     * @param songScheduler - Pre-made songScheduler object.
+     * @param parentWindow - Parent window of this container.
+     */
     public SchedulerListWindow ( Time days[], SongScheduler songScheduler, SongSchedulerWindow parentWindow ) {
-        this.songScheduler = songScheduler;
-        this.parentWindow = parentWindow;
         setupWindow( days, songScheduler, parentWindow );
     }
 
+    /**
+     * setupWindow
+     *
+     * This sets up the window. It is called by any constructor to improve on
+     * code reuse.
+     *
+     * @param days - Array of days that should be displayed.
+     * @param songScheduler - Pre-made songScheduler object.
+     * @param parentWindow - Parent window of this container.
+     */
     private void setupWindow ( Time days[], SongScheduler songScheduler, SongSchedulerWindow parentWindow ) {
+        this.songScheduler = songScheduler;
+        this.parentWindow = parentWindow;
         initComponents();
 
         // Create a new hourSchedulePanel for every day in the array.
         for ( int i = 0; i < days.length; i++ ) {
             Time currentTime = days[i];
-            scheduleTabPane.addTab( currentTime.getDateAsString(), null, new DayScheduleScrollPanel(songScheduler, currentTime), "A panel of some sort" );
+            scheduleTabPane.addTab( currentTime.getDateAsString(), null, new DayScheduleScrollPanel( songScheduler, currentTime ), "A panel of some sort" );
         }
     }
 
+    /**
+     * checkSchedules
+     *
+     * Checks the status of every DayScheduleScrollPanel.
+     *
+     * @return True if all schedules are good, false otherwise.
+     */
+    private boolean checkSchedules () {
+        boolean result = true;
+        for ( int i = 0; i < scheduleTabPane.getComponentCount(); i++ ) {
+            DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getComponentAt( i );
+
+            if ( !currentTab.checkStatus() ) {
+                result = false;
+            }
+        }
+
+        return result;
+    }
+
+    /**
+     * autoCorrect
+     *
+     * Automatically corrects all the schedules in conflict.
+     *
+     * @return void.
+     */
+    private void autoCorrect () {
+        for ( int i = 0; i < scheduleTabPane.getComponentCount(); i++ ) {
+            DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getComponentAt( i );
+            currentTab.autoCorrect();
+        }
+    }
+
+    /**
+     * addSong
+     *
+     * Passes addSong message to the current DayScheduleScrollPanel.
+     *
+     * @param song - The song to be added.
+     */
+    public void addSong ( Song song ) {
+        DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getSelectedComponent();
+
+        try {
+            currentTab.addSong( song );
+        } catch ( Exception exp ) {
+            System.out.println( exp.getMessage() );
+        }
+    }
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -138,86 +213,85 @@ public class SchedulerListWindow extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * deleteButtonActionPerformed
+     *
+     * Sends a message to the current DayScheduleScrollPanel to delete selected songs.
+     * 
+     * @param evt
+     */
     private void deleteButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getSelectedComponent();
         currentTab.deleteSelectedSongs();
 }//GEN-LAST:event_deleteButtonActionPerformed
 
+    /**
+     * doneButtonActionPerformed
+     *
+     * Checks all the DayTreeScrollPanels for conflicts.
+     *
+     * If any panels are invalid, presents the user with the option to fix the
+     * errors automatically or fix it themselves.
+     *
+     * If all the panels are good, commits the information to the database.
+     *
+     * @param evt
+     */
     private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
 
-        if ( !checkSchedules() )
-        {
+        if ( !checkSchedules() ) {
             int result = JOptionPane.showConfirmDialog( this, "There are schedules which are either too long or too short.  " +
-                    "Would you like the system to fix this?", "Schedule Error", JOptionPane.YES_NO_OPTION);
+                    "Would you like the system to fix this?", "Schedule Error", JOptionPane.YES_NO_OPTION );
 
-            if ( result == 0 )
-            {
+            if ( result == 0 ) {
                 autoCorrect();
             }
-        }
-        else
-        {
+        } else {
             songScheduler.commit();
             this.setVisible( false );
             this.dispose();
             if ( parentWindow != null ) {
                 parentWindow.setVisible( true );
-            }else{
-                System.exit(0);
+            } else {
+                System.exit( 0 );
             }
         }
     }//GEN-LAST:event_doneButtonActionPerformed
 
+    /**
+     * addSongButtonActionPerformed
+     *
+     * Presents the user with a SongBrowserWindow to select a song to add.
+     * When a user selects a song, the SongBrowserWindow calls this.addSong()
+     * which adds the song to the current schedule.
+     * 
+     * @param evt
+     */
     private void addSongButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addSongButtonActionPerformed
-        new SongBrowserWindow(this).setVisible(true);
-        this.setVisible(false);
+        new SongBrowserWindow( this ).setVisible( true );
+        this.setVisible( false );
     }//GEN-LAST:event_addSongButtonActionPerformed
 
-    public void addSong(Song song){
-        DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getSelectedComponent();
-
-        try {
-            currentTab.addSong( song );
-        } catch ( Exception exp ) {
-            System.out.println( exp.getMessage() );
-        }
-    }
-
+    /**
+     * generateScheduleButtonActionPerformed
+     *
+     * Automatically generates schedules for each selected hour in current
+     * DayScheduleScrollPanel.
+     * 
+     * @param evt
+     */
     private void generateScheduleButtonActionPerformed (java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generateScheduleButtonActionPerformed
         // Get the current tab, and tell it to generate schedules
         DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel) scheduleTabPane.getSelectedComponent();
 
         try {
             currentTab.generateSchedules();
-        }
-        catch( Exception exp )
-        {
-            System.out.println(exp.getMessage());
+        } catch ( Exception exp ) {
+            System.out.println( exp.getMessage() );
             exp.printStackTrace();
         }
 }//GEN-LAST:event_generateScheduleButtonActionPerformed
 
-    private boolean checkSchedules() {
-        boolean result = true;
-        for ( int i = 0; i < scheduleTabPane.getComponentCount(); i++ )
-        {
-            DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel)scheduleTabPane.getComponentAt( i );
-
-            if ( !currentTab.checkStatus() )
-                result = false;
-        }
-
-        return result;
-    }
-
-    private void autoCorrect()
-    {
-        for ( int i = 0; i < scheduleTabPane.getComponentCount(); i++ )
-        {
-            DayScheduleScrollPanel currentTab = (DayScheduleScrollPanel)scheduleTabPane.getComponentAt( i );
-            currentTab.autoCorrect();
-        }
-    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addSongButton;
     private javax.swing.JButton deleteButton;
