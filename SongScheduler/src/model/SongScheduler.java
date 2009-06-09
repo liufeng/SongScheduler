@@ -1,3 +1,16 @@
+/**
+ * SongScheduler.java
+ *
+ * Holds a schedule for 7 days, starting from startTime.
+ * Provides methods for generating schedules, fixing schedules and
+ * committing schedules.
+ *
+ * @author Feng Liu
+ * @author April Bugnot
+ * @author Kurtis Schmidt
+ * @author Jordan Wiebe
+ */
+
 package model;
 
 import java.sql.*;
