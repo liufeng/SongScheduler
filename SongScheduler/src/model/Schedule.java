@@ -1,5 +1,11 @@
-/*
+/**
+ * Schedule.java
+ *
  * For holding song schedules.
+ *
+ * @author Feng Liu
+ * @author April Bugnot
+ * @author Kurtis Schmidt
  */
 
 package model;
@@ -7,10 +13,6 @@ package model;
 import java.util.LinkedList;
 import java.util.Iterator;
 
-/**
- *
- * @author liufeng & aprilbugnot
- */
 public class Schedule implements Iterable {
     private LinkedList songList;
     private Time startTime;
@@ -132,16 +134,30 @@ public class Schedule implements Iterable {
         return songList.isEmpty();
     }
 
+    /**
+     * updateSongsInSchedule
+     *
+     * Updates song info for all songs in schedule..
+     *
+     * @return void
+     */
     public void updateSongsInSchedule(){
         for (int i=0; i < songList.size(); i++){
             Song song = (Song)songList.get(i);
-            //System.out.println(song.toString());
             song.setLastPlayed(startTime);
             song.addNumberOfPlays();
             song.updatePriority();
         }
     }
 
+    /**
+     * toString
+     *
+     * Prints out the time of the schedule.  This function is used by the GUI
+     * and so should not be changed.
+     *
+     * @return String - Start time of the schedule.
+     */
     public String toString(){
         int start = startTime.getHour();
         int finish = start + 1;
