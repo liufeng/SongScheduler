@@ -1,13 +1,16 @@
+/**
+ * Time.java
+ * 
+ * A Time type for all of the information about ``time''.
+ *
+ * @author liufeng & aprilbugnot
+ *
+ */
+
 package model;
 
 import java.util.Calendar;
 
-/**
- * A Time type for all of the information about ``time''.
- *
- * @author liufeng & aprilbugnot
- * 
- */
 public class Time
 {
     private Calendar calendar;
