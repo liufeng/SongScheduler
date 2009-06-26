@@ -22,7 +22,7 @@ public abstract class Database {
             Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
             Statement statement = connection.createStatement();
             
-            statement.addBatch("CREATE TABLE IF NOT EXISTS song(accessNumber INTEGER PRIMARY KEY, title TEXT, performer TEXT, recordingTitle TEXT, recordingType TEXT, year TEXT, length INTEGER, popularity INTEGER, playCount INTEGER, addedTime DATETIME, lastPlayed DATETIME, priority REAL);");
+            statement.addBatch("CREATE TABLE IF NOT EXISTS song(accessNumber INTEGER PRIMARY KEY, title TEXT, performer TEXT, recordingTitle TEXT, recordingType TEXT, year TEXT, length INTEGER, popularity NUMERIC, playCount INTEGER, addedTime DATETIME, lastPlayed DATETIME, priority REAL);");
             statement.addBatch("CREATE TABLE IF NOT EXISTS schedule(startTime DATETIME PRIMARY KEY, duration INTEGER);");
             statement.addBatch("CREATE TABLE IF NOT EXISTS songSchedule(accessNumber INTEGER CONSTRAINT fk_song_id REFERENCES song(accessNumber), startTime DATETIME CONSTRAINT fk_schedule_id REFERENCES schedule(startTime) ON DELETE CASCADE, trackNumber INTEGER, PRIMARY KEY(startTime, trackNumber));");
             statement.addBatch("CREATE TRIGGER IF NOT EXISTS fki_songSchedule_accessNumber_song_accessNumber BEFORE INSERT ON [songSchedule] FOR EACH ROW BEGIN   SELECT RAISE(ROLLBACK, 'insert on table \"songSchedule\" violates foreign key constraint \"fki_songSchedule_accessNumber_song_accessNumber\"')   WHERE NEW.accessNumber IS NOT NULL AND (SELECT accessNumber FROM song WHERE accessNumber = NEW.accessNumber) IS NULL;END;");
@@ -192,7 +192,7 @@ public abstract class Database {
      * @param title the title of the song to be modified.
      * @param newPopularity the new popularity of the song.
      */
-    public static void changeSongPopularity( String title, int newPopularity){
+    public static void changeSongPopularity( String title, double newPopularity){
         if(title != null && !title.equals("")){
             String sql = "UPDATE song SET popularity = " + newPopularity +
                     " WHERE title = \"" + title + "\";";

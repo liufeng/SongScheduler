@@ -7,6 +7,8 @@
  */
 package model;
 
+import java.util.Calendar;
+
 public class Song {
 
     private String title;
@@ -16,10 +18,12 @@ public class Song {
     private String year;
     private int length;
     private int accessNumber;
-    private int popularity;
+    private double popularity;
     private int playCount;
+    private int requestCount;
     private Time addedTime;
     private Time lastPlayed;
+    private long lastPopularized;
     private double priority;
 
     /**
@@ -63,6 +67,7 @@ public class Song {
         this.addedTime = addedTime;
         this.lastPlayed = lastPlayed;
         this.priority = priority;
+        this.lastPopularized = Calendar.getInstance().getTimeInMillis();
     }
 
     // Accessors
@@ -94,7 +99,7 @@ public class Song {
         return accessNumber;
     }
 
-    public int getPopularity () {
+    public double getPopularity () {
         return popularity;
     }
 
@@ -127,12 +132,24 @@ public class Song {
         }
     }
 
-    /**
-     * Set the popularity. User may alter it.
-     * @param popularity
-     */
-    public void setPopularity ( int popularity ) {
-        this.popularity = popularity;
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public void setPerformer(String performer){
+        this.performer = performer;
+    }
+
+    public void setRecordingTitle(String recordingTitle){
+        this.recordingTitle = recordingTitle;
+    }
+
+    public void setRecordingType(String recordingType){
+        this.recordingType = recordingType;
+    }
+
+    public void setYear(String year){
+        this.year = year;
     }
 
     /**
@@ -175,13 +192,32 @@ public class Song {
     }
 
     /**
-     * Modify the popularity of the song to <code>newPopularity</code>.
-     * @param newPopularity
+     * Increases the requestCount so popularity can be calculated.  Count
+     * automatically reset to zero when <code>updatePopularity()</code> is called.
      */
-    public void updatePopularity ( int newPopularity ) {
-        popularity = newPopularity;
-        this.updatePriority();
-        Database.changeSongPopularity( title, newPopularity );
+    public void makeRequest(){
+        requestCount++;
+    }
+
+    /**
+     * Re-calculates the popularity of the song based on requests since last called.
+     * Updates object and database values.
+     */
+    public void updatePopularity(){
+        long timeSinceUpdated = (Calendar.getInstance().getTimeInMillis() - lastPopularized)/1000;
+        double reqPerMinute = requestCount/(double)timeSinceUpdated * 60.0;
+
+        if(reqPerMinute >= 1){
+            popularity += reqPerMinute;
+        }
+
+        else{
+            popularity -= (1.0/24.0);
+        }
+
+        Database.changeSongPopularity( title, popularity );
+        requestCount = 0;
+        lastPopularized = Calendar.getInstance().getTimeInMillis();
     }
 
     /**

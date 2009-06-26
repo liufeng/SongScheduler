@@ -12,6 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import java.util.Calendar;
 
 /**
  *
@@ -53,6 +54,47 @@ public class SongSchedulerTest {
         assertTrue(result.getDuration() >= 2580000);
         // check the generated schedule is shorter than 48 minutes
         assertTrue(result.getDuration() <= 2880000);
+    }
+
+    /**
+     * Tests that updating of song popularity works.
+     */
+    @Test
+    public void testUpdatePopularity(){
+        double popChange = doUpdatePopularityTest(2, 3);
+        assertTrue(popChange == 40);
+
+        popChange = doUpdatePopularityTest(0, 1);
+        assertTrue(popChange > -.1 && popChange < 0);
+
+        popChange = doUpdatePopularityTest(1, 2);
+        assertTrue(popChange == 30);
+    }
+
+    /**
+     * Performs a series of requests on a test song in a set period of time,
+     * return the change in test song's popularity.
+     * @param timesToRequest
+     * @param secondsToWait
+     * @return
+     */
+    private double doUpdatePopularityTest(int timesToRequest, int secondsToWait){
+        long startTime = Calendar.getInstance().getTimeInMillis();
+        Song testSong = new Song("asdf", "a performer", "some title", "LP", "2009", 25, 25, 25, 25, new Time(), new Time(), 25);
+        double startPop = testSong.getPopularity();
+
+        for(int i=0; i<timesToRequest; i++){
+            testSong.makeRequest();
+        }
+
+        System.out.print("Waiting " + secondsToWait + " seconds...");
+        while(Calendar.getInstance().getTimeInMillis() < startTime + secondsToWait*1000){
+        }
+        System.out.print("Done.\n");
+
+        testSong.updatePopularity();
+
+        return testSong.getPopularity() - startPop;
     }
 
     /**
