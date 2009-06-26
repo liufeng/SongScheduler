@@ -151,9 +151,7 @@
                       <Component id="songLastPlayedDisplay" max="32767" attributes="1"/>
                       <Component id="songPopularityDisplay" alignment="0" pref="84" max="32767" attributes="1"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="saveNewPopularity" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="361" max="32767" attributes="0"/>
+                  <EmptySpace pref="445" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -206,7 +204,6 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="songPopularityDisplay" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="saveNewPopularity" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -278,14 +275,6 @@
         <Component class="javax.swing.JLabel" name="songArtistDisplay">
         </Component>
         <Component class="javax.swing.JLabel" name="songNameDisplay">
-        </Component>
-        <Component class="javax.swing.JButton" name="saveNewPopularity">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Save"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveNewPopularityActionPerformed"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>
