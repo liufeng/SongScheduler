@@ -13,7 +13,6 @@
 
 package model;
 
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -37,7 +36,7 @@ public class SongScheduler {
         for (int i = 0; i < 7; i++ )
         {
             for ( int j = 0; j < 24; j++ ) {
-                tentativeSchedule[i][j] = getScheduleFromDB(firstHour);
+                tentativeSchedule[i][j] = Database.getScheduleFromDB(firstHour);
                 firstHour = firstHour.getNextHour();
             }
         }
@@ -56,93 +55,8 @@ public class SongScheduler {
             for(int j=0; j < tentativeSchedule[i].length; j++){
                 //if the schdule is not empty then commit it
                 if(!tentativeSchedule[i][j].isEmpty())
-                    commitSchedule(tentativeSchedule[i][j]);
+                    Database.commitSchedule(tentativeSchedule[i][j]);
             }
-        }
-    }
-
-    /**
-     * Commit the <code>candidate</code> schedule to the database.
-     *
-     * @param candidate the schedule to be commited.
-     */
-    private void commitSchedule(Schedule candidate) {
-        //if the schedule that if trying to be committed is a null pointer don't commit
-        if(candidate != null){
-            candidate.updateSongsInSchedule();
-            try {
-                Class.forName("org.sqlite.JDBC");
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-
-                PreparedStatement prepStatement = connection.prepareStatement("SELECT * FROM schedule WHERE startTime = ?;");
-                prepStatement.setObject(1, candidate.getTime());
-                ResultSet rs = prepStatement.executeQuery();
-
-                if(rs.getRow() > 0){
-                    rs.close();
-                    prepStatement = connection.prepareStatement("UPDATE schedule SET duration = ? WHERE startTime = ?;");
-                    prepStatement.setInt(1, candidate.getDuration());
-                    prepStatement.setObject(2, candidate.getTime());
-                    prepStatement.executeUpdate();
-                }else{
-                    rs.close();
-                    prepStatement = connection.prepareStatement("INSERT INTO schedule VALUES (?, ?);");
-                    prepStatement.setObject(1, candidate.getTime());
-                    prepStatement.setInt(2, candidate.getDuration());
-                    prepStatement.executeUpdate();
-                }
-
-                prepStatement = connection.prepareStatement("DELETE FROM songSchedule WHERE startTime = ?;");
-                prepStatement.setObject(1, candidate.getTime());
-                prepStatement.executeUpdate();
-
-                prepStatement = connection.prepareStatement("INSERT INTO songSchedule VALUES (?, ?, ?);");
-                prepStatement.setObject(2, candidate.getTime());
-
-                Iterator<Song> songList = candidate.iterator();
-                int trackNumber = 1;
-                while (songList.hasNext()) {
-                    prepStatement.setInt(3, trackNumber);
-                    trackNumber++;
-                    Song song = songList.next();
-                    prepStatement.setInt(1, song.getAccessNumber());
-                    updateSongData(song, connection);
-                    prepStatement.executeUpdate();
-                }
-
-                prepStatement.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    /**
-     * Update some of the property values for <code>song</code> to
-     * the database. The changed property values are:
-     *
-     * <ul>
-     *   <li>Increase <code>playCount</code> by 1.</li>
-     *   <li>Set <code>lastPlayed</code> to the current time.</li>
-     *   <li>Update the <code>priority</code>.</li>
-     * </ul>
-     *
-     * @param song The Song object indicates the song to be updated.
-     * @param connection The connection to the database.
-     */
-    private void updateSongData(Song song, Connection connection) {
-        try {
-            PreparedStatement prepStatement = connection.prepareStatement("update song set lastPlayed = ?, priority = ?, playCount = ? where accessNumber = ?;");
-            song.addNumberOfPlays();
-            song.setLastPlayed(new Time());
-            song.updatePriority();
-
-            prepStatement.setObject(1, song.getLastPlayed());
-            prepStatement.setDouble(2, song.getPriority());
-            prepStatement.setInt(3, song.getNumberOfPlays());
-            prepStatement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
     }
 
@@ -246,7 +160,7 @@ public class SongScheduler {
                     song = (Song)songs.get( i );
                     postAdd = duration + song.getLength();
 
-                    if ( postAdd < schedule.MAX_SCHEDULE_LENGTH && canAddThisSong( song, startTime ))
+                    if ( postAdd < Schedule.MAX_SCHEDULE_LENGTH && canAddThisSong( song, startTime ))
                     {
                         schedule.add( song );
                         duration = schedule.getDuration();
@@ -261,7 +175,7 @@ public class SongScheduler {
                     song = iter.next();
                     postRemove = duration - song.getLength();
 
-                    if ( postRemove > schedule.MIN_SCHEDULE_LENGTH )
+                    if ( postRemove > Schedule.MIN_SCHEDULE_LENGTH )
                     {
                         schedule.remove( song );
                         duration = schedule.getDuration();
@@ -294,7 +208,7 @@ public class SongScheduler {
 
         if ( previousHour.before( this.startTime ) )
         {
-            previousSchedule = getScheduleFromDB( previousHour );
+            previousSchedule = Database.getScheduleFromDB( previousHour );
         }
         else
         {
@@ -303,7 +217,7 @@ public class SongScheduler {
 
         if ( nextHour.after( tentativeSchedule[6][23].getTime() ) )
         {
-            nextSchedule = getScheduleFromDB( nextHour );
+            nextSchedule = Database.getScheduleFromDB( nextHour );
         }
         else
         {
@@ -314,62 +228,6 @@ public class SongScheduler {
             result = false;
         if ( nextSchedule.contains(song) )
             result = false;
-        return result;
-    }
-
-    /**
-     * getScheduleFromDB
-     *
-     * If a tentative schedule exists for the specified time -- first check tentative schedule,
-     * then check database -- return this Schedule object;
-     * If no schedule exists for the specified time, return null.
-     *
-     * @author aprilbugnot
-     * @param startTime
-     * @return Schedule of the specified time, or null if no schedule exists
-     */
-    public Schedule getScheduleFromDB(Time startTime) {
-        Schedule result = new Schedule(startTime);
-        
-          //get the schedule from db
-          try {
-                Class.forName("org.sqlite.JDBC");
-
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-
-                PreparedStatement prepStatement = connection.prepareStatement("select song.* from song inner join songSchedule on song.accessNumber = songSchedule.accessNumber where startTime = ?;");
-                prepStatement.setObject(1, startTime);
-                ResultSet rs = prepStatement.executeQuery();
-
-                if (rs != null) {
-                    result = new Schedule(startTime);
-
-                    while (rs.next()) {
-                        Song song = new Song(
-                                rs.getString("title"),
-                                rs.getString("performer"),
-                                rs.getString("recordingTitle"),
-                                rs.getString("recordingType"),
-                                rs.getString("year"),
-                                rs.getInt("length"),
-                                rs.getInt("accessNumber"),
-                                rs.getInt("popularity"),
-                                rs.getInt("playCount"),
-                                new Time(rs.getString("addedTime")),
-                                new Time(rs.getString("lastPlayed")),
-                                rs.getDouble("priority"));
-
-                        result.add(song);
-                    }
-                }
-
-                rs.close();
-                prepStatement.close();
-                connection.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
         return result;
     }
 
