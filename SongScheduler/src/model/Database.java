@@ -1,7 +1,16 @@
 package model;
 
 import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -14,9 +23,10 @@ import java.util.Map.Entry;
  */
 
 public abstract class Database {
+    private static final String scheduleFile = "schedule.hash";
     private static String currLib;
     private static HashMap<Integer, Song> songHash;
-    private static HashMap<Time, Schedule> scheduleHash;
+    private static HashMap<String, Schedule> scheduleHash;
 
 
     public static void init(){
@@ -25,8 +35,33 @@ public abstract class Database {
         songHash = new HashMap<Integer, Song>();
         loadSongInfo();
 
-        scheduleHash = new HashMap<Time, Schedule>();
+        try{
+            InputStream is = new FileInputStream(scheduleFile);
+            ObjectInput oi = new ObjectInputStream(is);
+            scheduleHash = (HashMap<String, Schedule>)(oi.readObject());
+            oi.close();
+
+        }
+        catch(FileNotFoundException nf){
+            scheduleHash = new HashMap<String, Schedule>();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+
         loadScheduleInfo();
+    }
+
+    public static void destroy(){
+        try{
+            OutputStream os = new FileOutputStream(scheduleFile);
+            ObjectOutput oo = new ObjectOutputStream(os);
+            oo.writeObject(scheduleHash);
+            oo.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     public static void loadSongInfo(){
@@ -46,6 +81,14 @@ public abstract class Database {
 
     }
 
+    public static void saveSongInfo(){
+
+    }
+
+    public static void saveScheduleInfo(){
+
+    }
+
     private static void loadScheduleInfo(){
         try{
             Schedule currSchedule;
@@ -54,7 +97,7 @@ public abstract class Database {
             while (line != null) {
                 currSchedule = createScheduleFromLine(line);
                 if(!scheduleHash.containsKey(currSchedule.getTime()))
-                    scheduleHash.put(currSchedule.getTime(), currSchedule);
+                    scheduleHash.put(currSchedule.getTime().toString(), currSchedule);
             }
         }
         catch(Exception e){e.printStackTrace();}
@@ -99,28 +142,14 @@ public abstract class Database {
             if(scheduleHash.containsKey(candidate.getTime()))
                scheduleHash.remove(candidate.getTime());
 
-            scheduleHash.put(candidate.getTime(), candidate);
+            scheduleHash.put(candidate.getTime().toString(), candidate);
         }
+
+        candidate.updateSongsInSchedule();
+
+        destroy();
     }
 
-    /**
-     * Update some of the property values for <code>song</code> to
-     * the database. The changed property values are:
-     *
-     * <ul>
-     *   <li>Increase <code>playCount</code> by 1.</li>
-     *   <li>Set <code>lastPlayed</code> to the current time.</li>
-     *   <li>Update the <code>priority</code>.</li>
-     * </ul>
-     *
-     * @param song The Song object indicates the song to be updated.
-     * @param connection The connection to the database.
-     */
-    private static void updateSongData(Song song) {
-        song.addNumberOfPlays();
-        song.setLastPlayed(new Time());
-        song.updatePriority();
-    }
 
     /**
      * getScheduleFromDB
@@ -132,8 +161,8 @@ public abstract class Database {
      * @return Schedule of the specified time, or null if no schedule exists
      */
     public static Schedule getScheduleFromDB(Time startTime) {
-        if(scheduleHash.containsKey(startTime))
-            return scheduleHash.get(startTime);
+        if(scheduleHash.containsKey(startTime.toString()))
+            return scheduleHash.get(startTime.toString());
         else
             return new Schedule(startTime);
     }

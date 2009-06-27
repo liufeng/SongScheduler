@@ -10,10 +10,11 @@
 
 package model;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.Iterator;
 
-public class Schedule implements Iterable {
+public class Schedule implements Iterable, Serializable {
     private LinkedList<Song> songList;
     private Time startTime;
     private int duration; // in millisecond

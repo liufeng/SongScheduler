@@ -9,9 +9,10 @@
 
 package model;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
-public class Time
+public class Time implements Serializable
 {
     private Calendar calendar;
 

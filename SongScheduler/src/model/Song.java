@@ -7,9 +7,10 @@
  */
 package model;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
-public class Song {
+public class Song implements Serializable{
 
     private static int nextAccessNumber = 1;
 
