@@ -3,6 +3,7 @@ package model;
 import java.sql.*;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * A bunch of methods for operating the database.
@@ -284,4 +285,147 @@ public abstract class Database {
             }
         }
     }
+
+    /**
+     * Commit the <code>candidate</code> schedule to the database.
+     *
+     * @param candidate the schedule to be commited.
+     */
+    public static void commitSchedule(Schedule candidate) {
+        //if the schedule that if trying to be committed is a null pointer don't commit
+        if(candidate != null){
+            candidate.updateSongsInSchedule();
+            try {
+                Class.forName("org.sqlite.JDBC");
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+
+                PreparedStatement prepStatement = connection.prepareStatement("SELECT * FROM schedule WHERE startTime = ?;");
+                prepStatement.setObject(1, candidate.getTime());
+                ResultSet rs = prepStatement.executeQuery();
+
+                if(rs.getRow() > 0){
+                    rs.close();
+                    prepStatement = connection.prepareStatement("UPDATE schedule SET duration = ? WHERE startTime = ?;");
+                    prepStatement.setInt(1, candidate.getDuration());
+                    prepStatement.setObject(2, candidate.getTime());
+                    prepStatement.executeUpdate();
+                }else{
+                    rs.close();
+                    prepStatement = connection.prepareStatement("INSERT INTO schedule VALUES (?, ?);");
+                    prepStatement.setObject(1, candidate.getTime());
+                    prepStatement.setInt(2, candidate.getDuration());
+                    prepStatement.executeUpdate();
+                }
+
+                prepStatement = connection.prepareStatement("DELETE FROM songSchedule WHERE startTime = ?;");
+                prepStatement.setObject(1, candidate.getTime());
+                prepStatement.executeUpdate();
+
+                prepStatement = connection.prepareStatement("INSERT INTO songSchedule VALUES (?, ?, ?);");
+                prepStatement.setObject(2, candidate.getTime());
+
+                Iterator<Song> songList = candidate.iterator();
+                int trackNumber = 1;
+                while (songList.hasNext()) {
+                    prepStatement.setInt(3, trackNumber);
+                    trackNumber++;
+                    Song song = songList.next();
+                    prepStatement.setInt(1, song.getAccessNumber());
+                    updateSongData(song, connection);
+                    prepStatement.executeUpdate();
+                }
+
+                prepStatement.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Update some of the property values for <code>song</code> to
+     * the database. The changed property values are:
+     *
+     * <ul>
+     *   <li>Increase <code>playCount</code> by 1.</li>
+     *   <li>Set <code>lastPlayed</code> to the current time.</li>
+     *   <li>Update the <code>priority</code>.</li>
+     * </ul>
+     *
+     * @param song The Song object indicates the song to be updated.
+     * @param connection The connection to the database.
+     */
+    private static void updateSongData(Song song, Connection connection) {
+        try {
+            PreparedStatement prepStatement = connection.prepareStatement("update song set lastPlayed = ?, priority = ?, playCount = ? where accessNumber = ?;");
+            song.addNumberOfPlays();
+            song.setLastPlayed(new Time());
+            song.updatePriority();
+
+            prepStatement.setObject(1, song.getLastPlayed());
+            prepStatement.setDouble(2, song.getPriority());
+            prepStatement.setInt(3, song.getNumberOfPlays());
+            prepStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    /**
+     * getScheduleFromDB
+     *
+     * If a tentative schedule exists for the specified time -- first check tentative schedule,
+     * then check database -- return this Schedule object;
+     * If no schedule exists for the specified time, return null.
+     *
+     * @author aprilbugnot
+     * @param startTime
+     * @return Schedule of the specified time, or null if no schedule exists
+     */
+    public static Schedule getScheduleFromDB(Time startTime) {
+        Schedule result = new Schedule(startTime);
+
+          //get the schedule from db
+          try {
+                Class.forName("org.sqlite.JDBC");
+
+                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+
+                PreparedStatement prepStatement = connection.prepareStatement("select song.* from song inner join songSchedule on song.accessNumber = songSchedule.accessNumber where startTime = ?;");
+                prepStatement.setObject(1, startTime);
+                ResultSet rs = prepStatement.executeQuery();
+
+                if (rs != null) {
+                    result = new Schedule(startTime);
+
+                    while (rs.next()) {
+                        Song song = new Song(
+                                rs.getString("title"),
+                                rs.getString("performer"),
+                                rs.getString("recordingTitle"),
+                                rs.getString("recordingType"),
+                                rs.getString("year"),
+                                rs.getInt("length"),
+                                rs.getInt("accessNumber"),
+                                rs.getInt("popularity"),
+                                rs.getInt("playCount"),
+                                new Time(rs.getString("addedTime")),
+                                new Time(rs.getString("lastPlayed")),
+                                rs.getDouble("priority"));
+
+                        result.add(song);
+                    }
+                }
+
+                rs.close();
+                prepStatement.close();
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        return result;
+    }
+
 }
