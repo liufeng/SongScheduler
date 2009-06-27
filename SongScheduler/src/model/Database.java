@@ -1,289 +1,91 @@
 package model;
 
-import java.sql.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map.Entry;
 
 /**
- * A bunch of methods for operating the database.
  *
- * @author liufeng & aprilbugnot
- * @author jordan & kurtisschmidt
+ * @author cmhilde
  */
-public abstract class Database {
-    
-    /**
-     * Initialize the database. Creates three tables.
-     */
-    public static void init() {
-        try {
-            Class.forName("org.sqlite.JDBC");
 
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-            Statement statement = connection.createStatement();
-            
-            statement.addBatch("CREATE TABLE IF NOT EXISTS song(accessNumber INTEGER PRIMARY KEY, title TEXT, performer TEXT, recordingTitle TEXT, recordingType TEXT, year TEXT, length INTEGER, popularity NUMERIC, playCount INTEGER, addedTime DATETIME, lastPlayed DATETIME, priority REAL);");
-            statement.addBatch("CREATE TABLE IF NOT EXISTS schedule(startTime DATETIME PRIMARY KEY, duration INTEGER);");
-            statement.addBatch("CREATE TABLE IF NOT EXISTS songSchedule(accessNumber INTEGER CONSTRAINT fk_song_id REFERENCES song(accessNumber), startTime DATETIME CONSTRAINT fk_schedule_id REFERENCES schedule(startTime) ON DELETE CASCADE, trackNumber INTEGER, PRIMARY KEY(startTime, trackNumber));");
-            statement.addBatch("CREATE TRIGGER IF NOT EXISTS fki_songSchedule_accessNumber_song_accessNumber BEFORE INSERT ON [songSchedule] FOR EACH ROW BEGIN   SELECT RAISE(ROLLBACK, 'insert on table \"songSchedule\" violates foreign key constraint \"fki_songSchedule_accessNumber_song_accessNumber\"')   WHERE NEW.accessNumber IS NOT NULL AND (SELECT accessNumber FROM song WHERE accessNumber = NEW.accessNumber) IS NULL;END;");
-            statement.addBatch("CREATE TRIGGER IF NOT EXISTS fku_songSchedule_accessNumber_song_accessNumber BEFORE UPDATE ON [songSchedule]  FOR EACH ROW BEGIN     SELECT RAISE(ROLLBACK, 'update on table \"songSchedule\" violates foreign key constraint \"fku_songSchedule_accessNumber_song_accessNumber\"')       WHERE NEW.accessNumber IS NOT NULL AND (SELECT accessNumber FROM song WHERE accessNumber = NEW.accessNumber) IS NULL;END;");
-            statement.addBatch("CREATE TRIGGER IF NOT EXISTS fkd_songSchedule_accessNumber_song_accessNumber BEFORE DELETE ON song FOR EACH ROW BEGIN   SELECT RAISE(ROLLBACK, 'delete on table \"song\" violates foreign key constraint \"fkd_songSchedule_accessNumber_song_accessNumber\"')   WHERE (SELECT accessNumber FROM songSchedule WHERE accessNumber = OLD.accessNumber) IS NOT NULL;END;");
-            statement.addBatch("CREATE TRIGGER IF NOT EXISTS fki_songSchedule_startTime_schedule_startTime BEFORE INSERT ON [songSchedule] FOR EACH ROW BEGIN   SELECT RAISE(ROLLBACK, 'insert on table \"songSchedule\" violates foreign key constraint \"fki_songSchedule_startTime_schedule_startTime\"')   WHERE NEW.startTime IS NOT NULL AND (SELECT startTime FROM schedule WHERE startTime = NEW.startTime) IS NULL;END;");
-            statement.addBatch("CREATE TRIGGER IF NOT EXISTS fku_songSchedule_startTime_schedule_startTime BEFORE UPDATE ON [songSchedule]  FOR EACH ROW BEGIN     SELECT RAISE(ROLLBACK, 'update on table \"songSchedule\" violates foreign key constraint \"fku_songSchedule_startTime_schedule_startTime\"')       WHERE NEW.startTime IS NOT NULL AND (SELECT startTime FROM schedule WHERE startTime = NEW.startTime) IS NULL;END;");
-            statement.addBatch("CREATE TRIGGER IF NOT EXISTS fkdc_songSchedule_startTime_schedule_startTime BEFORE DELETE ON schedule FOR EACH ROW BEGIN      DELETE FROM songSchedule WHERE songSchedule.startTime = OLD.startTime;END;");
-            statement.executeBatch();
-            connection.close();
-            statement.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+public abstract class Database {
+    private static String currLib;
+    private static HashMap<Integer, Song> songHash;
+    private static HashMap<Time, Schedule> scheduleHash;
+
+
+    public static void init(){
+        currLib = "library.txt";
+
+        songHash = new HashMap<Integer, Song>();
+        loadSongInfo();
+
+        scheduleHash = new HashMap<Time, Schedule>();
+        loadScheduleInfo();
     }
 
-    /**
-     * updates the new song data from the library text file.
-     * 
-     * Adds the following 12 info into the song table:
-     *
-     * <ol>
-     *   <li>accessNumber</li>
-     *   <li>title</li>
-     *   <li>performer</li>
-     *   <li>recordingTitle</li>
-     *   <li>recordingType</li>
-     *   <li>year</li>
-     *   <li>length</li>
-     *   <li>popularity</li>
-     *   <li>playCount</li>
-     *   <li>addedTime</li>
-     *   <li>lastPlayed</li>
-     *   <li>priority</li>
-     * </ol>
-     *
-     * NOTE: should be executed at least once a week.
-     */
-    public static void updateSongInfo() {
-        try {
-            Class.forName("org.sqlite.JDBC");
-            Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-            
-            BufferedReader in = new BufferedReader(new FileReader("library.txt"));
+    public static void loadSongInfo(){
+        try{
+            Song currSong;
+            BufferedReader in = new BufferedReader(new FileReader(currLib));
             String line = in.readLine();
             while (line != null) {
-                String[] token = line.split(";");
-                String title = token[0];
-                String performer = token[1];
-                String recordingTitle = token[2];
-                String recordingType = token[3];
-                String year = token[4];
-                int length = Integer.parseInt(token[5]);
-                int accessNumber = Integer.parseInt(token[6]);
-                int popularity = Integer.parseInt(token[7]);
-                int playCount = Integer.parseInt(token[8]);
-                Time addedTime = new Time().getCurrentTime();
-                Time lastPlayed = null;
-                double priority = 0;
-
-                PreparedStatement prepStatement = connection.prepareStatement("insert into song values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
-                prepStatement.setInt(1, accessNumber);
-                prepStatement.setString(2, title);
-                prepStatement.setString(3, performer);
-                prepStatement.setString(4, recordingTitle);
-                prepStatement.setString(5, recordingType);
-                prepStatement.setString(6, year);
-                prepStatement.setInt(7, length);
-                prepStatement.setInt(8, popularity);
-                prepStatement.setInt(9, playCount);
-                prepStatement.setObject(10, addedTime);
-                prepStatement.setObject(11, lastPlayed);
-                prepStatement.setDouble(12, priority);
-                prepStatement.addBatch();
-
-                Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("select * from song where accessNumber = " + accessNumber + ";");
-                if (!rs.next()) {
-
-                    connection.setAutoCommit(false);
-                    prepStatement.executeBatch();
-                    connection.setAutoCommit(true);
-                }
+                currSong = createSongFromLine(line);
+                if(!songHash.containsKey(currSong.getAccessNumber()))
+                    songHash.put(currSong.getAccessNumber(), currSong);
 
                 line = in.readLine();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
+        catch(Exception e){e.printStackTrace();}
+
     }
 
-    /**
-     * Get song from database ordered by priority and title
-     *
-     * @return an <code>ArrayList</code> instance.
-     */
+    private static void loadScheduleInfo(){
+        try{
+            Schedule currSchedule;
+            BufferedReader in = new BufferedReader(new FileReader(currLib.substring(0, currLib.length()-4) + "_sched.txt"));
+            String line = in.readLine();
+            while (line != null) {
+                currSchedule = createScheduleFromLine(line);
+                if(!scheduleHash.containsKey(currSchedule.getTime()))
+                    scheduleHash.put(currSchedule.getTime(), currSchedule);
+            }
+        }
+        catch(Exception e){e.printStackTrace();}
+    }
+
     public static ArrayList getSongsByPriority(){
-        String sqlStatement = "SELECT * FROM song ORDER BY priority, title;";
+        ArrayList songList = new ArrayList<Song>();
 
-        return getSongsFromDB(sqlStatement);
+        for(Entry songEntry : songHash.entrySet()){
+            songList.add((Song)songEntry.getValue());
+        }
+
+        Collections.sort(songList, new PriorityComparator());
+        return songList;
     }
 
-    /**
-     * Get a list of songs from database by the title of the song.
-     * @param titls <code>String</code> instance of the titls of the song
-     * @return If <code>title</code> is null, return an <code>ArrayList</code>
-     *         holding all songs in database ordered by title;
-     *         otherwise return an <code>ArrayList</code> holding only
-     *         the song with the title in param.
-     */
     public static ArrayList getSongs( String title ){
-        String sqlStatement;
-
         if(title == null){
-            sqlStatement = "SELECT * FROM song ORDER BY title;";
-        }else{
-            sqlStatement = "SELECT * FROM song WHERE title = \"" + title + "\" ORDER BY title;";
+
+        }
+        ArrayList songList = new ArrayList<Song>();
+
+        for(Entry songEntry : songHash.entrySet()){
+            if(title == null || title.equals(((Song)songEntry.getValue()).getTitle()))
+                songList.add((Song)songEntry.getValue());
         }
 
-        return getSongsFromDB(sqlStatement);
-    }
+        if(title != null)
+            Collections.sort(songList, new TitleComparator());
 
-    /**
-     * Get songs from database by the SQL statement supplied in param.
-     * @param sqlStatement
-     * @return an <code>ArrayList</code>
-     */
-    private static ArrayList getSongsFromDB(String sqlStatement){
-        ArrayList songs = new ArrayList();
-        Song currSong;
-        if(sqlStatement != null && !sqlStatement.equals("")){
-            try {
-                Class.forName("org.sqlite.JDBC");
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-                Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery(sqlStatement);
-
-                while (rs.next()) {
-                    String title = rs.getString("title");
-                    String performer = rs.getString("performer");
-                    String recordingTitle = rs.getString("recordingTitle");
-                    String recordingType = rs.getString("recordingType");
-                    String year = rs.getString("year");
-                    int    length = rs.getInt("length");
-                    int    accessNumber = rs.getInt("accessNumber");
-                    int    popularity = rs.getInt("popularity");
-                    int    playCount = rs.getInt("playCount");
-                    Time   addedTime = new Time(rs.getString("addedTime"));
-                    Time   lastPlayed = new Time(rs.getString("lastPlayed"));
-                    double priority = rs.getDouble("priority");
-
-                    currSong = new Song(title, performer, recordingTitle, recordingType, year, length, accessNumber, popularity, playCount, addedTime, lastPlayed, priority);
-                    songs.add(currSong);
-                }
-                rs.close();
-                statement.close();
-                connection.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return songs;
-    }
-
-    /**
-     * Modify the <code>popularity</code> of the song in the database.
-     * @param title the title of the song to be modified.
-     * @param newPopularity the new popularity of the song.
-     */
-    public static void changeSongPopularity( String title, double newPopularity){
-        if(title != null && !title.equals("")){
-            String sql = "UPDATE song SET popularity = " + newPopularity +
-                    " WHERE title = \"" + title + "\";";
-
-            try {
-                Class.forName("org.sqlite.JDBC");
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-                Statement statement = connection.createStatement();
-                statement.executeQuery(sql);
-
-                statement.close();
-                connection.close();
-            } catch (Exception e) {
-                if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
-                    e.printStackTrace();
-            }
-        }
-    }
-
-    /**
-     * Modify the <code>priority</code> of the song to the database.
-     * @param title the title of the song to be modified.
-     * @param priority
-     */
-    static void changeSongPriority(String title, double priority) {
-        if (title != null && !title.equals("")) {
-            String sql = "update song set priority = " + priority +
-                    " where title = \"" + title + "\";";
-
-            try {
-                Class.forName("org.sqlite.JDBC");
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-                Statement statement = connection.createStatement();
-                statement.executeQuery(sql);
-
-                statement.close();
-                connection.close();
-            } catch (Exception e) {
-                if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
-                    e.printStackTrace();
-            }
-        }
-    }
-
-    /**
-     * Saves the current play count for a song to the database
-     * @param song the song for which the play count is to be saved to the database
-     */
-    public static void savePlayCount(Song song){
-        if(song != null){
-            String sql = "update song set playCount = " + song.getNumberOfPlays() +
-                    " where title = \"" + song.getTitle() + "\";";
-
-            try {
-                Class.forName("org.sqlite.JDBC");
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-                Statement statement = connection.createStatement();
-                statement.executeQuery(sql);
-
-                statement.close();
-                connection.close();
-            } catch (Exception e) {
-                if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
-                    e.printStackTrace();
-            }
-        }
-    }
-
-    /**
-     * Saves the current play count for a song to the database
-     * @param song the song for which the play count is to be saved to the database
-     */
-    public static void saveLastPlayed(Song song){
-        if(song != null){
-            String sql = "update song set lastPlayed = \"" + song.getLastPlayed().toString() +
-                    "\" where title = \"" + song.getTitle() + "\";";
-
-            try {
-                Class.forName("org.sqlite.JDBC");
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-                Statement statement = connection.createStatement();
-                statement.executeQuery(sql);
-
-                statement.close();
-                connection.close();
-            } catch (Exception e) {
-                if(!e.toString().equals("java.sql.SQLException: query does not return ResultSet"))
-                    e.printStackTrace();
-            }
-        }
+        return songList;
     }
 
     /**
@@ -294,51 +96,10 @@ public abstract class Database {
     public static void commitSchedule(Schedule candidate) {
         //if the schedule that if trying to be committed is a null pointer don't commit
         if(candidate != null){
-            candidate.updateSongsInSchedule();
-            try {
-                Class.forName("org.sqlite.JDBC");
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
+            if(scheduleHash.containsKey(candidate.getTime()))
+               scheduleHash.remove(candidate.getTime());
 
-                PreparedStatement prepStatement = connection.prepareStatement("SELECT * FROM schedule WHERE startTime = ?;");
-                prepStatement.setObject(1, candidate.getTime());
-                ResultSet rs = prepStatement.executeQuery();
-
-                if(rs.getRow() > 0){
-                    rs.close();
-                    prepStatement = connection.prepareStatement("UPDATE schedule SET duration = ? WHERE startTime = ?;");
-                    prepStatement.setInt(1, candidate.getDuration());
-                    prepStatement.setObject(2, candidate.getTime());
-                    prepStatement.executeUpdate();
-                }else{
-                    rs.close();
-                    prepStatement = connection.prepareStatement("INSERT INTO schedule VALUES (?, ?);");
-                    prepStatement.setObject(1, candidate.getTime());
-                    prepStatement.setInt(2, candidate.getDuration());
-                    prepStatement.executeUpdate();
-                }
-
-                prepStatement = connection.prepareStatement("DELETE FROM songSchedule WHERE startTime = ?;");
-                prepStatement.setObject(1, candidate.getTime());
-                prepStatement.executeUpdate();
-
-                prepStatement = connection.prepareStatement("INSERT INTO songSchedule VALUES (?, ?, ?);");
-                prepStatement.setObject(2, candidate.getTime());
-
-                Iterator<Song> songList = candidate.iterator();
-                int trackNumber = 1;
-                while (songList.hasNext()) {
-                    prepStatement.setInt(3, trackNumber);
-                    trackNumber++;
-                    Song song = songList.next();
-                    prepStatement.setInt(1, song.getAccessNumber());
-                    updateSongData(song, connection);
-                    prepStatement.executeUpdate();
-                }
-
-                prepStatement.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            scheduleHash.put(candidate.getTime(), candidate);
         }
     }
 
@@ -355,77 +116,85 @@ public abstract class Database {
      * @param song The Song object indicates the song to be updated.
      * @param connection The connection to the database.
      */
-    private static void updateSongData(Song song, Connection connection) {
-        try {
-            PreparedStatement prepStatement = connection.prepareStatement("update song set lastPlayed = ?, priority = ?, playCount = ? where accessNumber = ?;");
-            song.addNumberOfPlays();
-            song.setLastPlayed(new Time());
-            song.updatePriority();
-
-            prepStatement.setObject(1, song.getLastPlayed());
-            prepStatement.setDouble(2, song.getPriority());
-            prepStatement.setInt(3, song.getNumberOfPlays());
-            prepStatement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    private static void updateSongData(Song song) {
+        song.addNumberOfPlays();
+        song.setLastPlayed(new Time());
+        song.updatePriority();
     }
-
 
     /**
      * getScheduleFromDB
      *
-     * If a tentative schedule exists for the specified time -- first check tentative schedule,
-     * then check database -- return this Schedule object;
-     * If no schedule exists for the specified time, return null.
+     * Retrieve schedule by startTime, or null of none exists
      *
      * @author aprilbugnot
      * @param startTime
      * @return Schedule of the specified time, or null if no schedule exists
      */
     public static Schedule getScheduleFromDB(Time startTime) {
-        Schedule result = new Schedule(startTime);
-
-          //get the schedule from db
-          try {
-                Class.forName("org.sqlite.JDBC");
-
-                Connection connection = DriverManager.getConnection("jdbc:sqlite:song.db");
-
-                PreparedStatement prepStatement = connection.prepareStatement("select song.* from song inner join songSchedule on song.accessNumber = songSchedule.accessNumber where startTime = ?;");
-                prepStatement.setObject(1, startTime);
-                ResultSet rs = prepStatement.executeQuery();
-
-                if (rs != null) {
-                    result = new Schedule(startTime);
-
-                    while (rs.next()) {
-                        Song song = new Song(
-                                rs.getString("title"),
-                                rs.getString("performer"),
-                                rs.getString("recordingTitle"),
-                                rs.getString("recordingType"),
-                                rs.getString("year"),
-                                rs.getInt("length"),
-                                rs.getInt("accessNumber"),
-                                rs.getInt("popularity"),
-                                rs.getInt("playCount"),
-                                new Time(rs.getString("addedTime")),
-                                new Time(rs.getString("lastPlayed")),
-                                rs.getDouble("priority"));
-
-                        result.add(song);
-                    }
-                }
-
-                rs.close();
-                prepStatement.close();
-                connection.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-        return result;
+        if(scheduleHash.containsKey(startTime))
+            return scheduleHash.get(startTime);
+        else
+            return new Schedule(startTime);
     }
 
+    static class TitleComparator implements Comparator{
+        public int compare(Object song1, Object song2){
+            if(!(song1 instanceof Song) || !(song2 instanceof Song))
+                return 0;
+            else{
+                return ((Song)song1).getTitle().compareTo(((Song)song2).getTitle());
+            }
+        }
+    }
+
+    static class PriorityComparator implements Comparator{
+        public int compare(Object song1, Object song2){
+            if(!(song1 instanceof Song) || !(song2 instanceof Song))
+                return 0;
+            else{
+                if(((Song)song1).getPriority() > ((Song)song2).getPriority())
+                    return 1;
+                else if(((Song)song1).getPriority() < ((Song)song2).getPriority())
+                    return -1;
+                else
+                    return 0;
+            }
+        }
+    }
+
+    private static Schedule createScheduleFromLine(String line){
+        String[] token = line.split(";");
+
+        Time startTime = new Time(token[0]);
+
+        Schedule schedule = new Schedule(startTime);
+
+        String[] songNums = token[1].split("-");
+
+        for(String songNum : songNums){
+            schedule.add(songHash.get(songNum));
+        }
+
+        return schedule;
+    }
+
+    private static Song createSongFromLine(String line){
+        String[] token = line.split(";");
+        String title = token[0];
+        String performer = token[1];
+        String recordingTitle = token[2];
+        String recordingType = token[3];
+        String year = token[4];
+        int accessNumber = Integer.parseInt(token[5]);
+        String addedTime = token[6];
+        int popularity = Integer.parseInt(token[7]);
+        int length = Integer.parseInt(token[8]);
+        int playCount = Integer.parseInt(token[9]);
+        String lastPlayed = token[10];
+
+
+
+        return new Song(title, performer, recordingTitle, recordingType, year, length, popularity, accessNumber, playCount, addedTime, lastPlayed);
+    }
 }

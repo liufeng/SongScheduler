@@ -11,6 +11,8 @@ import java.util.Calendar;
 
 public class Song {
 
+    private static int nextAccessNumber = 1;
+
     private String title;
     private String performer;
     private String recordingTitle;
@@ -26,47 +28,51 @@ public class Song {
     private long lastPopularized;
     private double priority;
 
-    /**
-     * Constructs a <code>Song</code> instance with the information
-     * supplied by the params.
-     * 
-     * @param title
-     * @param performer
-     * @param recordingTitle
-     * @param recordingType
-     * @param year
-     * @param length
-     * @param accessNumber
-     * @param popularity
-     * @param playCount
-     * @param addedTime
-     * @param lastPlayed
-     * @param priority
-     */
-    public Song ( String title,
-            String performer,
-            String recordingTitle,
-            String recordingType,
-            String year,
-            int length,
-            int accessNumber,
-            int popularity,
-            int playCount,
-            Time addedTime,
-            Time lastPlayed,
-            double priority ) {
+
+    public Song(String title, String performer, String recordingTitle, String recordingType, String year,
+            int length, int popularity, int accessNumber, int playCount, String addedTime, String lastPlayed){
+
         this.title = title;
         this.performer = performer;
         this.recordingTitle = recordingTitle;
         this.recordingType = recordingType;
         this.year = year;
         this.length = length;
-        this.accessNumber = accessNumber;
         this.popularity = popularity;
+        this.accessNumber = accessNumber;
         this.playCount = playCount;
-        this.addedTime = addedTime;
-        this.lastPlayed = lastPlayed;
-        this.priority = priority;
+        this.addedTime = new Time(addedTime);
+
+        if(lastPlayed.equals("0"))
+            this.lastPlayed = new Time();
+        else{
+            this.lastPlayed = new Time(lastPlayed);
+        }
+
+        if(accessNumber >= nextAccessNumber){
+            nextAccessNumber = accessNumber + 1;
+        }
+
+        updatePriority();
+        this.lastPopularized = Calendar.getInstance().getTimeInMillis();
+    }
+
+    public Song(String title, String performer, String recordingTitle, String recordingType, String year,
+            int length, int popularity){
+        this.title = title;
+        this.performer = performer;
+        this.recordingTitle = recordingTitle;
+        this.recordingType = recordingType;
+        this.year = year;
+        this.length = length;
+        this.popularity = popularity;
+
+        this.accessNumber = nextAccessNumber;
+        nextAccessNumber++;
+
+        this.addedTime = new Time(Calendar.getInstance());
+        this.lastPlayed = null;
+
         this.lastPopularized = Calendar.getInstance().getTimeInMillis();
     }
 
@@ -160,7 +166,6 @@ public class Song {
     public void setLastPlayed ( Time lastPlayed ) {
         if ( lastPlayed.minus( this.lastPlayed ) > 0 ) {
             this.lastPlayed = lastPlayed;
-            Database.saveLastPlayed( this );
             updatePriority();
         }
     }
@@ -169,7 +174,6 @@ public class Song {
      */
     public void addNumberOfPlays () {
         this.playCount++;
-        Database.savePlayCount( this );
     }
 
     /**
@@ -186,9 +190,14 @@ public class Song {
      * system makes schedule.
      */
     public void updatePriority () {
-        double newPriority = 10 * popularity - 7 * getAveragePlays() - 16 / ( new Time().getCurrentTime().minus( lastPlayed ) );
+        double newPriority;
+
+        if(lastPlayed != null)
+            newPriority =  10 * popularity - 7 * getAveragePlays() - 16 / ( new Time().getCurrentTime().minus( lastPlayed ) );
+        else
+            newPriority = 10 * popularity - 7 * getAveragePlays();
+
         priority = newPriority;
-        Database.changeSongPriority( title, priority );
     }
 
     /**
@@ -215,10 +224,10 @@ public class Song {
             popularity -= (1.0/24.0);
         }
 
-        Database.changeSongPopularity( title, popularity );
         requestCount = 0;
         lastPopularized = Calendar.getInstance().getTimeInMillis();
     }
+
 
     /**
      * Decide if the <code>song</code> is the same song to <code>this</code>.

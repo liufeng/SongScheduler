@@ -42,7 +42,7 @@ public class DatabaseTest {
     @Test
     public void testUpdateSongInfo() {
         System.out.println("updateSongInfo");
-        Database.updateSongInfo();
+        Database.loadSongInfo();
     }
 
 }

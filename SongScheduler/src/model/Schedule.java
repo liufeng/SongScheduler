@@ -14,7 +14,7 @@ import java.util.LinkedList;
 import java.util.Iterator;
 
 public class Schedule implements Iterable {
-    private LinkedList songList;
+    private LinkedList<Song> songList;
     private Time startTime;
     private int duration; // in millisecond
     final static public int MIN_SCHEDULE_LENGTH = 2580000; // 43 minutes
@@ -178,5 +178,15 @@ public class Schedule implements Iterable {
         }
 
         return start + ":00" + startAP + " - " + finish + ":00" + finishAP;
+    }
+
+    public String toTextFileLine(){
+        String retString = startTime.toString() + ";";
+        for (Song song : songList){
+            retString += song.getAccessNumber() + "-";
+        }
+        retString = retString.substring(0, retString.length()-1);
+
+        return retString;
     }
 }
