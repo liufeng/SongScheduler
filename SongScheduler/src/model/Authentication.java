@@ -58,6 +58,13 @@ public abstract class Authentication {
     }
 
     /**
+     * To de-authenticat the user (a.k.a logout)
+     */
+    public void deAuthenticate() {
+        isAuthenticated = false;
+    }
+
+    /**
      * Modify the admin password.
      * @param newPass the new password.
      * @return <strong>true</strong> if the modification success;

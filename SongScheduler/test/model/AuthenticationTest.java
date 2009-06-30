@@ -71,6 +71,20 @@ public class AuthenticationTest {
     }
 
     /**
+     * Test of deAuthenticate method, of class Authentication.
+     */
+    @Test
+    public void testDeAuthenticate() {
+        System.out.println("deAuthenticate");
+        Authentication instance = new AuthenticationImpl();
+        instance.init();
+        instance.deAuthenticate();
+        boolean expResult = false;
+        boolean result = instance.isAuthenticated();
+        assertEquals(expResult, result);
+    }
+
+    /**
      * Test of modifyPassword method, of class Authentication.
      */
     @Test
