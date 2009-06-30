@@ -1,10 +1,13 @@
 package model;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInput;
 import java.io.ObjectInputStream;
@@ -15,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map.Entry;
 
 /**
@@ -81,8 +85,34 @@ public abstract class Database {
 
     }
 
+    /**
+     * write the song list to disk.
+     *
+     * NOTE: the sequence of the song item maybe not correct.
+     */
     public static void saveSongInfo(){
-
+        Iterator<Song> songs = songHash.values().iterator();
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter(currLib));
+            while (songs.hasNext()) {
+                Song song = songs.next();
+                String line = song.getTitle() + ";"
+                        + song.getPerformer() + ";"
+                        + song.getRecordingTitle() + ";"
+                        + song.getRecordingType() + ";"
+                        + song.getYear() + ";"
+                        + song.getAccessNumber() + ";"
+                        + song.getLastPlayed() + ";"
+                        + song.getPopularity() + ";"
+                        + song.getLength() + ";" +
+                        + song.getNumberOfPlays()
+                        + song.getPriority() + "\n";
+                out.write(line);
+            }
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void saveScheduleInfo(){
