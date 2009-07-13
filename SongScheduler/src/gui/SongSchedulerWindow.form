@@ -178,17 +178,14 @@
                               <Group type="102" attributes="0">
                                   <Component id="incrementPlayCount" min="-2" pref="103" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="saveSongData" alignment="0" pref="116" max="32767" attributes="1"/>
-                                      <Component id="addNewSong" alignment="0" pref="116" max="32767" attributes="1"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="songSearchButton" pref="116" max="32767" attributes="1"/>
-                                      <Component id="clearSongData" alignment="1" pref="116" max="32767" attributes="1"/>
-                                  </Group>
+                                  <Component id="saveSongData" min="-2" pref="116" max="-2" attributes="1"/>
                               </Group>
                               <Component id="changeHoldingFile" min="-2" pref="162" max="-2" attributes="1"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="songSearchButton" pref="116" max="32767" attributes="1"/>
+                              <Component id="clearSongData" alignment="1" pref="116" max="32767" attributes="1"/>
                           </Group>
                       </Group>
                   </Group>
@@ -251,15 +248,13 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="clearSongData" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="addNewSong" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="saveSongData" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="songSearchButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="saveSongData" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="changeHoldingFile" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="changeHoldingFile" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -378,14 +373,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="incrementPlayCountActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="addNewSong">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="New Song"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addNewSongActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

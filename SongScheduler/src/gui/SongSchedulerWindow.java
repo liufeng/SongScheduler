@@ -73,7 +73,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         saveSongData = new javax.swing.JButton();
         changeHoldingFile = new javax.swing.JButton();
         incrementPlayCount = new javax.swing.JButton();
-        addNewSong = new javax.swing.JButton();
         songListScrollPane = new javax.swing.JScrollPane();
         songList = new javax.swing.JList();
         MenuBar = new javax.swing.JMenuBar();
@@ -167,13 +166,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             }
         });
 
-        addNewSong.setText("New Song");
-        addNewSong.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addNewSongActionPerformed(evt);
-            }
-        });
-
         org.jdesktop.layout.GroupLayout selectedSongInfoPanelLayout = new org.jdesktop.layout.GroupLayout(selectedSongInfoPanel);
         selectedSongInfoPanel.setLayout(selectedSongInfoPanelLayout);
         selectedSongInfoPanelLayout.setHorizontalGroup(
@@ -213,14 +205,12 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                             .add(selectedSongInfoPanelLayout.createSequentialGroup()
                                 .add(incrementPlayCount, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 103, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                                 .add(121, 121, 121)
-                                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(org.jdesktop.layout.GroupLayout.LEADING, saveSongData, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
-                                    .add(org.jdesktop.layout.GroupLayout.LEADING, addNewSong, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE))
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                    .add(songSearchButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
-                                    .add(clearSongData, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)))
-                            .add(changeHoldingFile, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 162, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                                .add(saveSongData, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 116, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(changeHoldingFile, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 162, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                            .add(songSearchButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                            .add(clearSongData, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         selectedSongInfoPanelLayout.setVerticalGroup(
@@ -268,13 +258,11 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                     .add(selectedSongInfoPanelLayout.createSequentialGroup()
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(clearSongData)
-                            .add(addNewSong))
+                            .add(saveSongData, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(songSearchButton)
-                            .add(saveSongData, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                        .add(changeHoldingFile)))
+                            .add(changeHoldingFile))))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -463,12 +451,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void incrementPlayCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incrementPlayCountActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_incrementPlayCountActionPerformed
-
-    private void addNewSongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewSongActionPerformed
-        // TODO add your handling code here:
-        clearSongData();
-        //make a new song
-    }//GEN-LAST:event_addNewSongActionPerformed
     /**
      * updateViewPanel
      *
@@ -565,7 +547,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar MenuBar;
-    private javax.swing.JButton addNewSong;
     private datechooser.beans.DateChooserPanel calendar;
     private javax.swing.JButton changeHoldingFile;
     private javax.swing.JButton clearSongData;
