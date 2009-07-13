@@ -49,7 +49,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         calendar = new datechooser.beans.DateChooserPanel();
         generateScheduleButton = new javax.swing.JButton();
         viewSelectedButton = new javax.swing.JButton();
-        songSearchButton = new javax.swing.JButton();
         selectedSongInfoPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -57,24 +56,26 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         songPopularityDisplay = new javax.swing.JTextField();
         songLastPlayedDisplay = new javax.swing.JLabel();
         songPlayCountDisplay = new javax.swing.JLabel();
-        songLengthDisplay = new javax.swing.JLabel();
-        songYearDisplay = new javax.swing.JLabel();
-        songGenreDisplay = new javax.swing.JLabel();
-        songAlbumDisplay = new javax.swing.JLabel();
-        songArtistDisplay = new javax.swing.JLabel();
-        songNameDisplay = new javax.swing.JLabel();
-        songNameText = new javax.swing.JTextField();
+        songNameDisplay = new javax.swing.JTextField();
+        songArtistDisplay = new javax.swing.JTextField();
+        songAlbumDisplay = new javax.swing.JTextField();
+        songGenreDisplay = new javax.swing.JTextField();
+        songYearDisplay = new javax.swing.JTextField();
+        songLengthDisplay = new javax.swing.JTextField();
+        songSearchButton = new javax.swing.JButton();
+        clearSongData = new javax.swing.JButton();
+        saveSongData = new javax.swing.JButton();
+        changeHoldingFile = new javax.swing.JButton();
+        incrementPlayCount = new javax.swing.JButton();
+        addNewSong = new javax.swing.JButton();
         songListScrollPane = new javax.swing.JScrollPane();
         songList = new javax.swing.JList();
-        songNameLabel = new javax.swing.JLabel();
-        schedulePanel1 = new gui.SchedulePanel();
         MenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         fileMenuClose = new javax.swing.JMenuItem();
@@ -110,13 +111,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             }
         });
 
-        songSearchButton.setText("Search");
-        songSearchButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                songSearchButtonActionPerformed(evt);
-            }
-        });
-
         jLabel1.setText("Song Name:");
 
         jLabel2.setText("Artist:");
@@ -135,40 +129,99 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
         jLabel9.setText("Popularity:");
 
+        songSearchButton.setText("Search");
+        songSearchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                songSearchButtonActionPerformed(evt);
+            }
+        });
+
+        clearSongData.setText("Clear");
+        clearSongData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearSongDataActionPerformed(evt);
+            }
+        });
+
+        saveSongData.setText("Save");
+        saveSongData.setMaximumSize(new java.awt.Dimension(85, 29));
+        saveSongData.setMinimumSize(new java.awt.Dimension(85, 29));
+        saveSongData.setPreferredSize(new java.awt.Dimension(85, 29));
+        saveSongData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveSongDataActionPerformed(evt);
+            }
+        });
+
+        changeHoldingFile.setText("Change Song File");
+        changeHoldingFile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                changeHoldingFileActionPerformed(evt);
+            }
+        });
+
+        incrementPlayCount.setText("Increment");
+        incrementPlayCount.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                incrementPlayCountActionPerformed(evt);
+            }
+        });
+
+        addNewSong.setText("New Song");
+        addNewSong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addNewSongActionPerformed(evt);
+            }
+        });
+
         org.jdesktop.layout.GroupLayout selectedSongInfoPanelLayout = new org.jdesktop.layout.GroupLayout(selectedSongInfoPanel);
         selectedSongInfoPanel.setLayout(selectedSongInfoPanelLayout);
         selectedSongInfoPanelLayout.setHorizontalGroup(
             selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(selectedSongInfoPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel9, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel8, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                    .add(songPlayCountDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(songLastPlayedDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(songPopularityDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE))
-                .addContainerGap(470, Short.MAX_VALUE))
-            .add(selectedSongInfoPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(songYearDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 556, Short.MAX_VALUE)
-                    .add(songGenreDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 556, Short.MAX_VALUE)
-                    .add(songAlbumDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 556, Short.MAX_VALUE)
-                    .add(songLengthDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 556, Short.MAX_VALUE)
-                    .add(songArtistDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 556, Short.MAX_VALUE)
-                    .add(songNameDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 556, Short.MAX_VALUE)))
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jSeparator1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 659, Short.MAX_VALUE)
+                    .add(selectedSongInfoPanelLayout.createSequentialGroup()
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                            .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                .add(songArtistDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 556, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(songNameDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 556, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(songAlbumDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 556, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(songGenreDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 556, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(songYearDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 556, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(songLengthDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 556, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                    .add(org.jdesktop.layout.GroupLayout.TRAILING, selectedSongInfoPanelLayout.createSequentialGroup()
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel9, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel8))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                            .add(songPlayCountDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(songLastPlayedDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(songPopularityDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 84, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                            .add(selectedSongInfoPanelLayout.createSequentialGroup()
+                                .add(incrementPlayCount, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 103, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .add(121, 121, 121)
+                                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                                    .add(org.jdesktop.layout.GroupLayout.LEADING, saveSongData, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                    .add(org.jdesktop.layout.GroupLayout.LEADING, addNewSong, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE))
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                                    .add(songSearchButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                    .add(clearSongData, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)))
+                            .add(changeHoldingFile, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 162, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
         selectedSongInfoPanelLayout.setVerticalGroup(
             selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -176,41 +229,52 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                 .addContainerGap()
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel1)
-                    .add(songNameDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(songNameDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel2)
-                    .add(songArtistDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(songArtistDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel3)
-                    .add(songAlbumDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(songAlbumDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel4)
-                    .add(songGenreDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(songGenreDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel5)
-                    .add(songYearDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(songYearDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel6)
-                    .add(songLengthDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .add(songLengthDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jSeparator1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 10, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel7)
-                    .add(songPlayCountDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel8)
-                    .add(songLastPlayedDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(jLabel9)
-                    .add(songPopularityDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(selectedSongInfoPanelLayout.createSequentialGroup()
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(jLabel7)
+                            .add(songPlayCountDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                            .add(incrementPlayCount))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(jLabel8)
+                            .add(songLastPlayedDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 16, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(jLabel9)
+                            .add(songPopularityDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                    .add(selectedSongInfoPanelLayout.createSequentialGroup()
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(clearSongData)
+                            .add(addNewSong))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                        .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(songSearchButton)
+                            .add(saveSongData, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                        .add(changeHoldingFile)))
                 .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -223,10 +287,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             }
         });
         songListScrollPane.setViewportView(songList);
-
-        songNameLabel.setText("Song Name: ");
-
-        schedulePanel1.setMaximumSize(new java.awt.Dimension(300, 300));
 
         fileMenu.setText("File");
 
@@ -249,18 +309,12 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             .add(layout.createSequentialGroup()
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 669, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(layout.createSequentialGroup()
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(layout.createSequentialGroup()
                                 .add(11, 11, 11)
-                                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                    .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 447, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                    .add(layout.createSequentialGroup()
-                                        .add(songNameLabel)
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                        .add(songNameText, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 139, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                        .add(songSearchButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 171, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))))
+                                .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 447, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 442, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .add(9, 9, 9)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -269,36 +323,27 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                                 .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(layout.createSequentialGroup()
                                 .add(18, 18, 18)
-                                .add(generateScheduleButton))))
-                    .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(schedulePanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 564, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(533, Short.MAX_VALUE))
+                                .add(generateScheduleButton)))))
+                .addContainerGap(1087, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(layout.createSequentialGroup()
-                .add(20, 20, 20)
+                .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(schedulePanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 619, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(layout.createSequentialGroup()
                         .add(299, 299, 299)
                         .add(generateScheduleButton)
                         .add(43, 43, 43)
                         .add(viewSelectedButton)
-                        .add(219, 219, 219))
+                        .add(37, 37, 37))
                     .add(layout.createSequentialGroup()
-                        .add(calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
+                        .add(calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(songNameLabel)
-                            .add(songNameText, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(songSearchButton))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 231, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 231, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                .add(28, 28, 28))
         );
 
         pack();
@@ -373,7 +418,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_viewSelectedButtonActionPerformed
 
     private void songSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_songSearchButtonActionPerformed
-        String searchTerm = songNameText.getText();
+        String searchTerm = songNameDisplay.getText();
         ArrayList searchResults;
         Song songFound;
         int index = 0;
@@ -401,6 +446,29 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
         updateViewPanel();
 }//GEN-LAST:event_songListValueChanged
+
+    private void clearSongDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearSongDataActionPerformed
+        // TODO add your handling code here:
+        clearSongData();
+    }//GEN-LAST:event_clearSongDataActionPerformed
+
+    private void saveSongDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveSongDataActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_saveSongDataActionPerformed
+
+    private void changeHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeHoldingFileActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_changeHoldingFileActionPerformed
+
+    private void incrementPlayCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incrementPlayCountActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_incrementPlayCountActionPerformed
+
+    private void addNewSongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewSongActionPerformed
+        // TODO add your handling code here:
+        clearSongData();
+        //make a new song
+    }//GEN-LAST:event_addNewSongActionPerformed
     /**
      * updateViewPanel
      *
@@ -426,10 +494,23 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         songGenreDisplay.setText( selection.getRecordingType() );
         songLastPlayedDisplay.setText( selection.getLastPlayed().toString() );
         songNameDisplay.setText( selection.getTitle() );
-        songNameText.setText( selection.getTitle() );
         songPlayCountDisplay.setText( selection.getNumberOfPlays() + "" );
         songPopularityDisplay.setText( selection.getPopularity() + "" );
         songYearDisplay.setText( selection.getYear() );
+    }
+
+
+    private void clearSongData()
+    {
+        songLengthDisplay.setText( "" );
+        songAlbumDisplay.setText( "" );
+        songArtistDisplay.setText( "" );
+        songGenreDisplay.setText( "" );
+        songLastPlayedDisplay.setText( "" );
+        songNameDisplay.setText( "" );
+        songPlayCountDisplay.setText( "" );
+        songPopularityDisplay.setText( "" );
+        songYearDisplay.setText( "" );
     }
 
     /**
@@ -484,10 +565,14 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar MenuBar;
+    private javax.swing.JButton addNewSong;
     private datechooser.beans.DateChooserPanel calendar;
+    private javax.swing.JButton changeHoldingFile;
+    private javax.swing.JButton clearSongData;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuItem fileMenuClose;
     private javax.swing.JButton generateScheduleButton;
+    private javax.swing.JButton incrementPlayCount;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -497,23 +582,20 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JSeparator jSeparator1;
-    private gui.SchedulePanel schedulePanel1;
+    private javax.swing.JButton saveSongData;
     private javax.swing.JPanel selectedSongInfoPanel;
-    private javax.swing.JLabel songAlbumDisplay;
-    private javax.swing.JLabel songArtistDisplay;
-    private javax.swing.JLabel songGenreDisplay;
+    private javax.swing.JTextField songAlbumDisplay;
+    private javax.swing.JTextField songArtistDisplay;
+    private javax.swing.JTextField songGenreDisplay;
     private javax.swing.JLabel songLastPlayedDisplay;
-    private javax.swing.JLabel songLengthDisplay;
+    private javax.swing.JTextField songLengthDisplay;
     private javax.swing.JList songList;
     private javax.swing.JScrollPane songListScrollPane;
-    private javax.swing.JLabel songNameDisplay;
-    private javax.swing.JLabel songNameLabel;
-    private javax.swing.JTextField songNameText;
+    private javax.swing.JTextField songNameDisplay;
     private javax.swing.JLabel songPlayCountDisplay;
     private javax.swing.JTextField songPopularityDisplay;
     private javax.swing.JButton songSearchButton;
-    private javax.swing.JLabel songYearDisplay;
+    private javax.swing.JTextField songYearDisplay;
     private javax.swing.JButton viewSelectedButton;
     // End of variables declaration//GEN-END:variables
 }

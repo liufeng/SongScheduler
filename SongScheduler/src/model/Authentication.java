@@ -14,7 +14,7 @@ import java.io.IOException;
  *
  * @author liufeng
  */
-public abstract class Authentication {
+public class Authentication {
     private boolean isAuthenticated;
     private String password;
     private static final String PASS_FILE = "passwd";
