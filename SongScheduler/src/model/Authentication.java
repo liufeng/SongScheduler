@@ -14,15 +14,15 @@ import java.io.IOException;
  *
  * @author liufeng
  */
-public class Authentication {
-    private boolean isAuthenticated;
-    private String password;
+public abstract class Authentication {
+    private static boolean isAuthenticated;
+    private static String password;
     private static final String PASS_FILE = "passwd";
 
     /**
      * Initialize the password and the user status.
      */
-    public void init() {
+    public static void init() {
         isAuthenticated = false;
         password = "";
         try {
@@ -37,7 +37,7 @@ public class Authentication {
     /**
      * Check if the user is authenticationed.
      */
-    public boolean isAuthenticated() {
+    public static boolean isAuthenticated() {
         return isAuthenticated;
     }
 
@@ -47,7 +47,7 @@ public class Authentication {
      * @return <strong>true</strong> if the password is correct;
      *          <strong>false</strong> otherwise.
      */
-    public boolean checkPassword(String word) {
+    public static boolean checkPassword(String word) {
         if (password.equals(encrypt(word))) {
             isAuthenticated = true;
         } else {
@@ -60,7 +60,7 @@ public class Authentication {
     /**
      * To de-authenticat the user (a.k.a logout)
      */
-    public void deAuthenticate() {
+    public static void deAuthenticate() {
         isAuthenticated = false;
     }
 
@@ -70,7 +70,7 @@ public class Authentication {
      * @return <strong>true</strong> if the modification success;
      *          <strong>false</strong> otherwise (the user is not authenticated)
      */
-    public boolean modifyPassword(String newPass) {
+    public static boolean modifyPassword(String newPass) {
         if (isAuthenticated()) {
             String encryptedPass = encrypt(newPass);
             try {
@@ -92,7 +92,7 @@ public class Authentication {
      * @param pass
      * @return the encrypted password.
      */
-    private String encrypt(String pass) {
+    private static String encrypt(String pass) {
         return pass;
     }
 }

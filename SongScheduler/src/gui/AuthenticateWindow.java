@@ -20,11 +20,8 @@ import model.*;
  */
 public class AuthenticateWindow extends javax.swing.JFrame {
 
-    private Authentication myAuthenitcation;
-
     /** Creates new form AuthenticateWindow */
-    public AuthenticateWindow(Authentication myAuthenitcation) {
-        this.myAuthenitcation = myAuthenitcation;
+    public AuthenticateWindow() {
         initComponents();
     }
 
@@ -112,7 +109,7 @@ public class AuthenticateWindow extends javax.swing.JFrame {
         String thePassword = password.getSelectedText();
 
         if(thePassword != null)
-            myAuthenitcation.checkPassword(thePassword);
+            Authentication.checkPassword(thePassword);
 
         exit();
     }//GEN-LAST:event_okButtonActionPerformed
@@ -133,9 +130,8 @@ public class AuthenticateWindow extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Authentication someAuthenitcation = new Authentication();
-                someAuthenitcation.init();
-                new AuthenticateWindow(someAuthenitcation).setVisible(true);
+                Authentication.init();
+                new AuthenticateWindow().setVisible(true);
             }
         });
     }
