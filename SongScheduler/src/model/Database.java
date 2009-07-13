@@ -28,16 +28,20 @@ import java.util.Map.Entry;
 
 public abstract class Database {
     private static final String scheduleFile = "schedule.hash";
-    private static String currLib;
+    private static String currHoldingsFile;
     private static HashMap<Integer, Song> songHash;
     private static HashMap<String, Schedule> scheduleHash;
 
 
-    public static void init(){
-        currLib = "library.txt";
+    /**
+     * Initializes the database by loading songs and schedules.
+     * Loads all schedules from serialized schedule hash, or creates
+     * new hash if DNE.
+     * @param holdingsFile - filename of holdings file
+     */
+    public static void init(String holdingsFile){
 
-        songHash = new HashMap<Integer, Song>();
-        loadSongInfo();
+        setHoldingsFile(holdingsFile);
 
         try{
             InputStream is = new FileInputStream(scheduleFile);
@@ -52,9 +56,18 @@ public abstract class Database {
         catch(Exception e){
             e.printStackTrace();
         }
-
-        loadScheduleInfo();
     }
+
+    /**
+     * Changes the current holdings file.
+     * @param holdingsFile - filename of holdings file
+     */
+    public static void setHoldingsFile(String holdingsFile){
+        currHoldingsFile = holdingsFile;
+        songHash = new HashMap<Integer, Song>();
+        loadSongInfo();
+    }
+
 
     public static void destroy(){
         try{
@@ -68,10 +81,10 @@ public abstract class Database {
         }
     }
 
-    public static void loadSongInfo(){
+    private static void loadSongInfo(){
         try{
             Song currSong;
-            BufferedReader in = new BufferedReader(new FileReader(currLib));
+            BufferedReader in = new BufferedReader(new FileReader(currHoldingsFile));
             String line = in.readLine();
             while (line != null) {
                 currSong = createSongFromLine(line);
@@ -93,7 +106,7 @@ public abstract class Database {
     public static void saveSongInfo(){
         Iterator<Song> songs = songHash.values().iterator();
         try {
-            BufferedWriter out = new BufferedWriter(new FileWriter(currLib));
+            BufferedWriter out = new BufferedWriter(new FileWriter(currHoldingsFile));
             while (songs.hasNext()) {
                 Song song = songs.next();
                 String line = song.getTitle() + ";"
@@ -115,24 +128,10 @@ public abstract class Database {
         }
     }
 
-    public static void saveScheduleInfo(){
-
-    }
-
-    private static void loadScheduleInfo(){
-        try{
-            Schedule currSchedule;
-            BufferedReader in = new BufferedReader(new FileReader(currLib.substring(0, currLib.length()-4) + "_sched.txt"));
-            String line = in.readLine();
-            while (line != null) {
-                currSchedule = createScheduleFromLine(line);
-                if(!scheduleHash.containsKey(currSchedule.getTime()))
-                    scheduleHash.put(currSchedule.getTime().toString(), currSchedule);
-            }
-        }
-        catch(Exception e){e.printStackTrace();}
-    }
-
+    /**
+     * Returns an ArrayList of available songs, ordered by priority
+     * @return
+     */
     public static ArrayList getSongsByPriority(){
         ArrayList songList = new ArrayList<Song>();
 
@@ -144,6 +143,11 @@ public abstract class Database {
         return songList;
     }
 
+    /**
+     * Returns an ArrayList of songs that match a specified title
+     * @param title
+     * @return
+     */
     public static ArrayList getSongs( String title ){
         if(title == null){
 
@@ -197,47 +201,11 @@ public abstract class Database {
             return new Schedule(startTime);
     }
 
-    static class TitleComparator implements Comparator{
-        public int compare(Object song1, Object song2){
-            if(!(song1 instanceof Song) || !(song2 instanceof Song))
-                return 0;
-            else{
-                return ((Song)song1).getTitle().compareTo(((Song)song2).getTitle());
-            }
-        }
-    }
-
-    static class PriorityComparator implements Comparator{
-        public int compare(Object song1, Object song2){
-            if(!(song1 instanceof Song) || !(song2 instanceof Song))
-                return 0;
-            else{
-                if(((Song)song1).getPriority() > ((Song)song2).getPriority())
-                    return 1;
-                else if(((Song)song1).getPriority() < ((Song)song2).getPriority())
-                    return -1;
-                else
-                    return 0;
-            }
-        }
-    }
-
-    private static Schedule createScheduleFromLine(String line){
-        String[] token = line.split(";");
-
-        Time startTime = new Time(token[0]);
-
-        Schedule schedule = new Schedule(startTime);
-
-        String[] songNums = token[1].split("-");
-
-        for(String songNum : songNums){
-            schedule.add(songHash.get(songNum));
-        }
-
-        return schedule;
-    }
-
+    /**
+     * Parses a line from library holdings file to create song object
+     * @param line
+     * @return
+     */
     private static Song createSongFromLine(String line){
         String[] token = line.split(";");
         String title = token[0];
@@ -255,5 +223,30 @@ public abstract class Database {
 
 
         return new Song(title, performer, recordingTitle, recordingType, year, length, popularity, accessNumber, playCount, addedTime, lastPlayed);
+    }
+
+    private static class TitleComparator implements Comparator{
+        public int compare(Object song1, Object song2){
+            if(!(song1 instanceof Song) || !(song2 instanceof Song))
+                return 0;
+            else{
+                return ((Song)song1).getTitle().compareTo(((Song)song2).getTitle());
+            }
+        }
+    }
+
+    private static class PriorityComparator implements Comparator{
+        public int compare(Object song1, Object song2){
+            if(!(song1 instanceof Song) || !(song2 instanceof Song))
+                return 0;
+            else{
+                if(((Song)song1).getPriority() > ((Song)song2).getPriority())
+                    return 1;
+                else if(((Song)song1).getPriority() < ((Song)song2).getPriority())
+                    return -1;
+                else
+                    return 0;
+            }
+        }
     }
 }

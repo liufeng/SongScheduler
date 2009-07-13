@@ -19,15 +19,16 @@ import java.util.LinkedList;
  */
 public abstract class HoldingFiles {
     private static final String HOLDING_FILE = "holdingFile.txt";
-    private File listFile;
-    private LinkedList<String> list;
-    private String defaultHoldingFile;
+    private static File listFile;
+    private static LinkedList<String> list;
+    private static String defaultHoldingFile;
+    private static String currHoldingFile;
 
     /**
      * Initialize the holding files list. In case the holding file list
      * doesn't exist. If that happens, create a new file has only default.
      */
-    public void init() {
+    public static void init() {
         list = new LinkedList<String>();
 
         try {
@@ -50,6 +51,7 @@ public abstract class HoldingFiles {
         }
 
         defaultHoldingFile = "default.txt";
+        currHoldingFile = defaultHoldingFile;
     }
 
     /**
@@ -89,7 +91,23 @@ public abstract class HoldingFiles {
      * Set the default holding file.
      * @param filename
      */
-    public void setDefault(String filename) {
+    public static void setDefault(String filename) {
         defaultHoldingFile = filename;
+    }
+
+    /**
+     * Set the current holdings file
+     * @param filename
+     */
+    public static void setCurrent(String filename){
+        currHoldingFile = filename;
+    }
+
+    /**
+     * Get the current holdings file
+     * @return
+     */
+    public static String getCurrent(){
+        return currHoldingFile;
     }
 }

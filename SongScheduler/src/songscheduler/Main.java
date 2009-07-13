@@ -7,7 +7,7 @@ package songscheduler;
 
 import gui.*;
 import model.Database;
-import java.io.File;
+import model.HoldingFiles;
 
 public class Main {
 
@@ -16,8 +16,8 @@ public class Main {
      */
     public static void main ( String args[] ) {
 
-        Database.init();
-        Database.loadSongInfo();
+        HoldingFiles.init();
+        Database.init(HoldingFiles.getCurrent()); //This will be removed and holdings file dynamically selected from GUI input
         
         // TODO: Update every 7 days instead of only first time.
 
