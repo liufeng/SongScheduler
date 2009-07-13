@@ -33,16 +33,6 @@ public class DatabaseTest {
     @Test
     public void testInit() {
         System.out.println("init");
-        Database.init();
+        Database.init("default.txt");
     }
-
-    /**
-     * Test of updateSongInfo method, of class Database.
-     */
-    @Test
-    public void testUpdateSongInfo() {
-        System.out.println("updateSongInfo");
-        Database.loadSongInfo();
-    }
-
 }

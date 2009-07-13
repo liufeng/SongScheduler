@@ -123,6 +123,10 @@ public class Song implements Serializable{
         return priority;
     }
 
+    public Time getAddedTime(){
+        return addedTime;
+    }
+
     /**
      * Get the average played time of the song.
      * If the song hasn't added for 1 week, return the number

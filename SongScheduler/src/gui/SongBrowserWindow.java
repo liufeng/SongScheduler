@@ -33,7 +33,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
     public SongBrowserWindow ( JFrame parentWindow ) {
         this.parentWindow = parentWindow;
         Song currSong;
-        songs = Database.getSongs( null );
+        songs = Database.getSongs();
         listModel = new DefaultListModel();
         initComponents();
 
@@ -339,7 +339,7 @@ public class SongBrowserWindow extends javax.swing.JFrame {
         int index = 0;
 
         if ( !searchTerm.equals( "" ) ) {
-            searchResults = Database.getSongs( searchTerm );
+            searchResults = Database.getSongs( searchTerm, null, null, null );
             if ( !searchResults.isEmpty() ) {
                 songFound = (Song) searchResults.get( 0 );
 

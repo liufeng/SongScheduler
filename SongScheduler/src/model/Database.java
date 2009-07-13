@@ -2,6 +2,7 @@ package model;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -59,13 +60,34 @@ public abstract class Database {
     }
 
     /**
-     * Changes the current holdings file.
+     * Changes the current holdings file.  If file does not exist,
+     * creates new holdings file with specified name.  Saves changes to
+     * previous holdings file.
      * @param holdingsFile - filename of holdings file
      */
     public static void setHoldingsFile(String holdingsFile){
+        saveSongInfo();
+
         currHoldingsFile = holdingsFile;
         songHash = new HashMap<Integer, Song>();
-        loadSongInfo();
+
+        try{
+            File file = new File(currHoldingsFile);
+
+            if(!file.exists()){
+                BufferedWriter out = new BufferedWriter(new FileWriter(currHoldingsFile));
+                out.write("");
+                out.close();
+            }
+
+            else{
+                loadSongInfo();
+            }
+        }
+
+        catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
 
@@ -95,36 +117,36 @@ public abstract class Database {
             }
         }
         catch(Exception e){e.printStackTrace();}
-
     }
 
     /**
      * write the song list to disk.
      *
-     * NOTE: the sequence of the song item maybe not correct.
      */
-    public static void saveSongInfo(){
-        Iterator<Song> songs = songHash.values().iterator();
-        try {
-            BufferedWriter out = new BufferedWriter(new FileWriter(currHoldingsFile));
-            while (songs.hasNext()) {
-                Song song = songs.next();
-                String line = song.getTitle() + ";"
-                        + song.getPerformer() + ";"
-                        + song.getRecordingTitle() + ";"
-                        + song.getRecordingType() + ";"
-                        + song.getYear() + ";"
-                        + song.getAccessNumber() + ";"
-                        + song.getLastPlayed() + ";"
-                        + song.getPopularity() + ";"
-                        + song.getLength() + ";" +
-                        + song.getNumberOfPlays()
-                        + song.getPriority() + "\n";
-                out.write(line);
+     private static void saveSongInfo(){
+        if(songHash != null){
+            Iterator<Song> songs = songHash.values().iterator();
+            try {
+                BufferedWriter out = new BufferedWriter(new FileWriter(currHoldingsFile, false));
+                while (songs.hasNext()) {
+                    Song song = songs.next();
+                    String line = song.getTitle() + ";"
+                            + song.getPerformer() + ";"
+                            + song.getRecordingTitle() + ";"
+                            + song.getRecordingType() + ";"
+                            + song.getYear() + ";"
+                            + song.getAccessNumber() + ";"
+                            + song.getAddedTime().toString() + ";"
+                            + song.getPopularity() + ";"
+                            + song.getLength() + ";" +
+                            + song.getNumberOfPlays()
+                            + song.getLastPlayed().toString() + "\n";
+                    out.write(line);
+                }
+                out.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-            out.close();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
@@ -144,25 +166,36 @@ public abstract class Database {
     }
 
     /**
-     * Returns an ArrayList of songs that match a specified title
+     * Returns an ArrayList of songs that match specified criteria, sorted
+     * by title.  Pass null paramaters if not to be included in criteria.
      * @param title
+     * @param performer
+     * @param recTitle
+     * @param year
      * @return
      */
-    public static ArrayList getSongs( String title ){
-        if(title == null){
-
-        }
+    public static ArrayList getSongs( String title, String performer, String recTitle, String year ){   
         ArrayList songList = new ArrayList<Song>();
 
         for(Entry songEntry : songHash.entrySet()){
-            if(title == null || title.equals(((Song)songEntry.getValue()).getTitle()))
+            Song currSong = (Song)songEntry.getValue();
+            if((title != null && currSong.getTitle().toLowerCase().contains(title.toLowerCase()))
+                || (performer != null && currSong.getPerformer().toLowerCase().contains(performer.toLowerCase()))
+                || (recTitle != null && currSong.getRecordingTitle().toLowerCase().contains(recTitle.toLowerCase()))
+                || (year != null && year.equals(currSong.getYear())))
                 songList.add((Song)songEntry.getValue());
         }
-
-        if(title != null)
-            Collections.sort(songList, new TitleComparator());
+        Collections.sort(songList, new TitleComparator());
 
         return songList;
+    }
+
+    /**
+     * Dummy method to return all songs in current holdings file.
+     * @return
+     */
+    public static ArrayList getSongs(){
+        return getSongs("", null, null, null);
     }
 
     /**
