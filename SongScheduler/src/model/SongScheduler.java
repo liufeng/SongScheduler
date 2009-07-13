@@ -73,22 +73,59 @@ public class SongScheduler {
         Schedule result = getSchedule(startTime);
         ArrayList songs = Database.getSongsByPriority();
         Iterator<Object> iter = songs.iterator();
+        ArrayList topSongs = new ArrayList();
+        ArrayList midSongs = new ArrayList();
+        ArrayList bottomSongs = new ArrayList();
+        Song current;
+        int counter = 0;
 
         result.clear();
 
-        while ( result.underMin() && iter.hasNext() )
+        for(counter = 0; (counter < 50 && iter.hasNext()); counter++)
         {
-            Song current = (Song)iter.next();
+            current = (Song)iter.next();
+            topSongs.add(current);
+        }
+        addToSchedule(result,topSongs,4);
+
+        for(counter = 0; (counter < 100 && iter.hasNext()); counter++)
+        {
+            current = (Song)iter.next();
+            midSongs.add(current);
+        }
+        addToSchedule(result,midSongs,2);
+
+        while(iter.hasNext())
+        {
+            current = (Song)iter.next();
+            bottomSongs.add(current);
+        }
+        addToSchedule(result,bottomSongs,-1);
+
+    }
+
+
+    private void addToSchedule(Schedule schedule, ArrayList songs, int limit){
+        Song current = null;
+        int counter = 0;
+        int randNum;
+
+        while ( schedule.underMin() && (counter < limit || limit == -1) )
+        {
+            randNum = (int) (Math.random() * songs.size());
+            current = (Song) songs.get(randNum);
 
             if ( canAddThisSong( current, startTime) )
             {
-                result.add( current );
+                schedule.add( current );
+                counter++;
             }
 
             // do this check for preventing a song is too long that makes
             // the schedule longer than 48 minutes.
-            if ( result.overMax() ) {
-                result.remove( current );
+            if ( schedule.overMax() ) {
+                schedule.remove( current );
+                counter--;
             }
         }
     }
@@ -204,6 +241,7 @@ public class SongScheduler {
         Time nextHour = startTime.getNextHour();
         Schedule previousSchedule;
         Schedule nextSchedule;
+        Schedule thisSchedule = getSchedule(startTime);
         boolean result = true;
 
         if ( previousHour.before( this.startTime ) )
@@ -227,6 +265,8 @@ public class SongScheduler {
         if ( previousSchedule.contains(song) )
             result = false;
         if ( nextSchedule.contains(song) )
+            result = false;
+        if ( thisSchedule.contains(song))
             result = false;
         return result;
     }
