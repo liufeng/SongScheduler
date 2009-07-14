@@ -133,7 +133,7 @@ public class AuthenticateWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_cancelButtonActionPerformed
 
     private void exit(){
-        //parent.continueAfterAuthentication();
+        parent.continueAfterAuthentication();
         this.setVisible( false );
         this.dispose();
     }

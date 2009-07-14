@@ -19,22 +19,17 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
     private ArrayList songs;
     private DefaultListModel listModel;
+    private String action;
 
     /**
      * Constructor
      */
     public SongSchedulerWindow () {
-        Song currSong;
         songs = Database.getSongs();
-        listModel = new DefaultListModel();
+        action = null;
         initComponents();
 
-        for ( int i = 0; i < songs.size(); i++ ) {
-            currSong = (Song) songs.get( i );
-            listModel.add( i, currSong );
-        }
-
-        songList.setModel( listModel );
+        updateSongList();
     }
 
     /** This method is called from within the constructor to
@@ -455,29 +450,22 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_viewSelectedButtonActionPerformed
 
     private void songSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_songSearchButtonActionPerformed
-        String searchTerm = songNameDisplay.getText();
-        ArrayList searchResults;
-        Song songFound;
-        int index = 0;
+        String title = songNameDisplay.getText();
+        String artist = songArtistDisplay.getText();
+        String album = songAlbumDisplay.getText();
+        String year = songYearDisplay.getText();
 
-        if ( !searchTerm.equals( "" ) ) {
-            searchResults = Database.getSongs( searchTerm, null, null, null );
-            if ( !searchResults.isEmpty() ) {
-                songFound = (Song) searchResults.get( 0 );
+        if( artist.equals("") )
+            artist = null;
 
-                while ( index < songs.size() ) {
-                    if ( songFound.getTitle().equals( ( (Song) songs.get( index ) ).getTitle() ) ) {
-                        songList.setSelectedIndex( index );
-                        index = songs.size();
-                    }
-                    index++;
-                }
-            } else {
-                System.out.println( "No Song Found" );
-            }
-        } else {
-            System.out.println( "No song title entered" );
-        }
+        if( album.equals("") )
+            album = null;
+
+        if( year.equals("") )
+            year = null;
+
+        songs = Database.getSongs(title,artist,album,year);
+        updateSongList();
     }//GEN-LAST:event_songSearchButtonActionPerformed
 
     private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
@@ -491,15 +479,21 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
     private void saveSongDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveSongDataActionPerformed
         // TODO add your handling code here:
+        AuthenticateWindow enterPassword = new AuthenticateWindow(this);
+        enterPassword.setVisible(true);
+        action = "SAVE";
     }//GEN-LAST:event_saveSongDataActionPerformed
 
     private void changeHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeHoldingFileActionPerformed
-        HoldingsFilesWindow holdings = new HoldingsFilesWindow();
-        holdings.setVisible(true);
+        AuthenticateWindow enterPassword = new AuthenticateWindow(this);
+        enterPassword.setVisible(true);
+        action = "ACCESS_HOLDINGS_FILES";
     }//GEN-LAST:event_changeHoldingFileActionPerformed
 
     private void incrementPlayCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incrementPlayCountActionPerformed
         // TODO add your handling code here:
+        Song song = (Song) songs.get( songList.getSelectedIndex() );
+        song.makeRequest();
     }//GEN-LAST:event_incrementPlayCountActionPerformed
 
     private void fileMenuPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileMenuPrintActionPerformed
@@ -564,6 +558,59 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         songPlayCountDisplay.setText( "" );
         songPopularityDisplay.setText( "" );
         songYearDisplay.setText( "" );
+
+        songs = Database.getSongs();
+        updateSongList();
+    }
+
+    private void updateSongList()
+    {
+        Song currSong;
+        listModel = new DefaultListModel();
+
+        for ( int i = 0; i < songs.size(); i++ ) {
+            currSong = (Song) songs.get( i );
+            listModel.add( i, currSong );
+        }
+
+        songList.setModel( listModel );
+    }
+
+    public void continueAfterAuthentication()
+    {
+        if(Authentication.isAuthenticated())
+        {
+            if(action.equals("SAVE"))
+            {
+                //read in the song info
+                Song song = (Song) songs.get( songList.getSelectedIndex() );
+                song.setPerformer(songArtistDisplay.getText());
+                song.setRecordingTitle(songAlbumDisplay.getText());
+                song.setRecordingType(songGenreDisplay.getText());
+                song.setTitle(songNameDisplay.getText());
+                song.setYear(songYearDisplay.getText());
+                song.updatePopularity();
+                song.updatePriority();
+                //save the song
+            }
+            else if(action.equals("ACCESS_HOLDINGS_FILES"))
+            {
+                //open the holdings file window
+                HoldingsFilesWindow holdingsFileManager = new HoldingsFilesWindow();
+                holdingsFileManager.setVisible(true);
+            }
+            else
+            {
+                //error
+                System.out.println("Authentication order error");
+            }
+            Authentication.deAuthenticate();
+            action = null;
+        }
+        else
+        {
+            //not authenticated
+        }
     }
 
     /**
