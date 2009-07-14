@@ -10,7 +10,9 @@
  */
 
 package gui;
+import java.util.Iterator;
 import javax.swing.*;
+import model.HoldingFiles;
 
 /**
  *
@@ -21,6 +23,18 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
     /** Creates new form HoldingsFilesWindow */
     public HoldingsFilesWindow() {
         initComponents();
+        this.setDefaultCloseOperation( JFrame.DISPOSE_ON_CLOSE );
+
+        HoldingFiles.init();
+        DefaultListModel model = new DefaultListModel();
+        jList1.setModel(model);
+        jList1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        
+        Iterator<String> iter = HoldingFiles.iterator();
+        while( iter.hasNext() )
+        {
+            model.add(0, iter.next());
+        }
     }
 
     /** This method is called from within the constructor to
@@ -122,6 +136,11 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         jLabel9.setText("Popularity:");
 
         addSong.setText("Add");
+        addSong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addSongActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -201,6 +220,19 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void addSongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addSongActionPerformed
+        String name       = songNameDisplay.getText();
+        String artist     = songArtistDisplay.getText();
+        String album      = songAlbumDisplay.getText();
+        String genre      = songGenreDisplay.getText();
+        String year       = songYearDisplay.getText();
+        String length     = songLengthDisplay.getText();
+        String requests   = songRequestNumberDisplay.getText();
+        String popularity = songPopularityDisplay.getText();
+
+        String holdingsFile = (String)jList1.getSelectedValue();
+    }//GEN-LAST:event_addSongActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addSong;

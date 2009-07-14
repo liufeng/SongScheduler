@@ -58,15 +58,20 @@ public abstract class HoldingFiles {
      * Get the holding file list as a LinkedList instance.
      * @return
      */
-    public LinkedList<String> getHoldingFiles() {
+    public static LinkedList<String> getHoldingFiles() {
         return list;
+    }
+
+    public static Iterator<String> iterator()
+    {
+        return list.iterator();
     }
 
     /**
      * Add a new file to the holding file list.
      * @param filename
      */
-    public void addFile(String filename) {
+    public static void addFile(String filename) {
         list.add(filename);
         writeToDisk();
     }
@@ -74,7 +79,7 @@ public abstract class HoldingFiles {
     /**
      * Write the <code>list</code> to the disk file.
      */
-    private void writeToDisk() {
+    private static void writeToDisk() {
         Iterator<String> iter = list.iterator();
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(listFile));
@@ -109,5 +114,16 @@ public abstract class HoldingFiles {
      */
     public static String getCurrent(){
         return currHoldingFile;
+    }
+
+    public static void addSongToFile( String filename )
+    {
+        try
+        {
+            BufferedWriter out = new BufferedWriter(new FileWriter(filename, true));
+            out.write("Testing");
+            out.close();
+        }
+        catch( IOException ioe ){}
     }
 }

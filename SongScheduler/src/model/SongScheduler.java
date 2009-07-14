@@ -181,12 +181,10 @@ public class SongScheduler {
         Schedule schedule = getSchedule( startTime );
         ArrayList songs = Database.getSongsByPriority();
 
-        while ( schedule.underMin() || schedule.overMax() )
+        while ( !schedule.isEmpty() && (schedule.underMin() || schedule.overMax()) )
         {
-            while( schedule.underMin() )
-            {
-                addToSchedule( schedule, songs, 1 );
-            }
+            addToSchedule( schedule, songs, -1 );
+            
             while( schedule.overMax() )
             {
                 schedule.remove(schedule.getSong(schedule.getSongCount()-1));
