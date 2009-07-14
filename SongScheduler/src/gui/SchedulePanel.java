@@ -38,8 +38,12 @@ public class SchedulePanel extends javax.swing.JPanel {
 
     public void openDates( Time[] dates )
     {
+        openDates( dates, new SongScheduler(dates[0]) );
+    }
+    public void openDates( Time[] dates, SongScheduler scheduler )
+    {
         // Create a new SongScheduler and array for each schedule
-        this.songScheduler = new SongScheduler( dates[0] );
+        this.songScheduler = scheduler;
         this.schedules = new Schedule[24];
         this.tables = new JTable[dates.length][24];
                 

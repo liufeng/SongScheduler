@@ -79,7 +79,7 @@
                   <Component id="selectedSongInfoPanel" min="-2" pref="669" max="-2" attributes="1"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="schedulePanel1" pref="494" max="32767" attributes="0"/>
+              <Component id="schedulePanel" pref="494" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -89,7 +89,7 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="schedulePanel1" alignment="0" pref="771" max="32767" attributes="0"/>
+                  <Component id="schedulePanel" alignment="0" pref="771" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -416,7 +416,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="gui.SchedulePanel" name="schedulePanel1">
+    <Component class="gui.SchedulePanel" name="schedulePanel">
     </Component>
   </SubComponents>
 </Form>

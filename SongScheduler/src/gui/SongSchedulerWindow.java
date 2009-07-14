@@ -75,7 +75,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         incrementPlayCount = new javax.swing.JButton();
         songListScrollPane = new javax.swing.JScrollPane();
         songList = new javax.swing.JList();
-        schedulePanel1 = new gui.SchedulePanel();
+        schedulePanel = new gui.SchedulePanel();
         MenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         fileMenuPrint = new javax.swing.JMenuItem();
@@ -322,7 +322,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                                 .add(generateScheduleButton))))
                     .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 669, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(schedulePanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 494, Short.MAX_VALUE)
+                .add(schedulePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 494, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -330,7 +330,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(org.jdesktop.layout.GroupLayout.LEADING, schedulePanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, schedulePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
                     .add(layout.createSequentialGroup()
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(layout.createSequentialGroup()
@@ -403,8 +403,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             scheduler.generateMultipleHours( daysArray[i], 24 );
         }
 
-        new SchedulerListWindow( daysArray, scheduler, this ).setVisible( true );
-        this.setVisible( false );
+        schedulePanel.openDates( daysArray, scheduler );
 }//GEN-LAST:event_generateScheduleButtonActionPerformed
 
     /**
@@ -467,7 +466,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_incrementPlayCountActionPerformed
 
     private void fileMenuPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileMenuPrintActionPerformed
-        schedulePanel1.printSchedule();
+        schedulePanel.printSchedule();
     }//GEN-LAST:event_fileMenuPrintActionPerformed
     /**
      * updateViewPanel
@@ -561,7 +560,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
        // new SchedulerListWindow( daysArray, this ).setVisible( true );
        // this.setVisible( false );
-        schedulePanel1.openDates(daysArray);
+        schedulePanel.openDates(daysArray);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -584,7 +583,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JButton saveSongData;
-    private gui.SchedulePanel schedulePanel1;
+    private gui.SchedulePanel schedulePanel;
     private javax.swing.JPanel selectedSongInfoPanel;
     private javax.swing.JTextField songAlbumDisplay;
     private javax.swing.JTextField songArtistDisplay;
