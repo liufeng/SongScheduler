@@ -11,6 +11,7 @@
 
 package gui;
 
+import model.*;
 import java.awt.Color;
 import java.awt.event.FocusEvent;
 import java.awt.print.PrinterException;
@@ -21,7 +22,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import model.*;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
@@ -97,6 +97,7 @@ public class SchedulePanel extends javax.swing.JPanel {
             }
 
             JScrollPane scrollPane = new JScrollPane(schedulesPanel);
+            scrollPane.getVerticalScrollBar().setUnitIncrement(40);
             tabPane.addTab( currentTime.getDateAsString(), null, scrollPane, "A panel of some sort" );
         }
 
@@ -241,6 +242,22 @@ public class SchedulePanel extends javax.swing.JPanel {
                 
                 songScheduler.autoCorrect(currentTime);
                 setTableBackground( schedules[i][j], tables[i][j] );
+
+                DefaultTableModel model = (DefaultTableModel)tables[i][j].getModel();
+                int rows = tables[i][j].getRowCount();
+                for( int k = 0; k < rows; k++ )
+                {
+                    model.removeRow(0);
+                }
+                Iterator<Song> iter = schedules[i][j].iterator();
+                while( iter.hasNext() )
+                {
+                    Song song = iter.next();
+                    Object data[] = {song, song.getPerformer(), Conversions.milliToHHMMSS(song.getLength())};
+                    model.addRow(data);
+                }
+                model.addRow(blank);
+                updateScheduleLength( schedules[i][j], tables[i][j] );
             }
         }
     }
@@ -278,6 +295,6 @@ public class SchedulePanel extends javax.swing.JPanel {
     private JTable tables[][];
     private JTable selectedTable;
     private Schedule selectedSchedule;
-    private Object[] blank = {null,null};
+    private Object[] blank = {};
     private boolean ready;
 }

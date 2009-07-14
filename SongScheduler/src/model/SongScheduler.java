@@ -179,45 +179,17 @@ public class SongScheduler {
     public void autoCorrect( Time startTime )
     {
         Schedule schedule = getSchedule( startTime );
-        Iterator<Song> iter = schedule.iterator();
         ArrayList songs = Database.getSongsByPriority();
-        int duration;
-        int postAdd;
-        int postRemove;
-        Song song;
 
         while ( schedule.underMin() || schedule.overMax() )
         {
-            duration = schedule.getDuration();
-
-            if ( schedule.underMin() )
+            while( schedule.underMin() )
             {
-                for ( int i = 0; i < songs.size(); i++ )
-                {
-                    song = (Song)songs.get( i );
-                    postAdd = duration + song.getLength();
-
-                    if ( postAdd < Schedule.MAX_SCHEDULE_LENGTH && canAddThisSong( song, startTime ))
-                    {
-                        schedule.add( song );
-                        duration = schedule.getDuration();
-                    }
-                }
+                addToSchedule( schedule, songs, 1 );
             }
-            else if ( schedule.overMax() )
+            while( schedule.overMax() )
             {
-
-                while( iter.hasNext() )
-                {
-                    song = iter.next();
-                    postRemove = duration - song.getLength();
-
-                    if ( postRemove > Schedule.MIN_SCHEDULE_LENGTH )
-                    {
-                        schedule.remove( song );
-                        duration = schedule.getDuration();
-                    }
-                }
+                schedule.remove(schedule.getSong(schedule.getSongCount()-1));
             }
         }
     }

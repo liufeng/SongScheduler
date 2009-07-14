@@ -20,6 +20,7 @@ public class Schedule implements Iterable, Serializable {
     private int duration; // in millisecond
     final static public int MIN_SCHEDULE_LENGTH = 2580000; // 43 minutes
     final static public int MAX_SCHEDULE_LENGTH = 2880000; // 48 minutes
+    static final long serialVersionUID= 911893579883338575L;
 
     /**
      * Constructs an empty schedule starts from <em>startTime</em>.
@@ -47,6 +48,18 @@ public class Schedule implements Iterable, Serializable {
     public void remove(Song song) {
         songList.remove(song);
         duration -= song.getLength();
+    }
+
+    public Song getSong( int index )
+    {
+        if( index < songList.size() )
+            return songList.get(index);
+        return null;
+    }
+
+    public int getSongCount()
+    {
+        return songList.size();
     }
 
     /**
