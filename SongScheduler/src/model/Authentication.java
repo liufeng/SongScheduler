@@ -88,7 +88,9 @@ public abstract class Authentication {
     }
 
     /**
-     * To encrypt the string. May use MD5 algo. Haven't implement yet.
+     * To encrypt the string. May use MD5 algo. But it makes no
+     * sense if the any user can change the password file.
+     * 
      * @param pass
      * @return the encrypted password.
      */
