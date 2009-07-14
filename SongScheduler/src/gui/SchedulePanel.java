@@ -109,11 +109,6 @@ public class SchedulePanel extends javax.swing.JPanel {
         }
     }
 
-    public void addSong( Song song )
-    {
-        
-    }
-
     public void printSchedule()
     {
         DefaultTableModel model = new DefaultTableModel();
@@ -139,6 +134,29 @@ public class SchedulePanel extends javax.swing.JPanel {
         }
         catch( PrinterException exp ){ System.out.println("Error Printing\n");}
     }
+
+    public void deleteSelected()
+    {
+        int tab = tabPane.getSelectedIndex();
+        for( int i = 0; i < 24; i++ )
+        {
+            if( tables[tab][i].getSelectedRowCount() > 0 )
+            {
+                int[] selectedRows = tables[tab][i].getSelectedRows();
+                // Move backward so removing doesn't change position of elements
+                for( int k = selectedRows.length-1; k >= 0; k-- )
+                {
+                    ((DefaultTableModel)tables[tab][i].getModel()).removeRow(selectedRows[k]);
+                }
+            }
+        }
+    }
+
+    public void addSong( Song song )
+    {
+
+    }
+
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is

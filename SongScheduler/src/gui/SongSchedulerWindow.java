@@ -76,6 +76,9 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         songListScrollPane = new javax.swing.JScrollPane();
         songList = new javax.swing.JList();
         schedulePanel = new gui.SchedulePanel();
+        addSongButton = new javax.swing.JButton();
+        commitButton1 = new javax.swing.JButton();
+        deleteButton = new javax.swing.JButton();
         MenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         fileMenuPrint = new javax.swing.JMenuItem();
@@ -277,6 +280,27 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         });
         songListScrollPane.setViewportView(songList);
 
+        addSongButton.setText("Add");
+        addSongButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addSongButtonActionPerformed(evt);
+            }
+        });
+
+        commitButton1.setText("Commit");
+        commitButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                commitButton1ActionPerformed(evt);
+            }
+        });
+
+        deleteButton.setText("Delete");
+        deleteButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteButtonActionPerformed(evt);
+            }
+        });
+
         fileMenu.setText("File");
 
         fileMenuPrint.setText("Print");
@@ -312,17 +336,16 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                                 .add(11, 11, 11)
                                 .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 447, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 442, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .add(9, 9, 9)
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(layout.createSequentialGroup()
-                                .add(19, 19, 19)
-                                .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                            .add(layout.createSequentialGroup()
-                                .add(18, 18, 18)
-                                .add(generateScheduleButton))))
+                        .add(27, 27, 27)
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                            .add(commitButton1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(deleteButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(addSongButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(generateScheduleButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 669, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(schedulePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 494, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 18, Short.MAX_VALUE)
+                .add(schedulePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 476, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -332,17 +355,20 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, schedulePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
                     .add(layout.createSequentialGroup()
+                        .add(calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(layout.createSequentialGroup()
-                                .add(299, 299, 299)
                                 .add(generateScheduleButton)
-                                .add(43, 43, 43)
-                                .add(viewSelectedButton)
-                                .add(37, 37, 37))
-                            .add(layout.createSequentialGroup()
-                                .add(calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 231, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                                .add(viewSelectedButton)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(addSongButton)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(deleteButton)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(commitButton1))
+                            .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 231, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                 .add(48, 48, 48))
@@ -468,6 +494,19 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void fileMenuPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileMenuPrintActionPerformed
         schedulePanel.printSchedule();
     }//GEN-LAST:event_fileMenuPrintActionPerformed
+
+    private void addSongButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addSongButtonActionPerformed
+        Song song = (Song) songs.get( songList.getSelectedIndex() );
+        schedulePanel.addSong(song);
+    }//GEN-LAST:event_addSongButtonActionPerformed
+
+    private void commitButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_commitButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_commitButton1ActionPerformed
+
+    private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
+        schedulePanel.deleteSelected();
+    }//GEN-LAST:event_deleteButtonActionPerformed
     /**
      * updateViewPanel
      *
@@ -565,9 +604,12 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar MenuBar;
+    private javax.swing.JButton addSongButton;
     private datechooser.beans.DateChooserPanel calendar;
     private javax.swing.JButton changeHoldingFile;
     private javax.swing.JButton clearSongData;
+    private javax.swing.JButton commitButton1;
+    private javax.swing.JButton deleteButton;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuItem fileMenuClose;
     private javax.swing.JMenuItem fileMenuPrint;
