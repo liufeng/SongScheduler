@@ -226,7 +226,51 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.DDCC3317-1671-FEFE-1664-7093742A756E"/></UML:TypedElement.multiplicity></UML:AssociationEnd>
 <UML:NavigableEnd xmi.id="DCE.193B5768-BAC7-72C7-3D40-48F379908D82" visibility="private" type="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7" association="DCE.7D3E1999-C5AA-CBB3-569D-5E3BA221593E" name="schedules"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.A587E7A1-E5C8-6F4C-AE08-2CD4467277DA"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.E18565FE-F135-1F4A-6D9C-BFCD24D7BD09"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.A6959D32-D0D4-A0D0-9061-5EB7B0AC8CE7"/></UML:Attribute.default></UML:NavigableEnd></UML:Association.end></UML:Aggregation></UML:Element.ownedElement></UML:Package><UML:Package name="model" xmi.id="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1">
-<UML:Element.ownedElement><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="Time" xmi.id="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" clientDependency="DCE.E28EAD6C-09FD-9344-A43F-D68707F9E0EA" associationEnd="DCE.5FE07F48-894E-97F3-960A-450846CF13FD DCE.B9BB424B-E3A2-0063-4749-7ED1C88DC2F6 DCE.2D2125CC-763A-AC49-1DFD-4DA69896E3A9 DCE.B80DF426-FF75-B32C-0AF0-CDC05B993049"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/Time.java" xmi.id="DCE.946F7B41-5D2C-4D9E-A18D-107BFFA04E25" owner="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.FD26300D-D027-7536-E6A9-F0A60B671C48" AssociationType="Aggregation" name="calendar" xmi.id="DCE.BD905B2C-0E9E-FC94-DD9C-601494B283EE" owner="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="Time" xmi.id="DCE.AAFDCE6F-92EC-AAB4-4168-7F3344CB14EF" owner="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3">
+<UML:Element.ownedElement><UML:Class isAbstract="true" isLeaf="false" visibility="public" name="Authentication" xmi.id="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" clientDependency="" associationEnd=""><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/Authentication.java" xmi.id="DCE.CC73B5C8-E5C2-3705-EEB2-89B4A66CE04A" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"/><UML:TaggedValue xmi.id="DCE.5031B636-9F34-5993-BD95-997BA8E959D5" name="documentation">
+<UML:TaggedValue.dataValue>  @author liufeng
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="DCE.882CBCD4-7499-87AD-2FE9-27F37C80D599" name="isAuthenticated" xmi.id="DCE.B47C18E0-5CDB-E108-E0C6-3951909F6110" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Attribute.default>
+<UML:Expression xmi.id="DCE.6107DCED-D003-773B-8641-48B304BD7A74"/></UML:Attribute.default><UML:Element.presentation>
+</UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="password" xmi.id="DCE.B997ECA8-B45A-0427-2554-969EFB7A4598" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Attribute.default>
+<UML:Expression xmi.id="DCE.A2228812-942A-85E0-AE96-133D3A69EF5B"/></UML:Attribute.default><UML:Element.presentation>
+</UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" isFinal="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="PASS_FILE" xmi.id="DCE.D4D00F4A-291B-EE11-8B88-DAE519B53BE0" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Attribute.default><UML:Expression xmi.id="DCE.6461EAF1-7689-CBB8-AD4B-A796DD2A1F1E"><UML:Expression.body>"passwd"</UML:Expression.body></UML:Expression></UML:Attribute.default><UML:Element.presentation>
+</UML:Element.presentation></UML:Attribute><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="init" xmi.id="DCE.BA33686B-A4B6-19F9-BD0C-0BFE634DDC13" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.6AFB28D3-5DB1-9332-BF91-1AC82A5E1272" name="documentation">
+<UML:TaggedValue.dataValue>     Initialize the password and the user status.
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.3499C857-E76F-FA24-8D86-705F063A8F9D" owner="DCE.BA33686B-A4B6-19F9-BD0C-0BFE634DDC13"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.8CECDAFF-22B9-FF81-4A94-73B5EA2F64D3"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+</UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="isAuthenticated" xmi.id="DCE.2DF43E93-95AD-AFD3-A8B0-98AD1DB7B557" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.07EE9DD5-F8A1-D5A3-9B43-75347F4B988A" name="documentation">
+<UML:TaggedValue.dataValue>     Check if the user is authenticationed.
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.882CBCD4-7499-87AD-2FE9-27F37C80D599" xmi.id="DCE.4C6DC85B-3F40-AB85-A761-70856883C5A6" owner="DCE.2DF43E93-95AD-AFD3-A8B0-98AD1DB7B557"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.44BCF7C8-7380-8178-895F-ACF177847BCC"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+</UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="checkPassword" xmi.id="DCE.59354374-DAA0-2F16-C025-199806BE0027" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.7F8137CA-080C-28EA-F3D1-02847359D534" name="documentation">
+<UML:TaggedValue.dataValue>     Check if the password is correct. And change the user status.
+     @param word The user input password
+     @return &lt;strong&gt;true&lt;/strong&gt; if the password is correct;
+              &lt;strong&gt;false&lt;/strong&gt; otherwise.
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.882CBCD4-7499-87AD-2FE9-27F37C80D599" xmi.id="DCE.54F73260-8F9A-9921-EA97-F1CBA25698BA" owner="DCE.59354374-DAA0-2F16-C025-199806BE0027"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.02F33F9A-56FB-0FA9-8F16-0D02C198336B"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="word" xmi.id="DCE.4A47D2A8-D126-A6C9-E90A-B8272C9FE171" owner="DCE.59354374-DAA0-2F16-C025-199806BE0027"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.C0156671-3D41-0D47-A6D2-1FDDCCCC19CD"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+</UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="deAuthenticate" xmi.id="DCE.E4C5F570-DE72-3478-ACA8-FE70F59FF1A8" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.147D0D19-4B20-0D7D-9561-B04585316BCB" name="documentation">
+<UML:TaggedValue.dataValue>     To de-authenticat the user (a.k.a logout)
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.C8B138F0-72AC-3B1A-9485-AC6AC5DEF832" owner="DCE.E4C5F570-DE72-3478-ACA8-FE70F59FF1A8"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.45FCA950-BA30-92B0-023C-9DAF23A34C96"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+</UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="modifyPassword" xmi.id="DCE.E644A208-D681-C28E-E20D-68656EAE7D5F" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.C3F43891-175A-8901-1398-9C1C0FCB8F26" name="documentation">
+<UML:TaggedValue.dataValue>     Modify the admin password.
+     @param newPass the new password.
+     @return &lt;strong&gt;true&lt;/strong&gt; if the modification success;
+              &lt;strong&gt;false&lt;/strong&gt; otherwise (the user is not authenticated)
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.882CBCD4-7499-87AD-2FE9-27F37C80D599" xmi.id="DCE.6E33CC8B-14BF-3BC1-47F9-85A1C78ECD5B" owner="DCE.E644A208-D681-C28E-E20D-68656EAE7D5F"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.6E81EDD5-B54F-AC80-BE34-6FA7FF58770A"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="newPass" xmi.id="DCE.E309D402-926E-D520-6D68-71EFA6C7497B" owner="DCE.E644A208-D681-C28E-E20D-68656EAE7D5F"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.4948034C-8836-84DA-D2DB-EB96F6BA59C6"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+</UML:Element.presentation></UML:Operation><UML:Operation visibility="private" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="encrypt" xmi.id="DCE.F48C5627-AFD2-8F89-B3DB-3C7299503D5E" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.E43D0A27-697B-40B0-F35D-62D00742F81B" name="documentation">
+<UML:TaggedValue.dataValue>     To encrypt the string. May use MD5 algo. Haven't implement yet.
+     @param pass
+     @return the encrypted password.
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" xmi.id="DCE.C5AA805F-5A23-6FEC-438D-1DDA23FCCE25" owner="DCE.F48C5627-AFD2-8F89-B3DB-3C7299503D5E"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.A05BA3FE-18F6-A712-2E3F-68C9450ED77B"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="pass" xmi.id="DCE.C33D0073-7878-24BC-DF75-C866571D506B" owner="DCE.F48C5627-AFD2-8F89-B3DB-3C7299503D5E"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.CD4D9027-EF36-5D83-16BA-15B8E93D66F1"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+</UML:Element.presentation></UML:Operation></UML:Element.ownedElement>
+<UML:Element.presentation>
+</UML:Element.presentation></UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="Time" xmi.id="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" clientDependency="DCE.E28EAD6C-09FD-9344-A43F-D68707F9E0EA" associationEnd="DCE.5FE07F48-894E-97F3-960A-450846CF13FD DCE.B9BB424B-E3A2-0063-4749-7ED1C88DC2F6 DCE.2D2125CC-763A-AC49-1DFD-4DA69896E3A9 DCE.B80DF426-FF75-B32C-0AF0-CDC05B993049"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/Time.java" xmi.id="DCE.946F7B41-5D2C-4D9E-A18D-107BFFA04E25" owner="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.FD26300D-D027-7536-E6A9-F0A60B671C48" AssociationType="Aggregation" name="calendar" xmi.id="DCE.BD905B2C-0E9E-FC94-DD9C-601494B283EE" owner="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="Time" xmi.id="DCE.AAFDCE6F-92EC-AAB4-4168-7F3344CB14EF" owner="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3">
 <UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.33FB3C31-95C9-F614-168B-7428D659C598" name="documentation">
 <UML:TaggedValue.dataValue>     Constructs a &lt;code&gt;Time&lt;/code&gt; instance contains the current time.
      </UML:TaggedValue.dataValue></UML:TaggedValue></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="Time" xmi.id="DCE.4CCDC55A-92FC-0F62-7969-7564123FE743" owner="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.DDEC91BC-500D-A13F-72EB-81FE7CDA77B9" name="documentation">
@@ -392,9 +436,17 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="title" xmi.id="DCE.FCC8F2D6-8C2B-BCFA-5B8F-56C3DAAA06DA" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.39D9B87E-EB0B-EBE3-1A7C-6C31EB4CEE75"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.4691093B-81D0-837D-6C4A-DE32375E0866"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -404,9 +456,17 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="recordingTitle" xmi.id="DCE.38681D93-D5FE-89F4-8416-8DA6CE3C5BB3" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.A94A5515-A581-1B65-02F5-56168D0EAC35"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.4232FE9B-5BA9-59C9-3384-C25D4FC4A234"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -416,9 +476,17 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="year" xmi.id="DCE.9CC10BEC-C116-4D18-7163-34ABF0D8D0EB" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.D72C3920-5D96-C6CA-9F05-C8646586E3B8"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.0673364B-C255-84B4-8F64-D053B2584A1E"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -428,9 +496,17 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" name="accessNumber" xmi.id="DCE.D16E6FB2-CB41-D6EF-6BB6-0EB8438F75D4" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.AA18E0F8-3064-89B3-9D53-8184C7835686"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.D09ED983-E59E-DBAC-D930-8EF66851C473"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -440,9 +516,17 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" name="playCount" xmi.id="DCE.7602A6D1-873F-2655-5595-EF68151EACB3" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.B656A197-644D-F16C-34CD-51BEA1955C51"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.A696A3E9-AB71-2299-B861-678D8FD89209"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -452,15 +536,27 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="Time" AssociationType="Aggregation" name="addedTime"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="Time" AssociationType="Aggregation" name="lastPlayed"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.FDFE66FD-EDA4-37D0-6DF9-E6CC9175D79C" name="lastPopularized" xmi.id="DCE.9F221654-7C2D-1F8F-020E-4E67C43AFFE8" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.7FE41D29-5D74-8D0F-B302-5DFE99EB714C"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.7D78B163-EF99-2528-5CA1-6F3193F43F6D"/></UML:Attribute.default><UML:Element.presentation>
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.BAE51063-9500-3C27-BA84-DD06A94F0F23" name="priority" xmi.id="DCE.2F55BCE7-1C8E-C46D-9E0E-1675F7CF07D0" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.4CD860FE-FC19-001B-1653-0968888EA0BA"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.B1BF1FA8-0A9F-87BD-517F-645B57D851CF"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -479,6 +575,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="Song" xmi.id="DCE.EB0060AF-A319-A0FA-620A-06D706A33086" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="title" xmi.id="DCE.B65226F3-7816-D8D5-39DA-2C54B258B7C3" owner="DCE.EB0060AF-A319-A0FA-620A-06D706A33086"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.AB7F4BC2-0FFD-458D-C316-E403E1654B6E"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="performer" xmi.id="DCE.CEECE6B0-1640-649C-DEB5-41FF66B4EA62" owner="DCE.EB0060AF-A319-A0FA-620A-06D706A33086"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.75563434-6DBF-C7A2-D21B-F090A675842B"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="recordingTitle" xmi.id="DCE.3017D398-9E2A-F47E-5A6B-5A2E813A073B" owner="DCE.EB0060AF-A319-A0FA-620A-06D706A33086"><UML:TypedElement.multiplicity>
@@ -490,10 +590,18 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getTitle" xmi.id="DCE.573553C2-649A-CE7B-8E30-7A6E6EEF67E3" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.D50BA931-0D97-EDB6-F5DF-0A3E6C904049" name="documentation">
 <UML:TaggedValue.dataValue>Accessors
 </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" xmi.id="DCE.4F2EAE64-2304-FC1A-1F64-5893BF6FB9CA" owner="DCE.573553C2-649A-CE7B-8E30-7A6E6EEF67E3"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.B6A29477-1766-8AA8-9213-397F63D6CEEF"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -502,8 +610,16 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getRecordingTitle" xmi.id="DCE.0C8FC146-B74D-5B8D-206B-E1F821D9EDE1" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" xmi.id="DCE.D4EF1274-F038-6CF1-1E7C-9EC8022A5C1F" owner="DCE.0C8FC146-B74D-5B8D-206B-E1F821D9EDE1"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.7B687BCB-9001-D726-E3EB-880E7B888F94"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -512,8 +628,16 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getYear" xmi.id="DCE.68702028-FA5B-BD6F-7466-5D917F81D657" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" xmi.id="DCE.0DD8D571-20EE-D8FA-B11F-810CBCFB149A" owner="DCE.68702028-FA5B-BD6F-7466-5D917F81D657"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.0B64028B-9BE8-6616-21ED-DA4199921390"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -522,8 +646,16 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getAccessNumber" xmi.id="DCE.B8D35FCD-38E9-2E15-C09B-F1D70409EAD4" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" xmi.id="DCE.BE88FA6A-3F1D-DFC8-9A7B-1F27A3A217E4" owner="DCE.B8D35FCD-38E9-2E15-C09B-F1D70409EAD4"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.138BCC99-1448-F579-EE3F-F435511C267F"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -532,8 +664,16 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getNumberOfPlays" xmi.id="DCE.37CAB7AF-A2FD-8BEA-B3B5-ECF0F50839DC" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" xmi.id="DCE.73A788A1-EEFB-D5B0-3326-17154E2A53A5" owner="DCE.37CAB7AF-A2FD-8BEA-B3B5-ECF0F50839DC"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.CE66B852-CE7F-533E-E502-518FBC3558B2"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -542,13 +682,25 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getPriority" xmi.id="DCE.81DE15E0-C4D8-D59B-AB4D-38B3C107DBAE" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.BAE51063-9500-3C27-BA84-DD06A94F0F23" xmi.id="DCE.BF9677B4-5755-B682-FBD3-06BB58DCB0A8" owner="DCE.81DE15E0-C4D8-D59B-AB4D-38B3C107DBAE"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.66D68E75-0574-2A4A-4DE4-3FF1708B856F"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getAddedTime" xmi.id="DCE.49ABFFF5-0127-DF74-9F99-A9B7AAA5B703" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3" xmi.id="DCE.67D660BB-4B55-9A51-95AB-6962FDC6D141" owner="DCE.49ABFFF5-0127-DF74-9F99-A9B7AAA5B703"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.C86B1E04-8ABE-2DD2-C112-12E6F33B7889"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -563,9 +715,17 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="setTitle" xmi.id="DCE.6960A078-DE2A-675D-9910-4A075D5D4BE4" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.F43AEF96-1F8D-836E-BD5E-797AA6E1A98B" owner="DCE.6960A078-DE2A-675D-9910-4A075D5D4BE4"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.83BB4673-9183-15A5-84B1-4E93C1E600D5"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="title" xmi.id="DCE.FAFFB185-327B-31CE-96B9-F88BB7BA70CC" owner="DCE.6960A078-DE2A-675D-9910-4A075D5D4BE4"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.00BBE9D2-BAEA-0864-F9F0-1D9B621E53AE"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -575,9 +735,17 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="setRecordingTitle" xmi.id="DCE.874208AB-FB41-F84B-0128-2DB994550FF8" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.DED87EC5-E26C-BD6D-C672-44691740A6F7" owner="DCE.874208AB-FB41-F84B-0128-2DB994550FF8"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.EDE40BBA-D141-776F-24FA-24A86859F728"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="recordingTitle" xmi.id="DCE.D16AAD2A-B88E-9F60-C72E-CC197D1DE22E" owner="DCE.874208AB-FB41-F84B-0128-2DB994550FF8"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.CB93D9BC-6E6C-A411-A1B9-E6ACFCFB6C6E"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -587,9 +755,17 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="setYear" xmi.id="DCE.7EAD871D-4554-6878-C9D1-990469260087" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.850D834E-10B2-3F59-3E0A-26655CD63295" owner="DCE.7EAD871D-4554-6878-C9D1-990469260087"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.3A99C52F-FBF7-74C5-7B87-EEB365E4456B"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="year" xmi.id="DCE.0613BCB9-3DD0-E56C-2CB7-66E8FEAC2233" owner="DCE.7EAD871D-4554-6878-C9D1-990469260087"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.8C63943F-8AA6-6CF1-A162-D36A88452274"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -602,6 +778,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="addNumberOfPlays" xmi.id="DCE.5F25D38B-99D8-436C-4C92-5A1062F30311" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.B00BF15E-2785-7720-B187-021B58B029AB" name="documentation">
 <UML:TaggedValue.dataValue>     Increment the &lt;code&gt;playCount&lt;/code&gt; by 1.
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.EA6BB8CA-5D1F-2F9D-80B9-52D2BB7A1CD1" owner="DCE.5F25D38B-99D8-436C-4C92-5A1062F30311"><UML:TypedElement.multiplicity>
@@ -609,10 +789,18 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="resetNumberOfPlays" xmi.id="DCE.F8CBB761-44FE-9F27-EA0F-3C2B0FC38B1E" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.AA73740A-BD7F-00ED-26CF-8CF61A8C57F4" name="documentation">
 <UML:TaggedValue.dataValue>     set the plays in week to 0 for a new week.
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.FF7EA99A-A9D7-E678-1A36-B2F456473BCA" owner="DCE.F8CBB761-44FE-9F27-EA0F-3C2B0FC38B1E"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.73BE2378-5CB3-48BA-B35F-89D47969BB1C"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -626,6 +814,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="makeRequest" xmi.id="DCE.B4162FDF-734B-5CD1-437A-F23532D8B383" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.734B0215-5E24-DF5C-1FC1-6884D05FEE33" name="documentation">
 <UML:TaggedValue.dataValue>     Increases the requestCount so popularity can be calculated.  Count
      automatically reset to zero when &lt;code&gt;updatePopularity()&lt;/code&gt; is called.
@@ -634,11 +826,19 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="updatePopularity" xmi.id="DCE.C0B5F5BD-9C85-98D5-7D75-DDA49EDEF00A" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.8D46A4B5-C438-A081-F3CF-DC8DFCB8EF9D" name="documentation">
 <UML:TaggedValue.dataValue>     Re-calculates the popularity of the song based on requests since last called.
      Updates object and database values.
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.2E7D6018-C4BA-2030-8689-EAF769AD475E" owner="DCE.C0B5F5BD-9C85-98D5-7D75-DDA49EDEF00A"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.5089BE9D-E470-85CF-D3DA-BEBDA68C8FD1"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -654,6 +854,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="toString" xmi.id="DCE.9EA61B0A-8BE8-3509-F4D4-13700E6C6FA4" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.987892C2-A11D-4FFD-8D1E-58552951532D" name="documentation">
 <UML:TaggedValue.dataValue>     Return the name of the song
      @author Kurtis Schmidt
@@ -662,14 +866,23 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation>
 <UML:Implementation xmi.id="DCE.9D274438-42C7-B830-D4E6-33282B2A8E52" owner="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2" client="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2" supplier="DCE.19F38FAF-875C-0B0B-6BDA-F11D3F9C2F0B"/></UML:Element.ownedElement>
 <UML:Element.presentation>
+
 
 </UML:Element.presentation></UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="Schedule" xmi.id="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" associationEnd="DCE.4C2B9241-DFCD-82D3-B50F-7823FFA4E135 DCE.0C8F0E2C-15CD-0281-88FC-A11874DF5150 DCE.193B5768-BAC7-72C7-3D40-48F379908D82 DCE.DAAF69AA-7CFE-46DC-1164-7D7EF531A3E8 DCE.8B5BC805-995C-DD20-4CC8-D295C290575E DCE.41FF6F60-ED14-EF56-A4D4-F2334BA8A778" clientDependency="DCE.2567691A-C13A-D45D-84DC-9CE8431214D9 DCE.AC5B19F1-C576-B392-BA08-0344BFB0EC1D DCE.15CA5565-F8E3-9805-09D1-FE4AD1DBDD93 DCE.F25EF304-3139-45B2-DD12-F07A740AB2E2"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/Schedule.java" xmi.id="DCE.872C03BB-74C6-DFB5-01CF-0D42293C7647" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="Song" name="songList">
 </UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="Time" AssociationType="Aggregation" name="startTime"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" name="duration" xmi.id="DCE.684548C3-7220-99AE-88F4-0B9DFE99A981" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.E23A3262-38A8-81C0-1A82-653C54631629"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.51E4FD9D-9154-98B9-F3C8-B243331F2324"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -681,6 +894,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="public" isLeaf="false" ownerScope="instance" isFinal="true" isStatic="true" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" name="MAX_SCHEDULE_LENGTH" xmi.id="DCE.65D57A4C-4C25-47E7-DF1A-56B005724127" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Attribute.default><UML:Expression xmi.id="DCE.7E7DB4D5-4870-39EB-D24E-B91FDA6272F0"><UML:Expression.body>2880000</UML:Expression.body></UML:Expression></UML:Attribute.default>
 <UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.B65D824C-3B05-F1E5-2617-EAF411BB6028" name="documentation">
 <UML:TaggedValue.dataValue>43 minutes
@@ -689,11 +906,19 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="Schedule" xmi.id="DCE.A1612177-6792-5F80-A7B2-E384661A580A" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.CEAB032B-7ADA-CBF9-3CDE-C50A4874172F" name="documentation">
 <UML:TaggedValue.dataValue>     Constructs an empty schedule starts from &lt;em&gt;startTime&lt;/em&gt;.
      @param startTime
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" isQuery="false" type="DCE.9BECBDF0-68D1-A930-4B2B-72A7B766EBD3" name="startTime" xmi.id="DCE.70142F90-5863-4865-FD11-27E1BC4C1F52" owner="DCE.A1612177-6792-5F80-A7B2-E384661A580A"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.B4CA8A52-C5DC-84CA-4E1D-F11FD4D5BA68"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -706,12 +931,20 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="remove" xmi.id="DCE.C6FD726D-67B6-567A-BCAC-F1F131324180" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.E0730772-CB43-D723-3E8E-FB2AF7D37EB7" name="documentation">
 <UML:TaggedValue.dataValue>     Remove the &lt;em&gt;song&lt;/em&gt; from the current schedule.
      @param song
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.22313795-90B1-29DB-F3BC-B2DA3A76CEDE" owner="DCE.C6FD726D-67B6-567A-BCAC-F1F131324180"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.6FB86AFC-8B24-75E1-A735-43FC269AF92A"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2" name="song" xmi.id="DCE.06B3229F-1D80-AE48-9239-CC6E5B39E04B" owner="DCE.C6FD726D-67B6-567A-BCAC-F1F131324180"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.72E33EDC-8B57-2383-A56F-0449DDA03FC2"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -726,6 +959,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="underMin" xmi.id="DCE.D93D9E06-B724-0463-D416-B047ED7FDFE4" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.633AA4A6-7A3B-EABC-0A1D-4E390C111215" name="documentation">
 <UML:TaggedValue.dataValue>     Determine if the length of the current schedule is
      less than &lt;code&gt;MIN_SCHEDULE_LENGTH&lt;/code&gt;.
@@ -737,11 +974,19 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getDuration" xmi.id="DCE.6D132070-ACB3-1066-D6E4-9199174AF431" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.A145F541-502B-4FAD-57FE-816D97FC86DF" name="documentation">
 <UML:TaggedValue.dataValue>     Get the length of the schedule.
      @return the length of the schedule.
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" xmi.id="DCE.A4174A01-8139-1A2A-CBFF-330DACAA3CFD" owner="DCE.6D132070-ACB3-1066-D6E4-9199174AF431"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.0A15368A-ABA8-EECB-BC90-E4707DB2477E"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -756,8 +1001,16 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="iterator" xmi.id="DCE.AD878A49-BBF5-F3DD-61FA-EACF239415E5" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.A53F286D-313F-5188-AA76-556E53616625" xmi.id="DCE.D500F93E-24DE-D735-BD7F-258CAF8188AA"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.DEC73515-C858-7554-AD9D-6A4C6DFB033D"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -769,11 +1022,19 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="clear" xmi.id="DCE.FC6E2342-3595-F735-5634-6647808C17C6" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.22801DD6-9052-04E6-80C5-363240C3889E" name="documentation">
 <UML:TaggedValue.dataValue>     Remove all songs in this schedule. The schedule will be empty
      after executing this method.
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.0AAE030E-9D0C-F72C-9839-5E65CFAB002F" owner="DCE.FC6E2342-3595-F735-5634-6647808C17C6"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.460DC01C-1C9A-DC43-3EE5-77B6DBDAA203"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -786,12 +1047,20 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="updateSongsInSchedule" xmi.id="DCE.6A998444-3F56-8BA7-DEAD-460ACECB4509" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.D31F39F7-0C3C-7603-5016-AC6DCB471D88" name="documentation">
 <UML:TaggedValue.dataValue>     updateSongsInSchedule
           Updates song info for all songs in schedule..
           @return void
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.097E7B01-0EB3-E6B5-8CAB-A7D446D6B23D" owner="DCE.6A998444-3F56-8BA7-DEAD-460ACECB4509"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.25EBAA41-6744-0DB4-330A-33B05D75BEFE"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -805,8 +1074,16 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="toTextFileLine" xmi.id="DCE.54D90114-B723-6F5A-BAB3-868D851A7382" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" xmi.id="DCE.B0F37B3D-E52E-704C-684D-3535EA854073" owner="DCE.54D90114-B723-6F5A-BAB3-868D851A7382"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.F6162BF4-609C-A025-BC93-5A35F342E585"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 
@@ -815,29 +1092,54 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Implementation xmi.id="DCE.AC5B19F1-C576-B392-BA08-0344BFB0EC1D" owner="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7" client="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7" supplier="DCE.19F38FAF-875C-0B0B-6BDA-F11D3F9C2F0B"/></UML:Element.ownedElement>
 <UML:Element.presentation>
 
+
 </UML:Element.presentation></UML:Class><UML:Class isAbstract="true" isLeaf="false" visibility="public" name="HoldingFiles" xmi.id="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" associationEnd="DCE.0FBC5462-F716-1914-A94E-C799713470FD"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/HoldingFiles.java" xmi.id="DCE.31786578-6B1B-5A6B-4AAF-7AD163D5C77D" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"/><UML:TaggedValue xmi.id="DCE.25E101B9-1C36-9C9B-4DD0-628BCAA6216F" name="documentation">
 <UML:TaggedValue.dataValue>  @author liufeng
  </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" isFinal="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="HOLDING_FILE" xmi.id="DCE.87807531-129B-0825-1B93-9267830DC2A6" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:Attribute.default><UML:Expression xmi.id="DCE.DFEF35E4-1B42-CA69-AB22-529D821E66B4"><UML:Expression.body>"holdingFile.txt"</UML:Expression.body></UML:Expression></UML:Attribute.default><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.12343DE5-339C-DD07-091F-9A428D932C0B"/></UML:TypedElement.multiplicity><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="DCE.C1446D8E-1267-862E-E929-B9BE27C502E3" AssociationType="Aggregation" name="listFile" xmi.id="DCE.499BEAAD-470D-EDEF-4DF1-B4F0EA81B3F6" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.080B8F1F-DB2B-6833-5C3E-5DD1A23D94FA"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.0EF7F74E-B93C-E70C-6A0D-85895CD75F38"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="list" xmi.id="DCE.3D998FF4-C143-1256-1144-21990EE3B281" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474">
 <UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.131E981C-A06B-2AC1-6D51-937BD2B0692E">
 <UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="LinkedList" xmi.id="DCE.8B59A43C-838D-61D8-B1B2-58507CF88F3E"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.D9B6C825-D929-1DAD-F6DD-455DB4F1B6CB"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="defaultHoldingFile" xmi.id="DCE.9A9CF09E-2CC0-1CE4-5F27-A9240AE95ECB" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.79098420-C6F8-CB6E-71E5-0CEF24E85246"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.A056FC41-66F5-26AA-118B-BA7F90A67B01"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="currHoldingFile" xmi.id="DCE.F9219488-2080-B257-4151-942ACBF0707E" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.139C7306-43E7-B444-9A8B-681DF57EBAB6"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.91A9DD33-BC8C-D5B2-7A52-BE5CE3FE3AC7"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="init" xmi.id="DCE.C7F7DC5D-BB3D-42D7-61C9-91844B89AC68" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.BCCEAC99-A7C3-B17B-9514-2300BD32E991" name="documentation">
 <UML:TaggedValue.dataValue>     Initialize the holding files list. In case the holding file list
      doesn't exist. If that happens, create a new file has only default.
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.3724EB66-4552-1A05-94CA-01B85FF3FE23" owner="DCE.C7F7DC5D-BB3D-42D7-61C9-91844B89AC68"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.9F34E1C1-36D2-4B9F-C2BB-8F63CEFD72FB"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getHoldingFiles" xmi.id="DCE.37D5CDA6-A900-776B-A3AD-8476470D64F0" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.0094BA8E-A3AF-9FBC-615E-E16E92DEABBC" name="documentation">
 <UML:TaggedValue.dataValue>     Get the holding file list as a LinkedList instance.
      @return
@@ -845,44 +1147,77 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.BFC1E861-11AF-1D9B-B576-185E57E89099">
 <UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="LinkedList" xmi.id="DCE.A98F2B24-3D4F-A22D-130D-48B373A6953C"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="addFile" xmi.id="DCE.6D3930FD-8D0B-751B-1E6D-01CD9BFBF3B9" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.6EA22CA3-F329-E077-EB6E-87D087B00199" name="documentation">
 <UML:TaggedValue.dataValue>     Add a new file to the holding file list.
      @param filename
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.4005C35A-DB27-8C43-0C39-DE76CB5408B1" owner="DCE.6D3930FD-8D0B-751B-1E6D-01CD9BFBF3B9"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.794CFFB6-7DDC-EF98-1B3D-2135DD4B87A7"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="filename" xmi.id="DCE.0790DD2D-9B39-0679-0488-207F69FE0524" owner="DCE.6D3930FD-8D0B-751B-1E6D-01CD9BFBF3B9"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.EFFF30E0-FC2E-EA90-F312-C3BC4852E91A"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="private" isLeaf="false" ownerScope="instance" isAbstract="false" name="writeToDisk" xmi.id="DCE.29356066-E435-2F35-5067-C22C87FA4CF1" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.63B446EE-D787-7A08-E7EA-6B363B5F5EBC" name="documentation">
 <UML:TaggedValue.dataValue>     Write the &lt;code&gt;list&lt;/code&gt; to the disk file.
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.9A0836C6-9437-2CF9-611A-E745225ABE33" owner="DCE.29356066-E435-2F35-5067-C22C87FA4CF1"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.14D22A2A-62A5-D6DF-82B8-8512DC882226"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="setDefault" xmi.id="DCE.4D2D95EB-A44B-5CD6-14D4-4BFB6B99A02E" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.C33E33C5-D8F4-ECC7-7915-154D50C154F8" name="documentation">
 <UML:TaggedValue.dataValue>     Set the default holding file.
      @param filename
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.CDDED561-4EDD-666D-834F-9AE736BF7F08" owner="DCE.4D2D95EB-A44B-5CD6-14D4-4BFB6B99A02E"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.62A44543-376A-DA7F-EB98-853BBCDB4023"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="filename" xmi.id="DCE.2B0E546C-7EC9-D77E-E8AE-91A2F4E059C5" owner="DCE.4D2D95EB-A44B-5CD6-14D4-4BFB6B99A02E"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.C2E045DF-BC2F-6148-62DF-621EB2CD2800"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="setCurrent" xmi.id="DCE.2BFCB62F-AC1A-87DB-1793-FEC168C07A64" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.C9E04BF2-22F7-0101-0CE4-C938AA89B61C" name="documentation">
 <UML:TaggedValue.dataValue>     Set the current holdings file
      @param filename
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.5CBAEA6F-A325-2B29-D5EA-4D0F34084343" owner="DCE.2BFCB62F-AC1A-87DB-1793-FEC168C07A64"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.87A59643-B6BD-AADB-38D6-50C6544091DA"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="filename" xmi.id="DCE.0D0E2607-5688-6DEA-B320-FE14FB55A81B" owner="DCE.2BFCB62F-AC1A-87DB-1793-FEC168C07A64"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.46BDC436-787D-8238-C6C9-A537B17C5241"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="getCurrent" xmi.id="DCE.74DE499E-9ADF-9B1A-E592-467C1BCD7D77" owner="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.8CE3D439-0C3D-73EA-DC94-7E6ADE2B4956" name="documentation">
 <UML:TaggedValue.dataValue>     Get the current holdings file
      @return
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" xmi.id="DCE.7357492F-53E5-1073-565D-BE3D46C13DE6" owner="DCE.74DE499E-9ADF-9B1A-E592-467C1BCD7D77"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.A313A685-8733-C04B-0145-A8A576FF17FD"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Operation></UML:Element.ownedElement>
 <UML:Element.presentation>
+
 </UML:Element.presentation></UML:Class><UML:Class isAbstract="true" isLeaf="false" visibility="public" name="Database" xmi.id="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" associationEnd="DCE.92E24FAB-FF16-EF89-208B-003DC4109902 DCE.97F376EB-7EDD-74EB-5396-F367F9D25C18 DCE.BBE1491E-B6E1-F2DB-8AF5-25BF61E56E0A DCE.5CA406D4-E03F-D0ED-B694-9239EA008B0A"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/Database.java" xmi.id="DCE.6B8F7F0A-912B-FD79-FE04-AEA4646CE7D8" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"/><UML:TaggedValue xmi.id="DCE.82CAA0EC-F60A-9D75-2AB5-18A56A366919" name="documentation">
 <UML:TaggedValue.dataValue>  @author cmhilde
  </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" isFinal="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="scheduleFile" xmi.id="DCE.780D752A-566F-5F80-F08A-004AFAAE0D0A" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Attribute.default><UML:Expression xmi.id="DCE.FE420485-6F3B-8F26-6B87-E7F5A2EA64FE"><UML:Expression.body>"schedule.hash"</UML:Expression.body></UML:Expression></UML:Attribute.default><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.23A1FE26-AD8E-F58C-8D06-3613F3E140B4"/></UML:TypedElement.multiplicity><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="currHoldingsFile" xmi.id="DCE.D56989D5-8FBD-9196-B6EC-4FDE76FEE1F8" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.83F62214-B87E-2374-E634-E0A458C73643"/></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.48E52945-BD72-001D-E357-FA64F936F3C7"/></UML:Attribute.default><UML:Element.presentation>
+
+
+
+
 
 
 </UML:Element.presentation></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="HashMap" name="songHash"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="HashMap" name="scheduleHash"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="init" xmi.id="DCE.B97F9BA8-7CDA-FA67-0EA5-023AD0BC7DF9" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.6A14D90A-5EB0-B6FF-4D1E-A15A0B6764DD" name="documentation">
@@ -895,6 +1230,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.44F31482-76CF-0DEB-2BE8-845EECEC9BD4"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="setHoldingsFile" xmi.id="DCE.1DC0DE79-F2C6-082E-B6DA-56F6195AC6C8" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.0C75B9AA-A3E9-454B-70CE-63B2B6220510" name="documentation">
 <UML:TaggedValue.dataValue>     Changes the current holdings file.  If file does not exist,
      creates new holdings file with specified name.  Saves changes to
@@ -905,12 +1244,24 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.96783E5E-D95E-07B8-ED14-8EF4E01CAA0C"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="destroy" xmi.id="DCE.809DEF85-39B2-E88B-BE21-26B3264DE830" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.8A526BDC-A52F-62FF-681A-3A85096A0530" owner="DCE.809DEF85-39B2-E88B-BE21-26B3264DE830"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.910670D6-6EA4-3531-A16C-9893CBC66BD4"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="private" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="loadSongInfo" xmi.id="DCE.99FE5D87-2F84-F12A-365A-985F53C3CD1A" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.3A645E73-5E8C-899D-8361-C45DD2DA00A2" owner="DCE.99FE5D87-2F84-F12A-365A-985F53C3CD1A"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.4F2FC891-D669-3DF9-7C47-29F64478949C"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="private" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="saveSongInfo" xmi.id="DCE.54163C9D-7D37-734B-BAA4-D2C3A2698377" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.845C2EED-5092-6751-B9C6-3BBBF5285428" name="documentation">
@@ -919,11 +1270,19 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.713AD966-0525-13D4-D0FC-9AF075A7CECE"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="getSongsByPriority" xmi.id="DCE.00332ECE-DC12-FED4-F2E6-8D631C8D9A30" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.13C41F93-0D1B-34B3-0DF9-9A329328F8B5" name="documentation">
 <UML:TaggedValue.dataValue>     Returns an ArrayList of available songs, ordered by priority
      @return
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.859B626B-FEE7-B346-EF76-A7EF23AABE39" xmi.id="DCE.3A6BFE6D-BBD9-CBF4-1BA1-D3DB5104A118" owner="DCE.00332ECE-DC12-FED4-F2E6-8D631C8D9A30"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.736DFF4A-BE70-1ABD-91AA-7FAC131BCB4F"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="getSongs" xmi.id="DCE.E11B7E28-74CA-5593-17A5-C844C05A03ED" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.23172463-6433-9924-5E1B-69863A3279ED" name="documentation">
@@ -942,11 +1301,19 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.00518FFF-1332-8F7A-B4EC-8404438AEC35"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="getSongs" xmi.id="DCE.ABC34207-C0C9-EEB7-105C-8F5FF8C365E8" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.7558FD5F-6CC8-E8DE-BEFF-AEC53723B2E5" name="documentation">
 <UML:TaggedValue.dataValue>     Dummy method to return all songs in current holdings file.
      @return
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.859B626B-FEE7-B346-EF76-A7EF23AABE39" xmi.id="DCE.3504D077-E5DC-41BE-8F39-AB1FE3CE0EA0" owner="DCE.ABC34207-C0C9-EEB7-105C-8F5FF8C365E8"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.088AE25C-8D20-02D6-84E2-0CDF4E07E6E1"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="commitSchedule" xmi.id="DCE.C7611C59-592B-48FB-A858-7FF93F917D69" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.FEF8B876-171E-F6B6-7814-24CA91C02B0C" name="documentation">
@@ -955,6 +1322,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
      </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.A956EB31-81E8-1DA6-87FD-95D4C98F6B7F" owner="DCE.C7611C59-592B-48FB-A858-7FF93F917D69"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.6999EEA2-DF67-8190-AAA6-D52AF6363136"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7" name="candidate" xmi.id="DCE.28F50258-0024-49CE-418E-C55D72B4B6A4" owner="DCE.C7611C59-592B-48FB-A858-7FF93F917D69"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.FE8A83D2-7BDB-CC04-2291-E75B74291E4C"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
+
+
+
+
 
 
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="getScheduleFromDB" xmi.id="DCE.A42D98FC-8001-7B4A-7BE5-C41F9B5E4F20" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.C9D5E19A-7E44-EE08-BD91-FEB557262C15" name="documentation">
@@ -968,6 +1339,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.58F28DE9-0DCC-8493-372D-4788DDA7742E"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Operation visibility="private" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="createSongFromLine" xmi.id="DCE.BD77DE4D-E7A7-213E-379A-A9CAA0F78BD3" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.F3BB9EE3-AE25-5721-7830-2EA89E8274EC" name="documentation">
 <UML:TaggedValue.dataValue>     Parses a line from library holdings file to create song object
      @param line
@@ -977,65 +1352,51 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.D7921720-3A83-A41B-C857-4CBE8A6331A7"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation><UML:Class isAbstract="false" isLeaf="false" visibility="private" isStatic="true" name="TitleComparator" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810" xmi.id="DCE.E12B85BC-A157-7D31-CE8E-ED9B838C04AA" clientDependency="DCE.661368D1-FD1A-43DC-4C6F-6A93861E6302"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/Database.java" xmi.id="DCE.7634BE4C-20FC-2BE5-719C-0D3DFA4D2CAF" owner="DCE.E12B85BC-A157-7D31-CE8E-ED9B838C04AA"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="compare" xmi.id="DCE.6EC5F875-6E0B-9558-F31A-43B73842F263" owner="DCE.E12B85BC-A157-7D31-CE8E-ED9B838C04AA"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" xmi.id="DCE.18A13423-ADEB-5481-8215-5D4233D15BCC" owner="DCE.6EC5F875-6E0B-9558-F31A-43B73842F263"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.0508057B-82BD-03E0-D196-7CD54D16B126"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.B62AD88D-0029-BDDA-9238-CF6F77C0300D" name="song1" xmi.id="DCE.200F11A5-9D47-B19F-7696-FCA8F4660481" owner="DCE.6EC5F875-6E0B-9558-F31A-43B73842F263"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.293E480E-79AC-B37D-2CD0-3E9D621B0FFD"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.B62AD88D-0029-BDDA-9238-CF6F77C0300D" name="song2" xmi.id="DCE.6A73B1CD-5EC7-7141-A151-AE03F05793DB" owner="DCE.6EC5F875-6E0B-9558-F31A-43B73842F263"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.E999D32E-519E-DEF5-A332-BB5E2FBC09D3"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation>
 <UML:Implementation xmi.id="DCE.661368D1-FD1A-43DC-4C6F-6A93861E6302" owner="DCE.E12B85BC-A157-7D31-CE8E-ED9B838C04AA" client="DCE.E12B85BC-A157-7D31-CE8E-ED9B838C04AA" supplier="DCE.6A7DAC20-2BBF-10EB-C19A-C06015F1FE08"/></UML:Element.ownedElement>
 <UML:Element.presentation>
+
 </UML:Element.presentation></UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="private" isStatic="true" name="PriorityComparator" owner="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810" xmi.id="DCE.21CDCDB1-C925-288A-3C7F-0BFB6A4DAF20" clientDependency="DCE.2FC656ED-55F1-605A-702B-43A02E6216A9"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/Database.java" xmi.id="DCE.731F6DD7-DEE4-4811-0452-B770E904C0E1" owner="DCE.21CDCDB1-C925-288A-3C7F-0BFB6A4DAF20"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="compare" xmi.id="DCE.B7C344F2-673C-D18A-E07B-D54E145EE2A1" owner="DCE.21CDCDB1-C925-288A-3C7F-0BFB6A4DAF20"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.A8D44BB4-FEB4-02BD-9207-01826DD04BD6" xmi.id="DCE.30F1960E-5A44-709B-3026-B88DBAEB5733" owner="DCE.B7C344F2-673C-D18A-E07B-D54E145EE2A1"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.32356236-F172-3ACE-9549-F528DF4A0852"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.B62AD88D-0029-BDDA-9238-CF6F77C0300D" name="song1" xmi.id="DCE.EF695798-8EDF-73ED-A129-4466C038D9A2" owner="DCE.B7C344F2-673C-D18A-E07B-D54E145EE2A1"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.00712AA3-EEEF-2044-2559-AA352DC45E69"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.B62AD88D-0029-BDDA-9238-CF6F77C0300D" name="song2" xmi.id="DCE.BFB12029-A704-B1FF-A829-9D63DC6140CC" owner="DCE.B7C344F2-673C-D18A-E07B-D54E145EE2A1"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.F9191223-A0CA-ABE6-20FD-C5EB9020ADF2"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement><UML:Element.presentation>
 
 
+
+
+
+
 </UML:Element.presentation></UML:Operation>
 <UML:Implementation xmi.id="DCE.2FC656ED-55F1-605A-702B-43A02E6216A9" owner="DCE.21CDCDB1-C925-288A-3C7F-0BFB6A4DAF20" client="DCE.21CDCDB1-C925-288A-3C7F-0BFB6A4DAF20" supplier="DCE.6A7DAC20-2BBF-10EB-C19A-C06015F1FE08"/></UML:Element.ownedElement>
 <UML:Element.presentation>
+
 </UML:Element.presentation></UML:Class>
 </UML:Element.ownedElement>
 <UML:Element.presentation>
-</UML:Element.presentation></UML:Class><UML:Class isAbstract="true" isLeaf="false" visibility="public" name="Authentication" xmi.id="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/model/Authentication.java" xmi.id="DCE.805E52A8-8232-26FB-D59C-CFB57D7D0563" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"/><UML:TaggedValue xmi.id="DCE.600BCF2C-26BA-A03A-E32F-9D88F5FC7942" name="documentation">
-<UML:TaggedValue.dataValue>  @author liufeng
- </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.882CBCD4-7499-87AD-2FE9-27F37C80D599" name="isAuthenticated" xmi.id="DCE.B47C18E0-5CDB-E108-E0C6-3951909F6110" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.9300EB02-130A-FB3E-910C-BD43FD2ECD6F"/></UML:TypedElement.multiplicity><UML:Attribute.default>
-<UML:Expression xmi.id="DCE.994CDEED-0755-9BA0-1696-AEBB7D24EA54"/></UML:Attribute.default></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="password" xmi.id="DCE.B997ECA8-B45A-0427-2554-969EFB7A4598" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.774D0CEA-49AF-690D-BCF0-1192F5C41C39"/></UML:TypedElement.multiplicity><UML:Attribute.default>
-<UML:Expression xmi.id="DCE.08576EC6-AAC9-870A-24F8-E37479B31484"/></UML:Attribute.default></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" isFinal="true" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" AssociationType="Aggregation" name="PASS_FILE" xmi.id="DCE.D4D00F4A-291B-EE11-8B88-DAE519B53BE0" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Attribute.default><UML:Expression xmi.id="DCE.0CE90701-56B6-8575-A656-E84A8DC9DF22"><UML:Expression.body>"passwd"</UML:Expression.body></UML:Expression></UML:Attribute.default><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.97B6C273-A3CA-8892-7351-C673CD1BC14C"/></UML:TypedElement.multiplicity></UML:Attribute><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="init" xmi.id="DCE.BA33686B-A4B6-19F9-BD0C-0BFE634DDC13" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.2ACD6221-EC21-E9F9-9D97-B468CFF64AA6" name="documentation">
-<UML:TaggedValue.dataValue>     Initialize the password and the user status.
-     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.A0409976-C529-7836-43E0-0C6BDAE8BB41" owner="DCE.BA33686B-A4B6-19F9-BD0C-0BFE634DDC13"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.316AB69D-3A42-8A75-4D96-EE73C3942526"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="isAuthenticated" xmi.id="DCE.2DF43E93-95AD-AFD3-A8B0-98AD1DB7B557" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.E720BBE7-6448-E7AB-7903-E2F02ED14C14" name="documentation">
-<UML:TaggedValue.dataValue>     Check if the user is authenticationed.
-     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.882CBCD4-7499-87AD-2FE9-27F37C80D599" xmi.id="DCE.7939AE5A-66C6-7D3B-AF75-D81D8568D9C5" owner="DCE.2DF43E93-95AD-AFD3-A8B0-98AD1DB7B557"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.DF4104EF-4BED-28DF-A57D-85A7AAE434BD"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="checkPassword" xmi.id="DCE.59354374-DAA0-2F16-C025-199806BE0027" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.11CF6339-F0CD-7212-0ECB-FECFCC8F5ACE" name="documentation">
-<UML:TaggedValue.dataValue>     Check if the password is correct. And change the user status.
-     @param word The user input password
-     @return &lt;strong&gt;true&lt;/strong&gt; if the password is correct;
-              &lt;strong&gt;false&lt;/strong&gt; otherwise.
-     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.882CBCD4-7499-87AD-2FE9-27F37C80D599" xmi.id="DCE.39159E13-70F1-1F00-DE8D-DDA88CBC629C" owner="DCE.59354374-DAA0-2F16-C025-199806BE0027"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.9908DE74-8AF5-2A27-E600-28ED9A576936"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="word" xmi.id="DCE.EE52017D-A329-B35E-B060-A7A8888EECDF" owner="DCE.59354374-DAA0-2F16-C025-199806BE0027"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.B6436E18-4A09-3A4F-7DAD-217198578E8C"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="deAuthenticate" xmi.id="DCE.E4C5F570-DE72-3478-ACA8-FE70F59FF1A8" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.BCF07500-BE81-ADEA-E89E-81D486790829" name="documentation">
-<UML:TaggedValue.dataValue>     To de-authenticat the user (a.k.a logout)
-     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.97BDCC95-EFFB-3D45-50D3-27C0D9F6AA9D" xmi.id="DCE.920C80C0-3AE2-CDCB-F366-DCCBDAAFD03E" owner="DCE.E4C5F570-DE72-3478-ACA8-FE70F59FF1A8"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.CBAFBE0E-76E3-1DC3-C1AE-9279C46B5D9F"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="modifyPassword" xmi.id="DCE.E644A208-D681-C28E-E20D-68656EAE7D5F" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.8FBE4C62-C6E8-37BC-5D43-A2721CC1EFA0" name="documentation">
-<UML:TaggedValue.dataValue>     Modify the admin password.
-     @param newPass the new password.
-     @return &lt;strong&gt;true&lt;/strong&gt; if the modification success;
-              &lt;strong&gt;false&lt;/strong&gt; otherwise (the user is not authenticated)
-     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.882CBCD4-7499-87AD-2FE9-27F37C80D599" xmi.id="DCE.6B9D014D-52CC-072E-D559-DEC8B9118F4D" owner="DCE.E644A208-D681-C28E-E20D-68656EAE7D5F"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.FAA320CC-6963-15B9-A27F-DC5C555259D2"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="newPass" xmi.id="DCE.E0B4BABE-9FF4-D87F-8DD3-82DEE222B44B" owner="DCE.E644A208-D681-C28E-E20D-68656EAE7D5F"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.E7E200C5-2E56-7FFD-E9EC-4672CC673862"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="private" isLeaf="false" ownerScope="instance" isAbstract="false" name="encrypt" xmi.id="DCE.F48C5627-AFD2-8F89-B3DB-3C7299503D5E" owner="DCE.FFCEB68C-24A7-5F55-94B0-A01E51E2BE2D"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.8B47EF42-6F18-A404-04C2-B9BB4E0606F3" name="documentation">
-<UML:TaggedValue.dataValue>     To encrypt the string. May use MD5 algo. Haven't implement yet.
-     @param pass
-     @return the encrypted password.
-     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" xmi.id="DCE.6ACBD435-F06D-15F2-3105-9559EFFCEC6D" owner="DCE.F48C5627-AFD2-8F89-B3DB-3C7299503D5E"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.CD5DF5E0-01E5-2956-5107-E418422D953F"/></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.ED787623-AE90-A3DF-661C-A843C2A7FDA4" name="pass" xmi.id="DCE.3FAD6838-690B-2A79-ABF5-7E35F705492D" owner="DCE.F48C5627-AFD2-8F89-B3DB-3C7299503D5E"><UML:TypedElement.multiplicity>
-<UML:Multiplicity xmi.id="DCE.BC704F62-C25E-2E93-AF69-D04D5344BB95"/></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
-</UML:Class>
+
+
+
+
+
+
+
+
+
+</UML:Element.presentation></UML:Class>
 <UML:Aggregation xmi.id="DCE.B9EF242D-F4AE-24E2-58B1-40AAA0E0C48F" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" aggregateEnd="DCE.4C2B9241-DFCD-82D3-B50F-7823FFA4E135" partEnd="DCE.1950DE39-F26C-77F0-5511-F1BE422F0247"><UML:Association.end>
 <UML:AssociationEnd xmi.id="DCE.4C2B9241-DFCD-82D3-B50F-7823FFA4E135" visibility="private" type="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7" association="DCE.B9EF242D-F4AE-24E2-58B1-40AAA0E0C48F"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.4A31BE3B-B028-C23D-3724-3AF9F481E7F9"/></UML:TypedElement.multiplicity></UML:AssociationEnd>
@@ -1043,6 +1404,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.1FDF820F-2A5B-58F5-AA59-DCA6E20FFFCD">
 <UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="LinkedList" xmi.id="DCE.4CCD11AA-5ACE-E031-B83C-A489C654B564"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.EE84E920-0A4E-3FD7-5290-348F8640BE76"/></UML:Attribute.default></UML:NavigableEnd></UML:Association.end><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Aggregation>
 <UML:Aggregation xmi.id="DCE.05C3491A-CCC7-3F94-E64A-949FED629AC0" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" aggregateEnd="DCE.0C8F0E2C-15CD-0281-88FC-A11874DF5150" partEnd="DCE.5FE07F48-894E-97F3-960A-450846CF13FD"><UML:Association.end>
 <UML:AssociationEnd xmi.id="DCE.0C8F0E2C-15CD-0281-88FC-A11874DF5150" visibility="private" type="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7" association="DCE.05C3491A-CCC7-3F94-E64A-949FED629AC0"><UML:TypedElement.multiplicity>
@@ -1070,6 +1435,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:MultiplicityRange xmi.id="DCE.D8C9EFFD-0745-FA0E-382E-E64138030012" lower="1" upper="1"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.0CCE554C-38DC-ACCE-08FA-BE24BDBFB680"/></UML:Attribute.default></UML:NavigableEnd></UML:Association.end><UML:Element.presentation>
 
+
+
+
+
 </UML:Element.presentation></UML:Aggregation>
 <UML:Aggregation xmi.id="DCE.4EA898EF-B207-D573-E153-BB7D1946C755" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" aggregateEnd="DCE.97F376EB-7EDD-74EB-5396-F367F9D25C18" partEnd="DCE.2904023E-51D6-2319-4D24-1C760E6B07B9"><UML:Association.end>
 <UML:AssociationEnd xmi.id="DCE.97F376EB-7EDD-74EB-5396-F367F9D25C18" visibility="private" type="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810" association="DCE.4EA898EF-B207-D573-E153-BB7D1946C755"><UML:TypedElement.multiplicity>
@@ -1078,6 +1447,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.ADC13698-69EE-F85F-84C6-59CA2043DB86"><UML:Multiplicity.range>
 <UML:MultiplicityRange xmi.id="DCE.5EF3208C-CA36-5060-DB2D-EC79A5F16F9E" lower="1" upper="1"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity><UML:Attribute.default>
 <UML:Expression xmi.id="DCE.15C8195C-74B8-2A11-59E0-B71717C05B8F"/></UML:Attribute.default></UML:NavigableEnd></UML:Association.end><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Aggregation>
 <UML:Aggregation xmi.id="DCE.E23C150E-0A25-9252-E458-37E7716CA874" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1" aggregateEnd="DCE.E61A444B-D17D-B1F4-7FED-C491A36049BD" partEnd="DCE.DAAF69AA-7CFE-46DC-1164-7D7EF531A3E8"><UML:Association.end>
 <UML:AssociationEnd xmi.id="DCE.E61A444B-D17D-B1F4-7FED-C491A36049BD" visibility="private" type="DCE.977DC228-9EDB-6FC4-AF2B-EF3384396B51" association="DCE.E23C150E-0A25-9252-E458-37E7716CA874"><UML:TypedElement.multiplicity>
@@ -1100,6 +1473,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 
 
 <UML:MultiplicityRange xmi.id="DCE.E1D627FC-A80A-E3D5-D4E8-EDD5010D288A" lower="0" upper="*"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:AssociationEnd></UML:Association.end><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Association>
 
 
@@ -1111,6 +1488,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.D15A0C7F-988F-2776-9E18-DAA4556564D3"><UML:Multiplicity.range>
 
 <UML:MultiplicityRange xmi.id="DCE.97966871-F72C-3CD0-14C0-FC7945A74ACF" lower="0" upper="*"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:AssociationEnd></UML:Association.end><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Association>
 <UML:Association xmi.id="DCE.53F236D8-86FC-CC3F-198E-F8F68E140413" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1"><UML:Association.end>
 <UML:AssociationEnd xmi.id="DCE.41FF6F60-ED14-EF56-A4D4-F2334BA8A778" visibility="private" association="DCE.53F236D8-86FC-CC3F-198E-F8F68E140413" type="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7"><UML:TypedElement.multiplicity>
@@ -1120,6 +1501,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Multiplicity xmi.id="DCE.286EC761-E4C6-91F3-3858-57A631A27F98"><UML:Multiplicity.range>
 
 <UML:MultiplicityRange xmi.id="DCE.78014B98-C756-8DE7-345E-B0D5A04C048F" lower="0" upper="*"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:AssociationEnd></UML:Association.end><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Association>
 <UML:Association xmi.id="DCE.F2D969D9-1EF9-BC28-6EC7-24CE16F6C132" owner="DCE.E106EB4A-3C1D-30D3-B476-D5B5216818A1"><UML:Association.end>
 <UML:AssociationEnd xmi.id="DCE.0FBC5462-F716-1914-A94E-C799713470FD" visibility="private" association="DCE.F2D969D9-1EF9-BC28-6EC7-24CE16F6C132" type="DCE.1260DAB3-4E1E-458B-FBBC-E22835FA6474"><UML:TypedElement.multiplicity>
@@ -1128,6 +1513,10 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:AssociationEnd xmi.id="DCE.5CA406D4-E03F-D0ED-B694-9239EA008B0A" visibility="private" association="DCE.F2D969D9-1EF9-BC28-6EC7-24CE16F6C132" type="DCE.A67AB1CB-71C3-6329-A644-D0BACEA3B810"><UML:TypedElement.multiplicity>
 <UML:Multiplicity xmi.id="DCE.B648D5E3-A37C-C62C-90B3-3AC6717E09D0"><UML:Multiplicity.range>
 <UML:MultiplicityRange xmi.id="DCE.5FEF4938-72E7-A623-E274-9C6EFB9BCBA2" lower="1" upper="1"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:AssociationEnd></UML:Association.end><UML:Element.presentation>
+
+
+
+
 </UML:Element.presentation></UML:Association></UML:Element.ownedElement></UML:Package><UML:Package name="songscheduler" xmi.id="DCE.1FD341F7-78D0-63F2-1453-7CC23BEFD450">
 <UML:Element.ownedElement><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="Main" xmi.id="DCE.CA0155D8-9CA1-3096-7355-C23ACD6B91A3" owner="DCE.1FD341F7-78D0-63F2-1453-7CC23BEFD450"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/songscheduler/Main.java" xmi.id="DCE.7858B53A-1AE5-745C-1EEF-D47AE78CB597" owner="DCE.CA0155D8-9CA1-3096-7355-C23ACD6B91A3"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="main" xmi.id="DCE.C82FC8EB-2216-57A2-C431-8DB8DFE4B62F" owner="DCE.CA0155D8-9CA1-3096-7355-C23ACD6B91A3"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.D03423C9-700E-6595-C0A1-7A4C527B7C8A" name="documentation">
 <UML:TaggedValue.dataValue>     @param args the command line arguments
@@ -1175,6 +1564,7 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Derivation xmi.id="DCE.AB8E7B38-18C3-5457-A940-969746E39017" supplier="DCE.3EC9861B-7275-CE2D-73F0-5B31648620BD" owner="DCE.BC1A235B-231E-9A7C-8F05-D6590F84B9FF" client="DCE.BC1A235B-231E-9A7C-8F05-D6590F84B9FF"><UML:Element.ownedElement>
 <UML:Binding xmi.id="DCE.D8C867E3-6482-A4FB-64E5-8F9ADA0E4560" actual="DCE.6BDB5668-A240-774F-216A-10EB4031CF38" formal="DCE.3DEDA1B6-7F52-AACE-EA29-B91880D3C5B2" owner="DCE.AB8E7B38-18C3-5457-A940-969746E39017"/>
 <UML:Binding xmi.id="DCE.A38CA18F-668D-F1E5-8231-1FA418232AB4" actual="DCE.71DA2D56-67AD-992B-FDBE-2304794993A2" formal="DCE.4469F514-B750-E995-B55E-D9C16EB40875" owner="DCE.AB8E7B38-18C3-5457-A940-969746E39017"/></UML:Element.ownedElement></UML:Derivation></UML:Element.ownedElement><UML:Element.presentation>
+
 </UML:Element.presentation></UML:DerivationClassifier>
 <UML:DerivationClassifier xmi.id="DCE.83C031EF-53D7-DB37-EFAF-EFC0F706BF02" name="HashMap&lt;String, Schedule&gt;" owner="DCE.D54FDFF2-FBCB-F2CF-E647-67F26B01DE73" clientDependency="DCE.2402BAAA-8110-D8F8-DB74-07B8072B5E42" associationEnd="DCE.2904023E-51D6-2319-4D24-1C760E6B07B9 DCE.1498707C-160B-2B24-355A-304ECBB1EFEE"><UML:Element.ownedElement>
 <UML:Derivation xmi.id="DCE.2402BAAA-8110-D8F8-DB74-07B8072B5E42" supplier="DCE.3EC9861B-7275-CE2D-73F0-5B31648620BD" owner="DCE.83C031EF-53D7-DB37-EFAF-EFC0F706BF02" client="DCE.83C031EF-53D7-DB37-EFAF-EFC0F706BF02"><UML:Element.ownedElement>
@@ -1182,6 +1572,7 @@ Variables declaration - do not modify//GEN-BEGIN:variables
 <UML:Binding xmi.id="DCE.6645E221-9CA7-E388-F17C-ADD60A57DEF7" actual="DCE.ABA3EBD3-C7EF-320B-B3EA-A574480BC0C7" formal="DCE.4469F514-B750-E995-B55E-D9C16EB40875" owner="DCE.2402BAAA-8110-D8F8-DB74-07B8072B5E42"/></UML:Element.ownedElement></UML:Derivation>
 <UML:Class xmi.id="DCE.16F2BA1F-043F-1D16-77A6-E5588765D828" name="Unnamed" owner="DCE.83C031EF-53D7-DB37-EFAF-EFC0F706BF02"><UML:Element.presentation>
 </UML:Element.presentation></UML:Class></UML:Element.ownedElement><UML:Element.presentation>
+
 
 </UML:Element.presentation></UML:DerivationClassifier></UML:Element.ownedElement></UML:Package>
 <UML:Package xmi.id="DCE.A793A9D9-7C30-3C12-5C4E-3F8F0F4D7628" name="io" owner="DCE.633E9BAE-BE2D-B026-DA06-0C37BD7B6F80"><UML:Element.ownedElement>
