@@ -87,9 +87,9 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="schedulePanel" alignment="0" pref="771" max="32767" attributes="0"/>
+                  <Component id="schedulePanel" alignment="0" pref="780" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="calendar" pref="198" max="32767" attributes="1"/>
+                      <Component id="calendar" pref="199" max="32767" attributes="1"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -186,24 +186,30 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="songPlayCountDisplay" alignment="0" max="32767" attributes="1"/>
-                              <Component id="songLastPlayedDisplay" alignment="0" max="32767" attributes="1"/>
-                              <Component id="songPopularityDisplay" alignment="0" min="-2" pref="84" max="-2" attributes="1"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Component id="songPopularityDisplay" alignment="0" pref="84" max="32767" attributes="1"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="songPlayCountDisplay" min="-2" pref="61" max="-2" attributes="1"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="incrementPlayCount" min="-2" pref="103" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
-                                  <Component id="saveSongData" min="-2" pref="116" max="-2" attributes="1"/>
                               </Group>
-                              <Component id="changeHoldingFile" min="-2" pref="162" max="-2" attributes="1"/>
+                              <Component id="songLastPlayedDisplay" alignment="0" min="-2" pref="158" max="-2" attributes="1"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="songSearchButton" pref="116" max="32767" attributes="1"/>
-                              <Component id="clearSongData" alignment="1" pref="116" max="32767" attributes="1"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="saveSongData" min="-2" pref="116" max="-2" attributes="1"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="clearSongData" pref="116" max="32767" attributes="1"/>
+                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="changeHoldingFile" min="-2" pref="162" max="-2" attributes="1"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="songSearchButton" min="-2" pref="116" max="-2" attributes="1"/>
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
+                          <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -244,35 +250,24 @@
                       <Component id="songLengthDisplay" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="songPlayCountDisplay" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                              <Component id="incrementPlayCount" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="songLastPlayedDisplay" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="songPopularityDisplay" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="clearSongData" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="saveSongData" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="songSearchButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="changeHoldingFile" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="songPlayCountDisplay" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="incrementPlayCount" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="saveSongData" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="clearSongData" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="songLastPlayedDisplay" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="changeHoldingFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="songSearchButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="songPopularityDisplay" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
