@@ -148,14 +148,12 @@ public class SchedulePanel extends javax.swing.JPanel {
         // Move backward so removing doesn't change position of elements
         for( int k = selectedRows.length-1; k >= 0; k-- )
         {
-            selectedSchedule.remove( (Song)model.getValueAt(selectedRows[k], 0));
-            model.removeRow(selectedRows[k]);
+            if( selectedRows[k] < selectedTable.getRowCount()-1 ) // Ignore the blank
+            {
+                selectedSchedule.remove( (Song)model.getValueAt(selectedRows[k], 0));
+                model.removeRow(selectedRows[k]);
+            }
         }
-
-        // If the blank was deleted, add it back.
-        int rowCount = selectedTable.getRowCount();
-        if( rowCount == 0 || model.getValueAt( rowCount-1, 0 ) != blank[0] )
-            model.addRow(blank);
     }
 
     public void addSong( Song song )
@@ -166,6 +164,11 @@ public class SchedulePanel extends javax.swing.JPanel {
         model.removeRow( selectedTable.getRowCount()-1 );
         model.addRow(data);
         model.addRow(blank);
+    }
+
+    public boolean commit()
+    {
+        return true;
     }
 
     /** This method is called from within the constructor to
