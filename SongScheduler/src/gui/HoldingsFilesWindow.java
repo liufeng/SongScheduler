@@ -13,6 +13,7 @@ package gui;
 import java.util.Iterator;
 import javax.swing.*;
 import model.HoldingFiles;
+import model.Song;
 
 /**
  *
@@ -245,7 +246,20 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         String requests   = songRequestNumberDisplay.getText();
         String popularity = songPopularityDisplay.getText();
 
+       // Faerie Dance;Plants And Animals;Parc Avenue;CD;2007;1;2009-06-06 20:28:32;50;426266;0;0
+        String song = name + ";"
+                    + artist + ";"
+                    + album + ";"
+                    + genre + ";"
+                    + year + ";"
+                    + "" + ";"
+                    + "0000-00-00 00:00:00" + ";"
+                    + popularity +";"
+                    + length + ";"
+                    + "0" + ";"
+                    + "0";
         String holdingsFile = (String)jList1.getSelectedValue();
+        HoldingFiles.addSongToFile( holdingsFile, null);
     }//GEN-LAST:event_addSongActionPerformed
 
     private void selectHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectHoldingFileActionPerformed

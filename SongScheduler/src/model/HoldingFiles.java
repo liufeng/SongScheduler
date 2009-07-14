@@ -122,14 +122,14 @@ public abstract class HoldingFiles {
         return currHoldingFile;
     }
 
-    public static void addSongToFile( String filename )
+    public static void addSongToFile( String filename, Song song )
     {
         try
         {
             BufferedWriter out = new BufferedWriter(new FileWriter(filename, true));
-            out.write("Testing");
+            out.write("Testing\n");
             out.close();
         }
-        catch( IOException ioe ){}
+        catch( IOException ioe ){ ioe.printStackTrace(); }
     }
 }
