@@ -75,8 +75,10 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         incrementPlayCount = new javax.swing.JButton();
         songListScrollPane = new javax.swing.JScrollPane();
         songList = new javax.swing.JList();
+        schedulePanel1 = new gui.SchedulePanel();
         MenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
+        fileMenuPrint = new javax.swing.JMenuItem();
         fileMenuClose = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -216,7 +218,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         selectedSongInfoPanelLayout.setVerticalGroup(
             selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(selectedSongInfoPanelLayout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(20, Short.MAX_VALUE)
                 .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel1)
                     .add(songNameDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
@@ -262,8 +264,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(songSearchButton)
-                            .add(changeHoldingFile))))
-                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .add(changeHoldingFile)))))
         );
 
         songListScrollPane.setMaximumSize(new java.awt.Dimension(300, 300));
@@ -277,6 +278,14 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         songListScrollPane.setViewportView(songList);
 
         fileMenu.setText("File");
+
+        fileMenuPrint.setText("Print");
+        fileMenuPrint.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fileMenuPrintActionPerformed(evt);
+            }
+        });
+        fileMenu.add(fileMenuPrint);
 
         fileMenuClose.setText("Close");
         fileMenuClose.addActionListener(new java.awt.event.ActionListener() {
@@ -297,7 +306,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             .add(layout.createSequentialGroup()
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                    .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 669, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                     .add(layout.createSequentialGroup()
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(layout.createSequentialGroup()
@@ -311,27 +319,33 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                                 .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 147, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(layout.createSequentialGroup()
                                 .add(18, 18, 18)
-                                .add(generateScheduleButton)))))
-                .addContainerGap(1087, Short.MAX_VALUE))
+                                .add(generateScheduleButton))))
+                    .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 669, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(schedulePanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 494, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
+            .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, schedulePanel1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
                     .add(layout.createSequentialGroup()
-                        .add(299, 299, 299)
-                        .add(generateScheduleButton)
-                        .add(43, 43, 43)
-                        .add(viewSelectedButton)
-                        .add(37, 37, 37))
-                    .add(layout.createSequentialGroup()
-                        .add(calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(layout.createSequentialGroup()
+                                .add(299, 299, 299)
+                                .add(generateScheduleButton)
+                                .add(43, 43, 43)
+                                .add(viewSelectedButton)
+                                .add(37, 37, 37))
+                            .add(layout.createSequentialGroup()
+                                .add(calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 231, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 231, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .add(28, 28, 28))
+                        .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .add(48, 48, 48))
         );
 
         pack();
@@ -451,6 +465,10 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void incrementPlayCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incrementPlayCountActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_incrementPlayCountActionPerformed
+
+    private void fileMenuPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileMenuPrintActionPerformed
+        schedulePanel1.printSchedule();
+    }//GEN-LAST:event_fileMenuPrintActionPerformed
     /**
      * updateViewPanel
      *
@@ -541,8 +559,9 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             return;
         }
 
-        new SchedulerListWindow( daysArray, this ).setVisible( true );
-        this.setVisible( false );
+       // new SchedulerListWindow( daysArray, this ).setVisible( true );
+       // this.setVisible( false );
+        schedulePanel1.openDates(daysArray);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -552,6 +571,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private javax.swing.JButton clearSongData;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuItem fileMenuClose;
+    private javax.swing.JMenuItem fileMenuPrint;
     private javax.swing.JButton generateScheduleButton;
     private javax.swing.JButton incrementPlayCount;
     private javax.swing.JLabel jLabel1;
@@ -564,6 +584,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JButton saveSongData;
+    private gui.SchedulePanel schedulePanel1;
     private javax.swing.JPanel selectedSongInfoPanel;
     private javax.swing.JTextField songAlbumDisplay;
     private javax.swing.JTextField songArtistDisplay;

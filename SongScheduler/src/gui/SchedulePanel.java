@@ -11,8 +11,20 @@
 
 package gui;
 
+import java.awt.Color;
+import java.awt.event.FocusEvent;
+import java.awt.print.PrinterException;
+import java.util.Iterator;
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import model.*;
 import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 /**
  *
  * @author kurtisschmidt
@@ -24,6 +36,105 @@ public class SchedulePanel extends javax.swing.JPanel {
         initComponents();
     }
 
+    public void openDates( Time[] dates )
+    {
+        // Create a new SongScheduler and array for each schedule
+        this.songScheduler = new SongScheduler( dates[0] );
+        this.schedules = new Schedule[24];
+        this.tables = new JTable[dates.length][24];
+                
+        // Remove all the current tabs
+        tabPane.removeAll();
+
+        // Create the new tabs
+        for( int i = 0; i < dates.length; i++ )
+        {
+            Time currentTime = dates[i];
+
+            JPanel schedulesPanel = new JPanel();
+            schedulesPanel.setLayout( new BoxLayout( schedulesPanel, BoxLayout.Y_AXIS) );
+            for( int j = 0; j < 24; j++ )
+            {
+                DefaultTableModel model = new DefaultTableModel();
+                JTable table = new JTable( model );
+                table.addFocusListener( new java.awt.event.FocusListener() {
+                    public void focusGained(FocusEvent e){ onSelectTable(e); }
+                    public void focusLost(FocusEvent e){}
+                });
+                tables[i][j] = table;
+
+                table.setRowSelectionAllowed(true);
+                table.setColumnSelectionAllowed(false);
+                table.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+                table.setBorder( BorderFactory.createLineBorder(Color.black) );
+                table.setGridColor(Color.gray);
+                
+                model.addColumn("Name");
+                model.addColumn("Artist");
+                
+                schedules[j] = songScheduler.getSchedule( currentTime );
+                Iterator<Song> iter = schedules[j].iterator();
+                while( iter.hasNext() )
+                {
+                    Song song = iter.next();
+                    Object data[] = {song.getTitle(), song.getPerformer()};
+                    model.addRow(data);
+                }
+
+                schedulesPanel.add(new JLabel(currentTime.toString()));
+                schedulesPanel.add(table.getTableHeader());
+                schedulesPanel.add(table);
+                currentTime = currentTime.getNextHour();
+            }
+
+            JScrollPane scrollPane = new JScrollPane(schedulesPanel);
+            tabPane.addTab( currentTime.getDateAsString(), null, scrollPane, "A panel of some sort" );
+        }
+    }
+
+    public void onSelectTable( FocusEvent evt )
+    {
+        // Unselect from every other schedule
+        int selectedTab = tabPane.getSelectedIndex();
+        for(int i = 0; i < 24; i++)
+        {
+            if( !tables[selectedTab][i].isFocusOwner() )
+            {
+                tables[selectedTab][i].getSelectionModel().clearSelection();
+            }
+        }
+    }
+
+    public void addSong( Song song )
+    {
+        
+    }
+
+    public void printSchedule()
+    {
+        DefaultTableModel model = new DefaultTableModel();
+        JTable table = new JTable(model);
+        table.setGridColor(Color.gray);
+        int i = tabPane.getSelectedIndex();
+        model.addColumn("Name");
+        model.addColumn("Artist");
+        for(int j = 0; j < 24; j++)
+        {
+            Object time[] = {j+":00:00",""};
+            model.addRow( time );
+            TableModel model2 = tables[i][j].getModel();
+            for(int k = 0; k < model2.getRowCount(); k++)
+            {
+                Object data[] = {model2.getValueAt(k, 0),model2.getValueAt(k,1)};
+                model.addRow(data);
+            }
+        }
+        try
+        {
+            table.print();
+        }
+        catch( PrinterException exp ){ System.out.println("Error Printing\n");}
+    }
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -52,4 +163,7 @@ public class SchedulePanel extends javax.swing.JPanel {
     private javax.swing.JTabbedPane tabPane;
     // End of variables declaration//GEN-END:variables
 
+    private SongScheduler songScheduler;
+    private Schedule schedules[];
+    private JTable tables[][];
 }
