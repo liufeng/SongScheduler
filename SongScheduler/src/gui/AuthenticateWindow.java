@@ -114,10 +114,12 @@ public class AuthenticateWindow extends javax.swing.JFrame {
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         // TODO add your handling code here:
-        String thePassword = password.getSelectedText();
+        String thePassword = new String( password.getPassword() );
+
 
         if(thePassword != null)
             Authentication.checkPassword(thePassword);
+
 
         if(!Authentication.isAuthenticated())
             authenticationError.setText("Invalid Password.");
@@ -131,6 +133,7 @@ public class AuthenticateWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_cancelButtonActionPerformed
 
     private void exit(){
+        //parent.continueAfterAuthentication();
         this.setVisible( false );
         this.dispose();
     }
