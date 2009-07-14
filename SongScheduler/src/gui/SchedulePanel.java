@@ -75,13 +75,14 @@ public class SchedulePanel extends javax.swing.JPanel {
                 
                 model.addColumn("Name");
                 model.addColumn("Artist");
+                model.addColumn("Length");
                 
                 schedules[i][j] = songScheduler.getSchedule( currentTime );
                 Iterator<Song> iter = schedules[i][j].iterator();
                 while( iter.hasNext() )
                 {
                     Song song = iter.next();
-                    Object data[] = {song, song.getPerformer()};
+                    Object data[] = {song, song.getPerformer(), song.getLength()};
                     model.addRow(data);
                 }
                 model.addRow(blank);
@@ -154,21 +155,44 @@ public class SchedulePanel extends javax.swing.JPanel {
                 model.removeRow(selectedRows[k]);
             }
         }
+        setTableBackground( selectedSchedule, selectedTable );
+    }
+
+    public void setTableBackground( Schedule schedule, JTable table )
+    {
+        if( !schedule.isEmpty() && schedule.underMin() )
+            table.setBackground(Color.ORANGE);
+        else if( schedule.overMax() )
+            table.setBackground(Color.RED);
+        else
+            table.setBackground(Color.WHITE);
     }
 
     public void addSong( Song song )
     {
         selectedSchedule.add(song);
-        Object[] data = {song.getTitle(), song.getPerformer()};
+        Object[] data = {song, song.getPerformer(), song.getLength()};
         DefaultTableModel model = (DefaultTableModel)selectedTable.getModel();
         model.removeRow( selectedTable.getRowCount()-1 );
         model.addRow(data);
         model.addRow(blank);
+
+        setTableBackground( selectedSchedule, selectedTable );
     }
 
     public boolean commit()
     {
-        return true;
+        boolean result = false;
+        for( int i = 0; i < schedules.length; i++ )
+            for( int j = 0; j < 24; j++ )
+            {
+
+
+
+
+
+            }
+        return result;
     }
 
     /** This method is called from within the constructor to
@@ -205,4 +229,5 @@ public class SchedulePanel extends javax.swing.JPanel {
     private JTable selectedTable;
     private Schedule selectedSchedule;
     private Object[] blank = {null,null};
+    private boolean steadyState = true;
 }
