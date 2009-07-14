@@ -25,7 +25,6 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         initComponents();
         this.setDefaultCloseOperation( JFrame.DISPOSE_ON_CLOSE );
 
-        HoldingFiles.init();
         DefaultListModel model = new DefaultListModel();
         jList1.setModel(model);
         jList1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -33,7 +32,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         Iterator<String> iter = HoldingFiles.iterator();
         while( iter.hasNext() )
         {
-            model.add(0, iter.next());
+            model.add( model.size(), iter.next());
         }
     }
 
@@ -89,14 +88,29 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Holdings File"));
 
         selectHoldingFile.setText("Select");
+        selectHoldingFile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selectHoldingFileActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("File Name: ");
 
         makeNewFile.setText("Make New");
+        makeNewFile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                makeNewFileActionPerformed(evt);
+            }
+        });
 
         jScrollPane1.setViewportView(jList1);
 
         setDefaultFile.setText("Set as Default");
+        setDefaultFile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                setDefaultFileActionPerformed(evt);
+            }
+        });
 
         org.jdesktop.layout.GroupLayout jPanel1Layout = new org.jdesktop.layout.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -233,6 +247,21 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
 
         String holdingsFile = (String)jList1.getSelectedValue();
     }//GEN-LAST:event_addSongActionPerformed
+
+    private void selectHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectHoldingFileActionPerformed
+        HoldingFiles.setCurrent( (String)jList1.getSelectedValue() );
+    }//GEN-LAST:event_selectHoldingFileActionPerformed
+
+    private void setDefaultFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setDefaultFileActionPerformed
+        HoldingFiles.setDefault( (String)jList1.getSelectedValue() );
+    }//GEN-LAST:event_setDefaultFileActionPerformed
+
+    private void makeNewFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_makeNewFileActionPerformed
+        String filename = fileName.getText();
+        HoldingFiles.addFile(filename);
+        DefaultListModel model = (DefaultListModel)jList1.getModel();
+        model.add(model.getSize(), filename);
+    }//GEN-LAST:event_makeNewFileActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addSong;

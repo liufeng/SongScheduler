@@ -73,6 +73,12 @@ public abstract class HoldingFiles {
      */
     public static void addFile(String filename) {
         list.add(filename);
+        File f = new File(filename);
+        try
+        {
+            f.createNewFile();
+        }
+        catch( IOException ioe ){}
         writeToDisk();
     }
 
@@ -84,7 +90,7 @@ public abstract class HoldingFiles {
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(listFile));
             while (iter.hasNext()) {
-                out.write(iter.next());
+                out.write(iter.next() + "\n");
             }
             out.close();
         } catch (IOException e) {
