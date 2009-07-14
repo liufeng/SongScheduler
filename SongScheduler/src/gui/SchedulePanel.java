@@ -18,6 +18,7 @@ import java.util.Iterator;
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import model.*;
@@ -95,6 +96,8 @@ public class SchedulePanel extends javax.swing.JPanel {
             JScrollPane scrollPane = new JScrollPane(schedulesPanel);
             tabPane.addTab( currentTime.getDateAsString(), null, scrollPane, "A panel of some sort" );
         }
+
+        this.ready = true;
     }
 
     public void onSelectTable( FocusEvent evt )
@@ -117,6 +120,9 @@ public class SchedulePanel extends javax.swing.JPanel {
 
     public void printSchedule()
     {
+        if( !ready )
+            return;
+
         DefaultTableModel model = new DefaultTableModel();
         JTable table = new JTable(model);
         table.setGridColor(Color.gray);
@@ -144,6 +150,9 @@ public class SchedulePanel extends javax.swing.JPanel {
 
     public void deleteSelected()
     {
+        if( !ready )
+            return;
+        
         int[] selectedRows = selectedTable.getSelectedRows();
         DefaultTableModel model = (DefaultTableModel)selectedTable.getModel();
         // Move backward so removing doesn't change position of elements
@@ -158,7 +167,7 @@ public class SchedulePanel extends javax.swing.JPanel {
         setTableBackground( selectedSchedule, selectedTable );
     }
 
-    public void setTableBackground( Schedule schedule, JTable table )
+    private void setTableBackground( Schedule schedule, JTable table )
     {
         if( !schedule.isEmpty() && schedule.underMin() )
             table.setBackground(Color.ORANGE);
@@ -170,6 +179,8 @@ public class SchedulePanel extends javax.swing.JPanel {
 
     public void addSong( Song song )
     {
+        if( !ready )
+            return;
         selectedSchedule.add(song);
         Object[] data = {song, song.getPerformer(), song.getLength()};
         DefaultTableModel model = (DefaultTableModel)selectedTable.getModel();
@@ -180,19 +191,31 @@ public class SchedulePanel extends javax.swing.JPanel {
         setTableBackground( selectedSchedule, selectedTable );
     }
 
-    public boolean commit()
+    public void commit()
     {
-        boolean result = false;
+        if( !ready )
+            return;
+        
+        boolean result = true;
         for( int i = 0; i < schedules.length; i++ )
             for( int j = 0; j < 24; j++ )
             {
-
-
-
-
-
+                Color background = tables[i][j].getBackground();
+                if( background == Color.ORANGE || background == Color.RED )
+                    result = false;
             }
-        return result;
+        
+        if( result )
+        {
+            songScheduler.commit();
+            tabPane.removeAll();
+            ready = false;
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this.getParent(), "Error: Some schedules are over/under time.\nPlease fix this then commit again.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+
     }
 
     /** This method is called from within the constructor to
@@ -229,5 +252,5 @@ public class SchedulePanel extends javax.swing.JPanel {
     private JTable selectedTable;
     private Schedule selectedSchedule;
     private Object[] blank = {null,null};
-    private boolean steadyState = true;
+    private boolean ready;
 }

@@ -501,7 +501,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_addSongButtonActionPerformed
 
     private void commitButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_commitButton1ActionPerformed
-        // TODO add your handling code here:
+        schedulePanel.commit();
     }//GEN-LAST:event_commitButton1ActionPerformed
 
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
