@@ -6,14 +6,13 @@
  * @author liufeng & aprilbugnot
  *
  */
-
 package model;
 
 import java.io.Serializable;
 import java.util.Calendar;
 
-public class Time implements Serializable
-{
+public class Time implements Serializable {
+
     private Calendar calendar;
 
     /**
@@ -44,7 +43,7 @@ public class Time implements Serializable
      */
     public Time(int year, int month, int day, int hour, int minute, int second) {
         calendar = Calendar.getInstance();
-        calendar.set(year, month-1, day, hour, minute, second);
+        calendar.set(year, month - 1, day, hour, minute, second);
     }
 
     /**
@@ -71,14 +70,13 @@ public class Time implements Serializable
             int second = Integer.parseInt(token[2]);
 
             calendar = Calendar.getInstance();
-            calendar.set(year, month-1, day, hour, minute, second);
+            calendar.set(year, month - 1, day, hour, minute, second);
         }
     }
 
     /**
      * Accessors
      */
-
     /**
      * 
      * NOTE: It will return 1 if the year has set to 0.
@@ -138,7 +136,7 @@ public class Time implements Serializable
         } else {
             long end = time.getTimeInMillis();
             long start = this.getTimeInMillis();
-            return (int)((end - start) / (24 * 60 * 60 * 1000)) + 1;
+            return (int) ((end - start) / (24 * 60 * 60 * 1000)) + 1;
         }
     }
 
@@ -184,7 +182,7 @@ public class Time implements Serializable
     public boolean after(Time time) {
         return calendar.after(time.getCalendar());
     }
-    
+
     /**
      * Decide if <code>time</code> comes before <code>this</code>.
      * @param time
@@ -261,16 +259,14 @@ public class Time implements Serializable
     }
 
     public String getSQLString() {
-        return getYear() + "-" + getMonth() + "-" + getDay() + " "
-                + getHour() + ":" + getMinute() + ":" + getSecond();
+        return getYear() + "-" + getMonth() + "-" + getDay() + " " + getHour() + ":" + getMinute() + ":" + getSecond();
     }
-    
+
     /**
      * Get the date and time in <code>String</code> type.
      * @return "YYYY-MM-DD HH:MM:SS"
      */
     public String toString() {
-        return getYear() + "-" + getMonth() + "-" + getDay() + " "
-                + getHour() + ":" + getMinute() + ":" + getSecond();
+        return getYear() + "-" + getMonth() + "-" + getDay() + " " + getHour() + ":" + getMinute() + ":" + getSecond();
     }
 }

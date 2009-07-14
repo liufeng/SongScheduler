@@ -77,8 +77,9 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         songList = new javax.swing.JList();
         schedulePanel = new gui.SchedulePanel();
         addSongButton = new javax.swing.JButton();
-        commitButton1 = new javax.swing.JButton();
+        commitButton = new javax.swing.JButton();
         deleteButton = new javax.swing.JButton();
+        fixAllButton = new javax.swing.JButton();
         MenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         fileMenuPrint = new javax.swing.JMenuItem();
@@ -287,10 +288,10 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             }
         });
 
-        commitButton1.setText("Commit");
-        commitButton1.addActionListener(new java.awt.event.ActionListener() {
+        commitButton.setText("Commit");
+        commitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                commitButton1ActionPerformed(evt);
+                commitButtonActionPerformed(evt);
             }
         });
 
@@ -298,6 +299,13 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         deleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteButtonActionPerformed(evt);
+            }
+        });
+
+        fixAllButton.setText("Fix All");
+        fixAllButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fixAllButtonActionPerformed(evt);
             }
         });
 
@@ -337,14 +345,15 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                                 .add(calendar, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 447, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                             .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 442, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .add(27, 27, 27)
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(commitButton1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(deleteButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(addSongButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(viewSelectedButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .add(generateScheduleButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                            .add(commitButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, fixAllButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, deleteButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, addSongButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, viewSelectedButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .add(org.jdesktop.layout.GroupLayout.LEADING, generateScheduleButton, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 669, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 18, Short.MAX_VALUE)
+                .add(18, 18, 18)
                 .add(schedulePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 476, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -367,7 +376,9 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                                 .add(deleteButton)
                                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                                .add(commitButton1))
+                                .add(fixAllButton)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(commitButton))
                             .add(songListScrollPane, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 231, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(selectedSongInfoPanel, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
@@ -500,13 +511,17 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         schedulePanel.addSong(song);
     }//GEN-LAST:event_addSongButtonActionPerformed
 
-    private void commitButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_commitButton1ActionPerformed
+    private void commitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_commitButtonActionPerformed
         schedulePanel.commit();
-    }//GEN-LAST:event_commitButton1ActionPerformed
+    }//GEN-LAST:event_commitButtonActionPerformed
 
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         schedulePanel.deleteSelected();
     }//GEN-LAST:event_deleteButtonActionPerformed
+
+    private void fixAllButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fixAllButtonActionPerformed
+        schedulePanel.fixAllSchedules();
+    }//GEN-LAST:event_fixAllButtonActionPerformed
     /**
      * updateViewPanel
      *
@@ -608,11 +623,12 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private datechooser.beans.DateChooserPanel calendar;
     private javax.swing.JButton changeHoldingFile;
     private javax.swing.JButton clearSongData;
-    private javax.swing.JButton commitButton1;
+    private javax.swing.JButton commitButton;
     private javax.swing.JButton deleteButton;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenuItem fileMenuClose;
     private javax.swing.JMenuItem fileMenuPrint;
+    private javax.swing.JButton fixAllButton;
     private javax.swing.JButton generateScheduleButton;
     private javax.swing.JButton incrementPlayCount;
     private javax.swing.JLabel jLabel1;

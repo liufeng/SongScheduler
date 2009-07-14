@@ -65,8 +65,9 @@
                           <Component id="songListScrollPane" alignment="0" min="-2" pref="442" max="-2" attributes="1"/>
                       </Group>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="commitButton1" max="32767" attributes="1"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="commitButton" max="32767" attributes="1"/>
+                          <Component id="fixAllButton" alignment="0" max="32767" attributes="1"/>
                           <Component id="deleteButton" alignment="0" max="32767" attributes="1"/>
                           <Component id="addSongButton" alignment="0" max="32767" attributes="1"/>
                           <Component id="viewSelectedButton" alignment="0" max="32767" attributes="1"/>
@@ -75,7 +76,7 @@
                   </Group>
                   <Component id="selectedSongInfoPanel" min="-2" pref="669" max="-2" attributes="1"/>
               </Group>
-              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Component id="schedulePanel" pref="476" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -100,7 +101,9 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="deleteButton" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="commitButton1" min="-2" max="-2" attributes="0"/>
+                              <Component id="fixAllButton" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="commitButton" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="songListScrollPane" alignment="0" min="-2" pref="231" max="-2" attributes="0"/>
                       </Group>
@@ -425,12 +428,12 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addSongButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="commitButton1">
+    <Component class="javax.swing.JButton" name="commitButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Commit"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="commitButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="commitButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="deleteButton">
@@ -439,6 +442,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="fixAllButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fix All"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fixAllButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

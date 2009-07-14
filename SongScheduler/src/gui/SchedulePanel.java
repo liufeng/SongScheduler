@@ -83,10 +83,13 @@ public class SchedulePanel extends javax.swing.JPanel {
                 while( iter.hasNext() )
                 {
                     Song song = iter.next();
-                    Object data[] = {song, song.getPerformer(), song.getLength()};
+                    Object data[] = {song, song.getPerformer(), Conversions.milliToHHMMSS(song.getLength())};
                     model.addRow(data);
                 }
                 model.addRow(blank);
+
+                updateScheduleLength( schedules[i][j], table );
+                
                 schedulesPanel.add(new JLabel(currentTime.toString()));
                 schedulesPanel.add(table.getTableHeader());
                 schedulesPanel.add(table);
@@ -137,7 +140,7 @@ public class SchedulePanel extends javax.swing.JPanel {
             TableModel model2 = tables[i][j].getModel();
             for(int k = 0; k < model2.getRowCount(); k++)
             {
-                Object data[] = {model2.getValueAt(k, 0),model2.getValueAt(k,1)};
+                Object data[] = {model2.getValueAt(k, 0), model2.getValueAt(k,1), model2.getValueAt(k,2)};
                 model.addRow(data);
             }
         }
@@ -165,6 +168,7 @@ public class SchedulePanel extends javax.swing.JPanel {
             }
         }
         setTableBackground( selectedSchedule, selectedTable );
+        updateScheduleLength( selectedSchedule, selectedTable );
     }
 
     private void setTableBackground( Schedule schedule, JTable table )
@@ -182,13 +186,19 @@ public class SchedulePanel extends javax.swing.JPanel {
         if( !ready )
             return;
         selectedSchedule.add(song);
-        Object[] data = {song, song.getPerformer(), song.getLength()};
+        Object[] data = {song, song.getPerformer(), Conversions.milliToHHMMSS(song.getLength())};
         DefaultTableModel model = (DefaultTableModel)selectedTable.getModel();
         model.removeRow( selectedTable.getRowCount()-1 );
         model.addRow(data);
         model.addRow(blank);
 
         setTableBackground( selectedSchedule, selectedTable );
+        updateScheduleLength( selectedSchedule, selectedTable );
+    }
+
+    private void updateScheduleLength( Schedule schedule, JTable table )
+    {
+        table.getModel().setValueAt("Total: " + Conversions.milliToHHMMSS(schedule.getDuration()), table.getRowCount()-1, 2);
     }
 
     public void commit()
@@ -216,6 +226,23 @@ public class SchedulePanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this.getParent(), "Error: Some schedules are over/under time.\nPlease fix this then commit again.", "Error", JOptionPane.ERROR_MESSAGE);
         }
 
+    }
+
+    public void fixAllSchedules()
+    {
+        if( !ready )
+            return;
+        
+        for( int i = 0; i < schedules.length; i++ )
+        {
+            for( int j = 0; j < 24; j++ )
+            {
+                Time currentTime = schedules[i][j].getTime();
+                
+                songScheduler.autoCorrect(currentTime);
+                setTableBackground( schedules[i][j], tables[i][j] );
+            }
+        }
     }
 
     /** This method is called from within the constructor to
