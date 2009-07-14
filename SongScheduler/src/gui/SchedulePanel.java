@@ -44,7 +44,7 @@ public class SchedulePanel extends javax.swing.JPanel {
     {
         // Create a new SongScheduler and array for each schedule
         this.songScheduler = scheduler;
-        this.schedules = new Schedule[24];
+        this.schedules = new Schedule[dates.length][24];
         this.tables = new JTable[dates.length][24];
                 
         // Remove all the current tabs
@@ -76,15 +76,15 @@ public class SchedulePanel extends javax.swing.JPanel {
                 model.addColumn("Name");
                 model.addColumn("Artist");
                 
-                schedules[j] = songScheduler.getSchedule( currentTime );
-                Iterator<Song> iter = schedules[j].iterator();
+                schedules[i][j] = songScheduler.getSchedule( currentTime );
+                Iterator<Song> iter = schedules[i][j].iterator();
                 while( iter.hasNext() )
                 {
                     Song song = iter.next();
-                    Object data[] = {song.getTitle(), song.getPerformer()};
+                    Object data[] = {song, song.getPerformer()};
                     model.addRow(data);
                 }
-
+                model.addRow(blank);
                 schedulesPanel.add(new JLabel(currentTime.toString()));
                 schedulesPanel.add(table.getTableHeader());
                 schedulesPanel.add(table);
@@ -99,12 +99,17 @@ public class SchedulePanel extends javax.swing.JPanel {
     public void onSelectTable( FocusEvent evt )
     {
         // Unselect from every other schedule
-        int selectedTab = tabPane.getSelectedIndex();
+        int tab = tabPane.getSelectedIndex();
         for(int i = 0; i < 24; i++)
         {
-            if( !tables[selectedTab][i].isFocusOwner() )
+            if( tables[tab][i].isFocusOwner() )
             {
-                tables[selectedTab][i].getSelectionModel().clearSelection();
+                selectedTable = tables[tab][i];
+                selectedSchedule = schedules[tab][i];
+            }
+            else
+            {
+                tables[tab][i].getSelectionModel().clearSelection();
             }
         }
     }
@@ -117,9 +122,10 @@ public class SchedulePanel extends javax.swing.JPanel {
         int i = tabPane.getSelectedIndex();
         model.addColumn("Name");
         model.addColumn("Artist");
+
         for(int j = 0; j < 24; j++)
         {
-            Object time[] = {j+":00:00",""};
+            Object time[] = { j + ":00:00",""};
             model.addRow( time );
             TableModel model2 = tables[i][j].getModel();
             for(int k = 0; k < model2.getRowCount(); k++)
@@ -137,24 +143,29 @@ public class SchedulePanel extends javax.swing.JPanel {
 
     public void deleteSelected()
     {
-        int tab = tabPane.getSelectedIndex();
-        for( int i = 0; i < 24; i++ )
+        int[] selectedRows = selectedTable.getSelectedRows();
+        DefaultTableModel model = (DefaultTableModel)selectedTable.getModel();
+        // Move backward so removing doesn't change position of elements
+        for( int k = selectedRows.length-1; k >= 0; k-- )
         {
-            if( tables[tab][i].getSelectedRowCount() > 0 )
-            {
-                int[] selectedRows = tables[tab][i].getSelectedRows();
-                // Move backward so removing doesn't change position of elements
-                for( int k = selectedRows.length-1; k >= 0; k-- )
-                {
-                    ((DefaultTableModel)tables[tab][i].getModel()).removeRow(selectedRows[k]);
-                }
-            }
+            selectedSchedule.remove( (Song)model.getValueAt(selectedRows[k], 0));
+            model.removeRow(selectedRows[k]);
         }
+
+        // If the blank was deleted, add it back.
+        int rowCount = selectedTable.getRowCount();
+        if( rowCount == 0 || model.getValueAt( rowCount-1, 0 ) != blank[0] )
+            model.addRow(blank);
     }
 
     public void addSong( Song song )
     {
-
+        selectedSchedule.add(song);
+        Object[] data = {song.getTitle(), song.getPerformer()};
+        DefaultTableModel model = (DefaultTableModel)selectedTable.getModel();
+        model.removeRow( selectedTable.getRowCount()-1 );
+        model.addRow(data);
+        model.addRow(blank);
     }
 
     /** This method is called from within the constructor to
@@ -186,6 +197,9 @@ public class SchedulePanel extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
     private SongScheduler songScheduler;
-    private Schedule schedules[];
+    private Schedule schedules[][];
     private JTable tables[][];
+    private JTable selectedTable;
+    private Schedule selectedSchedule;
+    private Object[] blank = {null,null};
 }
