@@ -494,7 +494,8 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_saveSongDataActionPerformed
 
     private void changeHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeHoldingFileActionPerformed
-        // TODO add your handling code here:
+        HoldingsFilesWindow holdings = new HoldingsFilesWindow();
+        holdings.setVisible(true);
     }//GEN-LAST:event_changeHoldingFileActionPerformed
 
     private void incrementPlayCountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_incrementPlayCountActionPerformed
