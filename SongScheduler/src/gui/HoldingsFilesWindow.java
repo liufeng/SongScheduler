@@ -282,7 +282,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         String length     = songLengthDisplay.getText();
         String popularity = songPopularityDisplay.getText();
         //get the next access number
-        int accessNumber = 1; //replace this with the real access number
+        int accessNumber = Database.getNextAccessNum();
         //get the current time
         Time now = new Time();
 

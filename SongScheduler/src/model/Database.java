@@ -210,7 +210,7 @@ public abstract class Database {
      * write the song list to disk.
      *
      */
-     public static void saveSongInfo(){
+    public static void saveSongInfo(){
         if(songHash != null){
             Iterator<Song> songs = songHash.values().iterator();
             try {
@@ -236,6 +236,12 @@ public abstract class Database {
             }
         }
     }
+    
+    public static int getNextAccessNum()
+    {
+        return songHash.size() + 1;
+    }
+
 
     /**
      * Parses a line from library holdings file to create song object
