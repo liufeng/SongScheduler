@@ -60,21 +60,6 @@ public abstract class Database {
     }
 
     /**
-     * Persists database by serializing schedule hash and writing to file
-     */
-    public static void serializeDB(){
-        try{
-            OutputStream os = new FileOutputStream(scheduleFile);
-            ObjectOutput oo = new ObjectOutputStream(os);
-            oo.writeObject(scheduleHash);
-            oo.close();
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    /**
      * Changes the current holdings file.  If file does not exist,
      * creates new holdings file with specified name.  Saves changes to
      * previous holdings file.
@@ -247,6 +232,21 @@ public abstract class Database {
         Song currSong = createSongFromLine(song);
         if(!songHash.containsKey(currSong.getAccessNumber()))
             songHash.put(currSong.getAccessNumber(), currSong);
+    }
+
+    /**
+     * Persists database by serializing schedule hash and writing to file
+     */
+    private static void serializeDB(){
+        try{
+            OutputStream os = new FileOutputStream(scheduleFile);
+            ObjectOutput oo = new ObjectOutputStream(os);
+            oo.writeObject(scheduleHash);
+            oo.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     /**
