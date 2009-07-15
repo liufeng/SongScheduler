@@ -128,7 +128,7 @@ public abstract class HoldingFiles {
         {
             if(song != null){
                 BufferedWriter out = new BufferedWriter(new FileWriter(filename, true));
-                out.write("\n"+song);
+                out.write(song+"\n");
                 out.close();
             }
         }

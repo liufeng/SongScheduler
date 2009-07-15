@@ -538,7 +538,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
      * @return void
      */
     private void changeHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeHoldingFileActionPerformed
-        AuthenticateWindow enterPassword = new AuthenticateWindow();
+        AuthenticateWindow enterPassword = new AuthenticateWindow(this);
         enterPassword.setVisible(true);
     }//GEN-LAST:event_changeHoldingFileActionPerformed
 
@@ -615,6 +615,13 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void fixAllButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fixAllButtonActionPerformed
         schedulePanel.fixAllSchedules();
     }//GEN-LAST:event_fixAllButtonActionPerformed
+
+
+
+    public void changeSongs(){
+        songs = Database.getSongs();
+        updateSongList();
+    }
 
     /**
      * updateSongList

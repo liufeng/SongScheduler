@@ -17,6 +17,7 @@ import model.HoldingFiles;
 import model.Song;
 import model.Database;
 import model.Time;
+import model.Conversions;
 
 /**
  *
@@ -26,12 +27,13 @@ import model.Time;
 public class HoldingsFilesWindow extends javax.swing.JFrame {
     private ArrayList songs;                // The songs from the current holdings file
     private DefaultListModel listModel;     // The list model for the songs JList
-
+    private SongSchedulerWindow parent;
     /**
      * Constructor
      */
-    public HoldingsFilesWindow() {
+    public HoldingsFilesWindow(SongSchedulerWindow parent) {
         initComponents();
+        this.parent = parent;
         this.setDefaultCloseOperation( JFrame.DISPOSE_ON_CLOSE );
 
         DefaultListModel model = new DefaultListModel();
@@ -297,12 +299,14 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
                     + accessNumber + ";"
                     + now.toString() + ";"
                     + popularity +";"
-                    + length + ";"
+                    + Conversions.milliFromMSS(length) + ";"
                     + "0" + ";"
                     + "0";
         //write the song to the holdings file
         String holdingsFile = (String)jList1.getSelectedValue();
         HoldingFiles.addSongToFile( holdingsFile, song);
+        Database.addSongToDB(song);
+        updateSongList();
     }//GEN-LAST:event_addSongActionPerformed
 
     /**
@@ -317,6 +321,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         HoldingFiles.setCurrent( (String)jList1.getSelectedValue() );
         Database.setHoldingsFile( HoldingFiles.getCurrent() );
         updateSongList();
+        parent.changeSongs();
     }//GEN-LAST:event_selectHoldingFileActionPerformed
 
     /**

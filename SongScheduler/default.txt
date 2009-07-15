@@ -1,936 +1,936 @@
-Faerie Dance;Plants And Animals;Parc Avenue;CD;2007;1;2009-06-06 20:28:32;50;426266;0;0
-In the Flowers;Animal Collective;Merriweather Post Pavilion;CD;2009;2;2009-06-06 20:28:32;50;324101;0;0
-My Girls;Animal Collective;Merriweather Post Pavilion;LP;2009;3;2009-06-06 20:28:32;50;342857;0;0
-Also Frightened;Animal Collective;Merriweather Post Pavilion;CD;2009;4;2009-06-06 20:28:32;50;316133;0;0
-Summertime Clothes;Animal Collective;Merriweather Post Pavilion;LP;2009;5;2009-06-06 20:28:32;50;272195;0;0
-Daily Routine;Animal Collective;Merriweather Post Pavilion;CD;2009;6;2009-06-06 20:28:32;50;348107;0;0
-Bluish;Animal Collective;Merriweather Post Pavilion;CD;2009;7;2009-06-06 20:28:32;50;315637;0;0
-Guys Eyes;Animal Collective;Merriweather Post Pavilion;CD;2009;8;2009-06-06 20:28:32;50;272718;0;0
-Taste;Animal Collective;Merriweather Post Pavilion;LP;2009;9;2009-06-06 20:28:32;50;235520;0;0
-Lion in a Coma;Animal Collective;Merriweather Post Pavilion;LP;2009;10;2009-06-06 20:28:32;50;254302;0;0
-No More Runnin;Animal Collective;Merriweather Post Pavilion;LP;2009;11;2009-06-06 20:28:32;50;265404;0;0
-Brothersport;Animal Collective;Merriweather Post Pavilion;CD;2009;12;2009-06-06 20:28:32;50;359079;0;0
-Stormy High;Black Mountain;In The Future;LP;2008;13;2009-06-06 20:28:32;50;273763;0;0
-Angels;Black Mountain;In The Future;LP;2008;14;2009-06-06 20:28:32;50;187820;0;0
-Tyrants;Black Mountain;In The Future;LP;2008;15;2009-06-06 20:28:32;50;482716;0;0
-Wucan;Black Mountain;In The Future;CD;2008;16;2009-06-06 20:28:32;50;363023;0;0
-Stay Free;Black Mountain;In The Future;CD;2008;17;2009-06-06 20:28:32;50;269975;0;0
-Queens Will Play;Black Mountain;In The Future;LP;2008;18;2009-06-06 20:28:32;50;316786;0;0
-Evil Ways;Black Mountain;In The Future;LP;2008;19;2009-06-06 20:28:32;50;206210;0;0
-Wild Wind;Black Mountain;In The Future;CD;2008;20;2009-06-06 20:28:32;50;102556;0;0
-Bright Lights;Black Mountain;In The Future;LP;2008;21;2009-06-06 20:28:32;50;1001325;0;0
-Night Walks;Black Mountain;In The Future;LP;2008;22;2009-06-06 20:28:32;50;236617;0;0
-Tangled Up in Blue;Bob Dylan;Blood on the Tracks;CD;1975;23;2009-06-06 20:28:32;50;342674;0;0
-Simple Twist of Fate;Bob Dylan;Blood on the Tracks;LP;1975;24;2009-06-06 20:28:32;50;259213;0;0
-You're a Big Girl Now;Bob Dylan;Blood on the Tracks;LP;1975;25;2009-06-06 20:28:32;50;276088;0;0
-Idiot Wind;Bob Dylan;Blood on the Tracks;CD;1975;26;2009-06-06 20:28:32;50;469629;0;0
-You're Gonna Make Me Lonesome When You Go;Bob Dylan;Blood on the Tracks;LP;1975;27;2009-06-06 20:28:32;50;175804;0;0
-Meet Me in the Morning;Bob Dylan;Blood on the Tracks;LP;1975;28;2009-06-06 20:28:32;50;262295;0;0
-Lily, Rosemary and the Jack of Hearts;Bob Dylan;Blood on the Tracks;LP;1975;29;2009-06-06 20:28:32;50;533812;0;0
-If You See Her, Say Hello;Bob Dylan;Blood on the Tracks;CD;1975;30;2009-06-06 20:28:32;50;289515;0;0
-Shelter from the Storm;Bob Dylan;Blood on the Tracks;LP;1975;31;2009-06-06 20:28:32;50;302497;0;0
-Buckets of Rain;Bob Dylan;Blood on the Tracks;CD;1975;32;2009-06-06 20:28:32;50;202657;0;0
-Our Faces Split The Coast In Half;Broken Social Scene;Broken Social Scene;CD;2005;33;2009-06-06 20:28:32;50;222200;0;0
-Ibi Dreams Of Pavement (A Better Day);Broken Social Scene;Broken Social Scene;LP;2005;34;2009-06-06 20:28:32;50;267880;0;0
-7/4 (Shoreline);Broken Social Scene;Broken Social Scene;CD;2005;35;2009-06-06 20:28:32;50;293840;0;0
-Finish Your Collapse And Stay For Breakfast;Broken Social Scene;Broken Social Scene;CD;2005;36;2009-06-06 20:28:32;50;84413;0;0
-Major Label Debut;Broken Social Scene;Broken Social Scene;CD;2005;37;2009-06-06 20:28:32;50;268293;0;0
-Fire Eye'd Boy;Broken Social Scene;Broken Social Scene;LP;2005;38;2009-06-06 20:28:32;50;238920;0;0
-Windsurfing Nation;Broken Social Scene;Broken Social Scene;LP;2005;39;2009-06-06 20:28:32;50;275960;0;0
-Swimmers;Broken Social Scene;Broken Social Scene;LP;2005;40;2009-06-06 20:28:32;50;175533;0;0
-Hotel;Broken Social Scene;Broken Social Scene;CD;2005;41;2009-06-06 20:28:32;50;275560;0;0
-Handjobs For The Holidays;Broken Social Scene;Broken Social Scene;CD;2005;42;2009-06-06 20:28:32;50;279333;0;0
-Superconnected;Broken Social Scene;Broken Social Scene;LP;2005;43;2009-06-06 20:28:32;50;339760;0;0
-Bandwitch;Broken Social Scene;Broken Social Scene;CD;2005;44;2009-06-06 20:28:32;50;418573;0;0
-Tremoloa Debut;Broken Social Scene;Broken Social Scene;LP;2005;45;2009-06-06 20:28:32;50;59453;0;0
-Capture The Flag;Broken Social Scene;You Forgot It In People;CD;2002;46;2009-06-06 20:28:32;50;129008;0;0
-KC Accidental;Broken Social Scene;You Forgot It In People;CD;2002;47;2009-06-06 20:28:32;50;230781;0;0
-Stars And Sons;Broken Social Scene;You Forgot It In People;CD;2002;48;2009-06-06 20:28:32;50;308963;0;0
-Almost Crimes;Broken Social Scene;You Forgot It In People;LP;2002;49;2009-06-06 20:28:32;50;262964;0;0
-Looks Just Like The Sun;Broken Social Scene;You Forgot It In People;CD;2002;50;2009-06-06 20:28:32;50;263103;0;0
-Pacific Theme;Broken Social Scene;You Forgot It In People;LP;2002;51;2009-06-06 20:28:32;50;309195;0;0
-Anthems For A Seventeen-Year-Old Girl;Broken Social Scene;You Forgot It In People;CD;2002;52;2009-06-06 20:28:32;50;275712;0;0
-Cause = Time;Broken Social Scene;You Forgot It In People;CD;2002;53;2009-06-06 20:28:32;50;330859;0;0
-Late Night Bedroom Rock For The Missionaries;Broken Social Scene;You Forgot It In People;LP;2002;54;2009-06-06 20:28:32;50;226950;0;0
-Shampoo Suicide;Broken Social Scene;You Forgot It In People;LP;2002;55;2009-06-06 20:28:32;50;245085;0;0
-Lover's Spit;Broken Social Scene;You Forgot It In People;CD;2002;56;2009-06-06 20:28:32;50;382245;0;0
-I'm Still Your Fag;Broken Social Scene;You Forgot It In People;LP;2002;57;2009-06-06 20:28:32;50;264009;0;0
-Pitter Patter Goes My Heart;Broken Social Scene;You Forgot It In People;CD;2002;58;2009-06-06 20:28:32;50;144148;0;0
-Foreword;Christine Fellows;Paper Anniversary;CD;2005;59;2009-06-06 20:28:32;50;77200;0;0
-Vertebrae;Christine Fellows;Paper Anniversary;LP;2005;60;2009-06-06 20:28:32;50;252173;0;0
-Road Trip;Christine Fellows;Paper Anniversary;LP;2005;61;2009-06-06 20:28:32;50;54933;0;0
-Migrations;Christine Fellows;Paper Anniversary;CD;2005;62;2009-06-06 20:28:32;50;222706;0;0
-Face Down. Feet First.;Christine Fellows;Paper Anniversary;CD;2005;63;2009-06-06 20:28:32;50;175960;0;0
-Instructions On How To Dissect A Ground Owl;Christine Fellows;Paper Anniversary;LP;2005;64;2009-06-06 20:28:32;50;193106;0;0
-Paper Anniversary;Christine Fellows;Paper Anniversary;LP;2005;65;2009-06-06 20:28:32;50;74280;0;0
-Souvenirs;Christine Fellows;Paper Anniversary;CD;2005;66;2009-06-06 20:28:32;50;148693;0;0
-Double Takes;Christine Fellows;Paper Anniversary;LP;2005;67;2009-06-06 20:28:32;50;211800;0;0
-We Two;Christine Fellows;Paper Anniversary;CD;2005;68;2009-06-06 20:28:32;50;60506;0;0
-Phantom Pains;Christine Fellows;Paper Anniversary;CD;2005;69;2009-06-06 20:28:32;50;180280;0;0
-Departures/Arrivals;Christine Fellows;Paper Anniversary;LP;2005;70;2009-06-06 20:28:32;50;154440;0;0
-Paper Anniversary (Reprise);Christine Fellows;Paper Anniversary;CD;2005;71;2009-06-06 20:28:32;50;70706;0;0
-Afterword;Christine Fellows;Paper Anniversary;CD;2005;72;2009-06-06 20:28:32;50;107720;0;0
-Untrust Us;Crystal Castles;Crystal Castles;LP;2008;73;2009-06-06 20:28:32;50;186435;0;0
-Alice Practice;Crystal Castles;Crystal Castles;CD;2008;74;2009-06-06 20:28:32;50;161436;0;0
-Crimewave (Crystal Castles VS Health);Crystal Castles;Crystal Castles;CD;2008;75;2009-06-06 20:28:32;50;258507;0;0
-Magic Spells;Crystal Castles;Crystal Castles;CD;2008;76;2009-06-06 20:28:32;50;366915;0;0
-XXZXCUZX Me;Crystal Castles;Crystal Castles;LP;2008;77;2009-06-06 20:28:32;50;113841;0;0
-Air War;Crystal Castles;Crystal Castles;LP;2008;78;2009-06-06 20:28:32;50;252316;0;0
-Courtship Date;Crystal Castles;Crystal Castles;LP;2008;79;2009-06-06 20:28:32;50;210494;0;0
-Good Time;Crystal Castles;Crystal Castles;CD;2008;80;2009-06-06 20:28:32;50;175568;0;0
-1991;Crystal Castles;Crystal Castles;LP;2008;81;2009-06-06 20:28:32;50;113554;0;0
-Vanished;Crystal Castles;Crystal Castles;LP;2008;82;2009-06-06 20:28:32;50;243017;0;0
-Knights;Crystal Castles;Crystal Castles;LP;2008;83;2009-06-06 20:28:32;50;193750;0;0
-Love And Caring;Crystal Castles;Crystal Castles;CD;2008;84;2009-06-06 20:28:32;50;138971;0;0
-Through The Hosiery;Crystal Castles;Crystal Castles;CD;2008;85;2009-06-06 20:28:32;50;186958;0;0
-Reckless;Crystal Castles;Crystal Castles;CD;2008;86;2009-06-06 20:28:32;50;208457;0;0
-Black Panther;Crystal Castles;Crystal Castles;LP;2008;87;2009-06-06 20:28:32;50;177214;0;0
-Tell Me What To Swallow;Crystal Castles;Crystal Castles;CD;2008;88;2009-06-06 20:28:32;50;136777;0;0
-Feel The Love;Cut Copy;In Ghost Colours;LP;2008;89;2009-06-06 20:28:32;50;267624;0;0
-Out There On The Ice;Cut Copy;In Ghost Colours;CD;2008;90;2009-06-06 20:28:32;50;298448;0;0
-Lights And Music;Cut Copy;In Ghost Colours;CD;2008;91;2009-06-06 20:28:32;50;277446;0;0
-We Fight For Diamonds;Cut Copy;In Ghost Colours;LP;2008;92;2009-06-06 20:28:32;50;62066;0;0
-Unforgettable Season;Cut Copy;In Ghost Colours;CD;2008;93;2009-06-06 20:28:32;50;193227;0;0
-Midnight Runner;Cut Copy;In Ghost Colours;CD;2008;94;2009-06-06 20:28:32;50;152502;0;0
-So Haunted;Cut Copy;In Ghost Colours;CD;2008;95;2009-06-06 20:28:32;50;267049;0;0
-Voices In Quartz;Cut Copy;In Ghost Colours;LP;2008;96;2009-06-06 20:28:32;50;81110;0;0
-Hearts On Fire;Cut Copy;In Ghost Colours;LP;2008;97;2009-06-06 20:28:32;50;292623;0;0
-Far Away;Cut Copy;In Ghost Colours;CD;2008;98;2009-06-06 20:28:32;50;296359;0;0
-Silver Thoughts;Cut Copy;In Ghost Colours;LP;2008;99;2009-06-06 20:28:32;50;29309;0;0
-Strangers In The Wind;Cut Copy;In Ghost Colours;CD;2008;100;2009-06-06 20:28:32;50;283846;0;0
-Visions;Cut Copy;In Ghost Colours;LP;2008;101;2009-06-06 20:28:32;50;69511;0;0
-Nobody Lost, Nobody Found;Cut Copy;In Ghost Colours;LP;2008;102;2009-06-06 20:28:32;50;278622;0;0
-Eternity One Night Only;Cut Copy;In Ghost Colours;LP;2008;103;2009-06-06 20:28:32;50;186200;0;0
-Robot Rock / Oh Yeah;Daft Punk;Alive 2007;CD;2007;104;2009-06-06 20:28:32;50;387918;0;0
-Touch It / Technologic;Daft Punk;Alive 2007;LP;2007;105;2009-06-06 20:28:32;50;329769;0;0
-Television Rules The Nation / Crescendolls;Daft Punk;Alive 2007;CD;2007;106;2009-06-06 20:28:32;50;291422;0;0
-Too Long / Steam Machine;Daft Punk;Alive 2007;LP;2007;107;2009-06-06 20:28:32;50;437237;0;0
-Around The World / Harder, Better, Faster, Stronger;Daft Punk;Alive 2007;CD;2007;108;2009-06-06 20:28:32;50;327680;0;0
-Burnin' / Too Long;Daft Punk;Alive 2007;LP;2007;109;2009-06-06 20:28:32;50;429635;0;0
-Face to Face / Short Circuit;Daft Punk;Alive 2007;LP;2007;110;2009-06-06 20:28:32;50;296333;0;0
-One More Time / Aerodynamic / Aerodynamic Beats / Forget About the World;Daft Punk;Alive 2007;LP;2007;111;2009-06-06 20:28:32;50;555128;0;0
-Da Funk / Daftendirekt;Daft Punk;Alive 2007;CD;2007;113;2009-06-06 20:28:32;50;392202;0;0
-Superheroes / Human After All / Rock'n Roll;Daft Punk;Alive 2007;CD;2007;114;2009-06-06 20:28:32;50;339408;0;0
-Encore - Human After All / Together - Together / One More Time (reprise) / Stardust - Music Sounds Better with You;Daft Punk;Alive 2007 Bonus Disc;LP;2007;115;2009-06-06 20:28:32;50;598726;0;0
-+81;Deerhoof;Friend Opportunity;LP;2007;116;2009-06-06 20:28:32;50;183875;0;0
-Believe E.S.P.;Deerhoof;Friend Opportunity;LP;2007;117;2009-06-06 20:28:32;50;187533;0;0
-The Galaxist;Deerhoof;Friend Opportunity;LP;2007;118;2009-06-06 20:28:32;50;160914;0;0
-Choco Fight;Deerhoof;Friend Opportunity;LP;2007;119;2009-06-06 20:28:32;50;181054;0;0
-Whither The Invisible Birds?;Deerhoof;Friend Opportunity;LP;2007;120;2009-06-06 20:28:32;50;131213;0;0
-Cast Off Crown;Deerhoof;Friend Opportunity;LP;2007;121;2009-06-06 20:28:32;50;167444;0;0
-Kidz Are So Small;Deerhoof;Friend Opportunity;CD;2007;122;2009-06-06 20:28:32;50;119614;0;0
-Matchbook Seeks Maniac;Deerhoof;Friend Opportunity;LP;2007;123;2009-06-06 20:28:32;50;203520;0;0
-Look Away;Deerhoof;Friend Opportunity;LP;2007;124;2009-06-06 20:28:32;50;705933;0;0
-Intro;Deerhunter;Microcastle;LP;2008;125;2009-06-06 20:28:32;50;81946;0;0
-Agoraphobia;Deerhunter;Microcastle;LP;2008;126;2009-06-06 20:28:32;50;202710;0;0
-Never Stops;Deerhunter;Microcastle;CD;2008;127;2009-06-06 20:28:32;50;184555;0;0
-Little Kids;Deerhunter;Microcastle;CD;2008;128;2009-06-06 20:28:32;50;262817;0;0
-Microcastle;Deerhunter;Microcastle;CD;2008;129;2009-06-06 20:28:32;50;220133;0;0
-Calvary Scars;Deerhunter;Microcastle;LP;2008;130;2009-06-06 20:28:32;50;97071;0;0
-Green Jacket;Deerhunter;Microcastle;CD;2008;131;2009-06-06 20:28:32;50;129201;0;0
-Activa;Deerhunter;Microcastle;CD;2008;132;2009-06-06 20:28:32;50;109296;0;0
-Nothing Ever Happened;Deerhunter;Microcastle;CD;2008;133;2009-06-06 20:28:32;50;350981;0;0
-Saved By Old Times;Deerhunter;Microcastle;LP;2008;134;2009-06-06 20:28:32;50;230295;0;0
-These Hands;Deerhunter;Microcastle;LP;2008;135;2009-06-06 20:28:32;50;325250;0;0
-Twilight At Carbon Lake;Deerhunter;Microcastle;LP;2008;136;2009-06-06 20:28:32;50;264045;0;0
-Wash Off;Deerhunter;pitchfork top 100 tracks of 2007;CD;2007;137;2009-06-06 20:28:32;50;346827;0;0
-So Sorry;Feist;The Reminder;CD;2007;138;2009-06-06 20:28:32;50;192560;0;0
-I Feel It All;Feist;The Reminder;CD;2007;139;2009-06-06 20:28:32;50;219480;0;0
-My Moon My Man;Feist;The Reminder;LP;2007;140;2009-06-06 20:28:32;50;228346;0;0
-The Park;Feist;The Reminder;LP;2007;141;2009-06-06 20:28:32;50;274573;0;0
-The Water;Feist;The Reminder;CD;2007;142;2009-06-06 20:28:32;50;286320;0;0
-Sea Lion Woman;Feist;The Reminder;CD;2007;143;2009-06-06 20:28:32;50;219880;0;0
-Past In Present;Feist;The Reminder;CD;2007;144;2009-06-06 20:28:32;50;174306;0;0
-Limit To Your Love;Feist;The Reminder;LP;2007;145;2009-06-06 20:28:32;50;261040;0;0
-1 2 3 4;Feist;The Reminder;CD;2007;146;2009-06-06 20:28:32;50;183666;0;0
-Brandy Alexander;Feist;The Reminder;LP;2007;147;2009-06-06 20:28:32;50;216080;0;0
-Intuition;Feist;The Reminder;CD;2007;148;2009-06-06 20:28:32;50;276653;0;0
-Honey Honey;Feist;The Reminder;CD;2007;149;2009-06-06 20:28:32;50;207146;0;0
-How My Heart Behaves;Feist;The Reminder;LP;2007;150;2009-06-06 20:28:32;50;266600;0;0
-The Arctic Circle;Final Fantasy;He Poos Clouds;LP;2006;151;2009-06-06 20:28:32;50;264120;0;0
-He Poos Clouds;Final Fantasy;He Poos Clouds;CD;2006;152;2009-06-06 20:28:32;50;211840;0;0
-This Lamb Sells Condos;Final Fantasy;He Poos Clouds;LP;2006;153;2009-06-06 20:28:32;50;279773;0;0
-If I Were A Carp;Final Fantasy;He Poos Clouds;LP;2006;154;2009-06-06 20:28:32;50;243853;0;0
-For;Final Fantasy;He Poos Clouds;LP;2006;155;2009-06-06 20:28:32;50;57280;0;0
-I'm Afraid Of Japan;Final Fantasy;He Poos Clouds;CD;2006;156;2009-06-06 20:28:32;50;236840;0;0
-Song Song Song;Final Fantasy;He Poos Clouds;LP;2006;157;2009-06-06 20:28:32;50;271053;0;0
-Many Lives For 49 MP;Final Fantasy;He Poos Clouds;CD;2006;158;2009-06-06 20:28:32;50;176453;0;0
-Do You Love;Final Fantasy;He Poos Clouds;CD;2006;159;2009-06-06 20:28:32;50;183493;0;0
-The Pooka Sings;Final Fantasy;He Poos Clouds;LP;2005;160;2009-06-06 20:28:32;50;325906;0;0
-Sun Giant;Fleet Foxes;Sun Giant [EP];LP;2008;162;2009-06-06 20:28:32;50;134400;0;0
-Drops in the River;Fleet Foxes;Sun Giant [EP];LP;2008;163;2009-06-06 20:28:32;50;253152;0;0
-English House;Fleet Foxes;Sun Giant [EP];LP;2008;164;2009-06-06 20:28:32;50;281286;0;0
-Mykonos;Fleet Foxes;Sun Giant [EP];LP;2008;165;2009-06-06 20:28:32;50;275382;0;0
-Innocent Son;Fleet Foxes;Sun Giant [EP];LP;2008;166;2009-06-06 20:28:32;50;187533;0;0
-The Arm;Islands;Arm's Way;LP;2008;178;2009-06-06 20:28:32;50;338703;0;0
-Pieces of You;Islands;Arm's Way;CD;2008;179;2009-06-06 20:28:32;50;246204;0;0
-J'aime Vous Voire Quitter;Islands;Arm's Way;CD;2008;180;2009-06-06 20:28:32;50;203128;0;0
-Abominable Snow;Islands;Arm's Way;CD;2008;181;2009-06-06 20:28:32;50;275200;0;0
-Creeper;Islands;Arm's Way;LP;2008;182;2009-06-06 20:28:32;50;195030;0;0
-Kids Don't Know Shit;Islands;Arm's Way;CD;2008;183;2009-06-06 20:28:32;50;311222;0;0
-Life In Jail;Islands;Arm's Way;LP;2008;184;2009-06-06 20:28:32;50;327026;0;0
-In the Rushes;Islands;Arm's Way;CD;2008;185;2009-06-06 20:28:32;50;420519;0;0
-We Swim;Islands;Arm's Way;LP;2008;186;2009-06-06 20:28:32;50;306834;0;0
-To a Bond;Islands;Arm's Way;CD;2008;187;2009-06-06 20:28:32;50;467330;0;0
-I Feel Evil Creeping In;Islands;Arm's Way;LP;2008;188;2009-06-06 20:28:32;50;331937;0;0
-Vertigo (If it's a Crime);Islands;Arm's Way;CD;2008;189;2009-06-06 20:28:32;50;661890;0;0
-Folsom Prison Blues;Johnny Cash;At Folsom Prison;LP;1968;190;2009-06-06 20:28:32;50;162011;0;0
-Busted;Johnny Cash;At Folsom Prison;CD;1968;191;2009-06-06 20:28:32;50;84688;0;0
-Dark As The Dungeon;Johnny Cash;At Folsom Prison;LP;1968;192;2009-06-06 20:28:32;50;184581;0;0
-I Still Miss Someone;Johnny Cash;At Folsom Prison;CD;1968;193;2009-06-06 20:28:32;50;97724;0;0
-Cocaine Blues;Johnny Cash;At Folsom Prison;LP;1968;194;2009-06-06 20:28:32;50;181342;0;0
-25 Minutes To Go;Johnny Cash;At Folsom Prison;LP;1968;195;2009-06-06 20:28:32;50;211017;0;0
-Orange Blossom Special;Johnny Cash;At Folsom Prison;CD;1968;196;2009-06-06 20:28:32;50;180871;0;0
-The Long Black Veil;Johnny Cash;At Folsom Prison;LP;1968;197;2009-06-06 20:28:32;50;237635;0;0
-Send A Picture Of Mother;Johnny Cash;At Folsom Prison;CD;1968;198;2009-06-06 20:28:32;50;130533;0;0
-The Wall;Johnny Cash;At Folsom Prison;CD;1968;199;2009-06-06 20:28:32;50;96548;0;0
-Dirty Old Egg-Suckin' Dog;Johnny Cash;At Folsom Prison;LP;1968;200;2009-06-06 20:28:32;50;90226;0;0
-Flushed From The Bathroom Of Your Heart;Johnny Cash;At Folsom Prison;CD;1968;201;2009-06-06 20:28:32;50;137012;0;0
-Joe Bean;Johnny Cash;At Folsom Prison;CD;1968;202;2009-06-06 20:28:32;50;145502;0;0
-Jackson;Johnny Cash;At Folsom Prison;CD;1968;203;2009-06-06 20:28:32;50;192391;0;0
-Give My Love To Rose;Johnny Cash;At Folsom Prison;CD;1968;204;2009-06-06 20:28:32;50;160626;0;0
-I Got Stripes;Johnny Cash;At Folsom Prison;LP;1968;205;2009-06-06 20:28:32;50;117054;0;0
-The Legend Of John Henry's Hammer;Johnny Cash;At Folsom Prison;CD;1968;206;2009-06-06 20:28:32;50;428303;0;0
-Green, Green Grass Of Home;Johnny Cash;At Folsom Prison;LP;1968;207;2009-06-06 20:28:32;50;149524;0;0
-Greystone Chapel;Johnny Cash;At Folsom Prison;LP;1968;208;2009-06-06 20:28:32;50;362031;0;0
-Suzanne;Leonard Cohen;The Songs Of Leonard Cohen;CD;1967;209;2009-06-06 20:28:32;50;228493;0;0
-Master Song;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;210;2009-06-06 20:28:32;50;355106;0;0
-Winter Lady;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;211;2009-06-06 20:28:32;50;135960;0;0
-Stranger Song;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;212;2009-06-06 20:28:32;50;300506;0;0
-Sisters Of Mercy;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;213;2009-06-06 20:28:32;50;212800;0;0
-So Long, Marianne;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;214;2009-06-06 20:28:32;50;338626;0;0
-Hey, That's No Way To Say Goodbye;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;215;2009-06-06 20:28:32;50;175906;0;0
-Stories Of The Street;Leonard Cohen;The Songs Of Leonard Cohen;CD;1968;216;2009-06-06 20:28:32;50;275693;0;0
-Teachers;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;217;2009-06-06 20:28:32;50;181666;0;0
-One Of Us Cannot Be Wrong;Leonard Cohen;The Songs Of Leonard Cohen;CD;1968;218;2009-06-06 20:28:32;50;263773;0;0
-Paper Planes;M.I.A.;Kala;LP;2007;219;2009-06-06 20:28:32;50;205244;0;0
-Gravity Rides Everything;Modest Mouse;The Moon And Antarctica;CD;2000;220;2009-06-06 20:28:32;50;259893;0;0
-Dark Center Of The Universe;Modest Mouse;The Moon And Antarctica;CD;2000;221;2009-06-06 20:28:32;50;302733;0;0
-Perfect Disguise;Modest Mouse;The Moon And Antarctica;CD;2000;222;2009-06-06 20:28:32;50;161440;0;0
-Tiny Cities Made of Ashes;Modest Mouse;The Moon And Antarctica;LP;2000;223;2009-06-06 20:28:32;50;221733;0;0
-A Different City;Modest Mouse;The Moon And Antarctica;LP;2000;224;2009-06-06 20:28:32;50;188066;0;0
-The Cold Part;Modest Mouse;The Moon And Antarctica;CD;2000;225;2009-06-06 20:28:32;50;300933;0;0
-Alone Down There;Modest Mouse;The Moon And Antarctica;CD;2000;226;2009-06-06 20:28:32;50;141866;0;0
-The Stars Are Projectors;Modest Mouse;The Moon And Antarctica;LP;2000;227;2009-06-06 20:28:32;50;526600;0;0
-Wild Packs Of Family Dogs;Modest Mouse;The Moon And Antarctica;CD;2000;228;2009-06-06 20:28:32;50;105733;0;0
-Paper Thin Walls;Modest Mouse;The Moon And Antarctica;CD;2000;229;2009-06-06 20:28:32;50;181293;0;0
-I Came As A Rat;Modest Mouse;The Moon And Antarctica;CD;2000;230;2009-06-06 20:28:32;50;228373;0;0
-Lives;Modest Mouse;The Moon And Antarctica;LP;2000;231;2009-06-06 20:28:32;50;198693;0;0
-Life Like Weeds;Modest Mouse;The Moon And Antarctica;LP;2000;232;2009-06-06 20:28:32;50;390773;0;0
-What People Are Made Of;Modest Mouse;The Moon And Antarctica;CD;2000;233;2009-06-06 20:28:32;50;134466;0;0
-Suffer For Fashion;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;234;2009-06-06 20:28:32;50;178466;0;0
-Sink The Seine;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;235;2009-06-06 20:28:32;50;64173;0;0
-Cato As A Pun;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;236;2009-06-06 20:28:32;50;182600;0;0
-Heimdalsgate Like A Promethean Curse;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;237;2009-06-06 20:28:32;50;198600;0;0
-Gronlandic Edit;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;238;2009-06-06 20:28:32;50;204760;0;0
-A Sentence Of Sorts In Kongsvinger;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;239;2009-06-06 20:28:32;50;296426;0;0
-The Past Is A Grotesque Animal;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;240;2009-06-06 20:28:32;50;713066;0;0
-Bunny Ain't No Kind Of Rider;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;241;2009-06-06 20:28:32;50;231200;0;0
-Faberge Falls For Shuggie;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;242;2009-06-06 20:28:32;50;271373;0;0
-Labyrinthian Pomp;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;243;2009-06-06 20:28:32;50;201266;0;0
-She's A Rejector;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;244;2009-06-06 20:28:32;50;242946;0;0
-We Were Born The Mutants Again With Leafling;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;245;2009-06-06 20:28:32;50;298013;0;0
-Nonpareil of Favor;Of Montreal;Skeletal Lamping;CD;2008;246;2009-06-06 20:28:32;50;348943;0;0
-Wicked Wisdom;Of Montreal;Skeletal Lamping;CD;2008;247;2009-06-06 20:28:32;50;300355;0;0
-For Our Elegant Caste;Of Montreal;Skeletal Lamping;LP;2008;248;2009-06-06 20:28:32;50;154853;0;0
-Touched Something's Hollow;Of Montreal;Skeletal Lamping;LP;2008;249;2009-06-06 20:28:32;50;85812;0;0
-An Eluardian Instance;Of Montreal;Skeletal Lamping;LP;2008;250;2009-06-06 20:28:32;50;275304;0;0
-Gallery Piece;Of Montreal;Skeletal Lamping;CD;2008;251;2009-06-06 20:28:32;50;228075;0;0
-Women's Studies Victims;Of Montreal;Skeletal Lamping;CD;2008;252;2009-06-06 20:28:32;50;179487;0;0
-St.Exquisite's Confessions;Of Montreal;Skeletal Lamping;LP;2008;253;2009-06-06 20:28:32;50;274964;0;0
-Triphallus, to Punctuate!;Of Montreal;Skeletal Lamping;CD;2008;254;2009-06-06 20:28:32;50;202684;0;0
-And I've Seen a Bloody Shadow;Of Montreal;Skeletal Lamping;LP;2008;255;2009-06-06 20:28:32;50;143647;0;0
-Plastis Wafers;Of Montreal;Skeletal Lamping;LP;2008;256;2009-06-06 20:28:32;50;431647;0;0
-Death Is Not a Parallel Move;Of Montreal;Skeletal Lamping;LP;2008;257;2009-06-06 20:28:32;50;181707;0;0
-Beware Our Nubile Miscreants;Of Montreal;Skeletal Lamping;CD;2008;258;2009-06-06 20:28:32;50;292623;0;0
-Mingusings;Of Montreal;Skeletal Lamping;LP;2008;259;2009-06-06 20:28:32;50;181080;0;0
-Id Engager;Of Montreal;Skeletal Lamping;LP;2008;260;2009-06-06 20:28:32;50;205505;0;0
-Bone Machine;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1988;261;2009-06-06 20:28:32;50;183266;0;0
-Nimrod's Son;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1987;262;2009-06-06 20:28:32;50;136426;0;0
-The Holiday Song;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1987;263;2009-06-06 20:28:32;50;135026;0;0
-Caribou;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1988;264;2009-06-06 20:28:32;50;194226;0;0
-Broken Face;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1988;265;2009-06-06 20:28:32;50;89786;0;0
-Gigantic;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1988;266;2009-06-06 20:28:32;50;193573;0;0
-Vamos;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1988;267;2009-06-06 20:28:32;50;258400;0;0
-Hey;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1989;268;2009-06-06 20:28:32;50;210933;0;0
-Monkey Gone To Heaven;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;269;2009-06-06 20:28:32;50;175346;0;0
-Debaser;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1989;270;2009-06-06 20:28:32;50;171773;0;0
-Gouge Away;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;271;2009-06-06 20:28:32;50;162546;0;0
-Wave Of Mutilation;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;272;2009-06-06 20:28:32;50;123933;0;0
-Here Comes Your Man;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;273;2009-06-06 20:28:32;50;201200;0;0
-Tame;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1989;274;2009-06-06 20:28:32;50;116386;0;0
-Where Is My Mind?;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1988;275;2009-06-06 20:28:32;50;229240;0;0
-Into The White;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;276;2009-06-06 20:28:32;50;279946;0;0
-Velouria;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1990;277;2009-06-06 20:28:32;50;220386;0;0
-Allison;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1990;278;2009-06-06 20:28:32;50;77666;0;0
-Dig For Fire;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1990;279;2009-06-06 20:28:32;50;182746;0;0
-U-Mass;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1991;280;2009-06-06 20:28:32;50;180893;0;0
-Alec Eiffel;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1991;281;2009-06-06 20:28:32;50;167253;0;0
-Planet Of Sound;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1991;282;2009-06-06 20:28:32;50;126546;0;0
-Winterlong;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1990;283;2009-06-06 20:28:32;50;188666;0;0
-Bye Bye Bye;Plants And Animals;Parc Avenue;LP;2007;284;2009-06-06 20:28:32;50;218044;0;0
-Good Friend;Plants And Animals;Parc Avenue;CD;2007;285;2009-06-06 20:28:32;50;365609;0;0
-Feedback In The Field;Plants And Animals;Parc Avenue;CD;2007;286;2009-06-06 20:28:32;50;196388;0;0
-À L'orée Des Bois;Plants And Animals;Parc Avenue;CD;2007;287;2009-06-06 20:28:32;50;278778;0;0
-New Kind Of Love;Plants And Animals;Parc Avenue;LP;2007;288;2009-06-06 20:28:32;50;475585;0;0
-Early In The Morning;Plants And Animals;Parc Avenue;LP;2007;289;2009-06-06 20:28:32;50;142445;0;0
-Mercy;Plants And Animals;Parc Avenue;CD;2007;290;2009-06-06 20:28:32;50;323578;0;0
-Sea Shanty;Plants And Animals;Parc Avenue;CD;2007;291;2009-06-06 20:28:32;50;319164;0;0
-Keep It Real;Plants And Animals;Parc Avenue;CD;2007;292;2009-06-06 20:28:32;50;248163;0;0
-Guru;Plants And Animals;Parc Avenue;CD;2007;293;2009-06-06 20:28:32;50;412682;0;0
-Silence;Portishead;Third (Advance);LP;2008;294;2009-06-06 20:28:32;50;302811;0;0
-Hunter;Portishead;Third (Advance);CD;2008;295;2009-06-06 20:28:32;50;240770;0;0
-Nylon Smile;Portishead;Third (Advance);LP;2008;296;2009-06-06 20:28:32;50;201639;0;0
-The Rip;Portishead;Third (Advance);LP;2008;297;2009-06-06 20:28:32;50;273005;0;0
-Plastic;Portishead;Third (Advance);LP;2008;298;2009-06-06 20:28:32;50;212610;0;0
-We Carry On;Portishead;Third (Advance);LP;2008;299;2009-06-06 20:28:32;50;389825;0;0
-Deep Water;Portishead;Third (Advance);LP;2008;300;2009-06-06 20:28:32;50;95268;0;0
-Machine Gun;Portishead;Third (Advance);LP;2008;301;2009-06-06 20:28:32;50;288470;0;0
-Small;Portishead;Third (Advance);CD;2008;302;2009-06-06 20:28:32;50;409417;0;0
-Magic Doors;Portishead;Third (Advance);LP;2008;303;2009-06-06 20:28:32;50;213968;0;0
-Threads;Portishead;Third (Advance);LP;2008;304;2009-06-06 20:28:32;50;347820;0;0
-2+2=5 (The Lukewarm);Radiohead;Hail To The Thief;LP;2003;305;2009-06-06 20:28:32;50;199360;0;0
-Sail To The Moon (Brush The Cobwebs Of The Sky);Radiohead;Hail To The Thief;LP;2003;307;2009-06-06 20:28:32;50;258360;0;0
-Backdrifts (Honeymoon Is Over);Radiohead;Hail To The Thief;CD;2003;308;2009-06-06 20:28:32;50;322600;0;0
-Go To Sleep (Little Man Being Erased);Radiohead;Hail To The Thief;LP;2003;309;2009-06-06 20:28:32;50;201506;0;0
-Where I End And You Begin (The Sky Is Falling In);Radiohead;Hail To The Thief;LP;2003;310;2009-06-06 20:28:32;50;269293;0;0
-We Suck Young Blood (Your Time Is Up);Radiohead;Hail To The Thief;CD;2003;311;2009-06-06 20:28:32;50;296706;0;0
-The Gloaming (Softly Open Our Mouths In The Cold);Radiohead;Hail To The Thief;CD;2003;312;2009-06-06 20:28:32;50;212026;0;0
-There There (The Boney King Of Nowhere);Radiohead;Hail To The Thief;CD;2003;313;2009-06-06 20:28:32;50;323600;0;0
-I Will (No Man's Land);Radiohead;Hail To The Thief;LP;2003;314;2009-06-06 20:28:32;50;119466;0;0
-A Punch Up At A Wedding (No No No No No No No No);Radiohead;Hail To The Thief;CD;2003;315;2009-06-06 20:28:32;50;297333;0;0
-Scatterbrain (As Dead As Leaves);Radiohead;Hail To The Thief;CD;2003;317;2009-06-06 20:28:32;50;201706;0;0
-A Wolf At The Door (It Girl. Rag Doll);Radiohead;Hail To The Thief;CD;2003;318;2009-06-06 20:28:32;50;201333;0;0
-15 Step;Radiohead;In Rainbows;CD;2007;319;2009-06-06 20:28:32;50;237348;0;0
-Bodysnatchers;Radiohead;In Rainbows;LP;2007;320;2009-06-06 20:28:32;50;242337;0;0
-Nude;Radiohead;In Rainbows;LP;2007;321;2009-06-06 20:28:32;50;255399;0;0
-Weird Fishes/Arpeggi;Radiohead;In Rainbows;CD;2007;322;2009-06-06 20:28:32;50;318223;0;0
-All I Need;Radiohead;In Rainbows;LP;2007;323;2009-06-06 20:28:32;50;228806;0;0
-Faust Arp;Radiohead;In Rainbows;LP;2007;324;2009-06-06 20:28:32;50;129724;0;0
-Reckoner;Radiohead;In Rainbows;CD;2007;325;2009-06-06 20:28:32;50;290272;0;0
-House Of Cards;Radiohead;In Rainbows;LP;2007;326;2009-06-06 20:28:32;50;328359;0;0
-Jigsaw Falling Into Place;Radiohead;In Rainbows;CD;2007;327;2009-06-06 20:28:32;50;248946;0;0
-Videotape;Radiohead;In Rainbows;CD;2007;328;2009-06-06 20:28:32;50;279666;0;0
-Planet Telex;Radiohead;The Bends;LP;1995;329;2009-06-06 20:28:32;50;259200;0;0
-The Bends;Radiohead;The Bends;LP;1995;330;2009-06-06 20:28:32;50;246200;0;0
-High And Dry;Radiohead;The Bends;LP;1995;331;2009-06-06 20:28:32;50;257533;0;0
-Fake Plastic Trees;Radiohead;The Bends;CD;1995;332;2009-06-06 20:28:32;50;290706;0;0
-Bones;Radiohead;The Bends;LP;1995;333;2009-06-06 20:28:32;50;189000;0;0
-(Nice Dream);Radiohead;The Bends;CD;1995;334;2009-06-06 20:28:32;50;233226;0;0
-Just;Radiohead;The Bends;LP;1995;335;2009-06-06 20:28:32;50;234106;0;0
-My Iron Lung;Radiohead;The Bends;LP;1995;336;2009-06-06 20:28:32;50;276426;0;0
-Bullet Proof...I Wish I Was;Radiohead;The Bends;CD;1995;337;2009-06-06 20:28:32;50;208733;0;0
-Black Star;Radiohead;The Bends;CD;1995;338;2009-06-06 20:28:32;50;247040;0;0
-Sulk;Radiohead;The Bends;CD;1995;339;2009-06-06 20:28:32;50;222960;0;0
-Street Spirit (Fade Out);Radiohead;The Bends;LP;1995;340;2009-06-06 20:28:32;50;252400;0;0
-Divided;Tegan And Sara;Under Feet Like Ours;LP;1999;359;2009-06-06 20:28:32;50;184973;0;0
-Our Trees;Tegan And Sara;Under Feet Like Ours;CD;1999;360;2009-06-06 20:28:32;50;227291;0;0
-Come On;Tegan And Sara;Under Feet Like Ours;CD;1999;361;2009-06-06 20:28:32;50;245577;0;0
-Freedom;Tegan And Sara;Under Feet Like Ours;CD;1999;362;2009-06-06 20:28:32;50;135183;0;0
-Proud;Tegan And Sara;Under Feet Like Ours;CD;1999;363;2009-06-06 20:28:32;50;168150;0;0
-More For Me;Tegan And Sara;Under Feet Like Ours;CD;1999;364;2009-06-06 20:28:32;50;224548;0;0
-Hype;Tegan And Sara;Under Feet Like Ours;CD;1999;365;2009-06-06 20:28:32;50;185025;0;0
-Clever Meals;Tegan And Sara;Under Feet Like Ours;CD;1999;366;2009-06-06 20:28:32;50;198556;0;0
-This Is Everything;Tegan And Sara;Under Feet Like Ours;CD;1999;367;2009-06-06 20:28:32;50;189048;0;0
-Heavy;Tegan And Sara;Under Feet Like Ours;CD;1999;368;2009-06-06 20:28:32;50;258168;0;0
-Welcome Home;Tegan And Sara;Under Feet Like Ours;LP;1999;369;2009-06-06 20:28:32;50;154462;0;0
-Superstar;Tegan And Sara;Under Feet Like Ours;CD;1999;370;2009-06-06 20:28:32;50;230974;0;0
-Bye;Tegan And Sara;Under Feet Like Ours;CD;1999;371;2009-06-06 20:28:32;50;5276;0;0
-Neighborhood #1 (Tunnels);The Arcade Fire;Funeral;CD;2004;372;2009-06-06 20:28:32;50;288333;0;0
-Neighborhood #2 (Laika);The Arcade Fire;Funeral;CD;2004;373;2009-06-06 20:28:32;50;212000;0;0
-Une Annee Sans Lumiere;The Arcade Fire;Funeral;LP;2004;374;2009-06-06 20:28:32;50;220960;0;0
-Neighborhood #3 (Power Out);The Arcade Fire;Funeral;LP;2004;375;2009-06-06 20:28:32;50;312906;0;0
-Neighborhood #4 (7 Kettles);The Arcade Fire;Funeral;LP;2004;376;2009-06-06 20:28:32;50;289733;0;0
-Crown Of Love;The Arcade Fire;Funeral;CD;2004;377;2009-06-06 20:28:32;50;282333;0;0
-Wake Up;The Arcade Fire;Funeral;CD;2004;378;2009-06-06 20:28:32;50;335333;0;0
-Haiti;The Arcade Fire;Funeral;CD;2004;379;2009-06-06 20:28:32;50;247306;0;0
-Rebellion (Lies);The Arcade Fire;Funeral;LP;2004;380;2009-06-06 20:28:32;50;310893;0;0
-In The Backseat;The Arcade Fire;Funeral;LP;2004;381;2009-06-06 20:28:32;50;380213;0;0
-Black Mirror;The Arcade Fire;Neon Bible;LP;2007;382;2009-06-06 20:28:32;50;253373;0;0
-Keep The Car Running;The Arcade Fire;Neon Bible;LP;2007;383;2009-06-06 20:28:32;50;209093;0;0
-Neon Bible;The Arcade Fire;Neon Bible;CD;2007;384;2009-06-06 20:28:32;50;136640;0;0
-Intervention;The Arcade Fire;Neon Bible;LP;2007;385;2009-06-06 20:28:32;50;259000;0;0
-Black Wave / Bad Vibrations;The Arcade Fire;Neon Bible;LP;2007;386;2009-06-06 20:28:32;50;237506;0;0
-Ocean Of Noise;The Arcade Fire;Neon Bible;CD;2007;387;2009-06-06 20:28:32;50;293520;0;0
-The Well And The Lighthouse;The Arcade Fire;Neon Bible;LP;2007;388;2009-06-06 20:28:32;50;236706;0;0
-(Antichrist Television Blues);The Arcade Fire;Neon Bible;LP;2007;389;2009-06-06 20:28:32;50;310280;0;0
-Windowsill;The Arcade Fire;Neon Bible;CD;2007;390;2009-06-06 20:28:32;50;256400;0;0
-No Cars Go;The Arcade Fire;Neon Bible;CD;2007;391;2009-06-06 20:28:32;50;343626;0;0
-My Body Is A Cage;The Arcade Fire;Neon Bible;LP;2007;392;2009-06-06 20:28:32;50;287360;0;0
-Fake Empire;The National;Boxer;CD;2007;393;2009-06-06 20:28:32;50;209066;0;0
-Mistaken For Strangers;The National;Boxer;LP;2007;394;2009-06-06 20:28:32;50;215000;0;0
-Brainy;The National;Boxer;CD;2007;395;2009-06-06 20:28:32;50;202146;0;0
-Squalor Victoria;The National;Boxer;LP;2007;396;2009-06-06 20:28:32;50;183360;0;0
-Green Gloves;The National;Boxer;CD;2007;397;2009-06-06 20:28:32;50;223520;0;0
-Slow Show;The National;Boxer;LP;2007;398;2009-06-06 20:28:32;50;252306;0;0
-Apartment Story;The National;Boxer;CD;2007;399;2009-06-06 20:28:32;50;216560;0;0
-Start A War;The National;Boxer;CD;2007;400;2009-06-06 20:28:32;50;200453;0;0
-Guest Room;The National;Boxer;CD;2007;401;2009-06-06 20:28:32;50;202986;0;0
-Racing Like A Pro;The National;Boxer;CD;2007;402;2009-06-06 20:28:32;50;208253;0;0
-Ada;The National;Boxer;LP;2007;403;2009-06-06 20:28:32;50;247253;0;0
-Gospel;The National;Boxer;LP;2007;404;2009-06-06 20:28:32;50;269186;0;0
-Jellybelly;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;405;2009-06-06 20:28:32;50;181368;0;0
-Love;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;406;2009-06-06 20:28:32;50;261511;0;0
-Mellon Collie And The Infinite Sadness;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;407;2009-06-06 20:28:32;50;172094;0;0
-Muzzle;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;408;2009-06-06 20:28:32;50;224078;0;0
-An Ode To No One;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;409;2009-06-06 20:28:32;50;290951;0;0
-Porcelina Of The Vast Oceans;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;410;2009-06-06 20:28:32;50;561162;0;0
-Take Me Down;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;411;2009-06-06 20:28:32;50;172277;0;0
-To Forgive;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;412;2009-06-06 20:28:32;50;256731;0;0
-Tonight, Tonight;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;413;2009-06-06 20:28:32;50;254693;0;0
-Zero;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;414;2009-06-06 20:28:32;50;160470;0;0
-Beautiful;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;415;2009-06-06 20:28:32;50;258429;0;0
-Bodies;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;416;2009-06-06 20:28:32;50;252081;0;0
-By Starlight;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;417;2009-06-06 20:28:32;50;288182;0;0
-Farewell And Goodnight;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;418;2009-06-06 20:28:32;50;263000;0;0
-In The Arms Of Sleep;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;419;2009-06-06 20:28:32;50;252368;0;0
-Lily (My One And Only);The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;420;2009-06-06 20:28:32;50;211879;0;0
-Stumbleine;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;421;2009-06-06 20:28:32;50;174471;0;0
-Tales Of A Scorched Earth;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;422;2009-06-06 20:28:32;50;225985;0;0
-Thirty-Three;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;423;2009-06-06 20:28:32;50;250723;0;0
-Thru The Eyes Of Ruby;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;424;2009-06-06 20:28:32;50;458240;0;0
-We Only Come Out At Night;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;425;2009-06-06 20:28:32;50;245368;0;0
-Where Boys Fear To Tread;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;426;2009-06-06 20:28:32;50;262739;0;0
-X.Y.U.;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;427;2009-06-06 20:28:32;50;427128;0;0
-1979;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;428;2009-06-06 20:28:32;50;265900;0;0
-I Might Need You To Kill;The Thermals;The Body, The Blood, The Machine;CD;2006;429;2009-06-06 20:28:32;50;147147;0;0
-An Ear For Baby;The Thermals;The Body, The Blood, The Machine;LP;2006;430;2009-06-06 20:28:32;50;216450;0;0
-A Pillar Of Salt;The Thermals;The Body, The Blood, The Machine;LP;2006;431;2009-06-06 20:28:32;50;177371;0;0
-Returning To The Fold;The Thermals;The Body, The Blood, The Machine;LP;2006;432;2009-06-06 20:28:32;50;159268;0;0
-Test Pattern;The Thermals;The Body, The Blood, The Machine;LP;2006;433;2009-06-06 20:28:32;50;207882;0;0
-St. Rosa And The Swallows;The Thermals;The Body, The Blood, The Machine;LP;2006;434;2009-06-06 20:28:32;50;214935;0;0
-Back To The Sea;The Thermals;The Body, The Blood, The Machine;LP;2006;435;2009-06-06 20:28:32;50;287712;0;0
-Power Doesn't Run On Nothing;The Thermals;The Body, The Blood, The Machine;CD;2006;436;2009-06-06 20:28:32;50;314435;0;0
-I Hold The Sound;The Thermals;The Body, The Blood, The Machine;LP;2006;437;2009-06-06 20:28:32;50;278935;0;0
-Mansard Roof;Vampire Weekend;Vampire Weekend;LP;2007;438;2009-06-06 20:28:32;50;127869;0;0
-Oxford Comma;Vampire Weekend;Vampire Weekend;LP;2007;439;2009-06-06 20:28:32;50;204382;0;0
-A-Punk;Vampire Weekend;Vampire Weekend;CD;2007;440;2009-06-06 20:28:32;50;136907;0;0
-Cape Cod Kwassa Kwassa;Vampire Weekend;Vampire Weekend;LP;2007;441;2009-06-06 20:28:32;50;217417;0;0
-Boston;Vampire Weekend;Vampire Weekend;LP;2007;442;2009-06-06 20:28:32;50;160208;0;0
-Campus;Vampire Weekend;Vampire Weekend;LP;2007;443;2009-06-06 20:28:32;50;175568;0;0
-One;Vampire Weekend;Vampire Weekend;LP;2007;444;2009-06-06 20:28:32;50;191895;0;0
-Bryn;Vampire Weekend;Vampire Weekend;LP;2007;445;2009-06-06 20:28:32;50;131631;0;0
-Walcott;Vampire Weekend;Vampire Weekend;CD;2007;446;2009-06-06 20:28:32;50;228075;0;0
-The Kids Don't Stand A Chance;Vampire Weekend;Vampire Weekend;CD;2007;447;2009-06-06 20:28:32;50;243408;0;0
-Can't Stand It;Wilco;Summerteeth;CD;1999;448;2009-06-06 20:28:32;50;226977;0;0
-She's a Jar;Wilco;Summerteeth;CD;1999;449;2009-06-06 20:28:32;50;283010;0;0
-A Shot in the Arm;Wilco;Summerteeth;CD;1999;450;2009-06-06 20:28:32;50;259813;0;0
-We're Just Friends;Wilco;Summerteeth;LP;1999;451;2009-06-06 20:28:32;50;164728;0;0
-I'm always in love;Wilco;Summerteeth;CD;1999;452;2009-06-06 20:28:32;50;221178;0;0
-Nothing'severgonnastandinmyway (Again);Wilco;Summerteeth;LP;1999;453;2009-06-06 20:28:32;50;200751;0;0
-Pieholden Suite;Wilco;Summerteeth;CD;1999;454;2009-06-06 20:28:32;50;206445;0;0
-How to Fight Loneliness;Wilco;Summerteeth;CD;1999;455;2009-06-06 20:28:32;50;232829;0;0
-Via chicago;Wilco;Summerteeth;LP;1999;456;2009-06-06 20:28:32;50;333609;0;0
-ELT;Wilco;Summerteeth;CD;1999;457;2009-06-06 20:28:32;50;226351;0;0
-My Darling;Wilco;Summerteeth;LP;1999;458;2009-06-06 20:28:32;50;218279;0;0
-When You Wake Up Feeling Old;Wilco;Summerteeth;LP;1999;459;2009-06-06 20:28:32;50;236199;0;0
-Summer teeth;Wilco;Summerteeth;LP;1999;460;2009-06-06 20:28:32;50;201064;0;0
-In a Future Age;Wilco;Summerteeth;LP;1999;461;2009-06-06 20:28:32;50;177449;0;0
-Candyfloss [Bonus];Wilco;Summerteeth;LP;1999;462;2009-06-06 20:28:32;50;177815;0;0
-Radio Kaliningrad;Handsome Furs;Face Control;LP;2009;463;2009-06-06 20:28:32;50;292600;0;0
-Knotty Pine;Dirty Projectors + David Byrne;Dark Was The Night;LP;2009;464;2009-06-06 20:28:32;50;142915;0;0
-Cello Song;The Books featuring Jose Gonzalez;Dark Was The Night;LP;2009;465;2009-06-06 20:28:32;50;233822;0;0
-Train Song;Feist + Ben Gibbard;Dark Was The Night;CD;2009;466;2009-06-06 20:28:32;50;182543;0;0
-Brackett, WI;Bon Iver;Dark Was The Night;CD;2009;467;2009-06-06 20:28:32;50;242991;0;0
-Deep Blue Sea;Grizzly Bear;Dark Was The Night;CD;2009;468;2009-06-06 20:28:32;50;226455;0;0
-So Far Around The Bend;The National;Dark Was The Night;CD;2009;469;2009-06-06 20:28:32;50;222981;0;0
-Tightrope;Yeasayer;Dark Was The Night;CD;2009;470;2009-06-06 20:28:32;50;198217;0;0
-Feeling Good;My Brightest Diamond;Dark Was The Night;CD;2009;471;2009-06-06 20:28:32;50;233586;0;0
-Dark Was The Night;Kronos Quartet;Dark Was The Night;CD;2009;472;2009-06-06 20:28:32;50;231131;0;0
-I Was Young When I Left Home;Antony + Bryce Dessner;Dark Was The Night;CD;2009;473;2009-06-06 20:28:32;50;295262;0;0
-Big Red Machine;Justin Vernon + Aaron Dessner;Dark Was The Night;LP;2009;474;2009-06-06 20:28:32;50;278857;0;0
-Sleepless;The Decemberists;Dark Was The Night;CD;2009;475;2009-06-06 20:28:32;50;473600;0;0
-Service Bell;Grizzly Bear + Feist;Dark Was The Night;CD;2009;477;2009-06-06 20:28:32;50;143490;0;0
-You Are The Blood;Sufjan Stevens;Dark Was The Night;LP;2009;478;2009-06-06 20:28:32;50;614269;0;0
-Well-Alright;Spoon;Dark Was The Night;LP;2009;479;2009-06-06 20:28:32;50;165250;0;0
-Lenin;Arcade Fire;Dark Was The Night;LP;2009;480;2009-06-06 20:28:32;50;246517;0;0
-Mimizan;Beirut;Dark Was The Night;CD;2009;481;2009-06-06 20:28:32;50;162403;0;0
-El Caporal;My Morning Jacket;Dark Was The Night;LP;2009;482;2009-06-06 20:28:32;50;213106;0;0
-With A Girl Like You;David Sitek;Dark Was The Night;CD;2009;484;2009-06-06 20:28:32;50;206759;0;0
-Blood Pt 2;Buck 65 Remix (featuring Sufjan Stevens and Serengeti);Dark Was The Night;LP;2009;485;2009-06-06 20:28:32;50;215248;0;0
-Hey, Snow White;The New Pornographers;Dark Was The Night;LP;2009;486;2009-06-06 20:28:32;50;265848;0;0
-Gentle Hour;Yo La Tengo;Dark Was The Night;CD;2009;487;2009-06-06 20:28:32;50;331128;0;0
-Another Saturday;Stuart Murdoch;Dark Was The Night;LP;2009;488;2009-06-06 20:28:32;50;175464;0;0
-Happiness;Riceboy Sleeps;Dark Was The Night;CD;2009;489;2009-06-06 20:28:32;50;517041;0;0
-Amazing Grace;Cat Power and Dirty Delta Blues;Dark Was The Night;LP;2009;490;2009-06-06 20:28:32;50;214204;0;0
-The Giant Of Illinois;Andrew Bird;Dark Was The Night;CD;2009;491;2009-06-06 20:28:32;50;284551;0;0
-Lua;Conor Oberst + Gillian Welch;Dark Was The Night;LP;2009;492;2009-06-06 20:28:32;50;353515;0;0
-When The Road Runs Out;Blonde Redhead + Devastations;Dark Was The Night;CD;2009;493;2009-06-06 20:28:32;50;207255;0;0
-Love vs. Porn;Kevin Drew;Dark Was The Night;CD;2009;494;2009-06-06 20:28:32;50;237008;0;0
-Jerk It;Thunderheist;Thunderheist;CD;2009;495;2009-06-06 20:28:32;50;231920;0;0
-Help I'm Alive (Radio Edit Final);Metric;New Album;CD;2009;496;2009-06-06 20:28:32;50;207333;0;0
-Twilight Galaxy;Metric;Fantasies;LP;2009;497;2009-06-06 20:28:32;50;293511;0;0
-Stadium Love;Metric;Fantasies;LP;2009;498;2009-06-06 20:28:32;50;252891;0;0
-Help I'm Alive;Metric;Fantasies;CD;2009;499;2009-06-06 20:28:32;50;286302;0;0
-Blindness;Metric;Fantasies;LP;2009;500;2009-06-06 20:28:32;50;266893;0;0
-Gold Guns Girls;Metric;Fantasies;LP;2009;501;2009-06-06 20:28:32;50;245577;0;0
-Satellite Mind;Metric;Fantasies;LP;2009;502;2009-06-06 20:28:32;50;222902;0;0
-Collect Call;Metric;Fantasies;CD;2009;503;2009-06-06 20:28:32;50;286197;0;0
-Gimme Sympathy;Metric;Fantasies;CD;2009;504;2009-06-06 20:28:32;50;234501;0;0
-Waves (B-Side);Metric;Fantasies;CD;2009;505;2009-06-06 20:28:32;50;185756;0;0
-Front Row;Metric;Fantasies;CD;2009;506;2009-06-06 20:28:32;50;214883;0;0
-Sick Muse;Metric;Fantasies;CD;2009;507;2009-06-06 20:28:32;50;257541;0;0
-Help I'm Alive (Acoustic);Metric;Fantasies;LP;2009;508;2009-06-06 20:28:32;50;289018;0;0
-Gimme Sympathy (Acoustic);Metric;Fantasies;LP;2009;509;2009-06-06 20:28:32;50;207124;0;0
-"Heroes";David Bowie;The Pitchfork 500;LP;1977;510;2009-06-06 20:28:32;50;370442;0;0
-the passenger;Iggy Pop;The Pitchfork 500;LP;1990;511;2009-06-06 20:28:32;50;284160;0;0
-Street Hassle;Lou Reed;The Pitchfork 500;CD;1978;512;2009-06-06 20:28:32;50;660871;0;0
-Trans-Europe Express;Kraftwerk;The Pitchfork 500;CD;1977;513;2009-06-06 20:28:32;50;412447;0;0
-1/1;Brian Eno;The Pitchfork 500;CD;1978;514;2009-06-06 20:28:32;50;1040587;0;0
-Rockaway Beach;The Ramones;The Pitchfork 500;CD;1977;515;2009-06-06 20:28:32;50;126615;0;0
-Psycho Killer;Talking Heads;The Pitchfork 500;LP;1977;516;2009-06-06 20:28:32;50;260702;0;0
-Rock 'n' Roll Nigger;Patti Smith;The Pitchfork 500;LP;1978;517;2009-06-06 20:28:32;50;203415;0;0
-God Save The Queen;Sex Pistols;The Pitchfork 500;LP;1977;518;2009-06-06 20:28:32;50;200124;0;0
-Temptation 7" Mix;New Order;The Pitchfork 500;CD;2008;519;2009-06-06 20:28:32;50;326138;0;0
-Town Called Malice;The Jam;The Pitchfork 500;LP;1997;520;2009-06-06 20:28:32;50;174785;0;0
-The Chauffeur;Duran Duran;The Pitchfork 500;LP;1982;521;2009-06-06 20:28:32;50;310386;0;0
-Save It For Later;English Beat;The Pitchfork 500;LP;1982;522;2009-06-06 20:28:32;50;214700;0;0
-Our Lips Are Sealed;Go-Go`s;The Pitchfork 500;CD;1990;523;2009-06-06 20:28:32;50;167079;0;0
-Genius Of Love;Tom Tom Club;The Pitchfork 500;CD;1981;524;2009-06-06 20:28:32;50;334393;0;0
-Dirty Mind;Prince;The Pitchfork 500;LP;1980;525;2009-06-06 20:28:32;50;254928;0;0
-Billie Jean;Michael Jackson;The Pitchfork 500;LP;2001;527;2009-06-06 20:28:32;50;293955;0;0
-The Day Before You Came;ABBA;The Pitchfork 500;LP;1993;528;2009-06-06 20:28:32;50;351503;0;0
-(White Man) In Hammersmith Palais;The Clash;The Pitchfork 500;CD;2003;529;2009-06-06 20:28:32;50;241423;0;0
-More Than This;Roxy Music;The Pitchfork 500;LP;1982;530;2009-06-06 20:28:32;50;270733;0;0
-Under Pressure;Queen;The Pitchfork 500;CD;2001;531;2009-06-06 20:28:32;50;237714;0;0
-Atlantic City;Bruce Springsteen;The Pitchfork 500;CD;1982;532;2009-06-06 20:28:32;50;240770;0;0
-Don't Stop Believin';Journey;The Pitchfork 500;LP;1988;533;2009-06-06 20:28:32;50;250827;0;0
-Pay To Cum(Bad Brains 7");Bad Brains;The Pitchfork 500;CD;2003;534;2009-06-06 20:28:32;50;90697;0;0
-Minor Threat;Minor Threat;The Pitchfork 500;LP;1983;535;2009-06-06 20:28:32;50;87771;0;0
-Holiday In Cambodia;Dead Kennedys;The Pitchfork 500;LP;1980;536;2009-06-06 20:28:32;50;277577;0;0
-Rise Above;Black Flag;The Pitchfork 500;CD;1981;537;2009-06-06 20:28:32;50;146599;0;0
-Youth of America;The Wipers;The Pitchfork 500;CD;1981;538;2009-06-06 20:28:32;50;627147;0;0
-Sex Bomb;Flipper;The Pitchfork 500;LP;1982;539;2009-06-06 20:28:32;50;468924;0;0
-Ever Fallen In Love?;The Buzzcocks;The Pitchfork 500;CD;1979;540;2009-06-06 20:28:32;50;161280;0;0
-Ace Of Spades;Motörhead;The Pitchfork 500;LP;1980;541;2009-06-06 20:28:32;50;168855;0;0
-Run to the Hills;Iron Maiden;The Pitchfork 500;CD;1982;542;2009-06-06 20:28:32;50;233978;0;0
-Blue Boy;Orange Juice;The Pitchfork 500;CD;2005;543;2009-06-06 20:28:32;50;174942;0;0
-This Angry Silence;Television Personalities;The Pitchfork 500;LP;1980;544;2009-06-06 20:28:32;50;159921;0;0
-The Boy With The Perpetual Ner;The  Feelies;The Pitchfork 500;CD;1980;545;2009-06-06 20:28:32;50;309812;0;0
-Radio Free Europe;R.E.M.;The Pitchfork 500;CD;1983;546;2009-06-06 20:28:32;50;245394;0;0
-Blister In The Sun;Violent Femmes;The Pitchfork 500;CD;1983;547;2009-06-06 20:28:32;50;144404;0;0
-That's When I Reach For My Revolver;Mission Of Burma;The Pitchfork 500;LP;1981;548;2009-06-06 20:28:32;50;233456;0;0
-Parallel Lines;Vic Godard And The Subway Sect;The Pitchfork 500;LP;1999;549;2009-06-06 20:28:32;50;158589;0;0
-This Charming Man;The Smiths;The Pitchfork 500;CD;1984;550;2009-06-06 20:28:32;50;162951;0;0
-Death Valley '69;Sonic Youth;The Pitchfork 500;LP;1985;551;2009-06-06 20:28:32;50;322481;0;0
-Pink Turns To Blue;Hüsker Dü;The Pitchfork 500;CD;1984;552;2009-06-06 20:28:32;50;162977;0;0
-Plateau;Meat Puppets;The Pitchfork 500;CD;1983;553;2009-06-06 20:28:32;50;142471;0;0
-I Will Dare;The Replacements;The Pitchfork 500;LP;1984;554;2009-06-06 20:28:32;50;198400;0;0
-History Lesson - Part II;The Minutemen;The Pitchfork 500;CD;1984;555;2009-06-06 20:28:32;50;132205;0;0
-So. Central Rain;R.E.M.;The Pitchfork 500;LP;1984;556;2009-06-06 20:28:32;50;196127;0;0
-Oh Bondage! Up Yours!;X-Ray Spex;The Pitchfork 500;CD;1978;559;2009-06-06 20:28:32;50;171258;0;0
-It's Like That;Run-D.M.C.;The Pitchfork 500;LP;1984;560;2009-06-06 20:28:32;50;291944;0;0
-ON THE RADIO;Crash Crew;The Pitchfork 500;LP;1984;561;2009-06-06 20:28:32;50;343275;0;0
-South Bronx;Boogie Down Productions;The Pitchfork 500;LP;1987;562;2009-06-06 20:28:32;50;311405;0;0
-Blue Monday;New Order;The Pitchfork 500;LP;1987;563;2009-06-06 20:28:32;50;449227;0;0
-When Doves Cry;Prince And The Revolution;The Pitchfork 500;LP;1984;564;2009-06-06 20:28:32;50;354168;0;0
-This Must Be The Place (Naive Melody);Talking Heads;The Pitchfork 500;CD;1984;565;2009-06-06 20:28:32;50;297273;0;0
-Running Up That Hill (A Deal W;Kate Bush;The Pitchfork 500;CD;1985;566;2009-06-06 20:28:32;50;300669;0;0
-New Year's Day;U2;The Pitchfork 500;LP;1983;567;2009-06-06 20:28:32;50;336117;0;0
-Don't You (Forget About Me);Simple Minds;The Pitchfork 500;LP;2001;568;2009-06-06 20:28:32;50;263340;0;0
-One Chord Wonders;The Adverts;The Pitchfork 500;CD;1978;569;2009-06-06 20:28:32;50;169116;0;0
-Bastards Of Young;The Replacements;The Pitchfork 500;CD;1985;570;2009-06-06 20:28:32;50;218122;0;0
-Last Dance;The Mekons;The Pitchfork 500;LP;1985;571;2009-06-06 20:28:32;50;193332;0;0
-Kerosene;Big Black;The Pitchfork 500;LP;1986;572;2009-06-06 20:28:32;50;365374;0;0
-How Soon Is Now?;The Smiths;The Pitchfork 500;CD;1984;574;2009-06-06 20:28:32;50;406230;0;0
-Lorelei;Cocteau Twins;The Pitchfork 500;LP;1984;575;2009-06-06 20:28:32;50;221753;0;0
-Bizarre Love Triangle;New Order;The Pitchfork 500;LP;1987;576;2009-06-06 20:28:32;50;404636;0;0
-A New England;Billy Bragg;The Pitchfork 500;CD;2003;577;2009-06-06 20:28:32;50;135941;0;0
-Battery;Metallica;The Pitchfork 500;CD;1986;578;2009-06-06 20:28:32;50;312737;0;0
-Ex Lion Tamer;Wire;The Pitchfork 500;CD;1977;579;2009-06-06 20:28:32;50;139415;0;0
-Angel of Death;Slayer;The Pitchfork 500;LP;1986;580;2009-06-06 20:28:32;50;291840;0;0
-Clear Windowpane;Saint Vitus;The Pitchfork 500;CD;1986;581;2009-06-06 20:28:32;50;199235;0;0
-Halber Mensch;Einstürzende Neubauten;The Pitchfork 500;LP;1985;582;2009-06-06 20:28:32;50;249129;0;0
-Beat Box (Diversion One);Art Of Noise;The Pitchfork 500;CD;1984;583;2009-06-06 20:28:32;50;512783;0;0
-Relax (Come Fighting);Frankie Goes to Hollywood;The Pitchfork 500;CD;1990;584;2009-06-06 20:28:32;50;236303;0;0
-Optimo;Liquid Liquid;The Pitchfork 500;LP;1997;585;2009-06-06 20:28:32;50;160522;0;0
-Problèmes d'Amour (Original);Alexander Robotnick;The Pitchfork 500;CD;1983;586;2009-06-06 20:28:32;50;420702;0;0
-Let The Music Play;Shannon;The Pitchfork 500;LP;2004;587;2009-06-06 20:28:32;50;214778;0;0
-Looking From A Hilltop (Restructure);Section 25;The Pitchfork 500;CD;1984;588;2009-06-06 20:28:32;50;278778;0;0
-Holiday;Madonna;The Pitchfork 500;CD;1983;589;2009-06-06 20:28:32;50;245786;0;0
-I Feel Love [12" Version];Donna Summer;The Pitchfork 500;LP;1979;590;2009-06-06 20:28:32;50;496979;0;0
-Girls Just Want to Have Fun;Cyndi Lauper;The Pitchfork 500;LP;2003;591;2009-06-06 20:28:32;50;235493;0;0
-Rock Box;Run-D.M.C.;The Pitchfork 500;CD;1984;592;2009-06-06 20:28:32;50;333296;0;0
-i can't live without my radio;LL Cool J;The Pitchfork 500;CD;1996;593;2009-06-06 20:28:32;50;328672;0;0
-No Sleep Till Brooklyn;The Beastie Boys;The Pitchfork 500;CD;1986;594;2009-06-06 20:28:32;50;246883;0;0
-Needle To The Groove;Mantronix;The Pitchfork 500;LP;1999;595;2009-06-06 20:28:32;50;219742;0;0
-Cattle and Cane;The Go-Betweens;The Pitchfork 500;LP;2002;596;2009-06-06 20:28:32;50;260937;0;0
-Pink Frost;The Chills;The Pitchfork 500;CD;1995;597;2009-06-06 20:28:32;50;237688;0;0
-Primitive Painters;Felt;The Pitchfork 500;CD;1992;598;2009-06-06 20:28:32;50;359680;0;0
-There Is A Light That Never Goes Out;The Smiths;The Pitchfork 500;LP;1986;599;2009-06-06 20:28:32;50;243330;0;0
-Chase;Giorgio Moroder;The Pitchfork 500;CD;1978;600;2009-06-06 20:28:32;50;509884;0;0
-Jockey Full Of Bourbon;Tom Waits;The Pitchfork 500;LP;1985;601;2009-06-06 20:28:32;50;167235;0;0
-I'm On Fire;Bruce Springsteen;The Pitchfork 500;LP;1984;602;2009-06-06 20:28:32;50;161567;0;0
-Rawhide;Scott Walker;The Pitchfork 500;CD;1983;603;2009-06-06 20:28:32;50;231392;0;0
-Bad;U2;The Pitchfork 500;LP;1998;604;2009-06-06 20:28:32;50;351477;0;0
-The Boys Of Summer;Don Henley;The Pitchfork 500;LP;1984;605;2009-06-06 20:28:32;50;287529;0;0
-Graceland;Paul Simon;The Pitchfork 500;LP;1986;606;2009-06-06 20:28:32;50;291030;0;0
-Under Me Sleng Teng;Wayne Smith;The Pitchfork 500;LP;1986;607;2009-06-06 20:28:32;50;250697;0;0
-Can you feel it;Mr. Fingers;The Pitchfork 500;LP;1989;608;2009-06-06 20:28:32;50;356675;0;0
-Good Times                    ;Chic;The Pitchfork 500;LP;1979;609;2009-06-06 20:28:32;50;489038;0;0
-Walkin' With Jesus;Spacemen 3;The Pitchfork 500;LP;1987;610;2009-06-06 20:28:32;50;306102;0;0
-dreams burn down;Ride;The Pitchfork 500;LP;1999;611;2009-06-06 20:28:32;50;366680;0;0
-Blue Thunder;Galaxie 500;The Pitchfork 500;CD;1989;612;2009-06-06 20:28:32;50;227892;0;0
-Kinky Afro;Happy Mondays;The Pitchfork 500;CD;1990;613;2009-06-06 20:28:32;50;239542;0;0
-Teen Age Riot;Sonic Youth;The Pitchfork 500;LP;1988;614;2009-06-06 20:28:32;50;418403;0;0
-Don't Leave Me This Way;Thelma Houston;The Pitchfork 500;LP;2008;615;2009-06-06 20:28:32;50;248920;0;0
-Freak Scene;Dinosaur Jr.;The Pitchfork 500;LP;1988;616;2009-06-06 20:28:32;50;216999;0;0
-Human Cannonball;Butthole Surfers;The Pitchfork 500;LP;1987;617;2009-06-06 20:28:32;50;232045;0;0
-Waiting Room;Fugazi;The Pitchfork 500;LP;1987;618;2009-06-06 20:28:32;50;174915;0;0
-I Know You Got Soul;Eric B. and Rakim;The Pitchfork 500;CD;1987;619;2009-06-06 20:28:32;50;289671;0;0
-Rebel Without A Pause;Public Enemy;The Pitchfork 500;CD;1988;620;2009-06-06 20:28:32;50;258481;0;0
-Straight Outta Compton;N.W.A.;The Pitchfork 500;CD;1988;621;2009-06-06 20:28:32;50;258716;0;0
-I Will Survive;Gloria Gaynor;The Pitchfork 500;LP;1978;623;2009-06-06 20:28:32;50;197093;0;0
-Birthday;The Sugarcubes;The Pitchfork 500;LP;1988;625;2009-06-06 20:28:32;50;238706;0;0
-Just Like Heaven;The Cure;The Pitchfork 500;CD;1987;626;2009-06-06 20:28:32;50;212976;0;0
-Everyday Is Like Sunday;Morrissey;The Pitchfork 500;LP;1990;627;2009-06-06 20:28:32;50;213760;0;0
-Fairytale Of New York;The Pogues;The Pitchfork 500;CD;1987;628;2009-06-06 20:28:32;50;277446;0;0
-My Favourite Dress;Wedding Present;The Pitchfork 500;LP;1988;629;2009-06-06 20:28:32;50;254563;0;0
-Emma's House;The Field Mice;The Pitchfork 500;LP;1998;630;2009-06-06 20:28:32;50;216894;0;0
-You Should All Be Murdered;Another Sunny Day;The Pitchfork 500;CD;1989;631;2009-06-06 20:28:32;50;276453;0;0
-Punk Rock Girl;The Dead Milkmen;The Pitchfork 500;LP;1988;632;2009-06-06 20:28:32;50;158928;0;0
-Don't Stop Till You Get Enough;Michael Jackson;The Pitchfork 500;LP;2001;633;2009-06-06 20:28:32;50;366315;0;0
-There She Goes;The La's;The Pitchfork 500;LP;1990;634;2009-06-06 20:28:32;50;162246;0;0
-Birdhouse in Your Soul;They Might Be Giants;The Pitchfork 500;CD;1990;635;2009-06-06 20:28:32;50;200698;0;0
-Slack Motherfucker;Superchunk;The Pitchfork 500;CD;1992;636;2009-06-06 20:28:32;50;173923;0;0
-Merchandise;Fugazi;The Pitchfork 500;CD;1990;637;2009-06-06 20:28:32;50;179200;0;0
-Mouth Breather;The Jesus Lizard;The Pitchfork 500;LP;2000;638;2009-06-06 20:28:32;50;136019;0;0
-Children's Story;Slick Rick;The Pitchfork 500;CD;1988;639;2009-06-06 20:28:32;50;242181;0;0
-Just To Get A Rep;Gang Starr;The Pitchfork 500;LP;1990;640;2009-06-06 20:28:32;50;186827;0;0
-Push It;Salt-N-Pepa;The Pitchfork 500;LP;1987;642;2009-06-06 20:28:32;50;210337;0;0
-Hey Ladies;The Beastie Boys;The Pitchfork 500;CD;1989;643;2009-06-06 20:28:32;50;227422;0;0
-Flash Light;Parliament;The Pitchfork 500;CD;1977;644;2009-06-06 20:28:32;50;346618;0;0
-Me, Myself and I;De La Soul;The Pitchfork 500;LP;1989;645;2009-06-06 20:28:32;50;223320;0;0
-Fight The Power;Public Enemy;The Pitchfork 500;CD;1990;646;2009-06-06 20:28:32;50;283924;0;0
-Welcome To The Jungle;Guns N' Roses;The Pitchfork 500;LP;1987;647;2009-06-06 20:28:32;50;273658;0;0
-Beautiful Child;Swans;The Pitchfork 500;LP;1987;648;2009-06-06 20:28:32;50;292440;0;0
-The Sicilian Clan;John Zorn;The Pitchfork 500;CD;1989;649;2009-06-06 20:28:32;50;213159;0;0
-If I Was Your Girlfriend;Prince;The Pitchfork 500;LP;1987;650;2009-06-06 20:28:32;50;301766;0;0
-Like A Prayer;Madonna;The Pitchfork 500;CD;1989;651;2009-06-06 20:28:32;50;351608;0;0
-Groove Is In The Heart (1990);Deee-Lite;The Pitchfork 500;LP;1990;652;2009-06-06 20:28:32;50;234161;0;0
-Being boring;Pet Shop Boys;The Pitchfork 500;CD;1991;653;2009-06-06 20:28:32;50;291761;0;0
-Got To Give It Up;Marvin Gaye;The Pitchfork 500;LP;2006;654;2009-06-06 20:28:32;50;713586;0;0
-Nothing Compares 2 U;Sinead O'connor;The Pitchfork 500;LP;1990;655;2009-06-06 20:28:32;50;310831;0;0
-Little Fluffy Clouds;The Orb;The Pitchfork 500;LP;1991;656;2009-06-06 20:28:32;50;267075;0;0
-Wichita Lineman Was a Song I Once Heard;The KLF;The Pitchfork 500;CD;1990;657;2009-06-06 20:28:32;50;356048;0;0
-Chime;Orbital;The Pitchfork 500;CD;1991;658;2009-06-06 20:28:32;50;483343;0;0
-Enjoy The Silence;Depeche Mode;The Pitchfork 500;CD;1990;659;2009-06-06 20:28:32;50;372871;0;0
-Soon;My Bloody Valentine;The Pitchfork 500;LP;1991;660;2009-06-06 20:28:32;50;418821;0;0
-Indian Summer;Beat Happening;The Pitchfork 500;LP;1988;661;2009-06-06 20:28:32;50;185129;0;0
-Some Things Last A Long Time;Daniel Johnston;The Pitchfork 500;LP;2004;662;2009-06-06 20:28:32;50;294373;0;0
-Public Image;Public Image Ltd.;The Pitchfork 500;LP;1978;663;2009-06-06 20:28:32;50;181524;0;0
-Touch Me I'm Sick;Mudhoney;The Pitchfork 500;CD;1992;664;2009-06-06 20:28:32;50;156055;0;0
-Smells Like Teen Spirit;Nirvana;The Pitchfork 500;CD;1991;665;2009-06-06 20:28:32;50;301165;0;0
-Summer Babe (Winter Version);Pavement;The Pitchfork 500;CD;1992;666;2009-06-06 20:28:32;50;196284;0;0
-Web In Front;Archers Of Loaf;The Pitchfork 500;CD;1994;667;2009-06-06 20:28:32;50;124734;0;0
-From A Motel 6;Yo La Tengo;The Pitchfork 500;LP;1993;668;2009-06-06 20:28:32;50;249835;0;0
-The Freed Pig;Sebadoh;The Pitchfork 500;CD;1991;669;2009-06-06 20:28:32;50;188029;0;0
-Check The Rhime;A Tribe Called Quest;The Pitchfork 500;LP;1991;670;2009-06-06 20:28:32;50;216842;0;0
-A Roller Skating Jam Named ''Saturdays'';De La Soul;The Pitchfork 500;LP;1991;671;2009-06-06 20:28:32;50;242102;0;0
-the choice is yours;black sheep;The Pitchfork 500;LP;2003;672;2009-06-06 20:28:32;50;130246;0;0
-Damaged Goods;Gang Of Four;The Pitchfork 500;LP;1979;673;2009-06-06 20:28:32;50;207281;0;0
-Unfinished Sympathy;Massive Attack;The Pitchfork 500;LP;1991;674;2009-06-06 20:28:32;50;308480;0;0
-Aftermath;Tricky;The Pitchfork 500;LP;1995;675;2009-06-06 20:28:32;50;458710;0;0
-Higher Than The Sun;Primal Scream;The Pitchfork 500;LP;1991;676;2009-06-06 20:28:32;50;218409;0;0
-Step Into The Breeze (Part 1);Spiritualized;The Pitchfork 500;CD;1990;677;2009-06-06 20:28:32;50;168306;0;0
-Alison;Slowdive;The Pitchfork 500;CD;1994;678;2009-06-06 20:28:32;50;231993;0;0
-Xtal;Aphex Twin;The Pitchfork 500;CD;1993;679;2009-06-06 20:28:32;50;294191;0;0
-Ascension Day;Talk Talk;The Pitchfork 500;CD;1991;680;2009-06-06 20:28:32;50;359810;0;0
-Good Morning, Captain;Slint;The Pitchfork 500;LP;1992;681;2009-06-06 20:28:32;50;459415;0;0
-French Disko;Stereolab;The Pitchfork 500;LP;1995;682;2009-06-06 20:28:32;50;215954;0;0
-Shot By Both Sides;Magazine;The Pitchfork 500;CD;1978;683;2009-06-06 20:28:32;50;244401;0;0
-Terminator;Metalheadz;The Pitchfork 500;LP;2000;684;2009-06-06 20:28:32;50;309263;0;0
-New Jersey;RED HOUSE PAINTERS;The Pitchfork 500;CD;1993;685;2009-06-06 20:28:32;50;238706;0;0
-The Concept;Teenage Fanclub;The Pitchfork 500;LP;1991;686;2009-06-06 20:28:32;50;367098;0;0
-C Is The Heavenly Option;Heavenly;The Pitchfork 500;CD;1992;687;2009-06-06 20:28:32;50;201795;0;0
-City Sickness;Tindersticks;The Pitchfork 500;LP;1993;688;2009-06-06 20:28:32;50;240248;0;0
-Make Out Club;Unrest;The Pitchfork 500;CD;1993;689;2009-06-06 20:28:32;50;259265;0;0
-Human Fly;Cramps;The Pitchfork 500;LP;1984;690;2009-06-06 20:28:32;50;135392;0;0
-Nuthin' but a "G" Thang;Dr. Dre;The Pitchfork 500;CD;1992;691;2009-06-06 20:28:32;50;238576;0;0
-It Was A Good Day;Ice Cube;The Pitchfork 500;LP;2001;692;2009-06-06 20:28:32;50;260101;0;0
-I Get Around;2Pac;The Pitchfork 500;LP;1998;693;2009-06-06 20:28:32;50;259761;0;0
-93 'Til Infinity;Souls Of Mischief;The Pitchfork 500;LP;1993;694;2009-06-06 20:28:32;50;286563;0;0
-The Drowners;Suede;The Pitchfork 500;LP;1993;695;2009-06-06 20:28:32;50;250253;0;0
-For Tomorrow;Blur;The Pitchfork 500;LP;1993;696;2009-06-06 20:28:32;50;260179;0;0
-Stutter;Elastica;The Pitchfork 500;CD;1995;697;2009-06-06 20:28:32;50;142184;0;0
-Protect Ya Neck;Wu-Tang Clan;The Pitchfork 500;CD;1993;698;2009-06-06 20:28:32;50;291317;0;0
-Night Of The Living Dead;The Misfits;The Pitchfork 500;LP;1996;699;2009-06-06 20:28:32;50;117890;0;0
-My Mind Playin' Tricks on Me;Geto Boys;The Pitchfork 500;CD;1992;700;2009-06-06 20:28:32;50;311849;0;0
-Hooch;The Melvins;The Pitchfork 500;CD;1993;702;2009-06-06 20:28:32;50;170866;0;0
-Start Choppin;Dinosaur Jr.;The Pitchfork 500;CD;2001;703;2009-06-06 20:28:32;50;337214;0;0
-Divorce Song;Liz Phair;The Pitchfork 500;CD;1993;704;2009-06-06 20:28:32;50;200176;0;0
-Rid Of Me;PJ Harvey;The Pitchfork 500;CD;1993;705;2009-06-06 20:28:32;50;268904;0;0
-Debonair;The Afghan Whigs;The Pitchfork 500;CD;2007;706;2009-06-06 20:28:32;50;254484;0;0
-Killing In The Name;Rage Against The Machine;The Pitchfork 500;CD;1992;707;2009-06-06 20:28:32;50;314253;0;0
-Outdoor Miner;Wire;The Pitchfork 500;CD;1978;708;2009-06-06 20:28:32;50;104698;0;0
-It's A Shame About Ray;The Lemonheads;The Pitchfork 500;LP;1992;709;2009-06-06 20:28:32;50;186932;0;0
-Loser;Beck;The Pitchfork 500;CD;1999;710;2009-06-06 20:28:32;50;235206;0;0
-cannonball;The Breeders;The Pitchfork 500;CD;1993;711;2009-06-06 20:28:32;50;213733;0;0
-Scentless Apprentice;Nirvana;The Pitchfork 500;LP;1993;712;2009-06-06 20:28:32;50;227735;0;0
-Violet;Hole;The Pitchfork 500;CD;1994;713;2009-06-06 20:28:32;50;204277;0;0
-1979;Smashing Pumpkins;The Pitchfork 500;CD;1995;714;2009-06-06 20:28:32;50;265952;0;0
-Longview;Green Day;The Pitchfork 500;LP;1994;715;2009-06-06 20:28:32;50;239046;0;0
-Say It Ain't So;Weezer;The Pitchfork 500;CD;1994;716;2009-06-06 20:28:32;50;258873;0;0
-Live Forever;Oasis;The Pitchfork 500;LP;1994;718;2009-06-06 20:28:32;50;276897;0;0
-Disorder;Joy Division;The Pitchfork 500;LP;1979;719;2009-06-06 20:28:32;50;211591;0;0
-Common People;Pulp;The Pitchfork 500;LP;1995;720;2009-06-06 20:28:32;50;351608;0;0
-Juicy;The Notorious B.I.G.;The Pitchfork 500;LP;2004;721;2009-06-06 20:28:32;50;302811;0;0
-It Ain't Hard To Tell;Nas;The Pitchfork 500;LP;1994;722;2009-06-06 20:28:32;50;202396;0;0
-Shook Ones Part 2 LP Version;Mobb Deep;The Pitchfork 500;LP;1995;723;2009-06-06 20:28:32;50;269165;0;0
-4th Chamber (Feat. Ghostface K;GZA;The Pitchfork 500;LP;1995;724;2009-06-06 20:28:32;50;277080;0;0
-Gold Sounds;Pavement;The Pitchfork 500;CD;1994;725;2009-06-06 20:28:32;50;159738;0;0
-Car;Built To Spill;The Pitchfork 500;LP;2001;726;2009-06-06 20:28:32;50;178755;0;0
-Broke;Modest Mouse;The Pitchfork 500;CD;1999;727;2009-06-06 20:28:32;50;199366;0;0
-Headache;Frank Black;The Pitchfork 500;LP;1994;728;2009-06-06 20:28:32;50;172617;0;0
-Bellbottoms;The Jon Spencer Blues Explosion;The Pitchfork 500;CD;1994;729;2009-06-06 20:28:32;50;317831;0;0
-I Am A Scientist;Guided By Voices;The Pitchfork 500;CD;1994;730;2009-06-06 20:28:32;50;144431;0;0
-Closer;Nine Inch Nails;The Pitchfork 500;LP;1994;731;2009-06-06 20:28:32;50;373289;0;0
-Hyper-Ballad;Björk;The Pitchfork 500;CD;1995;732;2009-06-06 20:28:32;50;321410;0;0
-Devil's Haircut;Beck;The Pitchfork 500;LP;1996;733;2009-06-06 20:28:32;50;194089;0;0
-Sour Times;Portishead;The Pitchfork 500;LP;1994;734;2009-06-06 20:28:32;50;254066;0;0
-Like A Moterway;Saint Etienne;The Pitchfork 500;LP;2001;735;2009-06-06 20:28:32;50;221988;0;0
-Octagon;Basic Channel;The Pitchfork 500;LP;1994;736;2009-06-06 20:28:32;50;777377;0;0
-Throw;Paperclip People;The Pitchfork 500;CD;2008;737;2009-06-06 20:28:32;50;900675;0;0
-Midnight In A Perfect World;DJ Shadow;The Pitchfork 500;CD;1996;738;2009-06-06 20:28:32;50;302915;0;0
-Blue Flowers;Dr. Octagon;The Pitchfork 500;LP;1996;739;2009-06-06 20:28:32;50;197433;0;0
-Roast Fish And Cornbread;Lee Perry;The Pitchfork 500;CD;2008;740;2009-06-06 20:28:32;50;218462;0;0
-I Used to Love H.E.R.;Common;The Pitchfork 500;CD;1994;741;2009-06-06 20:28:32;50;278752;0;0
-Grace;Jeff Buckley;The Pitchfork 500;LP;1994;742;2009-06-06 20:28:32;50;322429;0;0
-Fade Into You;Mazzy Star;The Pitchfork 500;LP;1993;743;2009-06-06 20:28:32;50;295680;0;0
-This Is How We Walk On The Moon;Arthur Russell;The Pitchfork 500;CD;1994;744;2009-06-06 20:28:32;50;283036;0;0
-Words;Low;The Pitchfork 500;LP;1994;745;2009-06-06 20:28:32;50;350511;0;0
-Savory;Jawbox;The Pitchfork 500;LP;1994;746;2009-06-06 20:28:32;50;279353;0;0
-PU55YF00T1N';Brainiac;The Pitchfork 500;LP;1996;747;2009-06-06 20:28:32;50;153391;0;0
-Twist The Knife (Slowly);Napalm Death;The Pitchfork 500;LP;1994;748;2009-06-06 20:28:32;50;173583;0;0
-Fisherman;The Congos;The Pitchfork 500;LP;1977;749;2009-06-06 20:28:32;50;364721;0;0
-En As I Dype Skogen;Darkthrone;The Pitchfork 500;CD;1994;750;2009-06-06 20:28:32;50;302053;0;0
-Gin And Juice;Snoop Doggy Dogg;The Pitchfork 500;CD;1993;751;2009-06-06 20:28:32;50;213681;0;0
-I Got 5 On It;Luniz;The Pitchfork 500;CD;1995;752;2009-06-06 20:28:32;50;253570;0;0
-Limb By Limb;Cutty Ranks;The Pitchfork 500;LP;2008;753;2009-06-06 20:28:32;50;234266;0;0
-No Good (Start The Dance);The Prodigy;The Pitchfork 500;LP;1995;754;2009-06-06 20:28:32;50;378017;0;0
-Born Slippy;Underworld;The Pitchfork 500;LP;2003;755;2009-06-06 20:28:32;50;696711;0;0
-Setting Sun;The Chemical Brothers;The Pitchfork 500;CD;2003;756;2009-06-06 20:28:32;50;241240;0;0
-Da Funk;Daft Punk;The Pitchfork 500;LP;1996;757;2009-06-06 20:28:32;50;329639;0;0
-Armagideon Time;Willie Williams;The Pitchfork 500;CD;1982;759;2009-06-06 20:28:32;50;309028;0;0
-Needle In The Hay;Elliott Smith;The Pitchfork 500;CD;1995;760;2009-06-06 20:28:32;50;256888;0;0
-Take Ecstasy With Me;Magnetic Fields;The Pitchfork 500;LP;1993;761;2009-06-06 20:28:32;50;216528;0;0
-New Partner;Palace Music;The Pitchfork 500;CD;1995;762;2009-06-06 20:28:32;50;234240;0;0
-The First Big Weekend;Arab Strap;The Pitchfork 500;CD;1996;763;2009-06-06 20:28:32;50;292780;0;0
-Gamera;Tortoise;The Pitchfork 500;LP;2006;764;2009-06-06 20:28:32;50;713795;0;0
-Parasol;The Sea And Cake;The Pitchfork 500;CD;1995;765;2009-06-06 20:28:32;50;330109;0;0
-Rattled by the Rush;Pavement;The Pitchfork 500;LP;1995;766;2009-06-06 20:28:32;50;256600;0;0
-Game of Pricks;Guided By Voices;The Pitchfork 500;CD;1995;767;2009-06-06 20:28:32;50;93361;0;0
-El Scorcho;Weezer;The Pitchfork 500;LP;1996;768;2009-06-06 20:28:32;50;245707;0;0
-Paranoid Android;Radiohead;The Pitchfork 500;CD;1997;769;2009-06-06 20:28:32;50;383555;0;0
-24 Track Loop;This Heat;The Pitchfork 500;LP;1979;770;2009-06-06 20:28:32;50;356127;0;0
-Jóga;Björk;The Pitchfork 500;LP;1997;771;2009-06-06 20:28:32;50;305711;0;0
-Bitter Sweet Symphony;The Verve;The Pitchfork 500;CD;1997;772;2009-06-06 20:28:32;50;358504;0;0
-Between The Bars;Elliott Smith;The Pitchfork 500;LP;1997;773;2009-06-06 20:28:32;50;141244;0;0
-Cross Bones Style;Cat Power;The Pitchfork 500;LP;1998;774;2009-06-06 20:28:32;50;272248;0;0
-Reflections After Jane;The Clientele;The Pitchfork 500;CD;2000;775;2009-06-06 20:28:32;50;202240;0;0
-Teenage Spaceship;Smog;The Pitchfork 500;LP;1999;776;2009-06-06 20:28:32;50;238733;0;0
-random rules;Silver Jews;The Pitchfork 500;LP;1998;777;2009-06-06 20:28:32;50;238315;0;0
-Arch Carrier;Autechre;The Pitchfork 500;CD;1998;778;2009-06-06 20:28:32;50;409443;0;0
-Happy Cycling;Boards of Canada;The Pitchfork 500;LP;1998;779;2009-06-06 20:28:32;50;307095;0;0
-Typical Girls;The Slits;The Pitchfork 500;CD;1979;780;2009-06-06 20:28:32;50;237426;0;0
-So Now...;Herbert;The Pitchfork 500;LP;1998;781;2009-06-06 20:28:32;50;341211;0;0
-Windowlicker;Aphex Twin;The Pitchfork 500;CD;1999;782;2009-06-06 20:28:32;50;366341;0;0
-St. Elmo's Fire (Radio);Uilab;The Pitchfork 500;CD;1998;783;2009-06-06 20:28:32;50;250618;0;0
-Le Soleil Est Pres De Moi;Air;The Pitchfork 500;LP;1999;784;2009-06-06 20:28:32;50;291317;0;0
-Teardrop;Massive Attack;The Pitchfork 500;LP;1998;785;2009-06-06 20:28:32;50;330788;0;0
-Respiration;Black Star;The Pitchfork 500;CD;1999;786;2009-06-06 20:28:32;50;365426;0;0
-Hypnotize;The Notorious B.I.G.;The Pitchfork 500;CD;1997;787;2009-06-06 20:28:32;50;230086;0;0
-SpottieOttieDopaliscious;OutKast;The Pitchfork 500;LP;1998;788;2009-06-06 20:28:32;50;426971;0;0
-Waitin' For A Superman;The Flaming Lips;The Pitchfork 500;LP;1999;789;2009-06-06 20:28:32;50;257488;0;0
-She Is Beyond Good And Evil;The Pop Group;The Pitchfork 500;LP;1979;790;2009-06-06 20:28:32;50;202501;0;0
-Dry The Rain;The Beta Band;The Pitchfork 500;LP;1997;791;2009-06-06 20:28:32;50;365191;0;0
-Hideaway;The Olivia Tremor Control;The Pitchfork 500;CD;1999;792;2009-06-06 20:28:32;50;154017;0;0
-Holland, 1945;Neutral Milk Hotel;The Pitchfork 500;CD;1998;793;2009-06-06 20:28:32;50;192626;0;0
-Ice Hockey Hair;Super Furry Animals;The Pitchfork 500;LP;2004;794;2009-06-06 20:28:32;50;418272;0;0
-Music Sounds Better With You;Alan Braxe And Friends;The Pitchfork 500;LP;2004;795;2009-06-06 20:28:32;50;406831;0;0
-Jump'n Shout;Basement Jaxx;The Pitchfork 500;LP;1999;796;2009-06-06 20:28:32;50;282488;0;0
-This Is Hardcore;Pulp;The Pitchfork 500;CD;2006;797;2009-06-06 20:28:32;50;385044;0;0
-Autumn Sweater;Yo La Tengo;The Pitchfork 500;CD;1997;799;2009-06-06 20:28:32;50;320522;0;0
-The Guns of Brixton;The Clash;The Pitchfork 500;LP;1979;800;2009-06-06 20:28:32;50;189753;0;0
-One More Hour;Sleater-Kinney;The Pitchfork 500;LP;1997;801;2009-06-06 20:28:32;50;199915;0;0
-New Noise;Refused;The Pitchfork 500;CD;1998;802;2009-06-06 20:28:32;50;308271;0;0
-Super Shine;Boredoms;The Pitchfork 500;CD;1998;803;2009-06-06 20:28:32;50;765518;0;0
-Like Herod;Mogwai;The Pitchfork 500;CD;1997;804;2009-06-06 20:28:32;50;704809;0;0
-Halfway To A Threeway;Jim O'Rourke;The Pitchfork 500;CD;1999;805;2009-06-06 20:28:32;50;254798;0;0
-Svefn-G-Englar;Sigur Rós;The Pitchfork 500;CD;2001;806;2009-06-06 20:28:32;50;604081;0;0
-One More Time;Daft Punk;The Pitchfork 500;CD;2001;807;2009-06-06 20:28:32;50;320862;0;0
-Idioteque;Radiohead;The Pitchfork 500;CD;2000;808;2009-06-06 20:28:32;50;309159;0;0
-Gathering Storm / "Welcome To Barco Am/Pm..." / Cancer Towers On Holy Road Hi-Way;Godspeed You Black Emperor!;The Pitchfork 500;CD;2000;809;2009-06-06 20:28:32;50;1352489;0;0
-Contort Yourself;James Chance;The Pitchfork 500;LP;2003;810;2009-06-06 20:28:32;50;263836;0;0
-Since I Left You;The Avalanches;The Pitchfork 500;LP;2000;811;2009-06-06 20:28:32;50;261067;0;0
-Come On Let's Go;Broadcast;The Pitchfork 500;LP;2000;812;2009-06-06 20:28:32;50;197146;0;0
-Try Again ;Aaliyah;The Pitchfork 500;LP;2005;813;2009-06-06 20:28:32;50;286458;0;0
-Cry Me a River;Justin Timberlake;The Pitchfork 500;LP;2002;814;2009-06-06 20:28:32;50;290324;0;0
-Tessio;Luomo;The Pitchfork 500;LP;2000;815;2009-06-06 20:28:32;50;727902;0;0
-La Rock 01;Vitalic;The Pitchfork 500;CD;2005;816;2009-06-06 20:28:32;50;326086;0;0
-Love At First Sight;Kylie Minogue;The Pitchfork 500;CD;2002;817;2009-06-06 20:28:32;50;239960;0;0
-Big Pimpin' (Feat. UGK);Jay-Z;The Pitchfork 500;LP;1999;818;2009-06-06 20:28:32;50;284682;0;0
-B.O.B.;Outkast;The Pitchfork 500;CD;2000;819;2009-06-06 20:28:32;50;304300;0;0
-The Real Slim shady;Eminem;The Pitchfork 500;LP;2000;820;2009-06-06 20:28:32;50;284551;0;0
-Dream Baby Dream;Suicide;The Pitchfork 500;LP;1980;821;2009-06-06 20:28:32;50;384940;0;0
-Nutmeg (feat. The RZA);Ghostface Killah;The Pitchfork 500;LP;2000;822;2009-06-06 20:28:32;50;265064;0;0
-Get Ur Freak On;Missy Elliott;The Pitchfork 500;LP;2001;823;2009-06-06 20:28:32;50;237322;0;0
-Dead Leaves And The Dirty Ground;The White Stripes;The Pitchfork 500;LP;2001;824;2009-06-06 20:28:32;50;184006;0;0
-The Modern Age;The Strokes;The Pitchfork 500;LP;2000;825;2009-06-06 20:28:32;50;212871;0;0
-Another Morning Stoner;... And You Will Know Us By The Trail of Dead;The Pitchfork 500;CD;2002;826;2009-06-06 20:28:32;50;273658;0;0
-Obstacle 1;Interpol;The Pitchfork 500;LP;2002;827;2009-06-06 20:28:32;50;251376;0;0
-Danger! High Voltage;Electric Six;The Pitchfork 500;CD;2003;828;2009-06-06 20:28:32;50;214674;0;0
-Rippin Kittin (Original);Golden Boy With Miss Kittin;The Pitchfork 500;LP;2002;829;2009-06-06 20:28:32;50;293250;0;0
-Jürgen Pappe - So Weit Wie Noch Nie;Erlend Øye;The Pitchfork 500;CD;2004;830;2009-06-06 20:28:32;50;224313;0;0
-Nag Nag Nag;Cabaret Voltaire;The Pitchfork 500;LP;2002;831;2009-06-06 20:28:32;50;277942;0;0
-Heartbeats;The Knife;The Pitchfork 500;LP;2004;832;2009-06-06 20:28:32;50;231862;0;0
-Losing My Edge;LCD Soundsystem;The Pitchfork 500;CD;2004;833;2009-06-06 20:28:32;50;471693;0;0
-House Of Jealous Lovers;The Rapture;The Pitchfork 500;LP;2003;834;2009-06-06 20:28:32;50;307722;0;0
-Weak Become Heroes;The Streets;The Pitchfork 500;CD;2002;835;2009-06-06 20:28:32;50;333087;0;0
-Daylight;Aesop Rock;The Pitchfork 500;LP;2001;836;2009-06-06 20:28:32;50;266161;0;0
-Good Times Roll Pt. 2;RJD2;The Pitchfork 500;LP;2002;837;2009-06-06 20:28:32;50;297273;0;0
-The Calendar Hung Itself...;Bright Eyes;The Pitchfork 500;CD;2000;838;2009-06-06 20:28:32;50;236094;0;0
-Poor Places;Wilco;The Pitchfork 500;LP;2002;839;2009-06-06 20:28:32;50;318119;0;0
-No One Knows;Queens Of The Stone Age;The Pitchfork 500;LP;2002;840;2009-06-06 20:28:32;50;278726;0;0
-The Way That He Sings;My Morning Jacket;The Pitchfork 500;LP;2001;841;2009-06-06 20:28:32;50;335595;0;0
-Hot on the Heels of Love;Throbbing Gristle;The Pitchfork 500;LP;1979;842;2009-06-06 20:28:32;50;263993;0;0
-3rd Planet;Modest Mouse;The Pitchfork 500;LP;2000;843;2009-06-06 20:28:32;50;238968;0;0
-Distortions;Clinic;The Pitchfork 500;CD;2000;844;2009-06-06 20:28:32;50;241867;0;0
-Prayer to God;Shellac;The Pitchfork 500;LP;2000;845;2009-06-06 20:28:32;50;170684;0;0
-To Hell With Good Intentions;McLusky;The Pitchfork 500;CD;2001;846;2009-06-06 20:28:32;50;145632;0;0
-Ride the Sky;Lightning Bolt;The Pitchfork 500;LP;2001;847;2009-06-06 20:28:32;50;267859;0;0
-The Moon;The Microphones;The Pitchfork 500;LP;2002;848;2009-06-06 20:28:32;50;317257;0;0
-New Slang;The Shins;The Pitchfork 500;CD;2001;849;2009-06-06 20:28:32;50;231235;0;0
-Here I dreamt I was an architect;The Decemberists;The Pitchfork 500;CD;2002;850;2009-06-06 20:28:32;50;269191;0;0
-Life In A Glass House;Radiohead;The Pitchfork 500;CD;2001;851;2009-06-06 20:28:32;50;274782;0;0
-Mongoloid;Devo;The Pitchfork 500;LP;1978;852;2009-06-06 20:28:32;50;224522;0;0
-Cause=Time;Broken Social Scene;The Pitchfork 500;CD;2004;853;2009-06-06 20:28:32;50;369528;0;0
-This Magnificent Bird Will Rise;Deerhoof;The Pitchfork 500;CD;2002;854;2009-06-06 20:28:32;50;212662;0;0
-The Way We Get By;Spoon;The Pitchfork 500;CD;2002;855;2009-06-06 20:28:32;50;160156;0;0
-I Luv You;Dizzee Rascal;The Pitchfork 500;CD;2003;856;2009-06-06 20:28:32;50;245133;0;0
-Ante Up Remix (Album Version) (feat Busta Rhymes, Tephlon And Remy Martin);M.O.P.;The Pitchfork 500;LP;2001;857;2009-06-06 20:28:32;50;248398;0;0
-Grindin';Clipse;The Pitchfork 500;CD;2002;858;2009-06-06 20:28:32;50;264803;0;0
-Get By;Talib Kweli;The Pitchfork 500;CD;2002;859;2009-06-06 20:28:32;50;227552;0;0
-Takeover;Jay-Z;The Pitchfork 500;CD;2001;860;2009-06-06 20:28:32;50;313182;0;0
-Hey Ya!;Outkast;The Pitchfork 500;CD;2003;861;2009-06-06 20:28:32;50;235284;0;0
-Through The Wire;Kanye West;The Pitchfork 500;CD;2004;862;2009-06-06 20:28:32;50;221283;0;0
-Ignition [Remix];R. Kelly;The Pitchfork 500;CD;2005;863;2009-06-06 20:28:32;50;185939;0;0
-Crazy in Love;Beyoncé;The Pitchfork 500;CD;2003;864;2009-06-06 20:28:32;50;238471;0;0
-Crazy;Gnarls Barkley;The Pitchfork 500;CD;2006;865;2009-06-06 20:28:32;50;178442;0;0
-Me And Giuliani Down By The Schoolyard (A True Story);!!!;The Pitchfork 500;LP;2004;866;2009-06-06 20:28:32;50;542955;0;0
-Staring At The Sun;TV On The Radio;The Pitchfork 500;CD;2004;867;2009-06-06 20:28:32;50;207072;0;0
-Maps;Yeah Yeah Yeahs;The Pitchfork 500;CD;2003;868;2009-06-06 20:28:32;50;219846;0;0
-The Rat;The Walkmen;The Pitchfork 500;LP;2004;869;2009-06-06 20:28:32;50;267728;0;0
-A Sight to Behold;Devendra Banhart;The Pitchfork 500;CD;2004;870;2009-06-06 20:28:32;50;146494;0;0
-Peach, Plum, Pear;Joanna Newsom;The Pitchfork 500;LP;2004;871;2009-06-06 20:28:32;50;214047;0;0
-CASIMIR PULASKI DAY;Sufjan Stevens;The Pitchfork 500;LP;2005;872;2009-06-06 20:28:32;50;353985;0;0
-Kiss Me Again;Dinosaur;The Pitchfork 500;LP;1978;873;2009-06-06 20:28:32;50;783777;0;0
-Leaf House;Animal Collective;The Pitchfork 500;LP;2004;875;2009-06-06 20:28:32;50;162716;0;0
-Take Time;The Books;The Pitchfork 500;CD;2003;876;2009-06-06 20:28:32;50;216711;0;0
-Don't Save Us From the Flames;M83;The Pitchfork 500;CD;2005;877;2009-06-06 20:28:32;50;255947;0;0
-Such Great Heights;The Postal Service;The Pitchfork 500;CD;2002;878;2009-06-06 20:28:32;50;266396;0;0
-My Heartbeat;Annie;The Pitchfork 500;LP;2004;879;2009-06-06 20:28:32;50;188421;0;0
-Galang;M.I.A.;The Pitchfork 500;LP;2005;880;2009-06-06 20:28:32;50;215771;0;0
-Seven Nation Army;The White Stripes;The Pitchfork 500;CD;2003;881;2009-06-06 20:28:32;50;231836;0;0
-Take Me Out;Franz Ferdinand;The Pitchfork 500;CD;2004;882;2009-06-06 20:28:32;50;237087;0;0
-Here Comes The Summer;The Fiery Furnaces;The Pitchfork 500;LP;2005;883;2009-06-06 20:28:32;50;210050;0;0
-No Children;The Mountain Goats;The Pitchfork 500;LP;2002;885;2009-06-06 20:28:32;50;168333;0;0
-She Sends Kisses;The Wrens;The Pitchfork 500;LP;2001;886;2009-06-06 20:28:32;50;355892;0;0
-Modern Kicks;Exploding Hearts;The Pitchfork 500;LP;2003;888;2009-06-06 20:28:32;50;198870;0;0
-Formed a Band;Art Brut;The Pitchfork 500;LP;2005;889;2009-06-06 20:28:32;50;178729;0;0
-Farewell;Boris;The Pitchfork 500;CD;2006;890;2009-06-06 20:28:32;50;453459;0;0
-Sleeping Giant;Mastodon;The Pitchfork 500;CD;2006;891;2009-06-06 20:28:32;50;336352;0;0
-America's Most Blunted (Featuring Lord Quas);Madvillain;The Pitchfork 500;CD;2004;892;2009-06-06 20:28:32;50;234109;0;0
-What You Know;T.I.;The Pitchfork 500;LP;2006;893;2009-06-06 20:28:32;50;274416;0;0
-Wuthering Heights;Kate Bush;The Pitchfork 500;LP;1978;894;2009-06-06 20:28:32;50;270080;0;0
-Since U Been Gone;Kelly Clarkson;The Pitchfork 500;CD;2004;895;2009-06-06 20:28:32;50;188995;0;0
-1 Thing;Amerie;The Pitchfork 500;LP;2008;896;2009-06-06 20:28:32;50;240222;0;0
-Oh (Feat. Ludacris);Ciara;The Pitchfork 500;CD;2004;897;2009-06-06 20:28:32;50;256391;0;0
-The Power Is On;The Go! Team;The Pitchfork 500;CD;2004;898;2009-06-06 20:28:32;50;193933;0;0
-Mushaboom;Feist;The Pitchfork 500;CD;2004;899;2009-06-06 20:28:32;50;224548;0;0
-I'll Believe In Anything;Wolf Parade;The Pitchfork 500;LP;2005;900;2009-06-06 20:28:32;50;276741;0;0
-The Funeral;Band Of Horses;The Pitchfork 500;LP;2006;901;2009-06-06 20:28:32;50;322298;0;0
-Stuck Between Stations;The Hold Steady;The Pitchfork 500;CD;2006;902;2009-06-06 20:28:32;50;254171;0;0
-Postcards From italy;Beirut;The Pitchfork 500;CD;2006;903;2009-06-06 20:28:32;50;257515;0;0
-Suspiria (Main Title);Goblin;The Pitchfork 500;CD;1995;904;2009-06-06 20:28:32;50;355343;0;0
-You Are the Generation That Bought More Shoes and You Get What You Deserve;Johnny Boy;The Pitchfork 500;LP;2006;905;2009-06-06 20:28:32;50;189544;0;0
-Busy Doing Nothing;Love Is All;The Pitchfork 500;LP;2005;906;2009-06-06 20:28:32;50;205139;0;0
-Young Folks;Peter Bjorn And John;The Pitchfork 500;CD;2006;908;2009-06-06 20:28:32;50;276323;0;0
-Never Be Alone;Justice;The Pitchfork 500;LP;2005;909;2009-06-06 20:28:32;50;262217;0;0
-And I Was A Boy From School;Hot Chip;The Pitchfork 500;LP;2006;910;2009-06-06 20:28:32;50;319686;0;0
-Grass;Animal Collective;The Pitchfork 500;CD;2005;911;2009-06-06 20:28:32;50;179617;0;0
-Cone Toaster;Black Dice;The Pitchfork 500;LP;2003;912;2009-06-06 20:28:32;50;537678;0;0
-The Other Side Of Mt. Heart Attack;Liars;The Pitchfork 500;CD;2006;913;2009-06-06 20:28:32;50;283846;0;0
-(Don't Fear) The Reaper;Blue Öyster Cult;The Pitchfork 500;LP;1976;914;2009-06-06 20:28:32;50;308453;0;0
-Bros;Panda Bear;The Pitchfork 500;CD;2007;915;2009-06-06 20:28:32;50;750341;0;0
-Highway to Hell;AC/DC;The Pitchfork 500;CD;1979;916;2009-06-06 20:28:32;50;208483;0;0
-Runnin' With the Devil;Van Halen;The Pitchfork 500;LP;1978;917;2009-06-06 20:28:32;50;215666;0;0
-The Chain;Fleetwood Mac;The Pitchfork 500;CD;1997;918;2009-06-06 20:28:32;50;311379;0;0
-Deacon Blues;Steely Dan;The Pitchfork 500;LP;1977;919;2009-06-06 20:28:32;50;457247;0;0
-Mr. Blue Sky;Electric Light Orchestra;The Pitchfork 500;CD;2000;920;2009-06-06 20:28:32;50;307487;0;0
-Another Girl, Another Planet;The Only Ones;The Pitchfork 500;CD;1978;921;2009-06-06 20:28:32;50;182334;0;0
-Teenage Kicks;The Undertones;The Pitchfork 500;LP;1979;922;2009-06-06 20:28:32;50;148244;0;0
-Starry Eyes;The Records;The Pitchfork 500;LP;1979;923;2009-06-06 20:28:32;50;269270;0;0
-Surrender;Cheap Trick;The Pitchfork 500;CD;1979;924;2009-06-06 20:28:32;50;277524;0;0
-Just What I Needed;The Cars;The Pitchfork 500;LP;1978;925;2009-06-06 20:28:32;50;223294;0;0
-Radio, Radio;Elvis Costello;The Pitchfork 500;LP;1978;926;2009-06-06 20:28:32;50;186174;0;0
-Boys Don't Cry;The Cure;The Pitchfork 500;CD;1979;927;2009-06-06 20:28:32;50;154932;0;0
-Making Plans For Nigel;XTC;The Pitchfork 500;CD;1979;928;2009-06-06 20:28:32;50;252995;0;0
-Atomic;Blondie;The Pitchfork 500;CD;1984;929;2009-06-06 20:28:32;50;282253;0;0
-Memories Can't Wait;Talking Heads;The Pitchfork 500;LP;1979;930;2009-06-06 20:28:32;50;210102;0;0
-Monster Jam;Spoonie Gee Meets Sequence;The Pitchfork 500;CD;1997;931;2009-06-06 20:28:32;50;530390;0;0
-8th Wonder;Sugarhill Gang;The Pitchfork 500;LP;1996;932;2009-06-06 20:28:32;50;447007;0;0
-The Magnificient Seven;The Clash;The Pitchfork 500;LP;1980;933;2009-06-06 20:28:32;50;333322;0;0
-Born Under Punches (The Heat Goes On);Talking Heads;The Pitchfork 500;CD;1980;934;2009-06-06 20:28:32;50;349048;0;0
-Walking On Thin Ice (1981 Re-Edit);Yoko Ono;The Pitchfork 500;CD;1981;935;2009-06-06 20:28:32;50;440894;0;0
-Moody;ESG;The Pitchfork 500;LP;1991;936;2009-06-06 20:28:32;50;167967;0;0
-The Adventures Of Grandmaster Flash On The Wheels Of Steel;Grandmaster Flash;The Pitchfork 500;CD;2007;937;2009-06-06 20:28:32;50;429949;0;0
-That's The Joint;Funky 4 + 1;The Pitchfork 500;CD;1999;938;2009-06-06 20:28:32;50;563095;0;0
-Computer World..2;Kraftwerk;The Pitchfork 500;LP;1981;939;2009-06-06 20:28:32;50;199157;0;0
-Numbers;Kraftwerk;The Pitchfork 500;LP;1981;940;2009-06-06 20:28:32;50;201456;0;0
-Planet Rock;Afrika Bambaataa;The Pitchfork 500;LP;2001;941;2009-06-06 20:28:32;50;382955;0;0
-The Message;Grandmaster Flash;The Pitchfork 500;LP;2007;942;2009-06-06 20:28:32;50;192496;0;0
-Lesson No. 1 for Electric Guitar;Glenn Branca;The Pitchfork 500;LP;2004;943;2009-06-06 20:28:32;50;495960;0;0
-O Superman (For Massenet);Laurie Anderson;The Pitchfork 500;CD;1982;944;2009-06-06 20:28:32;50;507480;0;0
-Atmosphere;Joy Division;The Pitchfork 500;LP;1988;945;2009-06-06 20:28:32;50;250200;0;0
-Totally Wired;The Fall;The Pitchfork 500;LP;2004;946;2009-06-06 20:28:32;50;205191;0;0
-Beyond Belief;Elvis Costello;The Pitchfork 500;LP;1982;947;2009-06-06 20:28:32;50;156029;0;0
-Back On The Chain Gang;The Pretenders;The Pitchfork 500;CD;2000;948;2009-06-06 20:28:32;50;232777;0;0
-Private Idaho;B-52`s;The Pitchfork 500;LP;1980;949;2009-06-06 20:28:32;50;218070;0;0
-there, there my dear;Dexy's Midnight Runners;The Pitchfork 500;CD;1998;950;2009-06-06 20:28:32;50;213159;0;0
-Final Day;Young Marble Giants;The Pitchfork 500;CD;1980;951;2009-06-06 20:28:32;50;103732;0;0
-Third Uncle;Bauhaus;The Pitchfork 500;CD;1982;952;2009-06-06 20:28:32;50;318667;0;0
-The "Sweetest Girl";Scritti Politti;The Pitchfork 500;LP;2004;953;2009-06-06 20:28:32;50;305266;0;0
-Don`t You Want Me;Human League;The Pitchfork 500;LP;1995;954;2009-06-06 20:28:32;50;238628;0;0
-Party Fears Two;Associates;The Pitchfork 500;LP;2000;955;2009-06-06 20:28:32;50;314540;0;0
-All of My Heart;ABC;The Pitchfork 500;CD;1982;956;2009-06-06 20:28:32;50;317701;0;0
-Play Your Part (Pt. 2);Girl Talk;Feed The Animals;LP;2008;957;2009-06-06 20:28:32;50;205270;0;0
-Don't Stop;Girl Talk;Feed The Animals;LP;2008;958;2009-06-06 20:28:32;50;178259;0;0
-Here's The Thing;Girl Talk;Feed The Animals;LP;2008;959;2009-06-06 20:28:32;50;285570;0;0
-Let Me See You;Girl Talk;Feed The Animals;LP;2008;960;2009-06-06 20:28:32;50;243879;0;0
-In Step;Girl Talk;Feed The Animals;CD;2008;961;2009-06-06 20:28:32;50;203363;0;0
-Hands In The Air;Girl Talk;Feed The Animals;CD;2008;962;2009-06-06 20:28:32;50;260362;0;0
-Give Me A Beat;Girl Talk;Feed The Animals;LP;2008;963;2009-06-06 20:28:32;50;252290;0;0
-Like This;Girl Talk;Feed The Animals;CD;2008;964;2009-06-06 20:28:32;50;201168;0;0
-No Pause;Girl Talk;Feed The Animals;CD;2008;965;2009-06-06 20:28:32;50;192261;0;0
-Set It Off;Girl Talk;Feed The Animals;LP;2008;966;2009-06-06 20:28:32;50;221910;0;0
-What It's All About;Girl Talk;Feed The Animals;LP;2008;967;2009-06-06 20:28:32;50;254772;0;0
-Still Here;Girl Talk;Feed The Animals;CD;2008;968;2009-06-06 20:28:32;50;237165;0;0
-Shut The Club Down;Girl Talk;Feed The Animals;CD;2008;969;2009-06-06 20:28:32;50;186801;0;0
-Play Your Part (Pt. 1);Girl Talk;Feed The Animals;CD;2008;970;2009-06-06 20:28:32;50;284865;0;0
-Bang Bang (feat. Adam Levine);K'naan;Bang Bang - Single of the Week;CD;2009;971;2009-06-06 20:28:32;50;186533;0;0
-Chip Away;Jane's Addiction;NINJA 2009 Tour Sampler;LP;2009;972;2009-06-06 20:28:32;50;156849;0;0
-Not So Pretty Now;Nine Inch Nails;NINJA 2009 Tour Sampler;CD;2009;973;2009-06-06 20:28:32;50;229810;0;0
-The Oath;Street Sweeper;NINJA 2009 Tour Sampler;CD;2009;974;2009-06-06 20:28:32;50;265598;0;0
-Whores;Jane's Addiction;NINJA 2009 Tour Sampler;LP;2009;975;2009-06-06 20:28:32;50;224516;0;0
-Non-Entity;Nine Inch Nails;NINJA 2009 Tour Sampler;CD;2009;976;2009-06-06 20:28:32;50;243130;0;0
-Clap for the Killers;Street Sweeper;NINJA 2009 Tour Sampler;LP;2009;977;2009-06-06 20:28:32;50;237373;0;0
-Soft Shock;Yeah Yeah Yeahs;It's Blitz!;CD;2009;978;2009-06-06 20:28:32;50;233195;0;0
-Heads Will Roll;Yeah Yeah Yeahs;It's Blitz!;LP;2009;979;2009-06-06 20:28:32;50;222197;0;0
-Zero;Yeah Yeah Yeahs;It's Blitz!;LP;2009;980;2009-06-06 20:28:32;50;265874;0;0
-Dull Life;Yeah Yeah Yeahs;It's Blitz!;LP;2009;981;2009-06-06 20:28:32;50;248476;0;0
-Skeletons;Yeah Yeah Yeahs;It's Blitz!;CD;2009;982;2009-06-06 20:28:32;50;302236;0;0
-Dragon Queen;Yeah Yeah Yeahs;It's Blitz!;LP;2009;983;2009-06-06 20:28:32;50;242155;0;0
-Hysteric;Yeah Yeah Yeahs;It's Blitz!;CD;2009;984;2009-06-06 20:28:32;50;232333;0;0
-Runaway;Yeah Yeah Yeahs;It's Blitz!;CD;2009;985;2009-06-06 20:28:32;50;313469;0;0
-Shame and Fortune;Yeah Yeah Yeahs;It's Blitz!;LP;2009;986;2009-06-06 20:28:32;50;211565;0;0
+Under Me Sleng Teng;Wayne Smith;The Pitchfork 500;LP;1986;607;2009-6-6 20:28:32;50;250697;0;2009-7-15 14:48:14
+Making Plans For Nigel;XTC;The Pitchfork 500;CD;1979;928;2009-6-6 20:28:32;50;252995;0;2009-7-15 14:48:14
+Beautiful;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;415;2009-6-6 20:28:32;50;258429;0;2009-7-15 14:48:14
+Ignition [Remix];R. Kelly;The Pitchfork 500;CD;2005;863;2009-6-6 20:28:32;50;185939;0;2009-7-15 14:48:14
+Reckless;Crystal Castles;Crystal Castles;CD;2008;86;2009-6-6 20:28:32;50;208457;0;2009-7-15 14:48:14
+Do You Love;Final Fantasy;He Poos Clouds;CD;2006;159;2009-6-6 20:28:32;50;183493;0;2009-7-15 14:48:14
+the choice is yours;black sheep;The Pitchfork 500;LP;2003;672;2009-6-6 20:28:32;50;130246;0;2009-7-15 14:48:14
+Good Friend;Plants And Animals;Parc Avenue;CD;2007;285;2009-6-6 20:28:32;50;365609;0;2009-7-15 14:48:14
+A Different City;Modest Mouse;The Moon And Antarctica;LP;2000;224;2009-6-6 20:28:32;50;188066;0;2009-7-15 14:48:14
+You Are the Generation That Bought More Shoes and You Get What You Deserve;Johnny Boy;The Pitchfork 500;LP;2006;905;2009-6-6 20:28:32;50;189544;0;2009-7-15 14:48:14
+Lenin;Arcade Fire;Dark Was The Night;LP;2009;480;2009-6-6 20:28:32;50;246517;0;2009-7-15 14:48:14
+Lily, Rosemary and the Jack of Hearts;Bob Dylan;Blood on the Tracks;LP;1975;29;2009-6-6 20:28:32;50;533812;0;2009-7-15 14:48:14
+Summer teeth;Wilco;Summerteeth;LP;1999;460;2009-6-6 20:28:32;50;201064;0;2009-7-15 14:48:14
+Run to the Hills;Iron Maiden;The Pitchfork 500;CD;1982;542;2009-6-6 20:28:32;50;233978;0;2009-7-15 14:48:14
+Death Is Not a Parallel Move;Of Montreal;Skeletal Lamping;LP;2008;257;2009-6-6 20:28:32;50;181707;0;2009-7-15 14:48:14
+Mimizan;Beirut;Dark Was The Night;CD;2009;481;2009-6-6 20:28:32;50;162403;0;2009-7-15 14:48:14
+Gold Guns Girls;Metric;Fantasies;LP;2009;501;2009-6-6 20:28:32;50;245577;0;2009-7-15 14:48:14
+Rawhide;Scott Walker;The Pitchfork 500;CD;1983;603;2009-6-6 20:28:32;50;231392;0;2009-7-15 14:48:14
+Vanished;Crystal Castles;Crystal Castles;LP;2008;82;2009-6-6 20:28:32;50;243017;0;2009-7-15 14:48:14
+Get By;Talib Kweli;The Pitchfork 500;CD;2002;859;2009-6-6 20:28:32;50;227552;0;2009-7-15 14:48:14
+Neighborhood #3 (Power Out);The Arcade Fire;Funeral;LP;2004;375;2009-6-6 20:28:32;50;312906;0;2009-7-15 14:48:14
+Devil's Haircut;Beck;The Pitchfork 500;LP;1996;733;2009-6-6 20:28:32;50;194089;0;2009-7-15 14:48:14
+Stranger Song;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;212;2009-6-6 20:28:32;50;300506;0;2009-7-15 14:48:14
+Debonair;The Afghan Whigs;The Pitchfork 500;CD;2007;706;2009-6-6 20:28:32;50;254484;0;2009-7-15 14:48:14
+Private Idaho;B-52`s;The Pitchfork 500;LP;1980;949;2009-6-6 20:28:32;50;218070;0;2009-7-15 14:48:14
+Life Like Weeds;Modest Mouse;The Moon And Antarctica;LP;2000;232;2009-6-6 20:28:32;50;390773;0;2009-7-15 14:48:14
+Midnight Runner;Cut Copy;In Ghost Colours;CD;2008;94;2009-6-6 20:28:32;50;152502;0;2009-7-15 14:48:14
+Jóga;Björk;The Pitchfork 500;LP;1997;771;2009-6-6 20:28:32;50;305711;0;2009-7-15 14:48:14
+Where I End And You Begin (The Sky Is Falling In);Radiohead;Hail To The Thief;LP;2003;310;2009-6-6 20:28:32;50;269293;0;2009-7-15 14:48:14
+Daylight;Aesop Rock;The Pitchfork 500;LP;2001;836;2009-6-6 20:28:32;50;266161;0;2009-7-15 14:48:14
+There Is A Light That Never Goes Out;The Smiths;The Pitchfork 500;LP;1986;599;2009-6-6 20:28:32;50;243330;0;2009-7-15 14:48:14
+Modern Kicks;Exploding Hearts;The Pitchfork 500;LP;2003;888;2009-6-6 20:28:32;50;198870;0;2009-7-15 14:48:14
+Live Forever;Oasis;The Pitchfork 500;LP;1994;718;2009-6-6 20:28:32;50;276897;0;2009-7-15 14:48:14
+Bye;Tegan And Sara;Under Feet Like Ours;CD;1999;371;2009-6-6 20:28:32;50;5276;0;2009-7-15 14:48:14
+Blister In The Sun;Violent Femmes;The Pitchfork 500;CD;1983;547;2009-6-6 20:28:32;50;144404;0;2009-7-15 14:48:14
+The Oath;Street Sweeper;NINJA 2009 Tour Sampler;CD;2009;974;2009-6-6 20:28:32;50;265598;0;2009-7-15 14:48:14
+Our Faces Split The Coast In Half;Broken Social Scene;Broken Social Scene;CD;2005;33;2009-6-6 20:28:32;50;222200;0;2009-7-15 14:48:14
+Orange Blossom Special;Johnny Cash;At Folsom Prison;CD;1968;196;2009-6-6 20:28:32;50;180871;0;2009-7-15 14:48:14
+Memories Can't Wait;Talking Heads;The Pitchfork 500;LP;1979;930;2009-6-6 20:28:32;50;210102;0;2009-7-15 14:48:14
+Get Ur Freak On;Missy Elliott;The Pitchfork 500;LP;2001;823;2009-6-6 20:28:32;50;237322;0;2009-7-15 14:48:14
+The Bends;Radiohead;The Bends;LP;1995;330;2009-6-6 20:28:32;50;246200;0;2009-7-15 14:48:14
+Alec Eiffel;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1991;281;2009-6-6 20:28:32;50;167253;0;2009-7-15 14:48:14
+Give My Love To Rose;Johnny Cash;At Folsom Prison;CD;1968;204;2009-6-6 20:28:32;50;160626;0;2009-7-15 14:48:14
+Ice Hockey Hair;Super Furry Animals;The Pitchfork 500;LP;2004;794;2009-6-6 20:28:32;50;418272;0;2009-7-15 14:48:14
+Play Your Part (Pt. 1);Girl Talk;Feed The Animals;CD;2008;970;2009-6-6 20:28:32;50;284865;0;2009-7-15 14:48:14
+Lily (My One And Only);The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;420;2009-6-6 20:28:32;50;211879;0;2009-7-15 14:48:14
+St. Elmo's Fire (Radio);Uilab;The Pitchfork 500;CD;1998;783;2009-6-6 20:28:32;50;250618;0;2009-7-15 14:48:14
+Via chicago;Wilco;Summerteeth;LP;1999;456;2009-6-6 20:28:32;50;333609;0;2009-7-15 14:48:14
+1979;Smashing Pumpkins;The Pitchfork 500;CD;1995;714;2009-6-6 20:28:32;50;265952;0;2009-7-15 14:48:14
+Alice Practice;Crystal Castles;Crystal Castles;CD;2008;74;2009-6-6 20:28:32;50;161436;0;2009-7-15 14:48:14
+Billie Jean;Michael Jackson;The Pitchfork 500;LP;2001;527;2009-6-6 20:28:32;50;293955;0;2009-7-15 14:48:14
+Bone Machine;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1988;261;2009-6-6 20:28:32;50;183266;0;2009-7-15 14:48:14
+You're a Big Girl Now;Bob Dylan;Blood on the Tracks;LP;1975;25;2009-6-6 20:28:32;50;276088;0;2009-7-15 14:48:14
+Youth of America;The Wipers;The Pitchfork 500;CD;1981;538;2009-6-6 20:28:32;50;627147;0;2009-7-15 14:48:14
+Help I'm Alive (Radio Edit Final);Metric;New Album;CD;2009;496;2009-6-6 20:28:32;50;207333;0;2009-7-15 14:48:14
+Crazy;Gnarls Barkley;The Pitchfork 500;CD;2006;865;2009-6-6 20:28:32;50;178442;0;2009-7-15 14:48:14
+Distortions;Clinic;The Pitchfork 500;CD;2000;844;2009-6-6 20:28:32;50;241867;0;2009-7-15 14:48:14
+Take Time;The Books;The Pitchfork 500;CD;2003;876;2009-6-6 20:28:32;50;216711;0;2009-7-15 14:48:14
+Sea Lion Woman;Feist;The Reminder;CD;2007;143;2009-6-6 20:28:32;50;219880;0;2009-7-15 14:48:14
+Twilight Galaxy;Metric;Fantasies;LP;2009;497;2009-6-6 20:28:32;50;293511;0;2009-7-15 14:48:14
+Bunny Ain't No Kind Of Rider;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;241;2009-6-6 20:28:32;50;231200;0;2009-7-15 14:48:14
+Being boring;Pet Shop Boys;The Pitchfork 500;CD;1991;653;2009-6-6 20:28:32;50;291761;0;2009-7-15 14:48:14
+Greystone Chapel;Johnny Cash;At Folsom Prison;LP;1968;208;2009-6-6 20:28:32;50;362031;0;2009-7-15 14:48:14
+One;Vampire Weekend;Vampire Weekend;LP;2007;444;2009-6-6 20:28:32;50;191895;0;2009-7-15 14:48:14
+The "Sweetest Girl";Scritti Politti;The Pitchfork 500;LP;2004;953;2009-6-6 20:28:32;50;305266;0;2009-7-15 14:48:14
+Hotel;Broken Social Scene;Broken Social Scene;CD;2005;41;2009-6-6 20:28:32;50;275560;0;2009-7-15 14:48:14
+Happy Cycling;Boards of Canada;The Pitchfork 500;LP;1998;779;2009-6-6 20:28:32;50;307095;0;2009-7-15 14:48:14
+Loser;Beck;The Pitchfork 500;CD;1999;710;2009-6-6 20:28:32;50;235206;0;2009-7-15 14:48:14
+Bellbottoms;The Jon Spencer Blues Explosion;The Pitchfork 500;CD;1994;729;2009-6-6 20:28:32;50;317831;0;2009-7-15 14:48:14
+Set It Off;Girl Talk;Feed The Animals;LP;2008;966;2009-6-6 20:28:32;50;221910;0;2009-7-15 14:48:14
+History Lesson - Part II;The Minutemen;The Pitchfork 500;CD;1984;555;2009-6-6 20:28:32;50;132205;0;2009-7-15 14:48:14
+Rock Box;Run-D.M.C.;The Pitchfork 500;CD;1984;592;2009-6-6 20:28:32;50;333296;0;2009-7-15 14:48:14
+Here Comes Your Man;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;273;2009-6-6 20:28:32;50;201200;0;2009-7-15 14:48:14
+Respiration;Black Star;The Pitchfork 500;CD;1999;786;2009-6-6 20:28:32;50;365426;0;2009-7-15 14:48:14
+Divided;Tegan And Sara;Under Feet Like Ours;LP;1999;359;2009-6-6 20:28:32;50;184973;0;2009-7-15 14:48:14
+No Good (Start The Dance);The Prodigy;The Pitchfork 500;LP;1995;754;2009-6-6 20:28:32;50;378017;0;2009-7-15 14:48:14
+A Pillar Of Salt;The Thermals;The Body, The Blood, The Machine;LP;2006;431;2009-6-6 20:28:32;50;177371;0;2009-7-15 14:48:14
+For;Final Fantasy;He Poos Clouds;LP;2006;155;2009-6-6 20:28:32;50;57280;0;2009-7-15 14:48:14
+From A Motel 6;Yo La Tengo;The Pitchfork 500;LP;1993;668;2009-6-6 20:28:32;50;249835;0;2009-7-15 14:48:14
+Far Away;Cut Copy;In Ghost Colours;CD;2008;98;2009-6-6 20:28:32;50;296359;0;2009-7-15 14:48:14
+Freak Scene;Dinosaur Jr.;The Pitchfork 500;LP;1988;616;2009-6-6 20:28:32;50;216999;0;2009-7-15 14:48:14
+Stay Free;Black Mountain;In The Future;CD;2008;17;2009-6-6 20:28:32;50;269975;0;2009-7-15 14:48:14
+More Than This;Roxy Music;The Pitchfork 500;LP;1982;530;2009-6-6 20:28:32;50;270733;0;2009-7-15 14:48:14
+The Rat;The Walkmen;The Pitchfork 500;LP;2004;869;2009-6-6 20:28:32;50;267728;0;2009-7-15 14:48:14
+Tessio;Luomo;The Pitchfork 500;LP;2000;815;2009-6-6 20:28:32;50;727902;0;2009-7-15 14:48:14
+Nobody Lost, Nobody Found;Cut Copy;In Ghost Colours;LP;2008;102;2009-6-6 20:28:32;50;278622;0;2009-7-15 14:48:14
+Born Under Punches (The Heat Goes On);Talking Heads;The Pitchfork 500;CD;1980;934;2009-6-6 20:28:32;50;349048;0;2009-7-15 14:48:14
+Major Label Debut;Broken Social Scene;Broken Social Scene;CD;2005;37;2009-6-6 20:28:32;50;268293;0;2009-7-15 14:48:14
+Monkey Gone To Heaven;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;269;2009-6-6 20:28:32;50;175346;0;2009-7-15 14:48:14
+Step Into The Breeze (Part 1);Spiritualized;The Pitchfork 500;CD;1990;677;2009-6-6 20:28:32;50;168306;0;2009-7-15 14:48:14
+Velouria;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1990;277;2009-6-6 20:28:32;50;220386;0;2009-7-15 14:48:14
+For Tomorrow;Blur;The Pitchfork 500;LP;1993;696;2009-6-6 20:28:32;50;260179;0;2009-7-15 14:48:14
+She Is Beyond Good And Evil;The Pop Group;The Pitchfork 500;LP;1979;790;2009-6-6 20:28:32;50;202501;0;2009-7-15 14:48:14
+Blue Thunder;Galaxie 500;The Pitchfork 500;CD;1989;612;2009-6-6 20:28:32;50;227892;0;2009-7-15 14:48:14
+Waves (B-Side);Metric;Fantasies;CD;2009;505;2009-6-6 20:28:32;50;185756;0;2009-7-15 14:48:14
+J'aime Vous Voire Quitter;Islands;Arm's Way;CD;2008;180;2009-6-6 20:28:32;50;203128;0;2009-7-15 14:48:14
+Make Out Club;Unrest;The Pitchfork 500;CD;1993;689;2009-6-6 20:28:32;50;259265;0;2009-7-15 14:48:14
+Bright Lights;Black Mountain;In The Future;LP;2008;21;2009-6-6 20:28:32;50;1001325;0;2009-7-15 14:48:14
+Pay To Cum(Bad Brains 7");Bad Brains;The Pitchfork 500;CD;2003;534;2009-6-6 20:28:32;50;90697;0;2009-7-15 14:48:14
+Broken Face;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1988;265;2009-6-6 20:28:32;50;89786;0;2009-7-15 14:48:14
+Air War;Crystal Castles;Crystal Castles;LP;2008;78;2009-6-6 20:28:32;50;252316;0;2009-7-15 14:48:14
+Power Doesn't Run On Nothing;The Thermals;The Body, The Blood, The Machine;CD;2006;436;2009-6-6 20:28:32;50;314435;0;2009-7-15 14:48:14
+Atmosphere;Joy Division;The Pitchfork 500;LP;1988;945;2009-6-6 20:28:32;50;250200;0;2009-7-15 14:48:14
+Kids Don't Know Shit;Islands;Arm's Way;CD;2008;183;2009-6-6 20:28:32;50;311222;0;2009-7-15 14:48:14
+I Feel It All;Feist;The Reminder;CD;2007;139;2009-6-6 20:28:32;50;219480;0;2009-7-15 14:48:14
+Needle To The Groove;Mantronix;The Pitchfork 500;LP;1999;595;2009-6-6 20:28:32;50;219742;0;2009-7-15 14:48:14
+Idioteque;Radiohead;The Pitchfork 500;CD;2000;808;2009-6-6 20:28:32;50;309159;0;2009-7-15 14:48:14
+Life In A Glass House;Radiohead;The Pitchfork 500;CD;2001;851;2009-6-6 20:28:32;50;274782;0;2009-7-15 14:48:14
+Galang;M.I.A.;The Pitchfork 500;LP;2005;880;2009-6-6 20:28:32;50;215771;0;2009-7-15 14:48:14
+Gimme Sympathy (Acoustic);Metric;Fantasies;LP;2009;509;2009-6-6 20:28:32;50;207124;0;2009-7-15 14:48:14
+The Sicilian Clan;John Zorn;The Pitchfork 500;CD;1989;649;2009-6-6 20:28:32;50;213159;0;2009-7-15 14:48:14
+Death Valley '69;Sonic Youth;The Pitchfork 500;LP;1985;551;2009-6-6 20:28:32;50;322481;0;2009-7-15 14:48:14
+Clever Meals;Tegan And Sara;Under Feet Like Ours;CD;1999;366;2009-6-6 20:28:32;50;198556;0;2009-7-15 14:48:14
+Gravity Rides Everything;Modest Mouse;The Moon And Antarctica;CD;2000;220;2009-6-6 20:28:32;50;259893;0;2009-7-15 14:48:14
+How Soon Is Now?;The Smiths;The Pitchfork 500;CD;1984;574;2009-6-6 20:28:32;50;406230;0;2009-7-15 14:48:14
+A-Punk;Vampire Weekend;Vampire Weekend;CD;2007;440;2009-6-6 20:28:32;50;136907;0;2009-7-15 14:48:14
+Planet Rock;Afrika Bambaataa;The Pitchfork 500;LP;2001;941;2009-6-6 20:28:32;50;382955;0;2009-7-15 14:48:14
+Skeletons;Yeah Yeah Yeahs;It's Blitz!;CD;2009;982;2009-6-6 20:28:32;50;302236;0;2009-7-15 14:48:14
+Migrations;Christine Fellows;Paper Anniversary;CD;2005;62;2009-6-6 20:28:32;50;222706;0;2009-7-15 14:48:14
+Let Me See You;Girl Talk;Feed The Animals;LP;2008;960;2009-6-6 20:28:32;50;243879;0;2009-7-15 14:48:14
+Birdhouse in Your Soul;They Might Be Giants;The Pitchfork 500;CD;1990;635;2009-6-6 20:28:32;50;200698;0;2009-7-15 14:48:14
+Sleeping Giant;Mastodon;The Pitchfork 500;CD;2006;891;2009-6-6 20:28:32;50;336352;0;2009-7-15 14:48:14
+Last Dance;The Mekons;The Pitchfork 500;LP;1985;571;2009-6-6 20:28:32;50;193332;0;2009-7-15 14:48:14
+Matchbook Seeks Maniac;Deerhoof;Friend Opportunity;LP;2007;123;2009-6-6 20:28:32;50;203520;0;2009-7-15 14:48:14
+A Wolf At The Door (It Girl. Rag Doll);Radiohead;Hail To The Thief;CD;2003;318;2009-6-6 20:28:32;50;201333;0;2009-7-15 14:48:14
+Divorce Song;Liz Phair;The Pitchfork 500;CD;1993;704;2009-6-6 20:28:32;50;200176;0;2009-7-15 14:48:14
+The Galaxist;Deerhoof;Friend Opportunity;LP;2007;118;2009-6-6 20:28:32;50;160914;0;2009-7-15 14:48:14
+French Disko;Stereolab;The Pitchfork 500;LP;1995;682;2009-6-6 20:28:32;50;215954;0;2009-7-15 14:48:14
+Faerie Dance;Plants And Animals;Parc Avenue;CD;2007;1;2009-6-6 20:28:32;50;426266;0;2009-7-15 14:48:14
+The Adventures Of Grandmaster Flash On The Wheels Of Steel;Grandmaster Flash;The Pitchfork 500;CD;2007;937;2009-6-6 20:28:32;50;429949;0;2009-7-15 14:48:14
+The Other Side Of Mt. Heart Attack;Liars;The Pitchfork 500;CD;2006;913;2009-6-6 20:28:32;50;283846;0;2009-7-15 14:48:14
+PU55YF00T1N';Brainiac;The Pitchfork 500;LP;1996;747;2009-6-6 20:28:32;50;153391;0;2009-7-15 14:48:14
+Haiti;The Arcade Fire;Funeral;CD;2004;379;2009-6-6 20:28:32;50;247306;0;2009-7-15 14:48:14
+I Will (No Man's Land);Radiohead;Hail To The Thief;LP;2003;314;2009-6-6 20:28:32;50;119466;0;2009-7-15 14:48:14
+Black Star;Radiohead;The Bends;CD;1995;338;2009-6-6 20:28:32;50;247040;0;2009-7-15 14:48:14
+Blue Flowers;Dr. Octagon;The Pitchfork 500;LP;1996;739;2009-6-6 20:28:32;50;197433;0;2009-7-15 14:48:14
+We Were Born The Mutants Again With Leafling;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;245;2009-6-6 20:28:32;50;298013;0;2009-7-15 14:48:14
+Da Funk;Daft Punk;The Pitchfork 500;LP;1996;757;2009-6-6 20:28:32;50;329639;0;2009-7-15 14:48:14
+Mellon Collie And The Infinite Sadness;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;407;2009-6-6 20:28:32;50;172094;0;2009-7-15 14:48:14
+Dark As The Dungeon;Johnny Cash;At Folsom Prison;LP;1968;192;2009-6-6 20:28:32;50;184581;0;2009-7-15 14:48:14
+I Get Around;2Pac;The Pitchfork 500;LP;1998;693;2009-6-6 20:28:32;50;259761;0;2009-7-15 14:48:14
+1979;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;428;2009-6-6 20:28:32;50;265900;0;2009-7-15 14:48:14
+1/1;Brian Eno;The Pitchfork 500;CD;1978;514;2009-6-6 20:28:32;50;1040587;0;2009-7-15 14:48:14
+I'm Still Your Fag;Broken Social Scene;You Forgot It In People;LP;2002;57;2009-6-6 20:28:32;50;264009;0;2009-7-15 14:48:14
+Can't Stand It;Wilco;Summerteeth;CD;1999;448;2009-6-6 20:28:32;50;226977;0;2009-7-15 14:48:14
+Hands In The Air;Girl Talk;Feed The Animals;CD;2008;962;2009-6-6 20:28:32;50;260362;0;2009-7-15 14:48:14
+Deep Blue Sea;Grizzly Bear;Dark Was The Night;CD;2009;468;2009-6-6 20:28:32;50;226455;0;2009-7-15 14:48:14
+Drops in the River;Fleet Foxes;Sun Giant [EP];LP;2008;163;2009-6-6 20:28:32;50;253152;0;2009-7-15 14:48:14
+Dirty Old Egg-Suckin' Dog;Johnny Cash;At Folsom Prison;LP;1968;200;2009-6-6 20:28:32;50;90226;0;2009-7-15 14:48:14
+Punk Rock Girl;The Dead Milkmen;The Pitchfork 500;LP;1988;632;2009-6-6 20:28:32;50;158928;0;2009-7-15 14:48:14
+Human Cannonball;Butthole Surfers;The Pitchfork 500;LP;1987;617;2009-6-6 20:28:32;50;232045;0;2009-7-15 14:48:14
+Like Herod;Mogwai;The Pitchfork 500;CD;1997;804;2009-6-6 20:28:32;50;704809;0;2009-7-15 14:48:14
+Ex Lion Tamer;Wire;The Pitchfork 500;CD;1977;579;2009-6-6 20:28:32;50;139415;0;2009-7-15 14:48:14
+Unfinished Sympathy;Massive Attack;The Pitchfork 500;LP;1991;674;2009-6-6 20:28:32;50;308480;0;2009-7-15 14:48:14
+Happiness;Riceboy Sleeps;Dark Was The Night;CD;2009;489;2009-6-6 20:28:32;50;517041;0;2009-7-15 14:48:14
+The Well And The Lighthouse;The Arcade Fire;Neon Bible;LP;2007;388;2009-6-6 20:28:32;50;236706;0;2009-7-15 14:48:14
+Cause = Time;Broken Social Scene;You Forgot It In People;CD;2002;53;2009-6-6 20:28:32;50;330859;0;2009-7-15 14:48:14
+Thru The Eyes Of Ruby;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;424;2009-6-6 20:28:32;50;458240;0;2009-7-15 14:48:14
+Early In The Morning;Plants And Animals;Parc Avenue;LP;2007;289;2009-6-6 20:28:32;50;142445;0;2009-7-15 14:48:14
+Kiss Me Again;Dinosaur;The Pitchfork 500;LP;1978;873;2009-6-6 20:28:32;50;783777;0;2009-7-15 14:48:14
+She's a Jar;Wilco;Summerteeth;CD;1999;449;2009-6-6 20:28:32;50;283010;0;2009-7-15 14:48:14
+God Save The Queen;Sex Pistols;The Pitchfork 500;LP;1977;518;2009-6-6 20:28:32;50;200124;0;2009-7-15 14:48:14
+Children's Story;Slick Rick;The Pitchfork 500;CD;1988;639;2009-6-6 20:28:32;50;242181;0;2009-7-15 14:48:14
+Keep The Car Running;The Arcade Fire;Neon Bible;LP;2007;383;2009-6-6 20:28:32;50;209093;0;2009-7-15 14:48:14
+Superheroes / Human After All / Rock'n Roll;Daft Punk;Alive 2007;CD;2007;114;2009-6-6 20:28:32;50;339408;0;2009-7-15 14:48:14
+Never Stops;Deerhunter;Microcastle;CD;2008;127;2009-6-6 20:28:32;50;184555;0;2009-7-15 14:48:14
+Since U Been Gone;Kelly Clarkson;The Pitchfork 500;CD;2004;895;2009-6-6 20:28:32;50;188995;0;2009-7-15 14:48:14
+Freedom;Tegan And Sara;Under Feet Like Ours;CD;1999;362;2009-6-6 20:28:32;50;135183;0;2009-7-15 14:48:14
+New Year's Day;U2;The Pitchfork 500;LP;1983;567;2009-6-6 20:28:32;50;336117;0;2009-7-15 14:48:14
+Cato As A Pun;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;236;2009-6-6 20:28:32;50;182600;0;2009-7-15 14:48:14
+Another Morning Stoner;... And You Will Know Us By The Trail of Dead;The Pitchfork 500;CD;2002;826;2009-6-6 20:28:32;50;273658;0;2009-7-15 14:48:14
+I Luv You;Dizzee Rascal;The Pitchfork 500;CD;2003;856;2009-6-6 20:28:32;50;245133;0;2009-7-15 14:48:14
+Tremoloa Debut;Broken Social Scene;Broken Social Scene;LP;2005;45;2009-6-6 20:28:32;50;59453;0;2009-7-15 14:48:14
+When The Road Runs Out;Blonde Redhead + Devastations;Dark Was The Night;CD;2009;493;2009-6-6 20:28:32;50;207255;0;2009-7-15 14:48:14
+Runnin' With the Devil;Van Halen;The Pitchfork 500;LP;1978;917;2009-6-6 20:28:32;50;215666;0;2009-7-15 14:48:14
+Gin And Juice;Snoop Doggy Dogg;The Pitchfork 500;CD;1993;751;2009-6-6 20:28:32;50;213681;0;2009-7-15 14:48:14
+Machine Gun;Portishead;Third (Advance);LP;2008;301;2009-6-6 20:28:32;50;288470;0;2009-7-15 14:48:14
+Summertime Clothes;Animal Collective;Merriweather Post Pavilion;LP;2009;5;2009-6-6 20:28:32;50;272195;0;2009-7-15 14:48:14
+Wave Of Mutilation;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;272;2009-6-6 20:28:32;50;123933;0;2009-7-15 14:48:14
+Radio Kaliningrad;Handsome Furs;Face Control;LP;2009;463;2009-6-6 20:28:32;50;292600;0;2009-7-15 14:48:14
+Come On Let's Go;Broadcast;The Pitchfork 500;LP;2000;812;2009-6-6 20:28:32;50;197146;0;2009-7-15 14:48:14
+The Past Is A Grotesque Animal;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;240;2009-6-6 20:28:32;50;713066;0;2009-7-15 14:48:14
+Fade Into You;Mazzy Star;The Pitchfork 500;LP;1993;743;2009-6-6 20:28:32;50;295680;0;2009-7-15 14:48:14
+Slow Show;The National;Boxer;LP;2007;398;2009-6-6 20:28:32;50;252306;0;2009-7-15 14:48:14
+I Feel Evil Creeping In;Islands;Arm's Way;LP;2008;188;2009-6-6 20:28:32;50;331937;0;2009-7-15 14:48:14
+The Rip;Portishead;Third (Advance);LP;2008;297;2009-6-6 20:28:32;50;273005;0;2009-7-15 14:48:14
+Departures/Arrivals;Christine Fellows;Paper Anniversary;LP;2005;70;2009-6-6 20:28:32;50;154440;0;2009-7-15 14:48:14
+Take Me Down;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;411;2009-6-6 20:28:32;50;172277;0;2009-7-15 14:48:14
+Television Rules The Nation / Crescendolls;Daft Punk;Alive 2007;CD;2007;106;2009-6-6 20:28:32;50;291422;0;2009-7-15 14:48:14
+Let The Music Play;Shannon;The Pitchfork 500;LP;2004;587;2009-6-6 20:28:32;50;214778;0;2009-7-15 14:48:14
+It's Like That;Run-D.M.C.;The Pitchfork 500;LP;1984;560;2009-6-6 20:28:32;50;291944;0;2009-7-15 14:48:14
+Reflections After Jane;The Clientele;The Pitchfork 500;CD;2000;775;2009-6-6 20:28:32;50;202240;0;2009-7-15 14:48:14
+Green Jacket;Deerhunter;Microcastle;CD;2008;131;2009-6-6 20:28:32;50;129201;0;2009-7-15 14:48:14
+Big Pimpin' (Feat. UGK);Jay-Z;The Pitchfork 500;LP;1999;818;2009-6-6 20:28:32;50;284682;0;2009-7-15 14:48:14
+Soft Shock;Yeah Yeah Yeahs;It's Blitz!;CD;2009;978;2009-6-6 20:28:32;50;233195;0;2009-7-15 14:48:14
+Suzanne;Leonard Cohen;The Songs Of Leonard Cohen;CD;1967;209;2009-6-6 20:28:32;50;228493;0;2009-7-15 14:48:14
+Beautiful Child;Swans;The Pitchfork 500;LP;1987;648;2009-6-6 20:28:32;50;292440;0;2009-7-15 14:48:14
+The Moon;The Microphones;The Pitchfork 500;LP;2002;848;2009-6-6 20:28:32;50;317257;0;2009-7-15 14:48:14
+Souvenirs;Christine Fellows;Paper Anniversary;CD;2005;66;2009-6-6 20:28:32;50;148693;0;2009-7-15 14:48:14
+My Mind Playin' Tricks on Me;Geto Boys;The Pitchfork 500;CD;1992;700;2009-6-6 20:28:32;50;311849;0;2009-7-15 14:48:14
+Stormy High;Black Mountain;In The Future;LP;2008;13;2009-6-6 20:28:32;50;273763;0;2009-7-15 14:48:14
+My Body Is A Cage;The Arcade Fire;Neon Bible;LP;2007;392;2009-6-6 20:28:32;50;287360;0;2009-7-15 14:48:14
+Blood Pt 2;Buck 65 Remix (featuring Sufjan Stevens and Serengeti);Dark Was The Night;LP;2009;485;2009-6-6 20:28:32;50;215248;0;2009-7-15 14:48:14
+Wild Packs Of Family Dogs;Modest Mouse;The Moon And Antarctica;CD;2000;228;2009-6-6 20:28:32;50;105733;0;2009-7-15 14:48:14
+Never Be Alone;Justice;The Pitchfork 500;LP;2005;909;2009-6-6 20:28:32;50;262217;0;2009-7-15 14:48:14
+Bones;Radiohead;The Bends;LP;1995;333;2009-6-6 20:28:32;50;189000;0;2009-7-15 14:48:14
+Touched Something's Hollow;Of Montreal;Skeletal Lamping;LP;2008;249;2009-6-6 20:28:32;50;85812;0;2009-7-15 14:48:14
+Fairytale Of New York;The Pogues;The Pitchfork 500;CD;1987;628;2009-6-6 20:28:32;50;277446;0;2009-7-15 14:48:14
+Hey, That's No Way To Say Goodbye;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;215;2009-6-6 20:28:32;50;175906;0;2009-7-15 14:48:14
+Nutmeg (feat. The RZA);Ghostface Killah;The Pitchfork 500;LP;2000;822;2009-6-6 20:28:32;50;265064;0;2009-7-15 14:48:14
+Touch Me I'm Sick;Mudhoney;The Pitchfork 500;CD;1992;664;2009-6-6 20:28:32;50;156055;0;2009-7-15 14:48:14
+Jigsaw Falling Into Place;Radiohead;In Rainbows;CD;2007;327;2009-6-6 20:28:32;50;248946;0;2009-7-15 14:48:14
+These Hands;Deerhunter;Microcastle;LP;2008;135;2009-6-6 20:28:32;50;325250;0;2009-7-15 14:48:14
+Blue Monday;New Order;The Pitchfork 500;LP;1987;563;2009-6-6 20:28:32;50;449227;0;2009-7-15 14:48:14
+Almost Crimes;Broken Social Scene;You Forgot It In People;LP;2002;49;2009-6-6 20:28:32;50;262964;0;2009-7-15 14:48:14
+Juicy;The Notorious B.I.G.;The Pitchfork 500;LP;2004;721;2009-6-6 20:28:32;50;302811;0;2009-7-15 14:48:14
+Ada;The National;Boxer;LP;2007;403;2009-6-6 20:28:32;50;247253;0;2009-7-15 14:48:14
+Taste;Animal Collective;Merriweather Post Pavilion;LP;2009;9;2009-6-6 20:28:32;50;235520;0;2009-7-15 14:48:14
+Take Ecstasy With Me;Magnetic Fields;The Pitchfork 500;LP;1993;761;2009-6-6 20:28:32;50;216528;0;2009-7-15 14:48:14
+Soon;My Bloody Valentine;The Pitchfork 500;LP;1991;660;2009-6-6 20:28:32;50;418821;0;2009-7-15 14:48:14
+St.Exquisite's Confessions;Of Montreal;Skeletal Lamping;LP;2008;253;2009-6-6 20:28:32;50;274964;0;2009-7-15 14:48:14
+Dark Was The Night;Kronos Quartet;Dark Was The Night;CD;2009;472;2009-6-6 20:28:32;50;231131;0;2009-7-15 14:48:14
+Oh (Feat. Ludacris);Ciara;The Pitchfork 500;CD;2004;897;2009-6-6 20:28:32;50;256391;0;2009-7-15 14:48:14
+No One Knows;Queens Of The Stone Age;The Pitchfork 500;LP;2002;840;2009-6-6 20:28:32;50;278726;0;2009-7-15 14:48:14
+Shame and Fortune;Yeah Yeah Yeahs;It's Blitz!;LP;2009;986;2009-6-6 20:28:32;50;211565;0;2009-7-15 14:48:14
+Mistaken For Strangers;The National;Boxer;LP;2007;394;2009-6-6 20:28:32;50;215000;0;2009-7-15 14:48:14
+Straight Outta Compton;N.W.A.;The Pitchfork 500;CD;1988;621;2009-6-6 20:28:32;50;258716;0;2009-7-15 14:48:14
+Intuition;Feist;The Reminder;CD;2007;148;2009-6-6 20:28:32;50;276653;0;2009-7-15 14:48:14
+Parasol;The Sea And Cake;The Pitchfork 500;CD;1995;765;2009-6-6 20:28:32;50;330109;0;2009-7-15 14:48:14
+The Funeral;Band Of Horses;The Pitchfork 500;LP;2006;901;2009-6-6 20:28:32;50;322298;0;2009-7-15 14:48:14
+The Concept;Teenage Fanclub;The Pitchfork 500;LP;1991;686;2009-6-6 20:28:32;50;367098;0;2009-7-15 14:48:14
+Gold Sounds;Pavement;The Pitchfork 500;CD;1994;725;2009-6-6 20:28:32;50;159738;0;2009-7-15 14:48:14
+Jürgen Pappe - So Weit Wie Noch Nie;Erlend Øye;The Pitchfork 500;CD;2004;830;2009-6-6 20:28:32;50;224313;0;2009-7-15 14:48:14
+Save It For Later;English Beat;The Pitchfork 500;LP;1982;522;2009-6-6 20:28:32;50;214700;0;2009-7-15 14:48:14
+Beat Box (Diversion One);Art Of Noise;The Pitchfork 500;CD;1984;583;2009-6-6 20:28:32;50;512783;0;2009-7-15 14:48:14
+Face to Face / Short Circuit;Daft Punk;Alive 2007;LP;2007;110;2009-6-6 20:28:32;50;296333;0;2009-7-15 14:48:14
+Blue Boy;Orange Juice;The Pitchfork 500;CD;2005;543;2009-6-6 20:28:32;50;174942;0;2009-7-15 14:48:14
+If You See Her, Say Hello;Bob Dylan;Blood on the Tracks;CD;1975;30;2009-6-6 20:28:32;50;289515;0;2009-7-15 14:48:14
+Many Lives For 49 MP;Final Fantasy;He Poos Clouds;CD;2006;158;2009-6-6 20:28:32;50;176453;0;2009-7-15 14:48:14
+Satellite Mind;Metric;Fantasies;LP;2009;502;2009-6-6 20:28:32;50;222902;0;2009-7-15 14:48:14
+Zero;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;414;2009-6-6 20:28:32;50;160470;0;2009-7-15 14:48:14
+So Haunted;Cut Copy;In Ghost Colours;CD;2008;95;2009-6-6 20:28:32;50;267049;0;2009-7-15 14:48:14
+Sisters Of Mercy;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;213;2009-6-6 20:28:32;50;212800;0;2009-7-15 14:48:14
+Autumn Sweater;Yo La Tengo;The Pitchfork 500;CD;1997;799;2009-6-6 20:28:32;50;320522;0;2009-7-15 14:48:14
+Octagon;Basic Channel;The Pitchfork 500;LP;1994;736;2009-6-6 20:28:32;50;777377;0;2009-7-15 14:48:14
+Buckets of Rain;Bob Dylan;Blood on the Tracks;CD;1975;32;2009-6-6 20:28:32;50;202657;0;2009-7-15 14:48:14
+Wichita Lineman Was a Song I Once Heard;The KLF;The Pitchfork 500;CD;1990;657;2009-6-6 20:28:32;50;356048;0;2009-7-15 14:48:14
+ELT;Wilco;Summerteeth;CD;1999;457;2009-6-6 20:28:32;50;226351;0;2009-7-15 14:48:14
+Primitive Painters;Felt;The Pitchfork 500;CD;1992;598;2009-6-6 20:28:32;50;359680;0;2009-7-15 14:48:14
+Through The Hosiery;Crystal Castles;Crystal Castles;CD;2008;85;2009-6-6 20:28:32;50;186958;0;2009-7-15 14:48:14
+Seven Nation Army;The White Stripes;The Pitchfork 500;CD;2003;881;2009-6-6 20:28:32;50;231836;0;2009-7-15 14:48:14
+New Kind Of Love;Plants And Animals;Parc Avenue;LP;2007;288;2009-6-6 20:28:32;50;475585;0;2009-7-15 14:48:14
+Go To Sleep (Little Man Being Erased);Radiohead;Hail To The Thief;LP;2003;309;2009-6-6 20:28:32;50;201506;0;2009-7-15 14:48:14
+Beware Our Nubile Miscreants;Of Montreal;Skeletal Lamping;CD;2008;258;2009-6-6 20:28:32;50;292623;0;2009-7-15 14:48:14
+Jackson;Johnny Cash;At Folsom Prison;CD;1968;203;2009-6-6 20:28:32;50;192391;0;2009-7-15 14:48:14
+El Caporal;My Morning Jacket;Dark Was The Night;LP;2009;482;2009-6-6 20:28:32;50;213106;0;2009-7-15 14:48:14
+My Moon My Man;Feist;The Reminder;LP;2007;140;2009-6-6 20:28:32;50;228346;0;2009-7-15 14:48:14
+No Sleep Till Brooklyn;The Beastie Boys;The Pitchfork 500;CD;1986;594;2009-6-6 20:28:32;50;246883;0;2009-7-15 14:48:14
+1991;Crystal Castles;Crystal Castles;LP;2008;81;2009-6-6 20:28:32;50;113554;0;2009-7-15 14:48:14
+Innocent Son;Fleet Foxes;Sun Giant [EP];LP;2008;166;2009-6-6 20:28:32;50;187533;0;2009-7-15 14:48:14
+The Freed Pig;Sebadoh;The Pitchfork 500;CD;1991;669;2009-6-6 20:28:32;50;188029;0;2009-7-15 14:48:14
+Just What I Needed;The Cars;The Pitchfork 500;LP;1978;925;2009-6-6 20:28:32;50;223294;0;2009-7-15 14:48:14
+Neighborhood #4 (7 Kettles);The Arcade Fire;Funeral;LP;2004;376;2009-6-6 20:28:32;50;289733;0;2009-7-15 14:48:14
+Bye Bye Bye;Plants And Animals;Parc Avenue;LP;2007;284;2009-6-6 20:28:32;50;218044;0;2009-7-15 14:48:14
+Not So Pretty Now;Nine Inch Nails;NINJA 2009 Tour Sampler;CD;2009;973;2009-6-6 20:28:32;50;229810;0;2009-7-15 14:48:14
+No Children;The Mountain Goats;The Pitchfork 500;LP;2002;885;2009-6-6 20:28:32;50;168333;0;2009-7-15 14:48:14
+Weak Become Heroes;The Streets;The Pitchfork 500;CD;2002;835;2009-6-6 20:28:32;50;333087;0;2009-7-15 14:48:14
+Nimrod's Son;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1987;262;2009-6-6 20:28:32;50;136426;0;2009-7-15 14:48:14
+That's When I Reach For My Revolver;Mission Of Burma;The Pitchfork 500;LP;1981;548;2009-6-6 20:28:32;50;233456;0;2009-7-15 14:48:14
+In The Arms Of Sleep;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;419;2009-6-6 20:28:32;50;252368;0;2009-7-15 14:48:14
+Bitter Sweet Symphony;The Verve;The Pitchfork 500;CD;1997;772;2009-6-6 20:28:32;50;358504;0;2009-7-15 14:48:14
+Another Girl, Another Planet;The Only Ones;The Pitchfork 500;CD;1978;921;2009-6-6 20:28:32;50;182334;0;2009-7-15 14:48:14
+Smells Like Teen Spirit;Nirvana;The Pitchfork 500;CD;1991;665;2009-6-6 20:28:32;50;301165;0;2009-7-15 14:48:14
+Through The Wire;Kanye West;The Pitchfork 500;CD;2004;862;2009-6-6 20:28:32;50;221283;0;2009-7-15 14:48:14
+Activa;Deerhunter;Microcastle;CD;2008;132;2009-6-6 20:28:32;50;109296;0;2009-7-15 14:48:14
+Nude;Radiohead;In Rainbows;LP;2007;321;2009-6-6 20:28:32;50;255399;0;2009-7-15 14:48:14
+Shut The Club Down;Girl Talk;Feed The Animals;CD;2008;969;2009-6-6 20:28:32;50;186801;0;2009-7-15 14:48:14
+Graceland;Paul Simon;The Pitchfork 500;LP;1986;606;2009-6-6 20:28:32;50;291030;0;2009-7-15 14:48:14
+Neighborhood #1 (Tunnels);The Arcade Fire;Funeral;CD;2004;372;2009-6-6 20:28:32;50;288333;0;2009-7-15 14:48:14
+The Day Before You Came;ABBA;The Pitchfork 500;LP;1993;528;2009-6-6 20:28:32;50;351503;0;2009-7-15 14:48:14
+25 Minutes To Go;Johnny Cash;At Folsom Prison;LP;1968;195;2009-6-6 20:28:32;50;211017;0;2009-7-15 14:48:14
+Porcelina Of The Vast Oceans;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;410;2009-6-6 20:28:32;50;561162;0;2009-7-15 14:48:14
+Finish Your Collapse And Stay For Breakfast;Broken Social Scene;Broken Social Scene;CD;2005;36;2009-6-6 20:28:32;50;84413;0;2009-7-15 14:48:14
+Idiot Wind;Bob Dylan;Blood on the Tracks;CD;1975;26;2009-6-6 20:28:32;50;469629;0;2009-7-15 14:48:14
+Monster Jam;Spoonie Gee Meets Sequence;The Pitchfork 500;CD;1997;931;2009-6-6 20:28:32;50;530390;0;2009-7-15 14:48:14
+Sex Bomb;Flipper;The Pitchfork 500;LP;1982;539;2009-6-6 20:28:32;50;468924;0;2009-7-15 14:48:14
+If I Were A Carp;Final Fantasy;He Poos Clouds;LP;2006;154;2009-6-6 20:28:32;50;243853;0;2009-7-15 14:48:14
+Rid Of Me;PJ Harvey;The Pitchfork 500;CD;1993;705;2009-6-6 20:28:32;50;268904;0;2009-7-15 14:48:14
+Music Sounds Better With You;Alan Braxe And Friends;The Pitchfork 500;LP;2004;795;2009-6-6 20:28:32;50;406831;0;2009-7-15 14:48:14
+Le Soleil Est Pres De Moi;Air;The Pitchfork 500;LP;1999;784;2009-6-6 20:28:32;50;291317;0;2009-7-15 14:48:14
+Stadium Love;Metric;Fantasies;LP;2009;498;2009-6-6 20:28:32;50;252891;0;2009-7-15 14:48:14
+Violet;Hole;The Pitchfork 500;CD;1994;713;2009-6-6 20:28:32;50;204277;0;2009-7-15 14:48:14
+Indian Summer;Beat Happening;The Pitchfork 500;LP;1988;661;2009-6-6 20:28:32;50;185129;0;2009-7-15 14:48:14
+Nothing'severgonnastandinmyway (Again);Wilco;Summerteeth;LP;1999;453;2009-6-6 20:28:32;50;200751;0;2009-7-15 14:48:14
+It's A Shame About Ray;The Lemonheads;The Pitchfork 500;LP;1992;709;2009-6-6 20:28:32;50;186932;0;2009-7-15 14:48:14
+Walking On Thin Ice (1981 Re-Edit);Yoko Ono;The Pitchfork 500;CD;1981;935;2009-6-6 20:28:32;50;440894;0;2009-7-15 14:48:14
+Green, Green Grass Of Home;Johnny Cash;At Folsom Prison;LP;1968;207;2009-6-6 20:28:32;50;149524;0;2009-7-15 14:48:14
+Threads;Portishead;Third (Advance);LP;2008;304;2009-6-6 20:28:32;50;347820;0;2009-7-15 14:48:14
+Proud;Tegan And Sara;Under Feet Like Ours;CD;1999;363;2009-6-6 20:28:32;50;168150;0;2009-7-15 14:48:14
+So. Central Rain;R.E.M.;The Pitchfork 500;LP;1984;556;2009-6-6 20:28:32;50;196127;0;2009-7-15 14:48:14
+Typical Girls;The Slits;The Pitchfork 500;CD;1979;780;2009-6-6 20:28:32;50;237426;0;2009-7-15 14:48:14
+Past In Present;Feist;The Reminder;CD;2007;144;2009-6-6 20:28:32;50;174306;0;2009-7-15 14:48:14
+3rd Planet;Modest Mouse;The Pitchfork 500;LP;2000;843;2009-6-6 20:28:32;50;238968;0;2009-7-15 14:48:14
+Got To Give It Up;Marvin Gaye;The Pitchfork 500;LP;2006;654;2009-6-6 20:28:32;50;713586;0;2009-7-15 14:48:14
+Limb By Limb;Cutty Ranks;The Pitchfork 500;LP;2008;753;2009-6-6 20:28:32;50;234266;0;2009-7-15 14:48:14
+Planet Telex;Radiohead;The Bends;LP;1995;329;2009-6-6 20:28:32;50;259200;0;2009-7-15 14:48:14
+Debaser;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1989;270;2009-6-6 20:28:32;50;171773;0;2009-7-15 14:48:14
+Campus;Vampire Weekend;Vampire Weekend;LP;2007;443;2009-6-6 20:28:32;50;175568;0;2009-7-15 14:48:14
+Front Row;Metric;Fantasies;CD;2009;506;2009-6-6 20:28:32;50;214883;0;2009-7-15 14:48:14
+CASIMIR PULASKI DAY;Sufjan Stevens;The Pitchfork 500;LP;2005;872;2009-6-6 20:28:32;50;353985;0;2009-7-15 14:48:14
+Queens Will Play;Black Mountain;In The Future;LP;2008;18;2009-6-6 20:28:32;50;316786;0;2009-7-15 14:48:14
+O Superman (For Massenet);Laurie Anderson;The Pitchfork 500;CD;1982;944;2009-6-6 20:28:32;50;507480;0;2009-7-15 14:48:14
+Sun Giant;Fleet Foxes;Sun Giant [EP];LP;2008;162;2009-6-6 20:28:32;50;134400;0;2009-7-15 14:48:14
+Under Pressure;Queen;The Pitchfork 500;CD;2001;531;2009-6-6 20:28:32;50;237714;0;2009-7-15 14:48:14
+Eternity One Night Only;Cut Copy;In Ghost Colours;LP;2008;103;2009-6-6 20:28:32;50;186200;0;2009-7-15 14:48:14
+dreams burn down;Ride;The Pitchfork 500;LP;1999;611;2009-6-6 20:28:32;50;366680;0;2009-7-15 14:48:14
+Hypnotize;The Notorious B.I.G.;The Pitchfork 500;CD;1997;787;2009-6-6 20:28:32;50;230086;0;2009-7-15 14:48:14
+Bandwitch;Broken Social Scene;Broken Social Scene;CD;2005;44;2009-6-6 20:28:32;50;418573;0;2009-7-15 14:48:14
+Halfway To A Threeway;Jim O'Rourke;The Pitchfork 500;CD;1999;805;2009-6-6 20:28:32;50;254798;0;2009-7-15 14:48:14
+XXZXCUZX Me;Crystal Castles;Crystal Castles;LP;2008;77;2009-6-6 20:28:32;50;113841;0;2009-7-15 14:48:14
+Don't Leave Me This Way;Thelma Houston;The Pitchfork 500;LP;2008;615;2009-6-6 20:28:32;50;248920;0;2009-7-15 14:48:14
+Alison;Slowdive;The Pitchfork 500;CD;1994;678;2009-6-6 20:28:32;50;231993;0;2009-7-15 14:48:14
+All of My Heart;ABC;The Pitchfork 500;CD;1982;956;2009-6-6 20:28:32;50;317701;0;2009-7-15 14:48:14
+Guru;Plants And Animals;Parc Avenue;CD;2007;293;2009-6-6 20:28:32;50;412682;0;2009-7-15 14:48:14
+Girls Just Want to Have Fun;Cyndi Lauper;The Pitchfork 500;LP;2003;591;2009-6-6 20:28:32;50;235493;0;2009-7-15 14:48:14
+"Heroes";David Bowie;The Pitchfork 500;LP;1977;510;2009-6-6 20:28:32;50;370442;0;2009-7-15 14:48:14
+Swimmers;Broken Social Scene;Broken Social Scene;LP;2005;40;2009-6-6 20:28:32;50;175533;0;2009-7-15 14:48:14
+Silver Thoughts;Cut Copy;In Ghost Colours;LP;2008;99;2009-6-6 20:28:32;50;29309;0;2009-7-15 14:48:14
+Creeper;Islands;Arm's Way;LP;2008;182;2009-6-6 20:28:32;50;195030;0;2009-7-15 14:48:14
+Dry The Rain;The Beta Band;The Pitchfork 500;LP;1997;791;2009-6-6 20:28:32;50;365191;0;2009-7-15 14:48:14
+Maps;Yeah Yeah Yeahs;The Pitchfork 500;CD;2003;868;2009-6-6 20:28:32;50;219846;0;2009-7-15 14:48:14
+Minor Threat;Minor Threat;The Pitchfork 500;LP;1983;535;2009-6-6 20:28:32;50;87771;0;2009-7-15 14:48:14
+Night Walks;Black Mountain;In The Future;LP;2008;22;2009-6-6 20:28:32;50;236617;0;2009-7-15 14:48:14
+Our Trees;Tegan And Sara;Under Feet Like Ours;CD;1999;360;2009-6-6 20:28:32;50;227291;0;2009-7-15 14:48:14
+Sulk;Radiohead;The Bends;CD;1995;339;2009-6-6 20:28:32;50;222960;0;2009-7-15 14:48:14
+Back To The Sea;The Thermals;The Body, The Blood, The Machine;LP;2006;435;2009-6-6 20:28:32;50;287712;0;2009-7-15 14:48:14
+Third Uncle;Bauhaus;The Pitchfork 500;CD;1982;952;2009-6-6 20:28:32;50;318667;0;2009-7-15 14:48:14
+Dark Center Of The Universe;Modest Mouse;The Moon And Antarctica;CD;2000;221;2009-6-6 20:28:32;50;302733;0;2009-7-15 14:48:14
+Pieces of You;Islands;Arm's Way;CD;2008;179;2009-6-6 20:28:32;50;246204;0;2009-7-15 14:48:14
+Where Boys Fear To Tread;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;426;2009-6-6 20:28:32;50;262739;0;2009-7-15 14:48:14
+Slack Motherfucker;Superchunk;The Pitchfork 500;CD;1992;636;2009-6-6 20:28:32;50;173923;0;2009-7-15 14:48:14
+The Drowners;Suede;The Pitchfork 500;LP;1993;695;2009-6-6 20:28:32;50;250253;0;2009-7-15 14:48:14
+Grindin';Clipse;The Pitchfork 500;CD;2002;858;2009-6-6 20:28:32;50;264803;0;2009-7-15 14:48:14
+This Is Everything;Tegan And Sara;Under Feet Like Ours;CD;1999;367;2009-6-6 20:28:32;50;189048;0;2009-7-15 14:48:14
+Pink Turns To Blue;Hüsker Dü;The Pitchfork 500;CD;1984;552;2009-6-6 20:28:32;50;162977;0;2009-7-15 14:48:14
+Hyper-Ballad;Björk;The Pitchfork 500;CD;1995;732;2009-6-6 20:28:32;50;321410;0;2009-7-15 14:48:14
+An Ear For Baby;The Thermals;The Body, The Blood, The Machine;LP;2006;430;2009-6-6 20:28:32;50;216450;0;2009-7-15 14:48:14
+Gigantic;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1988;266;2009-6-6 20:28:32;50;193573;0;2009-7-15 14:48:14
+Back On The Chain Gang;The Pretenders;The Pitchfork 500;CD;2000;948;2009-6-6 20:28:32;50;232777;0;2009-7-15 14:48:14
+If I Was Your Girlfriend;Prince;The Pitchfork 500;LP;1987;650;2009-6-6 20:28:32;50;301766;0;2009-7-15 14:48:14
+Oxford Comma;Vampire Weekend;Vampire Weekend;LP;2007;439;2009-6-6 20:28:32;50;204382;0;2009-7-15 14:48:14
+Don't Save Us From the Flames;M83;The Pitchfork 500;CD;2005;877;2009-6-6 20:28:32;50;255947;0;2009-7-15 14:48:14
+Into The White;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;276;2009-6-6 20:28:32;50;279946;0;2009-7-15 14:48:14
+Teachers;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;217;2009-6-6 20:28:32;50;181666;0;2009-7-15 14:48:14
+Numbers;Kraftwerk;The Pitchfork 500;LP;1981;940;2009-6-6 20:28:32;50;201456;0;2009-7-15 14:48:14
+So Far Around The Bend;The National;Dark Was The Night;CD;2009;469;2009-6-6 20:28:32;50;222981;0;2009-7-15 14:48:14
+X.Y.U.;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;427;2009-6-6 20:28:32;50;427128;0;2009-7-15 14:48:14
+Nonpareil of Favor;Of Montreal;Skeletal Lamping;CD;2008;246;2009-6-6 20:28:32;50;348943;0;2009-7-15 14:48:14
+1 Thing;Amerie;The Pitchfork 500;LP;2008;896;2009-6-6 20:28:32;50;240222;0;2009-7-15 14:48:14
+Just To Get A Rep;Gang Starr;The Pitchfork 500;LP;1990;640;2009-6-6 20:28:32;50;186827;0;2009-7-15 14:48:14
+There There (The Boney King Of Nowhere);Radiohead;Hail To The Thief;CD;2003;313;2009-6-6 20:28:32;50;323600;0;2009-7-15 14:48:14
+Midnight In A Perfect World;DJ Shadow;The Pitchfork 500;CD;1996;738;2009-6-6 20:28:32;50;302915;0;2009-7-15 14:48:14
+The Cold Part;Modest Mouse;The Moon And Antarctica;CD;2000;225;2009-6-6 20:28:32;50;300933;0;2009-7-15 14:48:14
+Look Away;Deerhoof;Friend Opportunity;LP;2007;124;2009-6-6 20:28:32;50;705933;0;2009-7-15 14:48:14
+Scatterbrain (As Dead As Leaves);Radiohead;Hail To The Thief;CD;2003;317;2009-6-6 20:28:32;50;201706;0;2009-7-15 14:48:14
+The Modern Age;The Strokes;The Pitchfork 500;LP;2000;825;2009-6-6 20:28:32;50;212871;0;2009-7-15 14:48:14
+Rebellion (Lies);The Arcade Fire;Funeral;LP;2004;380;2009-6-6 20:28:32;50;310893;0;2009-7-15 14:48:14
+Vertebrae;Christine Fellows;Paper Anniversary;LP;2005;60;2009-6-6 20:28:32;50;252173;0;2009-7-15 14:48:14
+Road Trip;Christine Fellows;Paper Anniversary;LP;2005;61;2009-6-6 20:28:32;50;54933;0;2009-7-15 14:48:14
+Shot By Both Sides;Magazine;The Pitchfork 500;CD;1978;683;2009-6-6 20:28:32;50;244401;0;2009-7-15 14:48:14
+The Kids Don't Stand A Chance;Vampire Weekend;Vampire Weekend;CD;2007;447;2009-6-6 20:28:32;50;243408;0;2009-7-15 14:48:14
+(Don't Fear) The Reaper;Blue Öyster Cult;The Pitchfork 500;LP;1976;914;2009-6-6 20:28:32;50;308453;0;2009-7-15 14:48:14
+Choco Fight;Deerhoof;Friend Opportunity;LP;2007;119;2009-6-6 20:28:32;50;181054;0;2009-7-15 14:48:14
+Start Choppin;Dinosaur Jr.;The Pitchfork 500;CD;2001;703;2009-6-6 20:28:32;50;337214;0;2009-7-15 14:48:14
+Human Fly;Cramps;The Pitchfork 500;LP;1984;690;2009-6-6 20:28:32;50;135392;0;2009-7-15 14:48:14
+Here's The Thing;Girl Talk;Feed The Animals;LP;2008;959;2009-6-6 20:28:32;50;285570;0;2009-7-15 14:48:14
+You Should All Be Murdered;Another Sunny Day;The Pitchfork 500;CD;1989;631;2009-6-6 20:28:32;50;276453;0;2009-7-15 14:48:14
+Kerosene;Big Black;The Pitchfork 500;LP;1986;572;2009-6-6 20:28:32;50;365374;0;2009-7-15 14:48:14
+Racing Like A Pro;The National;Boxer;CD;2007;402;2009-6-6 20:28:32;50;208253;0;2009-7-15 14:48:14
+Busted;Johnny Cash;At Folsom Prison;CD;1968;191;2009-6-6 20:28:32;50;84688;0;2009-7-15 14:48:14
+In the Flowers;Animal Collective;Merriweather Post Pavilion;CD;2009;2;2009-6-6 20:28:32;50;324101;0;2009-7-15 14:48:14
+Hideaway;The Olivia Tremor Control;The Pitchfork 500;CD;1999;792;2009-6-6 20:28:32;50;154017;0;2009-7-15 14:48:14
+The Chain;Fleetwood Mac;The Pitchfork 500;CD;1997;918;2009-6-6 20:28:32;50;311379;0;2009-7-15 14:48:14
+Twilight At Carbon Lake;Deerhunter;Microcastle;LP;2008;136;2009-6-6 20:28:32;50;264045;0;2009-7-15 14:48:14
+One More Hour;Sleater-Kinney;The Pitchfork 500;LP;1997;801;2009-6-6 20:28:32;50;199915;0;2009-7-15 14:48:14
+Don't You (Forget About Me);Simple Minds;The Pitchfork 500;LP;2001;568;2009-6-6 20:28:32;50;263340;0;2009-7-15 14:48:14
+Everyday Is Like Sunday;Morrissey;The Pitchfork 500;LP;1990;627;2009-6-6 20:28:32;50;213760;0;2009-7-15 14:48:14
+The Wall;Johnny Cash;At Folsom Prison;CD;1968;199;2009-6-6 20:28:32;50;96548;0;2009-7-15 14:48:14
+The Way We Get By;Spoon;The Pitchfork 500;CD;2002;855;2009-6-6 20:28:32;50;160156;0;2009-7-15 14:48:14
+Love vs. Porn;Kevin Drew;Dark Was The Night;CD;2009;494;2009-6-6 20:28:32;50;237008;0;2009-7-15 14:48:14
+Love;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;406;2009-6-6 20:28:32;50;261511;0;2009-7-15 14:48:14
+93 'Til Infinity;Souls Of Mischief;The Pitchfork 500;LP;1993;694;2009-6-6 20:28:32;50;286563;0;2009-7-15 14:48:14
+Rockaway Beach;The Ramones;The Pitchfork 500;CD;1977;515;2009-6-6 20:28:32;50;126615;0;2009-7-15 14:48:14
+Paper Anniversary;Christine Fellows;Paper Anniversary;LP;2005;65;2009-6-6 20:28:32;50;74280;0;2009-7-15 14:48:14
+Savory;Jawbox;The Pitchfork 500;LP;1994;746;2009-6-6 20:28:32;50;279353;0;2009-7-15 14:48:14
+What People Are Made Of;Modest Mouse;The Moon And Antarctica;CD;2000;233;2009-6-6 20:28:32;50;134466;0;2009-7-15 14:48:14
+Daily Routine;Animal Collective;Merriweather Post Pavilion;CD;2009;6;2009-6-6 20:28:32;50;348107;0;2009-7-15 14:48:14
+I'm always in love;Wilco;Summerteeth;CD;1999;452;2009-6-6 20:28:32;50;221178;0;2009-7-15 14:48:14
+U-Mass;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1991;280;2009-6-6 20:28:32;50;180893;0;2009-7-15 14:48:14
+Encore - Human After All / Together - Together / One More Time (reprise) / Stardust - Music Sounds Better with You;Daft Punk;Alive 2007 Bonus Disc;LP;2007;115;2009-6-6 20:28:32;50;598726;0;2009-7-15 14:48:14
+Faberge Falls For Shuggie;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;242;2009-6-6 20:28:32;50;271373;0;2009-7-15 14:48:14
+In Step;Girl Talk;Feed The Animals;CD;2008;961;2009-6-6 20:28:32;50;203363;0;2009-7-15 14:48:14
+Try Again ;Aaliyah;The Pitchfork 500;LP;2005;813;2009-6-6 20:28:32;50;286458;0;2009-7-15 14:48:14
+Scentless Apprentice;Nirvana;The Pitchfork 500;LP;1993;712;2009-6-6 20:28:32;50;227735;0;2009-7-15 14:48:14
+Amazing Grace;Cat Power and Dirty Delta Blues;Dark Was The Night;LP;2009;490;2009-6-6 20:28:32;50;214204;0;2009-7-15 14:48:14
+Aftermath;Tricky;The Pitchfork 500;LP;1995;675;2009-6-6 20:28:32;50;458710;0;2009-7-15 14:48:14
+Moody;ESG;The Pitchfork 500;LP;1991;936;2009-6-6 20:28:32;50;167967;0;2009-7-15 14:48:14
+Thirty-Three;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;423;2009-6-6 20:28:32;50;250723;0;2009-7-15 14:48:14
+No Pause;Girl Talk;Feed The Animals;CD;2008;965;2009-6-6 20:28:32;50;192261;0;2009-7-15 14:48:14
+En As I Dype Skogen;Darkthrone;The Pitchfork 500;CD;1994;750;2009-6-6 20:28:32;50;302053;0;2009-7-15 14:48:14
+Heimdalsgate Like A Promethean Curse;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;237;2009-6-6 20:28:32;50;198600;0;2009-7-15 14:48:14
+Little Kids;Deerhunter;Microcastle;CD;2008;128;2009-6-6 20:28:32;50;262817;0;2009-7-15 14:48:14
+Keep It Real;Plants And Animals;Parc Avenue;CD;2007;292;2009-6-6 20:28:32;50;248163;0;2009-7-15 14:48:14
+Neon Bible;The Arcade Fire;Neon Bible;CD;2007;384;2009-6-6 20:28:32;50;136640;0;2009-7-15 14:48:14
+Lover's Spit;Broken Social Scene;You Forgot It In People;CD;2002;56;2009-6-6 20:28:32;50;382245;0;2009-7-15 14:48:14
+Hey, Snow White;The New Pornographers;Dark Was The Night;LP;2009;486;2009-6-6 20:28:32;50;265848;0;2009-7-15 14:48:14
+Knotty Pine;Dirty Projectors + David Byrne;Dark Was The Night;LP;2009;464;2009-6-6 20:28:32;50;142915;0;2009-7-15 14:48:14
+House Of Cards;Radiohead;In Rainbows;LP;2007;326;2009-6-6 20:28:32;50;328359;0;2009-7-15 14:48:14
+Too Long / Steam Machine;Daft Punk;Alive 2007;LP;2007;107;2009-6-6 20:28:32;50;437237;0;2009-7-15 14:48:14
+Rebel Without A Pause;Public Enemy;The Pitchfork 500;CD;1988;620;2009-6-6 20:28:32;50;258481;0;2009-7-15 14:48:14
+Night Of The Living Dead;The Misfits;The Pitchfork 500;LP;1996;699;2009-6-6 20:28:32;50;117890;0;2009-7-15 14:48:14
+Stars And Sons;Broken Social Scene;You Forgot It In People;CD;2002;48;2009-6-6 20:28:32;50;308963;0;2009-7-15 14:48:14
+To a Bond;Islands;Arm's Way;CD;2008;187;2009-6-6 20:28:32;50;467330;0;2009-7-15 14:48:14
+Untrust Us;Crystal Castles;Crystal Castles;LP;2008;73;2009-6-6 20:28:32;50;186435;0;2009-7-15 14:48:14
+Runaway;Yeah Yeah Yeahs;It's Blitz!;CD;2009;985;2009-6-6 20:28:32;50;313469;0;2009-7-15 14:48:14
+And I Was A Boy From School;Hot Chip;The Pitchfork 500;LP;2006;910;2009-6-6 20:28:32;50;319686;0;2009-7-15 14:48:14
+Angels;Black Mountain;In The Future;LP;2008;14;2009-6-6 20:28:32;50;187820;0;2009-7-15 14:48:14
+Intervention;The Arcade Fire;Neon Bible;LP;2007;385;2009-6-6 20:28:32;50;259000;0;2009-7-15 14:48:14
+Our Lips Are Sealed;Go-Go`s;The Pitchfork 500;CD;1990;523;2009-6-6 20:28:32;50;167079;0;2009-7-15 14:48:14
+Halber Mensch;Einstürzende Neubauten;The Pitchfork 500;LP;1985;582;2009-6-6 20:28:32;50;249129;0;2009-7-15 14:48:14
+New Partner;Palace Music;The Pitchfork 500;CD;1995;762;2009-6-6 20:28:32;50;234240;0;2009-7-15 14:48:14
+Gathering Storm / "Welcome To Barco Am/Pm..." / Cancer Towers On Holy Road Hi-Way;Godspeed You Black Emperor!;The Pitchfork 500;CD;2000;809;2009-6-6 20:28:32;50;1352489;0;2009-7-15 14:48:14
+Weird Fishes/Arpeggi;Radiohead;In Rainbows;CD;2007;322;2009-6-6 20:28:32;50;318223;0;2009-7-15 14:48:14
+Deep Water;Portishead;Third (Advance);LP;2008;300;2009-6-6 20:28:32;50;95268;0;2009-7-15 14:48:14
+An Eluardian Instance;Of Montreal;Skeletal Lamping;LP;2008;250;2009-6-6 20:28:32;50;275304;0;2009-7-15 14:48:14
+Cello Song;The Books featuring Jose Gonzalez;Dark Was The Night;LP;2009;465;2009-6-6 20:28:32;50;233822;0;2009-7-15 14:48:14
+Teenage Spaceship;Smog;The Pitchfork 500;LP;1999;776;2009-6-6 20:28:32;50;238733;0;2009-7-15 14:48:14
+Temptation 7" Mix;New Order;The Pitchfork 500;CD;2008;519;2009-6-6 20:28:32;50;326138;0;2009-7-15 14:48:14
+Battery;Metallica;The Pitchfork 500;CD;1986;578;2009-6-6 20:28:32;50;312737;0;2009-7-15 14:48:14
+Grace;Jeff Buckley;The Pitchfork 500;LP;1994;742;2009-6-6 20:28:32;50;322429;0;2009-7-15 14:48:14
+Ride the Sky;Lightning Bolt;The Pitchfork 500;LP;2001;847;2009-6-6 20:28:32;50;267859;0;2009-7-15 14:48:14
+Paper Thin Walls;Modest Mouse;The Moon And Antarctica;CD;2000;229;2009-6-6 20:28:32;50;181293;0;2009-7-15 14:48:14
+Green Gloves;The National;Boxer;CD;2007;397;2009-6-6 20:28:32;50;223520;0;2009-7-15 14:48:14
+C Is The Heavenly Option;Heavenly;The Pitchfork 500;CD;1992;687;2009-6-6 20:28:32;50;201795;0;2009-7-15 14:48:14
+The Power Is On;The Go! Team;The Pitchfork 500;CD;2004;898;2009-6-6 20:28:32;50;193933;0;2009-7-15 14:48:14
+Triphallus, to Punctuate!;Of Montreal;Skeletal Lamping;CD;2008;254;2009-6-6 20:28:32;50;202684;0;2009-7-15 14:48:14
+Headache;Frank Black;The Pitchfork 500;LP;1994;728;2009-6-6 20:28:32;50;172617;0;2009-7-15 14:48:14
+2+2=5 (The Lukewarm);Radiohead;Hail To The Thief;LP;2003;305;2009-6-6 20:28:32;50;199360;0;2009-7-15 14:48:14
+Service Bell;Grizzly Bear + Feist;Dark Was The Night;CD;2009;477;2009-6-6 20:28:32;50;143490;0;2009-7-15 14:48:14
+Fake Empire;The National;Boxer;CD;2007;393;2009-6-6 20:28:32;50;209066;0;2009-7-15 14:48:14
+(Nice Dream);Radiohead;The Bends;CD;1995;334;2009-6-6 20:28:32;50;233226;0;2009-7-15 14:48:14
+Stories Of The Street;Leonard Cohen;The Songs Of Leonard Cohen;CD;1968;216;2009-6-6 20:28:32;50;275693;0;2009-7-15 14:48:14
+Stuck Between Stations;The Hold Steady;The Pitchfork 500;CD;2006;902;2009-6-6 20:28:32;50;254171;0;2009-7-15 14:48:14
+Love At First Sight;Kylie Minogue;The Pitchfork 500;CD;2002;817;2009-6-6 20:28:32;50;239960;0;2009-7-15 14:48:14
+Anthems For A Seventeen-Year-Old Girl;Broken Social Scene;You Forgot It In People;CD;2002;52;2009-6-6 20:28:32;50;275712;0;2009-7-15 14:48:14
+4th Chamber (Feat. Ghostface K;GZA;The Pitchfork 500;LP;1995;724;2009-6-6 20:28:32;50;277080;0;2009-7-15 14:48:14
+Clap for the Killers;Street Sweeper;NINJA 2009 Tour Sampler;LP;2009;977;2009-6-6 20:28:32;50;237373;0;2009-7-15 14:48:14
+Out There On The Ice;Cut Copy;In Ghost Colours;CD;2008;90;2009-6-6 20:28:32;50;298448;0;2009-7-15 14:48:14
+One More Time / Aerodynamic / Aerodynamic Beats / Forget About the World;Daft Punk;Alive 2007;LP;2007;111;2009-6-6 20:28:32;50;555128;0;2009-7-15 14:48:14
+Poor Places;Wilco;The Pitchfork 500;LP;2002;839;2009-6-6 20:28:32;50;318119;0;2009-7-15 14:48:14
+When Doves Cry;Prince And The Revolution;The Pitchfork 500;LP;1984;564;2009-6-6 20:28:32;50;354168;0;2009-7-15 14:48:14
+I Was Young When I Left Home;Antony + Bryce Dessner;Dark Was The Night;CD;2009;473;2009-6-6 20:28:32;50;295262;0;2009-7-15 14:48:14
+Busy Doing Nothing;Love Is All;The Pitchfork 500;LP;2005;906;2009-6-6 20:28:32;50;205139;0;2009-7-15 14:48:14
+Dull Life;Yeah Yeah Yeahs;It's Blitz!;LP;2009;981;2009-6-6 20:28:32;50;248476;0;2009-7-15 14:48:14
+I'm On Fire;Bruce Springsteen;The Pitchfork 500;LP;1984;602;2009-6-6 20:28:32;50;161567;0;2009-7-15 14:48:14
+Rattled by the Rush;Pavement;The Pitchfork 500;LP;1995;766;2009-6-6 20:28:32;50;256600;0;2009-7-15 14:48:14
+(Antichrist Television Blues);The Arcade Fire;Neon Bible;LP;2007;389;2009-6-6 20:28:32;50;310280;0;2009-7-15 14:48:14
+Rippin Kittin (Original);Golden Boy With Miss Kittin;The Pitchfork 500;LP;2002;829;2009-6-6 20:28:32;50;293250;0;2009-7-15 14:48:14
+Lion in a Coma;Animal Collective;Merriweather Post Pavilion;LP;2009;10;2009-6-6 20:28:32;50;254302;0;2009-7-15 14:48:14
+America's Most Blunted (Featuring Lord Quas);Madvillain;The Pitchfork 500;CD;2004;892;2009-6-6 20:28:32;50;234109;0;2009-7-15 14:48:14
+Phantom Pains;Christine Fellows;Paper Anniversary;CD;2005;69;2009-6-6 20:28:32;50;180280;0;2009-7-15 14:48:14
+Me, Myself and I;De La Soul;The Pitchfork 500;LP;1989;645;2009-6-6 20:28:32;50;223320;0;2009-7-15 14:48:14
+Chip Away;Jane's Addiction;NINJA 2009 Tour Sampler;LP;2009;972;2009-6-6 20:28:32;50;156849;0;2009-7-15 14:48:14
+Welcome Home;Tegan And Sara;Under Feet Like Ours;LP;1999;369;2009-6-6 20:28:32;50;154462;0;2009-7-15 14:48:14
+She Sends Kisses;The Wrens;The Pitchfork 500;LP;2001;886;2009-6-6 20:28:32;50;355892;0;2009-7-15 14:48:14
+Like A Moterway;Saint Etienne;The Pitchfork 500;LP;2001;735;2009-6-6 20:28:32;50;221988;0;2009-7-15 14:48:14
+À L'orée Des Bois;Plants And Animals;Parc Avenue;CD;2007;287;2009-6-6 20:28:32;50;278778;0;2009-7-15 14:48:14
+So Long, Marianne;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;214;2009-6-6 20:28:32;50;338626;0;2009-7-15 14:48:14
+Say It Ain't So;Weezer;The Pitchfork 500;CD;1994;716;2009-6-6 20:28:32;50;258873;0;2009-7-15 14:48:14
+The Guns of Brixton;The Clash;The Pitchfork 500;LP;1979;800;2009-6-6 20:28:32;50;189753;0;2009-7-15 14:48:14
+Shelter from the Storm;Bob Dylan;Blood on the Tracks;LP;1975;31;2009-6-6 20:28:32;50;302497;0;2009-7-15 14:48:14
+This Angry Silence;Television Personalities;The Pitchfork 500;LP;1980;544;2009-6-6 20:28:32;50;159921;0;2009-7-15 14:48:14
+Tonight, Tonight;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;413;2009-6-6 20:28:32;50;254693;0;2009-7-15 14:48:14
+Jockey Full Of Bourbon;Tom Waits;The Pitchfork 500;LP;1985;601;2009-6-6 20:28:32;50;167235;0;2009-7-15 14:48:14
+Radio, Radio;Elvis Costello;The Pitchfork 500;LP;1978;926;2009-6-6 20:28:32;50;186174;0;2009-7-15 14:48:14
+Voices In Quartz;Cut Copy;In Ghost Colours;LP;2008;96;2009-6-6 20:28:32;50;81110;0;2009-7-15 14:48:14
+Ante Up Remix (Album Version) (feat Busta Rhymes, Tephlon And Remy Martin);M.O.P.;The Pitchfork 500;LP;2001;857;2009-6-6 20:28:32;50;248398;0;2009-7-15 14:48:14
+Song Song Song;Final Fantasy;He Poos Clouds;LP;2006;157;2009-6-6 20:28:32;50;271053;0;2009-7-15 14:48:14
+Like A Prayer;Madonna;The Pitchfork 500;CD;1989;651;2009-6-6 20:28:32;50;351608;0;2009-7-15 14:48:14
+Check The Rhime;A Tribe Called Quest;The Pitchfork 500;LP;1991;670;2009-6-6 20:28:32;50;216842;0;2009-7-15 14:48:14
+Take Me Out;Franz Ferdinand;The Pitchfork 500;CD;2004;882;2009-6-6 20:28:32;50;237087;0;2009-7-15 14:48:14
+Strangers In The Wind;Cut Copy;In Ghost Colours;CD;2008;100;2009-6-6 20:28:32;50;283846;0;2009-7-15 14:48:14
+Winterlong;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1990;283;2009-6-6 20:28:32;50;188666;0;2009-7-15 14:48:14
+Jump'n Shout;Basement Jaxx;The Pitchfork 500;LP;1999;796;2009-6-6 20:28:32;50;282488;0;2009-7-15 14:48:14
+Neighborhood #2 (Laika);The Arcade Fire;Funeral;CD;2004;373;2009-6-6 20:28:32;50;212000;0;2009-7-15 14:48:14
+Limit To Your Love;Feist;The Reminder;LP;2007;145;2009-6-6 20:28:32;50;261040;0;2009-7-15 14:48:14
+Cocaine Blues;Johnny Cash;At Folsom Prison;LP;1968;194;2009-6-6 20:28:32;50;181342;0;2009-7-15 14:48:14
+Chime;Orbital;The Pitchfork 500;CD;1991;658;2009-6-6 20:28:32;50;483343;0;2009-7-15 14:48:14
+Ever Fallen In Love?;The Buzzcocks;The Pitchfork 500;CD;1979;540;2009-6-6 20:28:32;50;161280;0;2009-7-15 14:48:14
+Mingusings;Of Montreal;Skeletal Lamping;LP;2008;259;2009-6-6 20:28:32;50;181080;0;2009-7-15 14:48:14
+You're Gonna Make Me Lonesome When You Go;Bob Dylan;Blood on the Tracks;LP;1975;27;2009-6-6 20:28:32;50;175804;0;2009-7-15 14:48:14
+Collect Call;Metric;Fantasies;CD;2009;503;2009-6-6 20:28:32;50;286197;0;2009-7-15 14:48:14
+The Boys Of Summer;Don Henley;The Pitchfork 500;LP;1984;605;2009-6-6 20:28:32;50;287529;0;2009-7-15 14:48:14
+Dream Baby Dream;Suicide;The Pitchfork 500;LP;1980;821;2009-6-6 20:28:32;50;384940;0;2009-7-15 14:48:14
+Hey Ya!;Outkast;The Pitchfork 500;CD;2003;861;2009-6-6 20:28:32;50;235284;0;2009-7-15 14:48:14
+Outdoor Miner;Wire;The Pitchfork 500;CD;1978;708;2009-6-6 20:28:32;50;104698;0;2009-7-15 14:48:14
+Holiday In Cambodia;Dead Kennedys;The Pitchfork 500;LP;1980;536;2009-6-6 20:28:32;50;277577;0;2009-7-15 14:48:14
+Tangled Up in Blue;Bob Dylan;Blood on the Tracks;CD;1975;23;2009-6-6 20:28:32;50;342674;0;2009-7-15 14:48:14
+Hey Ladies;The Beastie Boys;The Pitchfork 500;CD;1989;643;2009-6-6 20:28:32;50;227422;0;2009-7-15 14:48:14
+The Holiday Song;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1987;263;2009-6-6 20:28:32;50;135026;0;2009-7-15 14:48:14
+7/4 (Shoreline);Broken Social Scene;Broken Social Scene;CD;2005;35;2009-6-6 20:28:32;50;293840;0;2009-7-15 14:48:14
+8th Wonder;Sugarhill Gang;The Pitchfork 500;LP;1996;932;2009-6-6 20:28:32;50;447007;0;2009-7-15 14:48:14
+Candyfloss [Bonus];Wilco;Summerteeth;LP;1999;462;2009-6-6 20:28:32;50;177815;0;2009-7-15 14:48:14
+The Boy With The Perpetual Ner;The  Feelies;The Pitchfork 500;CD;1980;545;2009-6-6 20:28:32;50;309812;0;2009-7-15 14:48:14
+Honey Honey;Feist;The Reminder;CD;2007;149;2009-6-6 20:28:32;50;207146;0;2009-7-15 14:48:14
+Some Things Last A Long Time;Daniel Johnston;The Pitchfork 500;LP;2004;662;2009-6-6 20:28:32;50;294373;0;2009-7-15 14:48:14
+Help I'm Alive;Metric;Fantasies;CD;2009;499;2009-6-6 20:28:32;50;286302;0;2009-7-15 14:48:14
+Faust Arp;Radiohead;In Rainbows;LP;2007;324;2009-6-6 20:28:32;50;129724;0;2009-7-15 14:48:14
+The Legend Of John Henry's Hammer;Johnny Cash;At Folsom Prison;CD;1968;206;2009-6-6 20:28:32;50;428303;0;2009-7-15 14:48:14
+Tell Me What To Swallow;Crystal Castles;Crystal Castles;CD;2008;88;2009-6-6 20:28:32;50;136777;0;2009-7-15 14:48:14
+More For Me;Tegan And Sara;Under Feet Like Ours;CD;1999;364;2009-6-6 20:28:32;50;224548;0;2009-7-15 14:48:14
+An Ode To No One;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;409;2009-6-6 20:28:32;50;290951;0;2009-7-15 14:48:14
+Still Here;Girl Talk;Feed The Animals;CD;2008;968;2009-6-6 20:28:32;50;237165;0;2009-7-15 14:48:14
+My Darling;Wilco;Summerteeth;LP;1999;458;2009-6-6 20:28:32;50;218279;0;2009-7-15 14:48:14
+Teenage Kicks;The Undertones;The Pitchfork 500;LP;1979;922;2009-6-6 20:28:32;50;148244;0;2009-7-15 14:48:14
+Around The World / Harder, Better, Faster, Stronger;Daft Punk;Alive 2007;CD;2007;108;2009-6-6 20:28:32;50;327680;0;2009-7-15 14:48:14
+Problèmes d'Amour (Original);Alexander Robotnick;The Pitchfork 500;CD;1983;586;2009-6-6 20:28:32;50;420702;0;2009-7-15 14:48:14
+Between The Bars;Elliott Smith;The Pitchfork 500;LP;1997;773;2009-6-6 20:28:32;50;141244;0;2009-7-15 14:48:14
+Xtal;Aphex Twin;The Pitchfork 500;CD;1993;679;2009-6-6 20:28:32;50;294191;0;2009-7-15 14:48:14
+Hot on the Heels of Love;Throbbing Gristle;The Pitchfork 500;LP;1979;842;2009-6-6 20:28:32;50;263993;0;2009-7-15 14:48:14
+The Gloaming (Softly Open Our Mouths In The Cold);Radiohead;Hail To The Thief;CD;2003;312;2009-6-6 20:28:32;50;212026;0;2009-7-15 14:48:14
+This Lamb Sells Condos;Final Fantasy;He Poos Clouds;LP;2006;153;2009-6-6 20:28:32;50;279773;0;2009-7-15 14:48:14
+Joe Bean;Johnny Cash;At Folsom Prison;CD;1968;202;2009-6-6 20:28:32;50;145502;0;2009-7-15 14:48:14
+Pink Frost;The Chills;The Pitchfork 500;CD;1995;597;2009-6-6 20:28:32;50;237688;0;2009-7-15 14:48:14
+Summer Babe (Winter Version);Pavement;The Pitchfork 500;CD;1992;666;2009-6-6 20:28:32;50;196284;0;2009-7-15 14:48:14
+Pieholden Suite;Wilco;Summerteeth;CD;1999;454;2009-6-6 20:28:32;50;206445;0;2009-7-15 14:48:14
+Peach, Plum, Pear;Joanna Newsom;The Pitchfork 500;LP;2004;871;2009-6-6 20:28:32;50;214047;0;2009-7-15 14:48:14
+Party Fears Two;Associates;The Pitchfork 500;LP;2000;955;2009-6-6 20:28:32;50;314540;0;2009-7-15 14:48:14
+So Now...;Herbert;The Pitchfork 500;LP;1998;781;2009-6-6 20:28:32;50;341211;0;2009-7-15 14:48:14
+Heavy;Tegan And Sara;Under Feet Like Ours;CD;1999;368;2009-6-6 20:28:32;50;258168;0;2009-7-15 14:48:14
+Superconnected;Broken Social Scene;Broken Social Scene;LP;2005;43;2009-6-6 20:28:32;50;339760;0;2009-7-15 14:48:14
+Plateau;Meat Puppets;The Pitchfork 500;CD;1983;553;2009-6-6 20:28:32;50;142471;0;2009-7-15 14:48:14
+Good Time;Crystal Castles;Crystal Castles;CD;2008;80;2009-6-6 20:28:32;50;175568;0;2009-7-15 14:48:14
+Send A Picture Of Mother;Johnny Cash;At Folsom Prison;CD;1968;198;2009-6-6 20:28:32;50;130533;0;2009-7-15 14:48:14
+Gouge Away;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1989;271;2009-6-6 20:28:32;50;162546;0;2009-7-15 14:48:14
+Walkin' With Jesus;Spacemen 3;The Pitchfork 500;LP;1987;610;2009-6-6 20:28:32;50;306102;0;2009-7-15 14:48:14
+Sick Muse;Metric;Fantasies;CD;2009;507;2009-6-6 20:28:32;50;257541;0;2009-7-15 14:48:14
+random rules;Silver Jews;The Pitchfork 500;LP;1998;777;2009-6-6 20:28:32;50;238315;0;2009-7-15 14:48:14
+Boston;Vampire Weekend;Vampire Weekend;LP;2007;442;2009-6-6 20:28:32;50;160208;0;2009-7-15 14:48:14
+Common People;Pulp;The Pitchfork 500;LP;1995;720;2009-6-6 20:28:32;50;351608;0;2009-7-15 14:48:14
+Staring At The Sun;TV On The Radio;The Pitchfork 500;CD;2004;867;2009-6-6 20:28:32;50;207072;0;2009-7-15 14:48:14
+Parallel Lines;Vic Godard And The Subway Sect;The Pitchfork 500;LP;1999;549;2009-6-6 20:28:32;50;158589;0;2009-7-15 14:48:14
+Farewell And Goodnight;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;418;2009-6-6 20:28:32;50;263000;0;2009-7-15 14:48:14
+Closer;Nine Inch Nails;The Pitchfork 500;LP;1994;731;2009-6-6 20:28:32;50;373289;0;2009-7-15 14:48:14
+Magic Doors;Portishead;Third (Advance);LP;2008;303;2009-6-6 20:28:32;50;213968;0;2009-7-15 14:48:14
+The Park;Feist;The Reminder;LP;2007;141;2009-6-6 20:28:32;50;274573;0;2009-7-15 14:48:14
+Mykonos;Fleet Foxes;Sun Giant [EP];LP;2008;165;2009-6-6 20:28:32;50;275382;0;2009-7-15 14:48:14
+Love And Caring;Crystal Castles;Crystal Castles;CD;2008;84;2009-6-6 20:28:32;50;138971;0;2009-7-15 14:48:14
+Svefn-G-Englar;Sigur Rós;The Pitchfork 500;CD;2001;806;2009-6-6 20:28:32;50;604081;0;2009-7-15 14:48:14
+Street Spirit (Fade Out);Radiohead;The Bends;LP;1995;340;2009-6-6 20:28:32;50;252400;0;2009-7-15 14:48:14
+Teen Age Riot;Sonic Youth;The Pitchfork 500;LP;1988;614;2009-6-6 20:28:32;50;418403;0;2009-7-15 14:48:14
+Perfect Disguise;Modest Mouse;The Moon And Antarctica;CD;2000;222;2009-6-6 20:28:32;50;161440;0;2009-7-15 14:48:14
+Nuthin' but a "G" Thang;Dr. Dre;The Pitchfork 500;CD;1992;691;2009-6-6 20:28:32;50;238576;0;2009-7-15 14:48:14
+Tales Of A Scorched Earth;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;422;2009-6-6 20:28:32;50;225985;0;2009-7-15 14:48:14
+Robot Rock / Oh Yeah;Daft Punk;Alive 2007;CD;2007;104;2009-6-6 20:28:32;50;387918;0;2009-7-15 14:48:14
+Mansard Roof;Vampire Weekend;Vampire Weekend;LP;2007;438;2009-6-6 20:28:32;50;127869;0;2009-7-15 14:48:14
+Lesson No. 1 for Electric Guitar;Glenn Branca;The Pitchfork 500;LP;2004;943;2009-6-6 20:28:32;50;495960;0;2009-7-15 14:48:14
+Beyond Belief;Elvis Costello;The Pitchfork 500;LP;1982;947;2009-6-6 20:28:32;50;156029;0;2009-7-15 14:48:14
+Nylon Smile;Portishead;Third (Advance);LP;2008;296;2009-6-6 20:28:32;50;201639;0;2009-7-15 14:48:14
+I Feel Love [12" Version];Donna Summer;The Pitchfork 500;LP;1979;590;2009-6-6 20:28:32;50;496979;0;2009-7-15 14:48:14
+i can't live without my radio;LL Cool J;The Pitchfork 500;CD;1996;593;2009-6-6 20:28:32;50;328672;0;2009-7-15 14:48:14
+Where Is My Mind?;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1988;275;2009-6-6 20:28:32;50;229240;0;2009-7-15 14:48:14
+Wash Off;Deerhunter;pitchfork top 100 tracks of 2007;CD;2007;137;2009-6-6 20:28:32;50;346827;0;2009-7-15 14:48:14
+SpottieOttieDopaliscious;OutKast;The Pitchfork 500;LP;1998;788;2009-6-6 20:28:32;50;426971;0;2009-7-15 14:48:14
+New Slang;The Shins;The Pitchfork 500;CD;2001;849;2009-6-6 20:28:32;50;231235;0;2009-7-15 14:48:14
+The Arm;Islands;Arm's Way;LP;2008;178;2009-6-6 20:28:32;50;338703;0;2009-7-15 14:48:14
+Atlantic City;Bruce Springsteen;The Pitchfork 500;CD;1982;532;2009-6-6 20:28:32;50;240770;0;2009-7-15 14:48:14
+Evil Ways;Black Mountain;In The Future;LP;2008;19;2009-6-6 20:28:32;50;206210;0;2009-7-15 14:48:14
+One Of Us Cannot Be Wrong;Leonard Cohen;The Songs Of Leonard Cohen;CD;1968;218;2009-6-6 20:28:32;50;263773;0;2009-7-15 14:48:14
+Final Day;Young Marble Giants;The Pitchfork 500;CD;1980;951;2009-6-6 20:28:32;50;103732;0;2009-7-15 14:48:14
+Vamos;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1988;267;2009-6-6 20:28:32;50;258400;0;2009-7-15 14:48:14
+Paranoid Android;Radiohead;The Pitchfork 500;CD;1997;769;2009-6-6 20:28:32;50;383555;0;2009-7-15 14:48:14
+Windsurfing Nation;Broken Social Scene;Broken Social Scene;LP;2005;39;2009-6-6 20:28:32;50;275960;0;2009-7-15 14:48:14
+St. Rosa And The Swallows;The Thermals;The Body, The Blood, The Machine;LP;2006;434;2009-6-6 20:28:32;50;214935;0;2009-7-15 14:48:14
+I Might Need You To Kill;The Thermals;The Body, The Blood, The Machine;CD;2006;429;2009-6-6 20:28:32;50;147147;0;2009-7-15 14:48:14
+Such Great Heights;The Postal Service;The Pitchfork 500;CD;2002;878;2009-6-6 20:28:32;50;266396;0;2009-7-15 14:48:14
+the passenger;Iggy Pop;The Pitchfork 500;LP;1990;511;2009-6-6 20:28:32;50;284160;0;2009-7-15 14:48:14
+Nothing Compares 2 U;Sinead O'connor;The Pitchfork 500;LP;1990;655;2009-6-6 20:28:32;50;310831;0;2009-7-15 14:48:14
+The Giant Of Illinois;Andrew Bird;Dark Was The Night;CD;2009;491;2009-6-6 20:28:32;50;284551;0;2009-7-15 14:48:14
+This Magnificent Bird Will Rise;Deerhoof;The Pitchfork 500;CD;2002;854;2009-6-6 20:28:32;50;212662;0;2009-7-15 14:48:14
+Folsom Prison Blues;Johnny Cash;At Folsom Prison;LP;1968;190;2009-6-6 20:28:32;50;162011;0;2009-7-15 14:48:14
+Heartbeats;The Knife;The Pitchfork 500;LP;2004;832;2009-6-6 20:28:32;50;231862;0;2009-7-15 14:48:14
+Terminator;Metalheadz;The Pitchfork 500;LP;2000;684;2009-6-6 20:28:32;50;309263;0;2009-7-15 14:48:14
+Walcott;Vampire Weekend;Vampire Weekend;CD;2007;446;2009-6-6 20:28:32;50;228075;0;2009-7-15 14:48:14
+Tightrope;Yeasayer;Dark Was The Night;CD;2009;470;2009-6-6 20:28:32;50;198217;0;2009-7-15 14:48:14
+Bizarre Love Triangle;New Order;The Pitchfork 500;LP;1987;576;2009-6-6 20:28:32;50;404636;0;2009-7-15 14:48:14
+Throw;Paperclip People;The Pitchfork 500;CD;2008;737;2009-6-6 20:28:32;50;900675;0;2009-7-15 14:48:14
+Don't Stop;Girl Talk;Feed The Animals;LP;2008;958;2009-6-6 20:28:32;50;178259;0;2009-7-15 14:48:14
+Foreword;Christine Fellows;Paper Anniversary;CD;2005;59;2009-6-6 20:28:32;50;77200;0;2009-7-15 14:48:14
+One Chord Wonders;The Adverts;The Pitchfork 500;CD;1978;569;2009-6-6 20:28:32;50;169116;0;2009-7-15 14:48:14
+Suffer For Fashion;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;234;2009-6-6 20:28:32;50;178466;0;2009-7-15 14:48:14
+Here I dreamt I was an architect;The Decemberists;The Pitchfork 500;CD;2002;850;2009-6-6 20:28:32;50;269191;0;2009-7-15 14:48:14
+We Two;Christine Fellows;Paper Anniversary;CD;2005;68;2009-6-6 20:28:32;50;60506;0;2009-7-15 14:48:14
+Danger! High Voltage;Electric Six;The Pitchfork 500;CD;2003;828;2009-6-6 20:28:32;50;214674;0;2009-7-15 14:48:14
+Guest Room;The National;Boxer;CD;2007;401;2009-6-6 20:28:32;50;202986;0;2009-7-15 14:48:14
+Armagideon Time;Willie Williams;The Pitchfork 500;CD;1982;759;2009-6-6 20:28:32;50;309028;0;2009-7-15 14:48:14
+Computer World..2;Kraftwerk;The Pitchfork 500;LP;1981;939;2009-6-6 20:28:32;50;199157;0;2009-7-15 14:48:14
+Alone Down There;Modest Mouse;The Moon And Antarctica;CD;2000;226;2009-6-6 20:28:32;50;141866;0;2009-7-15 14:48:14
+My Girls;Animal Collective;Merriweather Post Pavilion;LP;2009;3;2009-6-6 20:28:32;50;342857;0;2009-7-15 14:48:14
+Bros;Panda Bear;The Pitchfork 500;CD;2007;915;2009-6-6 20:28:32;50;750341;0;2009-7-15 14:48:14
+Just Like Heaven;The Cure;The Pitchfork 500;CD;1987;626;2009-6-6 20:28:32;50;212976;0;2009-7-15 14:48:14
+Abominable Snow;Islands;Arm's Way;CD;2008;181;2009-6-6 20:28:32;50;275200;0;2009-7-15 14:48:14
+Dig For Fire;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1990;279;2009-6-6 20:28:32;50;182746;0;2009-7-15 14:48:14
+Instructions On How To Dissect A Ground Owl;Christine Fellows;Paper Anniversary;LP;2005;64;2009-6-6 20:28:32;50;193106;0;2009-7-15 14:48:14
+Emma's House;The Field Mice;The Pitchfork 500;LP;1998;630;2009-6-6 20:28:32;50;216894;0;2009-7-15 14:48:14
+Cast Off Crown;Deerhoof;Friend Opportunity;LP;2007;121;2009-6-6 20:28:32;50;167444;0;2009-7-15 14:48:14
+Bodysnatchers;Radiohead;In Rainbows;LP;2007;320;2009-6-6 20:28:32;50;242337;0;2009-7-15 14:48:14
+This Must Be The Place (Naive Melody);Talking Heads;The Pitchfork 500;CD;1984;565;2009-6-6 20:28:32;50;297273;0;2009-7-15 14:48:14
+Wicked Wisdom;Of Montreal;Skeletal Lamping;CD;2008;247;2009-6-6 20:28:32;50;300355;0;2009-7-15 14:48:14
+Whither The Invisible Birds?;Deerhoof;Friend Opportunity;LP;2007;120;2009-6-6 20:28:32;50;131213;0;2009-7-15 14:48:14
+Higher Than The Sun;Primal Scream;The Pitchfork 500;LP;1991;676;2009-6-6 20:28:32;50;218409;0;2009-7-15 14:48:14
+Born Slippy;Underworld;The Pitchfork 500;LP;2003;755;2009-6-6 20:28:32;50;696711;0;2009-7-15 14:48:14
+Jellybelly;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;405;2009-6-6 20:28:32;50;181368;0;2009-7-15 14:48:14
+Mushaboom;Feist;The Pitchfork 500;CD;2004;899;2009-6-6 20:28:32;50;224548;0;2009-7-15 14:48:14
+Psycho Killer;Talking Heads;The Pitchfork 500;LP;1977;516;2009-6-6 20:28:32;50;260702;0;2009-7-15 14:48:14
+Like This;Girl Talk;Feed The Animals;CD;2008;964;2009-6-6 20:28:32;50;201168;0;2009-7-15 14:48:14
+Bluish;Animal Collective;Merriweather Post Pavilion;CD;2009;7;2009-6-6 20:28:32;50;315637;0;2009-7-15 14:48:14
+Deacon Blues;Steely Dan;The Pitchfork 500;LP;1977;919;2009-6-6 20:28:32;50;457247;0;2009-7-15 14:48:14
+Sea Shanty;Plants And Animals;Parc Avenue;CD;2007;291;2009-6-6 20:28:32;50;319164;0;2009-7-15 14:48:14
+Words;Low;The Pitchfork 500;LP;1994;745;2009-6-6 20:28:32;50;350511;0;2009-7-15 14:48:14
+In The Backseat;The Arcade Fire;Funeral;LP;2004;381;2009-6-6 20:28:32;50;380213;0;2009-7-15 14:48:14
+Labyrinthian Pomp;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;243;2009-6-6 20:28:32;50;201266;0;2009-7-15 14:48:14
++81;Deerhoof;Friend Opportunity;LP;2007;116;2009-6-6 20:28:32;50;183875;0;2009-7-15 14:48:14
+Intro;Deerhunter;Microcastle;LP;2008;125;2009-6-6 20:28:32;50;81946;0;2009-7-15 14:48:14
+New Noise;Refused;The Pitchfork 500;CD;1998;802;2009-6-6 20:28:32;50;308271;0;2009-7-15 14:48:14
+Protect Ya Neck;Wu-Tang Clan;The Pitchfork 500;CD;1993;698;2009-6-6 20:28:32;50;291317;0;2009-7-15 14:48:14
+Shampoo Suicide;Broken Social Scene;You Forgot It In People;LP;2002;55;2009-6-6 20:28:32;50;245085;0;2009-7-15 14:48:14
+Jerk It;Thunderheist;Thunderheist;CD;2009;495;2009-6-6 20:28:32;50;231920;0;2009-7-15 14:48:14
+Don`t You Want Me;Human League;The Pitchfork 500;LP;1995;954;2009-6-6 20:28:32;50;238628;0;2009-7-15 14:48:14
+Fisherman;The Congos;The Pitchfork 500;LP;1977;749;2009-6-6 20:28:32;50;364721;0;2009-7-15 14:48:14
+Magic Spells;Crystal Castles;Crystal Castles;CD;2008;76;2009-6-6 20:28:32;50;366915;0;2009-7-15 14:48:14
+We're Just Friends;Wilco;Summerteeth;LP;1999;451;2009-6-6 20:28:32;50;164728;0;2009-7-15 14:48:14
+Leaf House;Animal Collective;The Pitchfork 500;LP;2004;875;2009-6-6 20:28:32;50;162716;0;2009-7-15 14:48:14
+A New England;Billy Bragg;The Pitchfork 500;CD;2003;577;2009-6-6 20:28:32;50;135941;0;2009-7-15 14:48:14
+cannonball;The Breeders;The Pitchfork 500;CD;1993;711;2009-6-6 20:28:32;50;213733;0;2009-7-15 14:48:14
+Merchandise;Fugazi;The Pitchfork 500;CD;1990;637;2009-6-6 20:28:32;50;179200;0;2009-7-15 14:48:14
+Gronlandic Edit;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;238;2009-6-6 20:28:32;50;204760;0;2009-7-15 14:48:14
+Hooch;The Melvins;The Pitchfork 500;CD;1993;702;2009-6-6 20:28:32;50;170866;0;2009-7-15 14:48:14
+Cry Me a River;Justin Timberlake;The Pitchfork 500;LP;2002;814;2009-6-6 20:28:32;50;290324;0;2009-7-15 14:48:14
+What You Know;T.I.;The Pitchfork 500;LP;2006;893;2009-6-6 20:28:32;50;274416;0;2009-7-15 14:48:14
+Tyrants;Black Mountain;In The Future;LP;2008;15;2009-6-6 20:28:32;50;482716;0;2009-7-15 14:48:14
+Start A War;The National;Boxer;CD;2007;400;2009-6-6 20:28:32;50;200453;0;2009-7-15 14:48:14
+The First Big Weekend;Arab Strap;The Pitchfork 500;CD;1996;763;2009-6-6 20:28:32;50;292780;0;2009-7-15 14:48:14
+Genius Of Love;Tom Tom Club;The Pitchfork 500;CD;1981;524;2009-6-6 20:28:32;50;334393;0;2009-7-15 14:48:14
+Clear Windowpane;Saint Vitus;The Pitchfork 500;CD;1986;581;2009-6-6 20:28:32;50;199235;0;2009-7-15 14:48:14
+We Carry On;Portishead;Third (Advance);LP;2008;299;2009-6-6 20:28:32;50;389825;0;2009-7-15 14:48:14
+Gallery Piece;Of Montreal;Skeletal Lamping;CD;2008;251;2009-6-6 20:28:32;50;228075;0;2009-7-15 14:48:14
+I Came As A Rat;Modest Mouse;The Moon And Antarctica;CD;2000;230;2009-6-6 20:28:32;50;228373;0;2009-7-15 14:48:14
+Just;Radiohead;The Bends;LP;1995;335;2009-6-6 20:28:32;50;234106;0;2009-7-15 14:48:14
+Microcastle;Deerhunter;Microcastle;CD;2008;129;2009-6-6 20:28:32;50;220133;0;2009-7-15 14:48:14
+Contort Yourself;James Chance;The Pitchfork 500;LP;2003;810;2009-6-6 20:28:32;50;263836;0;2009-7-15 14:48:14
+The Calendar Hung Itself...;Bright Eyes;The Pitchfork 500;CD;2000;838;2009-6-6 20:28:32;50;236094;0;2009-7-15 14:48:14
+I Know You Got Soul;Eric B. and Rakim;The Pitchfork 500;CD;1987;619;2009-6-6 20:28:32;50;289671;0;2009-7-15 14:48:14
+KC Accidental;Broken Social Scene;You Forgot It In People;CD;2002;47;2009-6-6 20:28:32;50;230781;0;2009-7-15 14:48:14
+We Swim;Islands;Arm's Way;LP;2008;186;2009-6-6 20:28:32;50;306834;0;2009-7-15 14:48:14
+Non-Entity;Nine Inch Nails;NINJA 2009 Tour Sampler;CD;2009;976;2009-6-6 20:28:32;50;243130;0;2009-7-15 14:48:14
+Postcards From italy;Beirut;The Pitchfork 500;CD;2006;903;2009-6-6 20:28:32;50;257515;0;2009-7-15 14:48:14
+City Sickness;Tindersticks;The Pitchfork 500;LP;1993;688;2009-6-6 20:28:32;50;240248;0;2009-7-15 14:48:14
+Black Wave / Bad Vibrations;The Arcade Fire;Neon Bible;LP;2007;386;2009-6-6 20:28:32;50;237506;0;2009-7-15 14:48:14
+Gentle Hour;Yo La Tengo;Dark Was The Night;CD;2009;487;2009-6-6 20:28:32;50;331128;0;2009-7-15 14:48:14
+Town Called Malice;The Jam;The Pitchfork 500;LP;1997;520;2009-6-6 20:28:32;50;174785;0;2009-7-15 14:48:14
+Train Song;Feist + Ben Gibbard;Dark Was The Night;CD;2009;466;2009-6-6 20:28:32;50;182543;0;2009-7-15 14:48:14
+Caribou;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1988;264;2009-6-6 20:28:32;50;194226;0;2009-7-15 14:48:14
+Push It;Salt-N-Pepa;The Pitchfork 500;LP;1987;642;2009-6-6 20:28:32;50;210337;0;2009-7-15 14:48:14
+In a Future Age;Wilco;Summerteeth;LP;1999;461;2009-6-6 20:28:32;50;177449;0;2009-7-15 14:48:14
+House Of Jealous Lovers;The Rapture;The Pitchfork 500;LP;2003;834;2009-6-6 20:28:32;50;307722;0;2009-7-15 14:48:14
+I Used to Love H.E.R.;Common;The Pitchfork 500;CD;1994;741;2009-6-6 20:28:32;50;278752;0;2009-7-15 14:48:14
+Pacific Theme;Broken Social Scene;You Forgot It In People;LP;2002;51;2009-6-6 20:28:32;50;309195;0;2009-7-15 14:48:14
+You Are The Blood;Sufjan Stevens;Dark Was The Night;LP;2009;478;2009-6-6 20:28:32;50;614269;0;2009-7-15 14:48:14
+Windowsill;The Arcade Fire;Neon Bible;CD;2007;390;2009-6-6 20:28:32;50;256400;0;2009-7-15 14:48:14
+Afterword;Christine Fellows;Paper Anniversary;CD;2005;72;2009-6-6 20:28:32;50;107720;0;2009-7-15 14:48:14
+Broke;Modest Mouse;The Pitchfork 500;CD;1999;727;2009-6-6 20:28:32;50;199366;0;2009-7-15 14:48:14
+Crown Of Love;The Arcade Fire;Funeral;CD;2004;377;2009-6-6 20:28:32;50;282333;0;2009-7-15 14:48:14
+Zero;Yeah Yeah Yeahs;It's Blitz!;LP;2009;980;2009-6-6 20:28:32;50;265874;0;2009-7-15 14:48:14
+Formed a Band;Art Brut;The Pitchfork 500;LP;2005;889;2009-6-6 20:28:32;50;178729;0;2009-7-15 14:48:14
+ON THE RADIO;Crash Crew;The Pitchfork 500;LP;1984;561;2009-6-6 20:28:32;50;343275;0;2009-7-15 14:48:14
+Winter Lady;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;211;2009-6-6 20:28:32;50;135960;0;2009-7-15 14:48:14
+Fight The Power;Public Enemy;The Pitchfork 500;CD;1990;646;2009-6-6 20:28:32;50;283924;0;2009-7-15 14:48:14
+He Poos Clouds;Final Fantasy;He Poos Clouds;CD;2006;152;2009-6-6 20:28:32;50;211840;0;2009-7-15 14:48:14
+Backdrifts (Honeymoon Is Over);Radiohead;Hail To The Thief;CD;2003;308;2009-6-6 20:28:32;50;322600;0;2009-7-15 14:48:14
+To Hell With Good Intentions;McLusky;The Pitchfork 500;CD;2001;846;2009-6-6 20:28:32;50;145632;0;2009-7-15 14:48:14
+Shook Ones Part 2 LP Version;Mobb Deep;The Pitchfork 500;LP;1995;723;2009-6-6 20:28:32;50;269165;0;2009-7-15 14:48:14
+Big Red Machine;Justin Vernon + Aaron Dessner;Dark Was The Night;LP;2009;474;2009-6-6 20:28:32;50;278857;0;2009-7-15 14:48:14
+Game of Pricks;Guided By Voices;The Pitchfork 500;CD;1995;767;2009-6-6 20:28:32;50;93361;0;2009-7-15 14:48:14
+No More Runnin;Animal Collective;Merriweather Post Pavilion;LP;2009;11;2009-6-6 20:28:32;50;265404;0;2009-7-15 14:48:14
+And I've Seen a Bloody Shadow;Of Montreal;Skeletal Lamping;LP;2008;255;2009-6-6 20:28:32;50;143647;0;2009-7-15 14:48:14
+Lights And Music;Cut Copy;In Ghost Colours;CD;2008;91;2009-6-6 20:28:32;50;277446;0;2009-7-15 14:48:14
+Hysteric;Yeah Yeah Yeahs;It's Blitz!;CD;2009;984;2009-6-6 20:28:32;50;232333;0;2009-7-15 14:48:14
+Grass;Animal Collective;The Pitchfork 500;CD;2005;911;2009-6-6 20:28:32;50;179617;0;2009-7-15 14:48:14
+The Real Slim shady;Eminem;The Pitchfork 500;LP;2000;820;2009-6-6 20:28:32;50;284551;0;2009-7-15 14:48:14
+Feel The Love;Cut Copy;In Ghost Colours;LP;2008;89;2009-6-6 20:28:32;50;267624;0;2009-7-15 14:48:14
+Nothing Ever Happened;Deerhunter;Microcastle;CD;2008;133;2009-6-6 20:28:32;50;350981;0;2009-7-15 14:48:14
+I Will Survive;Gloria Gaynor;The Pitchfork 500;LP;1978;623;2009-6-6 20:28:32;50;197093;0;2009-7-15 14:48:14
+Reckoner;Radiohead;In Rainbows;CD;2007;325;2009-6-6 20:28:32;50;290272;0;2009-7-15 14:48:14
+Young Folks;Peter Bjorn And John;The Pitchfork 500;CD;2006;908;2009-6-6 20:28:32;50;276323;0;2009-7-15 14:48:14
+Groove Is In The Heart (1990);Deee-Lite;The Pitchfork 500;LP;1990;652;2009-6-6 20:28:32;50;234161;0;2009-7-15 14:48:14
+A Roller Skating Jam Named ''Saturdays'';De La Soul;The Pitchfork 500;LP;1991;671;2009-6-6 20:28:32;50;242102;0;2009-7-15 14:48:14
+Crazy in Love;Beyoncé;The Pitchfork 500;CD;2003;864;2009-6-6 20:28:32;50;238471;0;2009-7-15 14:48:14
+Bang Bang (feat. Adam Levine);K'naan;Bang Bang - Single of the Week;CD;2009;971;2009-6-6 20:28:32;50;186533;0;2009-7-15 14:48:14
+Boys Don't Cry;The Cure;The Pitchfork 500;CD;1979;927;2009-6-6 20:28:32;50;154932;0;2009-7-15 14:48:14
+Une Annee Sans Lumiere;The Arcade Fire;Funeral;LP;2004;374;2009-6-6 20:28:32;50;220960;0;2009-7-15 14:48:14
+Tiny Cities Made of Ashes;Modest Mouse;The Moon And Antarctica;LP;2000;223;2009-6-6 20:28:32;50;221733;0;2009-7-15 14:48:14
+Can you feel it;Mr. Fingers;The Pitchfork 500;LP;1989;608;2009-6-6 20:28:32;50;356675;0;2009-7-15 14:48:14
+Car;Built To Spill;The Pitchfork 500;LP;2001;726;2009-6-6 20:28:32;50;178755;0;2009-7-15 14:48:14
+Feedback In The Field;Plants And Animals;Parc Avenue;CD;2007;286;2009-6-6 20:28:32;50;196388;0;2009-7-15 14:48:14
+Ibi Dreams Of Pavement (A Better Day);Broken Social Scene;Broken Social Scene;LP;2005;34;2009-6-6 20:28:32;50;267880;0;2009-7-15 14:48:14
+The Pooka Sings;Final Fantasy;He Poos Clouds;LP;2005;160;2009-6-6 20:28:32;50;325906;0;2009-7-15 14:48:14
+Flushed From The Bathroom Of Your Heart;Johnny Cash;At Folsom Prison;CD;1968;201;2009-6-6 20:28:32;50;137012;0;2009-7-15 14:48:14
+Squalor Victoria;The National;Boxer;LP;2007;396;2009-6-6 20:28:32;50;183360;0;2009-7-15 14:48:14
+Bodies;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;416;2009-6-6 20:28:32;50;252081;0;2009-7-15 14:48:14
+Longview;Green Day;The Pitchfork 500;LP;1994;715;2009-6-6 20:28:32;50;239046;0;2009-7-15 14:48:14
+Enjoy The Silence;Depeche Mode;The Pitchfork 500;CD;1990;659;2009-6-6 20:28:32;50;372871;0;2009-7-15 14:48:14
+When You Wake Up Feeling Old;Wilco;Summerteeth;LP;1999;459;2009-6-6 20:28:32;50;236199;0;2009-7-15 14:48:14
+I Hold The Sound;The Thermals;The Body, The Blood, The Machine;LP;2006;437;2009-6-6 20:28:32;50;278935;0;2009-7-15 14:48:14
+1 2 3 4;Feist;The Reminder;CD;2007;146;2009-6-6 20:28:32;50;183666;0;2009-7-15 14:48:14
+Totally Wired;The Fall;The Pitchfork 500;LP;2004;946;2009-6-6 20:28:32;50;205191;0;2009-7-15 14:48:14
+Ace Of Spades;Motörhead;The Pitchfork 500;LP;1980;541;2009-6-6 20:28:32;50;168855;0;2009-7-15 14:48:14
+Meet Me in the Morning;Bob Dylan;Blood on the Tracks;LP;1975;28;2009-6-6 20:28:32;50;262295;0;2009-7-15 14:48:14
+Fire Eye'd Boy;Broken Social Scene;Broken Social Scene;LP;2005;38;2009-6-6 20:28:32;50;238920;0;2009-7-15 14:48:14
+24 Track Loop;This Heat;The Pitchfork 500;LP;1979;770;2009-6-6 20:28:32;50;356127;0;2009-7-15 14:48:14
+Gimme Sympathy;Metric;Fantasies;CD;2009;504;2009-6-6 20:28:32;50;234501;0;2009-7-15 14:48:14
+This Is Hardcore;Pulp;The Pitchfork 500;CD;2006;797;2009-6-6 20:28:32;50;385044;0;2009-7-15 14:48:14
+Well-Alright;Spoon;Dark Was The Night;LP;2009;479;2009-6-6 20:28:32;50;165250;0;2009-7-15 14:48:14
+Flash Light;Parliament;The Pitchfork 500;CD;1977;644;2009-6-6 20:28:32;50;346618;0;2009-7-15 14:48:14
+there, there my dear;Dexy's Midnight Runners;The Pitchfork 500;CD;1998;950;2009-6-6 20:28:32;50;213159;0;2009-7-15 14:48:14
+Atomic;Blondie;The Pitchfork 500;CD;1984;929;2009-6-6 20:28:32;50;282253;0;2009-7-15 14:48:14
+Black Panther;Crystal Castles;Crystal Castles;LP;2008;87;2009-6-6 20:28:32;50;177214;0;2009-7-15 14:48:14
+Chase;Giorgio Moroder;The Pitchfork 500;CD;1978;600;2009-6-6 20:28:32;50;509884;0;2009-7-15 14:48:14
+How My Heart Behaves;Feist;The Reminder;LP;2007;150;2009-6-6 20:28:32;50;266600;0;2009-7-15 14:48:14
+Killing In The Name;Rage Against The Machine;The Pitchfork 500;CD;1992;707;2009-6-6 20:28:32;50;314253;0;2009-7-15 14:48:14
+Public Image;Public Image Ltd.;The Pitchfork 500;LP;1978;663;2009-6-6 20:28:32;50;181524;0;2009-7-15 14:48:14
+Here Comes The Summer;The Fiery Furnaces;The Pitchfork 500;LP;2005;883;2009-6-6 20:28:32;50;210050;0;2009-7-15 14:48:14
+How to Fight Loneliness;Wilco;Summerteeth;CD;1999;455;2009-6-6 20:28:32;50;232829;0;2009-7-15 14:48:14
+Dead Leaves And The Dirty Ground;The White Stripes;The Pitchfork 500;LP;2001;824;2009-6-6 20:28:32;50;184006;0;2009-7-15 14:48:14
+I Still Miss Someone;Johnny Cash;At Folsom Prison;CD;1968;193;2009-6-6 20:28:32;50;97724;0;2009-7-15 14:48:14
+Rise Above;Black Flag;The Pitchfork 500;CD;1981;537;2009-6-6 20:28:32;50;146599;0;2009-7-15 14:48:14
+Id Engager;Of Montreal;Skeletal Lamping;LP;2008;260;2009-6-6 20:28:32;50;205505;0;2009-7-15 14:48:14
+Radio Free Europe;R.E.M.;The Pitchfork 500;CD;1983;546;2009-6-6 20:28:32;50;245394;0;2009-7-15 14:48:14
+Holland, 1945;Neutral Milk Hotel;The Pitchfork 500;CD;1998;793;2009-6-6 20:28:32;50;192626;0;2009-7-15 14:48:14
+Cross Bones Style;Cat Power;The Pitchfork 500;LP;1998;774;2009-6-6 20:28:32;50;272248;0;2009-7-15 14:48:14
+Unforgettable Season;Cut Copy;In Ghost Colours;CD;2008;93;2009-6-6 20:28:32;50;193227;0;2009-7-15 14:48:14
+The Way That He Sings;My Morning Jacket;The Pitchfork 500;LP;2001;841;2009-6-6 20:28:32;50;335595;0;2009-7-15 14:48:14
+By Starlight;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;417;2009-6-6 20:28:32;50;288182;0;2009-7-15 14:48:14
+Simple Twist of Fate;Bob Dylan;Blood on the Tracks;LP;1975;24;2009-6-6 20:28:32;50;259213;0;2009-7-15 14:48:14
+Blindness;Metric;Fantasies;LP;2009;500;2009-6-6 20:28:32;50;266893;0;2009-7-15 14:48:14
+Starry Eyes;The Records;The Pitchfork 500;LP;1979;923;2009-6-6 20:28:32;50;269270;0;2009-7-15 14:48:14
+What It's All About;Girl Talk;Feed The Animals;LP;2008;967;2009-6-6 20:28:32;50;254772;0;2009-7-15 14:48:14
+Losing My Edge;LCD Soundsystem;The Pitchfork 500;CD;2004;833;2009-6-6 20:28:32;50;471693;0;2009-7-15 14:48:14
+Web In Front;Archers Of Loaf;The Pitchfork 500;CD;1994;667;2009-6-6 20:28:32;50;124734;0;2009-7-15 14:48:14
+Superstar;Tegan And Sara;Under Feet Like Ours;CD;1999;370;2009-6-6 20:28:32;50;230974;0;2009-7-15 14:48:14
+Optimo;Liquid Liquid;The Pitchfork 500;LP;1997;585;2009-6-6 20:28:32;50;160522;0;2009-7-15 14:48:14
+Planet Of Sound;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1991;282;2009-6-6 20:28:32;50;126546;0;2009-7-15 14:48:14
+Ascension Day;Talk Talk;The Pitchfork 500;CD;1991;680;2009-6-6 20:28:32;50;359810;0;2009-7-15 14:48:14
+All I Need;Radiohead;In Rainbows;LP;2007;323;2009-6-6 20:28:32;50;228806;0;2009-7-15 14:48:14
+We Suck Young Blood (Your Time Is Up);Radiohead;Hail To The Thief;CD;2003;311;2009-6-6 20:28:32;50;296706;0;2009-7-15 14:48:14
+Small;Portishead;Third (Advance);CD;2008;302;2009-6-6 20:28:32;50;409417;0;2009-7-15 14:48:14
+Capture The Flag;Broken Social Scene;You Forgot It In People;CD;2002;46;2009-6-6 20:28:32;50;129008;0;2009-7-15 14:48:14
+Courtship Date;Crystal Castles;Crystal Castles;LP;2008;79;2009-6-6 20:28:32;50;210494;0;2009-7-15 14:48:14
+One More Time;Daft Punk;The Pitchfork 500;CD;2001;807;2009-6-6 20:28:32;50;320862;0;2009-7-15 14:48:14
+Returning To The Fold;The Thermals;The Body, The Blood, The Machine;LP;2006;432;2009-6-6 20:28:32;50;159268;0;2009-7-15 14:48:14
+Wucan;Black Mountain;In The Future;CD;2008;16;2009-6-6 20:28:32;50;363023;0;2009-7-15 14:48:14
+Cape Cod Kwassa Kwassa;Vampire Weekend;Vampire Weekend;LP;2007;441;2009-6-6 20:28:32;50;217417;0;2009-7-15 14:48:14
+Good Times                    ;Chic;The Pitchfork 500;LP;1979;609;2009-6-6 20:28:32;50;489038;0;2009-7-15 14:48:14
+Help I'm Alive (Acoustic);Metric;Fantasies;LP;2009;508;2009-6-6 20:28:32;50;289018;0;2009-7-15 14:48:14
+I Will Dare;The Replacements;The Pitchfork 500;LP;1984;554;2009-6-6 20:28:32;50;198400;0;2009-7-15 14:48:14
+Hearts On Fire;Cut Copy;In Ghost Colours;LP;2008;97;2009-6-6 20:28:32;50;292623;0;2009-7-15 14:48:14
+(White Man) In Hammersmith Palais;The Clash;The Pitchfork 500;CD;2003;529;2009-6-6 20:28:32;50;241423;0;2009-7-15 14:48:14
+Me And Giuliani Down By The Schoolyard (A True Story);!!!;The Pitchfork 500;LP;2004;866;2009-6-6 20:28:32;50;542955;0;2009-7-15 14:48:14
+Teardrop;Massive Attack;The Pitchfork 500;LP;1998;785;2009-6-6 20:28:32;50;330788;0;2009-7-15 14:48:14
+Windowlicker;Aphex Twin;The Pitchfork 500;CD;1999;782;2009-6-6 20:28:32;50;366341;0;2009-7-15 14:48:14
+The Water;Feist;The Reminder;CD;2007;142;2009-6-6 20:28:32;50;286320;0;2009-7-15 14:48:14
+Knights;Crystal Castles;Crystal Castles;LP;2008;83;2009-6-6 20:28:32;50;193750;0;2009-7-15 14:48:14
+Cattle and Cane;The Go-Betweens;The Pitchfork 500;LP;2002;596;2009-6-6 20:28:32;50;260937;0;2009-7-15 14:48:14
+Hey;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1989;268;2009-6-6 20:28:32;50;210933;0;2009-7-15 14:48:14
+Kinky Afro;Happy Mondays;The Pitchfork 500;CD;1990;613;2009-6-6 20:28:32;50;239542;0;2009-7-15 14:48:14
+High And Dry;Radiohead;The Bends;LP;1995;331;2009-6-6 20:28:32;50;257533;0;2009-7-15 14:48:14
+La Rock 01;Vitalic;The Pitchfork 500;CD;2005;816;2009-6-6 20:28:32;50;326086;0;2009-7-15 14:48:14
+Tame;Pixies;Wave Of Mutilation: Best Of Pixies;CD;1989;274;2009-6-6 20:28:32;50;116386;0;2009-7-15 14:48:14
+I Got Stripes;Johnny Cash;At Folsom Prison;LP;1968;205;2009-6-6 20:28:32;50;117054;0;2009-7-15 14:48:14
+The Magnificient Seven;The Clash;The Pitchfork 500;LP;1980;933;2009-6-6 20:28:32;50;333322;0;2009-7-15 14:48:14
+I'm Afraid Of Japan;Final Fantasy;He Poos Clouds;CD;2006;156;2009-6-6 20:28:32;50;236840;0;2009-7-15 14:48:14
+A Sight to Behold;Devendra Banhart;The Pitchfork 500;CD;2004;870;2009-6-6 20:28:32;50;146494;0;2009-7-15 14:48:14
+Stumbleine;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;421;2009-6-6 20:28:32;50;174471;0;2009-7-15 14:48:14
+Disorder;Joy Division;The Pitchfork 500;LP;1979;719;2009-6-6 20:28:32;50;211591;0;2009-7-15 14:48:14
+This Charming Man;The Smiths;The Pitchfork 500;CD;1984;550;2009-6-6 20:28:32;50;162951;0;2009-7-15 14:48:14
+Visions;Cut Copy;In Ghost Colours;LP;2008;101;2009-6-6 20:28:32;50;69511;0;2009-7-15 14:48:14
+Test Pattern;The Thermals;The Body, The Blood, The Machine;LP;2006;433;2009-6-6 20:28:32;50;207882;0;2009-7-15 14:48:14
+Holiday;Madonna;The Pitchfork 500;CD;1983;589;2009-6-6 20:28:32;50;245786;0;2009-7-15 14:48:14
+Allison;Pixies;Wave Of Mutilation: Best Of Pixies;LP;1990;278;2009-6-6 20:28:32;50;77666;0;2009-7-15 14:48:14
+Don't Stop Till You Get Enough;Michael Jackson;The Pitchfork 500;LP;2001;633;2009-6-6 20:28:32;50;366315;0;2009-7-15 14:48:14
+Mongoloid;Devo;The Pitchfork 500;LP;1978;852;2009-6-6 20:28:32;50;224522;0;2009-7-15 14:48:14
+Sour Times;Portishead;The Pitchfork 500;LP;1994;734;2009-6-6 20:28:32;50;254066;0;2009-7-15 14:48:14
+Handjobs For The Holidays;Broken Social Scene;Broken Social Scene;CD;2005;42;2009-6-6 20:28:32;50;279333;0;2009-7-15 14:48:14
+Needle In The Hay;Elliott Smith;The Pitchfork 500;CD;1995;760;2009-6-6 20:28:32;50;256888;0;2009-7-15 14:48:14
+Takeover;Jay-Z;The Pitchfork 500;CD;2001;860;2009-6-6 20:28:32;50;313182;0;2009-7-15 14:48:14
+Little Fluffy Clouds;The Orb;The Pitchfork 500;LP;1991;656;2009-6-6 20:28:32;50;267075;0;2009-7-15 14:48:14
+Hunter;Portishead;Third (Advance);CD;2008;295;2009-6-6 20:28:32;50;240770;0;2009-7-15 14:48:14
+Paper Planes;M.I.A.;Kala;LP;2007;219;2009-6-6 20:28:32;50;205244;0;2009-7-15 14:48:14
+Trans-Europe Express;Kraftwerk;The Pitchfork 500;CD;1977;513;2009-6-6 20:28:32;50;412447;0;2009-7-15 14:48:14
+My Heartbeat;Annie;The Pitchfork 500;LP;2004;879;2009-6-6 20:28:32;50;188421;0;2009-7-15 14:48:14
+Arch Carrier;Autechre;The Pitchfork 500;CD;1998;778;2009-6-6 20:28:32;50;409443;0;2009-7-15 14:48:14
+The Message;Grandmaster Flash;The Pitchfork 500;LP;2007;942;2009-6-6 20:28:32;50;192496;0;2009-7-15 14:48:14
+Street Hassle;Lou Reed;The Pitchfork 500;CD;1978;512;2009-6-6 20:28:32;50;660871;0;2009-7-15 14:48:14
+It Was A Good Day;Ice Cube;The Pitchfork 500;LP;2001;692;2009-6-6 20:28:32;50;260101;0;2009-7-15 14:48:14
+Waitin' For A Superman;The Flaming Lips;The Pitchfork 500;LP;1999;789;2009-6-6 20:28:32;50;257488;0;2009-7-15 14:48:14
+Wild Wind;Black Mountain;In The Future;CD;2008;20;2009-6-6 20:28:32;50;102556;0;2009-7-15 14:48:14
+Life In Jail;Islands;Arm's Way;LP;2008;184;2009-6-6 20:28:32;50;327026;0;2009-7-15 14:48:14
+Don't Stop Believin';Journey;The Pitchfork 500;LP;1988;533;2009-6-6 20:28:32;50;250827;0;2009-7-15 14:48:14
+I Am A Scientist;Guided By Voices;The Pitchfork 500;CD;1994;730;2009-6-6 20:28:32;50;144431;0;2009-7-15 14:48:14
+Hype;Tegan And Sara;Under Feet Like Ours;CD;1999;365;2009-6-6 20:28:32;50;185025;0;2009-7-15 14:48:14
+So Sorry;Feist;The Reminder;CD;2007;138;2009-6-6 20:28:32;50;192560;0;2009-7-15 14:48:14
+A Punch Up At A Wedding (No No No No No No No No);Radiohead;Hail To The Thief;CD;2003;315;2009-6-6 20:28:32;50;297333;0;2009-7-15 14:48:14
+Sink The Seine;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;235;2009-6-6 20:28:32;50;64173;0;2009-7-15 14:48:14
+Twist The Knife (Slowly);Napalm Death;The Pitchfork 500;LP;1994;748;2009-6-6 20:28:32;50;173583;0;2009-7-15 14:48:14
+Obstacle 1;Interpol;The Pitchfork 500;LP;2002;827;2009-6-6 20:28:32;50;251376;0;2009-7-15 14:48:14
+El Scorcho;Weezer;The Pitchfork 500;LP;1996;768;2009-6-6 20:28:32;50;245707;0;2009-7-15 14:48:14
+Da Funk / Daftendirekt;Daft Punk;Alive 2007;CD;2007;113;2009-6-6 20:28:32;50;392202;0;2009-7-15 14:48:14
+Good Morning, Captain;Slint;The Pitchfork 500;LP;1992;681;2009-6-6 20:28:32;50;459415;0;2009-7-15 14:48:14
+We Only Come Out At Night;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;425;2009-6-6 20:28:32;50;245368;0;2009-7-15 14:48:14
+That's The Joint;Funky 4 + 1;The Pitchfork 500;CD;1999;938;2009-6-6 20:28:32;50;563095;0;2009-7-15 14:48:14
+Birthday;The Sugarcubes;The Pitchfork 500;LP;1988;625;2009-6-6 20:28:32;50;238706;0;2009-7-15 14:48:14
+Believe E.S.P.;Deerhoof;Friend Opportunity;LP;2007;117;2009-6-6 20:28:32;50;187533;0;2009-7-15 14:48:14
+There She Goes;The La's;The Pitchfork 500;LP;1990;634;2009-6-6 20:28:32;50;162246;0;2009-7-15 14:48:14
+Vertigo (If it's a Crime);Islands;Arm's Way;CD;2008;189;2009-6-6 20:28:32;50;661890;0;2009-7-15 14:48:14
+Bullet Proof...I Wish I Was;Radiohead;The Bends;CD;1995;337;2009-6-6 20:28:32;50;208733;0;2009-7-15 14:48:14
+Kidz Are So Small;Deerhoof;Friend Opportunity;CD;2007;122;2009-6-6 20:28:32;50;119614;0;2009-7-15 14:48:14
+Lorelei;Cocteau Twins;The Pitchfork 500;LP;1984;575;2009-6-6 20:28:32;50;221753;0;2009-7-15 14:48:14
+Wake Up;The Arcade Fire;Funeral;CD;2004;378;2009-6-6 20:28:32;50;335333;0;2009-7-15 14:48:14
+Mercy;Plants And Animals;Parc Avenue;CD;2007;290;2009-6-6 20:28:32;50;323578;0;2009-7-15 14:48:14
+Pitter Patter Goes My Heart;Broken Social Scene;You Forgot It In People;CD;2002;58;2009-6-6 20:28:32;50;144148;0;2009-7-15 14:48:14
+15 Step;Radiohead;In Rainbows;CD;2007;319;2009-6-6 20:28:32;50;237348;0;2009-7-15 14:48:14
+A Shot in the Arm;Wilco;Summerteeth;CD;1999;450;2009-6-6 20:28:32;50;259813;0;2009-7-15 14:48:14
+Face Down. Feet First.;Christine Fellows;Paper Anniversary;CD;2005;63;2009-6-6 20:28:32;50;175960;0;2009-7-15 14:48:14
+Nag Nag Nag;Cabaret Voltaire;The Pitchfork 500;LP;2002;831;2009-6-6 20:28:32;50;277942;0;2009-7-15 14:48:14
+Mr. Blue Sky;Electric Light Orchestra;The Pitchfork 500;CD;2000;920;2009-6-6 20:28:32;50;307487;0;2009-7-15 14:48:14
+For Our Elegant Caste;Of Montreal;Skeletal Lamping;LP;2008;248;2009-6-6 20:28:32;50;154853;0;2009-7-15 14:48:14
+Setting Sun;The Chemical Brothers;The Pitchfork 500;CD;2003;756;2009-6-6 20:28:32;50;241240;0;2009-7-15 14:48:14
+My Favourite Dress;Wedding Present;The Pitchfork 500;LP;1988;629;2009-6-6 20:28:32;50;254563;0;2009-7-15 14:48:14
+Silence;Portishead;Third (Advance);LP;2008;294;2009-6-6 20:28:32;50;302811;0;2009-7-15 14:48:14
+Agoraphobia;Deerhunter;Microcastle;LP;2008;126;2009-6-6 20:28:32;50;202710;0;2009-7-15 14:48:14
+Give Me A Beat;Girl Talk;Feed The Animals;LP;2008;963;2009-6-6 20:28:32;50;252290;0;2009-7-15 14:48:14
+Rock 'n' Roll Nigger;Patti Smith;The Pitchfork 500;LP;1978;517;2009-6-6 20:28:32;50;203415;0;2009-7-15 14:48:14
+Damaged Goods;Gang Of Four;The Pitchfork 500;LP;1979;673;2009-6-6 20:28:32;50;207281;0;2009-7-15 14:48:14
+Angel of Death;Slayer;The Pitchfork 500;LP;1986;580;2009-6-6 20:28:32;50;291840;0;2009-7-15 14:48:14
+I'll Believe In Anything;Wolf Parade;The Pitchfork 500;LP;2005;900;2009-6-6 20:28:32;50;276741;0;2009-7-15 14:48:14
+Black Mirror;The Arcade Fire;Neon Bible;LP;2007;382;2009-6-6 20:28:32;50;253373;0;2009-7-15 14:48:14
+Late Night Bedroom Rock For The Missionaries;Broken Social Scene;You Forgot It In People;LP;2002;54;2009-6-6 20:28:32;50;226950;0;2009-7-15 14:48:14
+Waiting Room;Fugazi;The Pitchfork 500;LP;1987;618;2009-6-6 20:28:32;50;174915;0;2009-7-15 14:48:14
+She's A Rejector;Of Montreal;Hissing Fauna, Are You The Destroyer?;CD;2006;244;2009-6-6 20:28:32;50;242946;0;2009-7-15 14:48:14
+Touch It / Technologic;Daft Punk;Alive 2007;LP;2007;105;2009-6-6 20:28:32;50;329769;0;2009-7-15 14:48:14
+Another Saturday;Stuart Murdoch;Dark Was The Night;LP;2009;488;2009-6-6 20:28:32;50;175464;0;2009-7-15 14:48:14
+Come On;Tegan And Sara;Under Feet Like Ours;CD;1999;361;2009-6-6 20:28:32;50;245577;0;2009-7-15 14:48:14
+Bastards Of Young;The Replacements;The Pitchfork 500;CD;1985;570;2009-6-6 20:28:32;50;218122;0;2009-7-15 14:48:14
+Super Shine;Boredoms;The Pitchfork 500;CD;1998;803;2009-6-6 20:28:32;50;765518;0;2009-7-15 14:48:14
+Fake Plastic Trees;Radiohead;The Bends;CD;1995;332;2009-6-6 20:28:32;50;290706;0;2009-7-15 14:48:14
+A Sentence Of Sorts In Kongsvinger;Of Montreal;Hissing Fauna, Are You The Destroyer?;LP;2006;239;2009-6-6 20:28:32;50;296426;0;2009-7-15 14:48:14
+Also Frightened;Animal Collective;Merriweather Post Pavilion;CD;2009;4;2009-6-6 20:28:32;50;316133;0;2009-7-15 14:48:14
+I Got 5 On It;Luniz;The Pitchfork 500;CD;1995;752;2009-6-6 20:28:32;50;253570;0;2009-7-15 14:48:14
+Double Takes;Christine Fellows;Paper Anniversary;LP;2005;67;2009-6-6 20:28:32;50;211800;0;2009-7-15 14:48:14
+Bryn;Vampire Weekend;Vampire Weekend;LP;2007;445;2009-6-6 20:28:32;50;131631;0;2009-7-15 14:48:14
+The Long Black Veil;Johnny Cash;At Folsom Prison;LP;1968;197;2009-6-6 20:28:32;50;237635;0;2009-7-15 14:48:14
+Play Your Part (Pt. 2);Girl Talk;Feed The Animals;LP;2008;957;2009-6-6 20:28:32;50;205270;0;2009-7-15 14:48:14
+Wuthering Heights;Kate Bush;The Pitchfork 500;LP;1978;894;2009-6-6 20:28:32;50;270080;0;2009-7-15 14:48:14
+English House;Fleet Foxes;Sun Giant [EP];LP;2008;164;2009-6-6 20:28:32;50;281286;0;2009-7-15 14:48:14
+Lua;Conor Oberst + Gillian Welch;Dark Was The Night;LP;2009;492;2009-6-6 20:28:32;50;353515;0;2009-7-15 14:48:14
+Cause=Time;Broken Social Scene;The Pitchfork 500;CD;2004;853;2009-6-6 20:28:32;50;369528;0;2009-7-15 14:48:14
+Mouth Breather;The Jesus Lizard;The Pitchfork 500;LP;2000;638;2009-6-6 20:28:32;50;136019;0;2009-7-15 14:48:14
+Looking From A Hilltop (Restructure);Section 25;The Pitchfork 500;CD;1984;588;2009-6-6 20:28:32;50;278778;0;2009-7-15 14:48:14
+My Iron Lung;Radiohead;The Bends;LP;1995;336;2009-6-6 20:28:32;50;276426;0;2009-7-15 14:48:14
+Dirty Mind;Prince;The Pitchfork 500;LP;1980;525;2009-6-6 20:28:32;50;254928;0;2009-7-15 14:48:14
+Apartment Story;The National;Boxer;CD;2007;399;2009-6-6 20:28:32;50;216560;0;2009-7-15 14:48:14
+Stutter;Elastica;The Pitchfork 500;CD;1995;697;2009-6-6 20:28:32;50;142184;0;2009-7-15 14:48:14
+Women's Studies Victims;Of Montreal;Skeletal Lamping;CD;2008;252;2009-6-6 20:28:32;50;179487;0;2009-7-15 14:48:14
+Surrender;Cheap Trick;The Pitchfork 500;CD;1979;924;2009-6-6 20:28:32;50;277524;0;2009-7-15 14:48:14
+Sleepless;The Decemberists;Dark Was The Night;CD;2009;475;2009-6-6 20:28:32;50;473600;0;2009-7-15 14:48:14
+Master Song;Leonard Cohen;The Songs Of Leonard Cohen;LP;1968;210;2009-6-6 20:28:32;50;355106;0;2009-7-15 14:48:14
+Crimewave (Crystal Castles VS Health);Crystal Castles;Crystal Castles;CD;2008;75;2009-6-6 20:28:32;50;258507;0;2009-7-15 14:48:14
+Lives;Modest Mouse;The Moon And Antarctica;LP;2000;231;2009-6-6 20:28:32;50;198693;0;2009-7-15 14:48:14
+This Is How We Walk On The Moon;Arthur Russell;The Pitchfork 500;CD;1994;744;2009-6-6 20:28:32;50;283036;0;2009-7-15 14:48:14
+It Ain't Hard To Tell;Nas;The Pitchfork 500;LP;1994;722;2009-6-6 20:28:32;50;202396;0;2009-7-15 14:48:14
+Calvary Scars;Deerhunter;Microcastle;LP;2008;130;2009-6-6 20:28:32;50;97071;0;2009-7-15 14:48:14
+Ocean Of Noise;The Arcade Fire;Neon Bible;CD;2007;387;2009-6-6 20:28:32;50;293520;0;2009-7-15 14:48:14
+Since I Left You;The Avalanches;The Pitchfork 500;LP;2000;811;2009-6-6 20:28:32;50;261067;0;2009-7-15 14:48:14
+Brothersport;Animal Collective;Merriweather Post Pavilion;CD;2009;12;2009-6-6 20:28:32;50;359079;0;2009-7-15 14:48:14
+Whores;Jane's Addiction;NINJA 2009 Tour Sampler;LP;2009;975;2009-6-6 20:28:32;50;224516;0;2009-7-15 14:48:14
+Suspiria (Main Title);Goblin;The Pitchfork 500;CD;1995;904;2009-6-6 20:28:32;50;355343;0;2009-7-15 14:48:14
+South Bronx;Boogie Down Productions;The Pitchfork 500;LP;1987;562;2009-6-6 20:28:32;50;311405;0;2009-7-15 14:48:14
+To Forgive;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;LP;1995;412;2009-6-6 20:28:32;50;256731;0;2009-7-15 14:48:14
+Welcome To The Jungle;Guns N' Roses;The Pitchfork 500;LP;1987;647;2009-6-6 20:28:32;50;273658;0;2009-7-15 14:48:14
+With A Girl Like You;David Sitek;Dark Was The Night;CD;2009;484;2009-6-6 20:28:32;50;206759;0;2009-7-15 14:48:14
+Running Up That Hill (A Deal W;Kate Bush;The Pitchfork 500;CD;1985;566;2009-6-6 20:28:32;50;300669;0;2009-7-15 14:48:14
+Oh Bondage! Up Yours!;X-Ray Spex;The Pitchfork 500;CD;1978;559;2009-6-6 20:28:32;50;171258;0;2009-7-15 14:48:14
+In the Rushes;Islands;Arm's Way;CD;2008;185;2009-6-6 20:28:32;50;420519;0;2009-7-15 14:48:14
+The Stars Are Projectors;Modest Mouse;The Moon And Antarctica;LP;2000;227;2009-6-6 20:28:32;50;526600;0;2009-7-15 14:48:14
+Roast Fish And Cornbread;Lee Perry;The Pitchfork 500;CD;2008;740;2009-6-6 20:28:32;50;218462;0;2009-7-15 14:48:14
+The Arctic Circle;Final Fantasy;He Poos Clouds;LP;2006;151;2009-6-6 20:28:32;50;264120;0;2009-7-15 14:48:14
+Guys Eyes;Animal Collective;Merriweather Post Pavilion;CD;2009;8;2009-6-6 20:28:32;50;272718;0;2009-7-15 14:48:14
+Prayer to God;Shellac;The Pitchfork 500;LP;2000;845;2009-6-6 20:28:32;50;170684;0;2009-7-15 14:48:14
+Dragon Queen;Yeah Yeah Yeahs;It's Blitz!;LP;2009;983;2009-6-6 20:28:32;50;242155;0;2009-7-15 14:48:14
+No Cars Go;The Arcade Fire;Neon Bible;CD;2007;391;2009-6-6 20:28:32;50;343626;0;2009-7-15 14:48:14
+Paper Anniversary (Reprise);Christine Fellows;Paper Anniversary;CD;2005;71;2009-6-6 20:28:32;50;70706;0;2009-7-15 14:48:14
+B.O.B.;Outkast;The Pitchfork 500;CD;2000;819;2009-6-6 20:28:32;50;304300;0;2009-7-15 14:48:14
+Plastic;Portishead;Third (Advance);LP;2008;298;2009-6-6 20:28:32;50;212610;0;2009-7-15 14:48:14
+Saved By Old Times;Deerhunter;Microcastle;LP;2008;134;2009-6-6 20:28:32;50;230295;0;2009-7-15 14:48:14
+Highway to Hell;AC/DC;The Pitchfork 500;CD;1979;916;2009-6-6 20:28:32;50;208483;0;2009-7-15 14:48:14
+Brackett, WI;Bon Iver;Dark Was The Night;CD;2009;467;2009-6-6 20:28:32;50;242991;0;2009-7-15 14:48:14
+Sail To The Moon (Brush The Cobwebs Of The Sky);Radiohead;Hail To The Thief;LP;2003;307;2009-6-6 20:28:32;50;258360;0;2009-7-15 14:48:14
+Brandy Alexander;Feist;The Reminder;LP;2007;147;2009-6-6 20:28:32;50;216080;0;2009-7-15 14:48:14
+Muzzle;The Smashing Pumpkins;Mellon Collie And The Infinite Sadness;CD;1995;408;2009-6-6 20:28:32;50;224078;0;2009-7-15 14:48:14
+Brainy;The National;Boxer;CD;2007;395;2009-6-6 20:28:32;50;202146;0;2009-7-15 14:48:14
+Looks Just Like The Sun;Broken Social Scene;You Forgot It In People;CD;2002;50;2009-6-6 20:28:32;50;263103;0;2009-7-15 14:48:14
+Cone Toaster;Black Dice;The Pitchfork 500;LP;2003;912;2009-6-6 20:28:32;50;537678;0;2009-7-15 14:48:14
+The Chauffeur;Duran Duran;The Pitchfork 500;LP;1982;521;2009-6-6 20:28:32;50;310386;0;2009-7-15 14:48:14
+New Jersey;RED HOUSE PAINTERS;The Pitchfork 500;CD;1993;685;2009-6-6 20:28:32;50;238706;0;2009-7-15 14:48:14
+Farewell;Boris;The Pitchfork 500;CD;2006;890;2009-6-6 20:28:32;50;453459;0;2009-7-15 14:48:14
+Heads Will Roll;Yeah Yeah Yeahs;It's Blitz!;LP;2009;979;2009-6-6 20:28:32;50;222197;0;2009-7-15 14:48:14
+Bad;U2;The Pitchfork 500;LP;1998;604;2009-6-6 20:28:32;50;351477;0;2009-7-15 14:48:14
+Gamera;Tortoise;The Pitchfork 500;LP;2006;764;2009-6-6 20:28:32;50;713795;0;2009-7-15 14:48:14
+Relax (Come Fighting);Frankie Goes to Hollywood;The Pitchfork 500;CD;1990;584;2009-6-6 20:28:32;50;236303;0;2009-7-15 14:48:14
+Good Times Roll Pt. 2;RJD2;The Pitchfork 500;LP;2002;837;2009-6-6 20:28:32;50;297273;0;2009-7-15 14:48:14
+Videotape;Radiohead;In Rainbows;CD;2007;328;2009-6-6 20:28:32;50;279666;0;2009-7-15 14:48:14
+Plastis Wafers;Of Montreal;Skeletal Lamping;LP;2008;256;2009-6-6 20:28:32;50;431647;0;2009-7-15 14:48:14
+Burnin' / Too Long;Daft Punk;Alive 2007;LP;2007;109;2009-6-6 20:28:32;50;429635;0;2009-7-15 14:48:14
+Feeling Good;My Brightest Diamond;Dark Was The Night;CD;2009;471;2009-6-6 20:28:32;50;233586;0;2009-7-15 14:48:14
+We Fight For Diamonds;Cut Copy;In Ghost Colours;LP;2008;92;2009-6-6 20:28:32;50;62066;0;2009-7-15 14:48:14
+Gospel;The National;Boxer;LP;2007;404;2009-6-6 20:28:32;50;269186;0;2009-7-15 14:48:14

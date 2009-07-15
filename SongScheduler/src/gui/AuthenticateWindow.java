@@ -18,12 +18,14 @@ import model.Authentication;
  * @author jordan
  */
 public class AuthenticateWindow extends javax.swing.JFrame {
+    private SongSchedulerWindow parent;
 
     /**
      * Constructor
      */
-    public AuthenticateWindow() {
+    public AuthenticateWindow(SongSchedulerWindow parent) {
         initComponents();
+        this.parent = parent;
     }
 
     /** This method is called from within the constructor to
@@ -125,7 +127,7 @@ public class AuthenticateWindow extends javax.swing.JFrame {
         else
         {
             //make a new holdings file window
-            HoldingsFilesWindow holdingsFileManager = new HoldingsFilesWindow();
+            HoldingsFilesWindow holdingsFileManager = new HoldingsFilesWindow(parent);
             holdingsFileManager.setVisible(true);
             //unauthenticate the user so that the nebxt time someone tries to open the window they will need to authenticate themselves
             Authentication.deAuthenticate();

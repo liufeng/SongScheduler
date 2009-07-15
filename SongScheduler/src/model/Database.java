@@ -242,6 +242,12 @@ public abstract class Database {
         return songHash.size() + 1;
     }
 
+    public static void addSongToDB(String song)
+    {
+        Song currSong = createSongFromLine(song);
+        if(!songHash.containsKey(currSong.getAccessNumber()))
+            songHash.put(currSong.getAccessNumber(), currSong);
+    }
 
     /**
      * Parses a line from library holdings file to create song object
