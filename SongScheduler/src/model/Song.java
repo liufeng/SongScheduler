@@ -21,7 +21,7 @@ public class Song implements Serializable{
     private String year;
     private int length;
     private int accessNumber;
-    private double popularity;
+    private int popularity;
     private int playCount;
     private int requestCount;
     private Time addedTime;
@@ -106,7 +106,7 @@ public class Song implements Serializable{
         return accessNumber;
     }
 
-    public double getPopularity () {
+    public int getPopularity () {
         return popularity;
     }
 

@@ -226,7 +226,7 @@ public abstract class Database {
                             + song.getAddedTime().toString() + ";"
                             + song.getPopularity() + ";"
                             + song.getLength() + ";" +
-                            + song.getNumberOfPlays()
+                            + song.getNumberOfPlays() + ";"
                             + song.getLastPlayed().toString() + "\n";
                     out.write(line);
                 }

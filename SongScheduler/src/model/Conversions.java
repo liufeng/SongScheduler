@@ -32,4 +32,14 @@ public class Conversions {
             sSecs = "" + secs;
         return sHours + ":" + sMins + ":" + sSecs;
     }
+
+    public static int milliFromMSS(String time)
+    {
+        String[] token = time.split(":");
+        int minutes = Integer.parseInt(token[0]);
+        int seconds = Integer.parseInt(token[1]);
+        int milliseconds = minutes * 60000 + seconds * 1000;
+        
+        return milliseconds;
+    }
 }
