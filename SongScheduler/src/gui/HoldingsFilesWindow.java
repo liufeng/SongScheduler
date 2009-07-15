@@ -11,15 +11,19 @@
 
 package gui;
 import java.util.Iterator;
+import java.util.ArrayList;
 import javax.swing.*;
 import model.HoldingFiles;
 import model.Song;
+import model.Database;
 
 /**
  *
  * @author jordan
  */
 public class HoldingsFilesWindow extends javax.swing.JFrame {
+    private ArrayList songs;
+    private DefaultListModel listModel;
 
     /** Creates new form HoldingsFilesWindow */
     public HoldingsFilesWindow() {
@@ -35,6 +39,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         {
             model.add( model.size(), iter.next());
         }
+        updateSongList();
     }
 
     /** This method is called from within the constructor to
@@ -66,11 +71,12 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
         setDefaultFile = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        songRequestNumberDisplay = new javax.swing.JTextField();
         songPopularityDisplay = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         addSong = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        songList = new javax.swing.JList();
+        saveSong = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -118,35 +124,35 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(jPanel1Layout.createSequentialGroup()
-                .add(selectHoldingFile)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
-                .add(setDefaultFile))
-            .add(jPanel1Layout.createSequentialGroup()
-                .add(jLabel1)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(fileName, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 134, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(makeNewFile)
+                .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel1Layout.createSequentialGroup()
+                        .add(selectHoldingFile)
+                        .add(18, 18, 18)
+                        .add(setDefaultFile))
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jPanel1Layout.createSequentialGroup()
+                        .add(jLabel1)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(fileName, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 134, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(makeNewFile)))
                 .addContainerGap())
-            .add(org.jdesktop.layout.GroupLayout.TRAILING, jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 348, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(org.jdesktop.layout.GroupLayout.TRAILING, jPanel1Layout.createSequentialGroup()
-                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 195, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .addContainerGap()
+                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 305, Short.MAX_VALUE)
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                 .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                    .add(selectHoldingFile)
-                    .add(setDefaultFile))
+                    .add(setDefaultFile)
+                    .add(selectHoldingFile))
                 .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                 .add(jPanel1Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                     .add(jLabel1)
                     .add(fileName, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                    .add(makeNewFile))
-                .addContainerGap())
+                    .add(makeNewFile)))
         );
-
-        jLabel8.setText("Number of Requests:");
 
         jLabel9.setText("Popularity:");
 
@@ -157,6 +163,20 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
             }
         });
 
+        songList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                songListValueChanged(evt);
+            }
+        });
+        jScrollPane2.setViewportView(songList);
+
+        saveSong.setText("Save");
+        saveSong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveSongActionPerformed(evt);
+            }
+        });
+
         org.jdesktop.layout.GroupLayout layout = new org.jdesktop.layout.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -164,31 +184,35 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
             .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
-                    .add(addSong, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 122, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(org.jdesktop.layout.GroupLayout.LEADING, jScrollPane2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 339, Short.MAX_VALUE)
+                    .add(layout.createSequentialGroup()
+                        .add(saveSong, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 108, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
+                        .add(addSong, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 122, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                     .add(layout.createSequentialGroup()
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                            .add(jLabel5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                            .add(jLabel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                            .add(jLabel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                            .add(jLabel7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                            .add(jLabel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-                            .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
-                                .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel9, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .add(org.jdesktop.layout.GroupLayout.LEADING, jLabel8))
-                            .add(jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                            .add(layout.createSequentialGroup()
+                                .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                                    .add(jLabel5, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                                    .add(jLabel3, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                                    .add(jLabel2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                                    .add(jLabel7, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                                    .add(jLabel6, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                                    .add(jLabel4, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED))
+                            .add(layout.createSequentialGroup()
+                                .add(jLabel9)
+                                .add(61, 61, 61)))
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
-                            .add(songRequestNumberDisplay)
+                            .add(songPopularityDisplay)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, songLengthDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, songYearDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, songGenreDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, songAlbumDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                             .add(org.jdesktop.layout.GroupLayout.TRAILING, songArtistDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                            .add(org.jdesktop.layout.GroupLayout.TRAILING, songNameDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
-                            .add(songPopularityDisplay))))
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                            .add(org.jdesktop.layout.GroupLayout.TRAILING, songNameDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE))))
+                .add(18, 18, 18)
+                .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 341, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
@@ -222,14 +246,14 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
                             .add(songLengthDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
-                            .add(jLabel8)
-                            .add(songRequestNumberDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(jLabel9)
                             .add(songPopularityDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(addSong)))
+                        .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                            .add(addSong)
+                            .add(saveSong))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED, 17, Short.MAX_VALUE)
+                        .add(jScrollPane2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -243,7 +267,6 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         String genre      = songGenreDisplay.getText();
         String year       = songYearDisplay.getText();
         String length     = songLengthDisplay.getText();
-        String requests   = songRequestNumberDisplay.getText();
         String popularity = songPopularityDisplay.getText();
 
        // Faerie Dance;Plants And Animals;Parc Avenue;CD;2007;1;2009-06-06 20:28:32;50;426266;0;0
@@ -264,6 +287,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
 
     private void selectHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectHoldingFileActionPerformed
         HoldingFiles.setCurrent( (String)jList1.getSelectedValue() );
+        updateSongList();
     }//GEN-LAST:event_selectHoldingFileActionPerformed
 
     private void setDefaultFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setDefaultFileActionPerformed
@@ -277,6 +301,51 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         model.add(model.getSize(), filename);
     }//GEN-LAST:event_makeNewFileActionPerformed
 
+    private void saveSongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveSongActionPerformed
+        Song song = (Song) songs.get( songList.getSelectedIndex() );
+        song.setPerformer(songArtistDisplay.getText());
+        song.setRecordingTitle(songAlbumDisplay.getText());
+        song.setRecordingType(songGenreDisplay.getText());
+        song.setTitle(songNameDisplay.getText());
+        song.setYear(songYearDisplay.getText());
+        song.updatePopularity();
+        song.updatePriority();
+    }//GEN-LAST:event_saveSongActionPerformed
+
+    private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
+        Song selection = (Song) songs.get( songList.getSelectedIndex() );
+        int milliseconds = selection.getLength();
+        int minutes = milliseconds / 60000;
+        int seconds = ( milliseconds - ( minutes * 60000 ) ) / 1000;
+        String length = minutes + ":";
+        if ( seconds < 10 ) {
+            length += "0" + seconds;
+        } else {
+            length += seconds;
+        }
+
+        songLengthDisplay.setText( length );
+        songAlbumDisplay.setText( selection.getRecordingTitle() );
+        songArtistDisplay.setText( selection.getPerformer() );
+        songGenreDisplay.setText( selection.getRecordingType() );
+        songNameDisplay.setText( selection.getTitle() );
+        songPopularityDisplay.setText( selection.getPopularity() + "" );
+        songYearDisplay.setText( selection.getYear() );
+    }//GEN-LAST:event_songListValueChanged
+    
+    private void updateSongList()
+    {
+        Song currSong;
+        songs = Database.getSongs();
+        listModel = new DefaultListModel();
+
+        for ( int i = 0; i < songs.size(); i++ ) {
+            currSong = (Song) songs.get( i );
+            listModel.add( i, currSong );
+        }
+
+        songList.setModel( listModel );
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addSong;
     private javax.swing.JTextField fileName;
@@ -287,21 +356,22 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JList jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton makeNewFile;
+    private javax.swing.JButton saveSong;
     private javax.swing.JButton selectHoldingFile;
     private javax.swing.JButton setDefaultFile;
     private javax.swing.JTextField songAlbumDisplay;
     private javax.swing.JTextField songArtistDisplay;
     private javax.swing.JTextField songGenreDisplay;
     private javax.swing.JTextField songLengthDisplay;
+    private javax.swing.JList songList;
     private javax.swing.JTextField songNameDisplay;
     private javax.swing.JTextField songPopularityDisplay;
-    private javax.swing.JTextField songRequestNumberDisplay;
     private javax.swing.JTextField songYearDisplay;
     // End of variables declaration//GEN-END:variables
 

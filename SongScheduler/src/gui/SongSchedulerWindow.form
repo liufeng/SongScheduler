@@ -89,7 +89,7 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="schedulePanel" alignment="0" pref="789" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="calendar" pref="217" max="32767" attributes="1"/>
+                      <Component id="calendar" pref="226" max="32767" attributes="1"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
@@ -187,19 +187,15 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="songPopularityDisplay" alignment="0" pref="84" max="32767" attributes="1"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="songPlayCountDisplay" min="-2" pref="61" max="-2" attributes="1"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="requestSong" min="-2" pref="103" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="songPlayCountDisplay" alignment="0" min="-2" pref="61" max="-2" attributes="1"/>
                               <Component id="songLastPlayedDisplay" alignment="0" min="-2" pref="158" max="-2" attributes="1"/>
                           </Group>
                           <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                                  <Component id="saveSongData" min="-2" pref="116" max="-2" attributes="1"/>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="requestSong" min="-2" pref="103" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="clearSongData" pref="116" max="32767" attributes="1"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -253,7 +249,6 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="songPlayCountDisplay" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
-                              <Component id="requestSong" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -269,7 +264,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="clearSongData" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="saveSongData" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="requestSong" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -360,23 +355,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clearSongDataActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="saveSongData">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Save"/>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[85, 29]"/>
-            </Property>
-            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[85, 29]"/>
-            </Property>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[85, 29]"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveSongDataActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="changeHoldingFile">

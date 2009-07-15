@@ -19,14 +19,12 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
     private ArrayList songs;
     private DefaultListModel listModel;
-    private String action;
 
     /**
      * Constructor
      */
     public SongSchedulerWindow () {
         songs = Database.getSongs();
-        action = null;
         initComponents();
         updateSongList();
     }
@@ -64,7 +62,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         songLengthDisplay = new javax.swing.JTextField();
         songSearchButton = new javax.swing.JButton();
         clearSongData = new javax.swing.JButton();
-        saveSongData = new javax.swing.JButton();
         changeHoldingFile = new javax.swing.JButton();
         requestSong = new javax.swing.JButton();
         songListScrollPane = new javax.swing.JScrollPane();
@@ -142,16 +139,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             }
         });
 
-        saveSongData.setText("Save");
-        saveSongData.setMaximumSize(new java.awt.Dimension(85, 29));
-        saveSongData.setMinimumSize(new java.awt.Dimension(85, 29));
-        saveSongData.setPreferredSize(new java.awt.Dimension(85, 29));
-        saveSongData.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveSongDataActionPerformed(evt);
-            }
-        });
-
         changeHoldingFile.setText("Change Song File");
         changeHoldingFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,17 +185,14 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
                             .add(songPopularityDisplay, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
-                            .add(selectedSongInfoPanelLayout.createSequentialGroup()
-                                .add(songPlayCountDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 61, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .add(18, 18, 18)
-                                .add(requestSong, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 103, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(songPlayCountDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 61, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                             .add(songLastPlayedDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 158, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .add(87, 87, 87)
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(selectedSongInfoPanelLayout.createSequentialGroup()
-                                .add(40, 40, 40)
-                                .add(saveSongData, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 116, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                                .add(59, 59, 59)
+                                .add(requestSong, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 103, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                                 .add(clearSongData, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE))
                             .add(selectedSongInfoPanelLayout.createSequentialGroup()
                                 .add(changeHoldingFile, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 162, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
@@ -248,8 +232,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                     .add(selectedSongInfoPanelLayout.createSequentialGroup()
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(jLabel7)
-                            .add(songPlayCountDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                            .add(requestSong))
+                            .add(songPlayCountDisplay, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 20, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(jLabel8)
@@ -261,7 +244,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                     .add(selectedSongInfoPanelLayout.createSequentialGroup()
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(clearSongData)
-                            .add(saveSongData, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                            .add(requestSong))
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(selectedSongInfoPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
                             .add(changeHoldingFile)
@@ -361,7 +344,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
                 .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
                     .add(org.jdesktop.layout.GroupLayout.LEADING, schedulePanel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
                     .add(layout.createSequentialGroup()
-                        .add(calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+                        .add(calendar, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 226, Short.MAX_VALUE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
                         .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                             .add(layout.createSequentialGroup()
@@ -472,29 +455,49 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_songSearchButtonActionPerformed
 
     private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
-        updateViewPanel();
+        Song selection = (Song) songs.get( songList.getSelectedIndex() );
+        int milliseconds = selection.getLength();
+        int minutes = milliseconds / 60000;
+        int seconds = ( milliseconds - ( minutes * 60000 ) ) / 1000;
+        String length = minutes + ":";
+        if ( seconds < 10 ) {
+            length += "0" + seconds;
+        } else {
+            length += seconds;
+        }
+
+        songLengthDisplay.setText( length );
+        songAlbumDisplay.setText( selection.getRecordingTitle() );
+        songArtistDisplay.setText( selection.getPerformer() );
+        songGenreDisplay.setText( selection.getRecordingType() );
+        songLastPlayedDisplay.setText( selection.getLastPlayed().toString() );
+        songNameDisplay.setText( selection.getTitle() );
+        songPlayCountDisplay.setText( selection.getNumberOfPlays() + "" );
+        songPopularityDisplay.setText( selection.getPopularity() + "" );
+        songYearDisplay.setText( selection.getYear() );
 }//GEN-LAST:event_songListValueChanged
 
     private void clearSongDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearSongDataActionPerformed
-        // TODO add your handling code here:
-        clearSongData();
-    }//GEN-LAST:event_clearSongDataActionPerformed
+        songLengthDisplay.setText( "" );
+        songAlbumDisplay.setText( "" );
+        songArtistDisplay.setText( "" );
+        songGenreDisplay.setText( "" );
+        songLastPlayedDisplay.setText( "" );
+        songNameDisplay.setText( "" );
+        songPlayCountDisplay.setText( "" );
+        songPopularityDisplay.setText( "" );
+        songYearDisplay.setText( "" );
 
-    private void saveSongDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveSongDataActionPerformed
-        // TODO add your handling code here:
-        AuthenticateWindow enterPassword = new AuthenticateWindow(this);
-        enterPassword.setVisible(true);
-        action = "SAVE";
-    }//GEN-LAST:event_saveSongDataActionPerformed
+        songs = Database.getSongs();
+        updateSongList();
+    }//GEN-LAST:event_clearSongDataActionPerformed
 
     private void changeHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeHoldingFileActionPerformed
         AuthenticateWindow enterPassword = new AuthenticateWindow(this);
         enterPassword.setVisible(true);
-        action = "ACCESS_HOLDINGS_FILES";
     }//GEN-LAST:event_changeHoldingFileActionPerformed
 
     private void requestSongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestSongActionPerformed
-        // TODO add your handling code here:
         Song song = (Song) songs.get( songList.getSelectedIndex() );
         song.makeRequest();
     }//GEN-LAST:event_requestSongActionPerformed
@@ -519,52 +522,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void fixAllButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fixAllButtonActionPerformed
         schedulePanel.fixAllSchedules();
     }//GEN-LAST:event_fixAllButtonActionPerformed
-    /**
-     * updateViewPanel
-     *
-     * Gets the selected song and updates all the labels to the new songs values.
-     *
-     * @return void
-     */
-    private void updateViewPanel () {
-        Song selection = (Song) songs.get( songList.getSelectedIndex() );
-        int milliseconds = selection.getLength();
-        int minutes = milliseconds / 60000;
-        int seconds = ( milliseconds - ( minutes * 60000 ) ) / 1000;
-        String length = minutes + ":";
-        if ( seconds < 10 ) {
-            length += "0" + seconds;
-        } else {
-            length += seconds;
-        }
-
-        songLengthDisplay.setText( length );
-        songAlbumDisplay.setText( selection.getRecordingTitle() );
-        songArtistDisplay.setText( selection.getPerformer() );
-        songGenreDisplay.setText( selection.getRecordingType() );
-        songLastPlayedDisplay.setText( selection.getLastPlayed().toString() );
-        songNameDisplay.setText( selection.getTitle() );
-        songPlayCountDisplay.setText( selection.getNumberOfPlays() + "" );
-        songPopularityDisplay.setText( selection.getPopularity() + "" );
-        songYearDisplay.setText( selection.getYear() );
-    }
-
-
-    private void clearSongData()
-    {
-        songLengthDisplay.setText( "" );
-        songAlbumDisplay.setText( "" );
-        songArtistDisplay.setText( "" );
-        songGenreDisplay.setText( "" );
-        songLastPlayedDisplay.setText( "" );
-        songNameDisplay.setText( "" );
-        songPlayCountDisplay.setText( "" );
-        songPopularityDisplay.setText( "" );
-        songYearDisplay.setText( "" );
-
-        songs = Database.getSongs();
-        updateSongList();
-    }
 
     private void updateSongList()
     {
@@ -583,36 +540,16 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     {
         if(Authentication.isAuthenticated())
         {
-            if(action.equals("SAVE"))
-            {
-                //read in the song info
-                Song song = (Song) songs.get( songList.getSelectedIndex() );
-                song.setPerformer(songArtistDisplay.getText());
-                song.setRecordingTitle(songAlbumDisplay.getText());
-                song.setRecordingType(songGenreDisplay.getText());
-                song.setTitle(songNameDisplay.getText());
-                song.setYear(songYearDisplay.getText());
-                song.updatePopularity();
-                song.updatePriority();
-                //save the song
-            }
-            else if(action.equals("ACCESS_HOLDINGS_FILES"))
-            {
-                //open the holdings file window
-                HoldingsFilesWindow holdingsFileManager = new HoldingsFilesWindow();
-                holdingsFileManager.setVisible(true);
-            }
-            else
-            {
-                //error
-                System.out.println("Authentication order error");
-            }
+            //open the holdings file window
+            HoldingsFilesWindow holdingsFileManager = new HoldingsFilesWindow();
+            holdingsFileManager.setVisible(true);
+            //de-authenticate the user
             Authentication.deAuthenticate();
-            action = null;
         }
         else
         {
-            //not authenticated
+            //not authenticated print error
+            System.out.println("Unauthenticated Access to holdings files attempted");
         }
     }
 
@@ -690,7 +627,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JButton requestSong;
-    private javax.swing.JButton saveSongData;
     private gui.SchedulePanel schedulePanel;
     private javax.swing.JPanel selectedSongInfoPanel;
     private javax.swing.JTextField songAlbumDisplay;
