@@ -280,8 +280,12 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         String year       = songYearDisplay.getText();
         String length     = songLengthDisplay.getText();
         String popularity = songPopularityDisplay.getText();
+        //get the next access number
+        
+        //get the current time
 
-      // Faerie Dance;Plants And Animals;Parc Avenue;CD;2007;1;2009-06-06 20:28:32;50;426266;0;0
+        // title; artist; album; genre; year; access_number; datetime_added; popularity; length; play_count; last_played
+
         // make a string with the song info
         String song = name + ";"
                     + artist + ";"
@@ -309,6 +313,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
      */
     private void selectHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectHoldingFileActionPerformed
         HoldingFiles.setCurrent( (String)jList1.getSelectedValue() );
+        Database.init(HoldingFiles.getCurrent());
         updateSongList();
     }//GEN-LAST:event_selectHoldingFileActionPerformed
 
