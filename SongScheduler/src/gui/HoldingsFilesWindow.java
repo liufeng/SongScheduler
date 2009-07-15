@@ -313,7 +313,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
      */
     private void selectHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectHoldingFileActionPerformed
         HoldingFiles.setCurrent( (String)jList1.getSelectedValue() );
-        Database.init(HoldingFiles.getCurrent());
+        Database.setHoldingsFile( HoldingFiles.getCurrent() );
         updateSongList();
     }//GEN-LAST:event_selectHoldingFileActionPerformed
 
