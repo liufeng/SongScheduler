@@ -201,6 +201,7 @@ public abstract class Database {
 
                 line = in.readLine();
             }
+            in.close();
         }
         catch(Exception e){e.printStackTrace();}
     }
