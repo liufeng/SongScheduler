@@ -20,12 +20,15 @@ import model.Database;
 /**
  *
  * @author jordan
+ * @author kurtisschmidt
  */
 public class HoldingsFilesWindow extends javax.swing.JFrame {
-    private ArrayList songs;
-    private DefaultListModel listModel;
+    private ArrayList songs;                // The songs from the current holdings file
+    private DefaultListModel listModel;     // The list model for the songs JList
 
-    /** Creates new form HoldingsFilesWindow */
+    /**
+     * Constructor
+     */
     public HoldingsFilesWindow() {
         initComponents();
         this.setDefaultCloseOperation( JFrame.DISPOSE_ON_CLOSE );
@@ -260,7 +263,16 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * addSongActionPerformed
+     *
+     * Add a song to the selected holdings file
+     *
+     * @param evt
+     * @return void
+     */
     private void addSongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addSongActionPerformed
+        //get the song info
         String name       = songNameDisplay.getText();
         String artist     = songArtistDisplay.getText();
         String album      = songAlbumDisplay.getText();
@@ -269,7 +281,8 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         String length     = songLengthDisplay.getText();
         String popularity = songPopularityDisplay.getText();
 
-       // Faerie Dance;Plants And Animals;Parc Avenue;CD;2007;1;2009-06-06 20:28:32;50;426266;0;0
+      // Faerie Dance;Plants And Animals;Parc Avenue;CD;2007;1;2009-06-06 20:28:32;50;426266;0;0
+        // make a string with the song info
         String song = name + ";"
                     + artist + ";"
                     + album + ";"
@@ -281,19 +294,44 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
                     + length + ";"
                     + "0" + ";"
                     + "0";
+        //write the song to the holdings file
         String holdingsFile = (String)jList1.getSelectedValue();
         HoldingFiles.addSongToFile( holdingsFile, null);
     }//GEN-LAST:event_addSongActionPerformed
 
+    /**
+     * selectHoldingFileActionPerformed
+     *
+     * Select a holdings file to be the current holdings file for the program
+     *
+     * @param evt
+     * @return void
+     */
     private void selectHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectHoldingFileActionPerformed
         HoldingFiles.setCurrent( (String)jList1.getSelectedValue() );
         updateSongList();
     }//GEN-LAST:event_selectHoldingFileActionPerformed
 
+    /**
+     * setDefaultFileActionPerformed
+     *
+     * Select a holdings file to be the default holdings file for the program
+     *
+     * @param evt
+     * @return void
+     */
     private void setDefaultFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setDefaultFileActionPerformed
         HoldingFiles.setDefault( (String)jList1.getSelectedValue() );
     }//GEN-LAST:event_setDefaultFileActionPerformed
 
+    /**
+     * makeNewFileActionPerformed
+     *
+     * Make a new holdings file
+     *
+     * @param evt
+     * @return void
+     */
     private void makeNewFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_makeNewFileActionPerformed
         String filename = fileName.getText();
         HoldingFiles.addFile(filename);
@@ -301,19 +339,40 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         model.add(model.getSize(), filename);
     }//GEN-LAST:event_makeNewFileActionPerformed
 
+    /**
+     * saveSongActionPerformed
+     *
+     * Save the info from the song selected in the JList to the holdings file
+     *
+     * @param evt
+     * @return void
+     */
     private void saveSongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveSongActionPerformed
+        //get the song from the JList
         Song song = (Song) songs.get( songList.getSelectedIndex() );
+        //get the data from the text fields
         song.setPerformer(songArtistDisplay.getText());
         song.setRecordingTitle(songAlbumDisplay.getText());
         song.setRecordingType(songGenreDisplay.getText());
         song.setTitle(songNameDisplay.getText());
         song.setYear(songYearDisplay.getText());
+        //update the songs info
         song.updatePopularity();
         song.updatePriority();
     }//GEN-LAST:event_saveSongActionPerformed
 
+    /**
+     * songListValueChanged
+     *
+     * Update the song text fields to the info from the the song selected in the JList
+     *
+     * @param evt
+     * @return void
+     */
     private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
+        //get the song from the list
         Song selection = (Song) songs.get( songList.getSelectedIndex() );
+        //calculate the minutes, seconds and milliseconds for the song length
         int milliseconds = selection.getLength();
         int minutes = milliseconds / 60000;
         int seconds = ( milliseconds - ( minutes * 60000 ) ) / 1000;
@@ -324,6 +383,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
             length += seconds;
         }
 
+        //set the text fields
         songLengthDisplay.setText( length );
         songAlbumDisplay.setText( selection.getRecordingTitle() );
         songArtistDisplay.setText( selection.getPerformer() );
@@ -332,18 +392,28 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         songPopularityDisplay.setText( selection.getPopularity() + "" );
         songYearDisplay.setText( selection.getYear() );
     }//GEN-LAST:event_songListValueChanged
-    
+
+    /**
+     * updateSongList
+     *
+     * Populate the JList with the songs from the currently selected holdings file
+     *
+     * @return void
+     */
     private void updateSongList()
     {
         Song currSong;
+        //get the songs
         songs = Database.getSongs();
         listModel = new DefaultListModel();
 
+        //put each song from the holdings file into the list model
         for ( int i = 0; i < songs.size(); i++ ) {
             currSong = (Song) songs.get( i );
             listModel.add( i, currSong );
         }
 
+        //use the new list model for the song JList
         songList.setModel( listModel );
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables

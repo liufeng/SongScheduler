@@ -32,15 +32,35 @@ import javax.swing.table.TableModel;
  */
 public class SchedulePanel extends javax.swing.JPanel {
 
-    /** Creates new form SchedulePanel */
+    /**
+     * Constructor
+     */
     public SchedulePanel() {
         initComponents();
     }
 
+    /**
+     * openDates
+     *
+     * Make schedules and load them for the given dates
+     *
+     * @param dates the dates that the schedules are being made for
+     * @return void
+     */
     public void openDates( Time[] dates )
     {
         openDates( dates, new SongScheduler(dates[0]) );
     }
+
+    /**
+     * openDates
+     *
+     * Load the given schedules for the given dates
+     *
+     * @param dates the dates that the schedules are being loaded for
+     * @param schduler the scheduler that is used to make the schedules
+     * @return void
+     */
     public void openDates( Time[] dates, SongScheduler scheduler )
     {
         // Create a new SongScheduler and array for each schedule
@@ -104,6 +124,14 @@ public class SchedulePanel extends javax.swing.JPanel {
         this.ready = true;
     }
 
+    /**
+     * onSelectTable
+     *
+     * Does something --------------------------------------------------------------------------------
+     *
+     * @param evt
+     * @return void
+     */
     public void onSelectTable( FocusEvent evt )
     {
         // Unselect from every other schedule
@@ -122,6 +150,13 @@ public class SchedulePanel extends javax.swing.JPanel {
         }
     }
 
+    /**
+     * printSchedule
+     *
+     * Print the schedules from this date
+     *
+     * @return void
+     */
     public void printSchedule()
     {
         if( !ready )
@@ -152,6 +187,13 @@ public class SchedulePanel extends javax.swing.JPanel {
         catch( PrinterException exp ){ System.out.println("Error Printing\n");}
     }
 
+    /**
+     * deleteSelected
+     *
+     * Remove the selected song from the schedule
+     *
+     * @return void
+     */
     public void deleteSelected()
     {
         if( !ready )
@@ -172,6 +214,15 @@ public class SchedulePanel extends javax.swing.JPanel {
         updateScheduleLength( selectedSchedule, selectedTable );
     }
 
+    /**
+     * setTableBackground
+     *
+     * Sets the background for the table to show if that schedule is broken in some way
+     *
+     * @param schedule the schedule displayed in the table
+     * @param table the table displaying the schedule
+     * @return void
+     */
     private void setTableBackground( Schedule schedule, JTable table )
     {
         if( !schedule.isEmpty() && schedule.underMin() )
@@ -182,6 +233,14 @@ public class SchedulePanel extends javax.swing.JPanel {
             table.setBackground(Color.WHITE);
     }
 
+    /**
+     * addSong
+     *
+     * Add a song tot the selected schedule
+     *
+     * @param song the song to be scheduled
+     * @return void
+     */
     public void addSong( Song song )
     {
         if( !ready )
@@ -197,11 +256,27 @@ public class SchedulePanel extends javax.swing.JPanel {
         updateScheduleLength( selectedSchedule, selectedTable );
     }
 
+    /**
+     * updateScheduleLength
+     *
+     * Update the displayed legth of the schedule
+     *
+     * @param schedule the schedule displayed in the table
+     * @param table the table displaying the schedule
+     * @return void
+     */
     private void updateScheduleLength( Schedule schedule, JTable table )
     {
         table.getModel().setValueAt("Total: " + Conversions.milliToHHMMSS(schedule.getDuration()), table.getRowCount()-1, 2);
     }
 
+    /**
+     * commit
+     *
+     * Commit all the schedules for the give day
+     *
+     * @return void
+     */
     public void commit()
     {
         if( !ready )
@@ -229,6 +304,13 @@ public class SchedulePanel extends javax.swing.JPanel {
 
     }
 
+    /**
+     * fixAllSchedules
+     *
+     * Fix all of the schedules for this date
+     *
+     * @return void
+     */
     public void fixAllSchedules()
     {
         if( !ready )

@@ -14,18 +14,21 @@ import javax.swing.*;
 /**
  *
  * @author kurtisschmidt
+ * @author jordan
  */
 public class SongSchedulerWindow extends javax.swing.JFrame {
 
-    private ArrayList songs;
-    private DefaultListModel listModel;
+    private ArrayList songs;                // a list of all of the song that are currently loaded into the system
+    private DefaultListModel listModel;     // the list model used to hold the songs for display in the JList
 
     /**
      * Constructor
      */
     public SongSchedulerWindow () {
+        //get the songs from the database
         songs = Database.getSongs();
         initComponents();
+        //populate the JList with the songs
         updateSongList();
     }
 
@@ -435,12 +438,22 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         openSelectedDates();
     }//GEN-LAST:event_viewSelectedButtonActionPerformed
 
+    /**
+     * songSearchButtonActionPerformed
+     *
+     * Search for a song by title, artist, album and/or year
+     *
+     * @param evt
+     * @return void
+     */
     private void songSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_songSearchButtonActionPerformed
+        //get the search information from the form
         String title = songNameDisplay.getText();
         String artist = songArtistDisplay.getText();
         String album = songAlbumDisplay.getText();
         String year = songYearDisplay.getText();
 
+        //if the artist, ablum, or year are blank set them to null
         if( artist.equals("") )
             artist = null;
 
@@ -450,12 +463,24 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         if( year.equals("") )
             year = null;
 
+        //set the list of song to the search results
         songs = Database.getSongs(title,artist,album,year);
+        //populate the JList with the search results
         updateSongList();
     }//GEN-LAST:event_songSearchButtonActionPerformed
 
+    /**
+     * songListValueChanged
+     *
+     * Update the information displayed about a song to the information about the song that is selected in the JList
+     *
+     * @param evt
+     * @return void
+     */
     private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
+        //get the selected song
         Song selection = (Song) songs.get( songList.getSelectedIndex() );
+        //conver the songs length
         int milliseconds = selection.getLength();
         int minutes = milliseconds / 60000;
         int seconds = ( milliseconds - ( minutes * 60000 ) ) / 1000;
@@ -466,6 +491,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
             length += seconds;
         }
 
+        //set all of the forms fields
         songLengthDisplay.setText( length );
         songAlbumDisplay.setText( selection.getRecordingTitle() );
         songArtistDisplay.setText( selection.getPerformer() );
@@ -477,7 +503,16 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         songYearDisplay.setText( selection.getYear() );
 }//GEN-LAST:event_songListValueChanged
 
+    /**
+     * clearSongDataActionPerformed
+     *
+     * Clear all of the song fields and update the JList with the full list of songs from this holdings file
+     *
+     * @param evt
+     * @return void
+     */
     private void clearSongDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearSongDataActionPerformed
+        //clear the fields
         songLengthDisplay.setText( "" );
         songAlbumDisplay.setText( "" );
         songArtistDisplay.setText( "" );
@@ -488,69 +523,120 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         songPopularityDisplay.setText( "" );
         songYearDisplay.setText( "" );
 
+        //get all the songs from the database again
         songs = Database.getSongs();
+        //update the JList
         updateSongList();
     }//GEN-LAST:event_clearSongDataActionPerformed
 
+    /**
+     * changeHoldingFileActionPerformed
+     *
+     * Start the process for opening the Holdings file window
+     *
+     * @param evt
+     * @return void
+     */
     private void changeHoldingFileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeHoldingFileActionPerformed
-        AuthenticateWindow enterPassword = new AuthenticateWindow(this);
+        AuthenticateWindow enterPassword = new AuthenticateWindow();
         enterPassword.setVisible(true);
     }//GEN-LAST:event_changeHoldingFileActionPerformed
 
+    /**
+     * requestSongActionPerformed
+     *
+     * Record a request made for a song
+     *
+     * @param evt
+     * @return void
+     */
     private void requestSongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestSongActionPerformed
         Song song = (Song) songs.get( songList.getSelectedIndex() );
         song.makeRequest();
     }//GEN-LAST:event_requestSongActionPerformed
 
+    /**
+     * fileMenuPrintActionPerformed
+     *
+     * Print the schedule
+     *
+     * @param evt
+     * @return void
+     */
     private void fileMenuPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileMenuPrintActionPerformed
         schedulePanel.printSchedule();
     }//GEN-LAST:event_fileMenuPrintActionPerformed
 
+    /**
+     * addSongButtonActionPerformed
+     *
+     * Add a song to the selected schedule
+     *
+     * @param evt
+     * @return void
+     */
     private void addSongButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addSongButtonActionPerformed
         Song song = (Song) songs.get( songList.getSelectedIndex() );
         schedulePanel.addSong(song);
     }//GEN-LAST:event_addSongButtonActionPerformed
 
+    /**
+     * commitButtonActionPerformed
+     *
+     * Commit all tentative schedules
+     *
+     * @param evt
+     * @return void
+     */
     private void commitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_commitButtonActionPerformed
         schedulePanel.commit();
     }//GEN-LAST:event_commitButtonActionPerformed
 
+    /**
+     * deleteButtonActionPerformed
+     *
+     * Remove the selected song from their schedules
+     *
+     * @param evt
+     * @return void
+     */
     private void deleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteButtonActionPerformed
         schedulePanel.deleteSelected();
     }//GEN-LAST:event_deleteButtonActionPerformed
 
+    /**
+     * fixAllButtonActionPerformed
+     *
+     * Fix all of the broken schedules
+     *
+     * @param evt
+     * @return void
+     */
     private void fixAllButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fixAllButtonActionPerformed
         schedulePanel.fixAllSchedules();
     }//GEN-LAST:event_fixAllButtonActionPerformed
 
+    /**
+     * updateSongList
+     *
+     * Update the JList so that it displays the song in the songs ArrayList
+     *
+     * @return void
+     */
     private void updateSongList()
     {
         Song currSong;
+        //make a new listModel
         listModel = new DefaultListModel();
 
+        //add each song in the ArrayList to the listModel
         for ( int i = 0; i < songs.size(); i++ ) {
             currSong = (Song) songs.get( i );
             listModel.add( i, currSong );
         }
 
+        //used the list model made
         songList.setModel( listModel );
-    }
-
-    public void continueAfterAuthentication()
-    {
-        if(Authentication.isAuthenticated())
-        {
-            //open the holdings file window
-            HoldingsFilesWindow holdingsFileManager = new HoldingsFilesWindow();
-            holdingsFileManager.setVisible(true);
-            //de-authenticate the user
-            Authentication.deAuthenticate();
-        }
-        else
-        {
-            //not authenticated print error
-            System.out.println("Unauthenticated Access to holdings files attempted");
-        }
     }
 
     /**

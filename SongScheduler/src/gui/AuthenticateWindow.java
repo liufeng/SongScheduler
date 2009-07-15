@@ -18,11 +18,11 @@ import model.Authentication;
  * @author jordan
  */
 public class AuthenticateWindow extends javax.swing.JFrame {
-    SongSchedulerWindow parent;
 
-    /** Creates new form AuthenticateWindow */
-    public AuthenticateWindow(SongSchedulerWindow calledFrom) {
-        parent = calledFrom;
+    /**
+     * Constructor
+     */
+    public AuthenticateWindow() {
         initComponents();
     }
 
@@ -105,28 +105,56 @@ public class AuthenticateWindow extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * okButtonActionPerformed
+     *
+     * Try to authenticate the user and open the holdings file window
+     *
+     * @param evt
+     * @return void
+     */
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
-        // TODO add your handling code here:
+        //get the password from the form
         String thePassword = new String( password.getPassword() );
-
-
+        //check the password
         if(thePassword != null)
             Authentication.checkPassword(thePassword);
-
-
+        //check if the user got autheticated
         if(!Authentication.isAuthenticated())
             authenticationError.setText("Invalid Password.");
         else
+        {
+            //make a new holdings file window
+            HoldingsFilesWindow holdingsFileManager = new HoldingsFilesWindow();
+            holdingsFileManager.setVisible(true);
+            //unauthenticate the user so that the nebxt time someone tries to open the window they will need to authenticate themselves
+            Authentication.deAuthenticate();
+            //close the window
             exit();
+        }
     }//GEN-LAST:event_okButtonActionPerformed
 
+    /**
+     * cancelButtonActionPerformed
+     *
+     * Close the authentication window without authentication
+     *
+     * @param evt
+     * @return void
+     */
     private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
-        // TODO add your handling code here:
+        //close the window
         exit();
     }//GEN-LAST:event_cancelButtonActionPerformed
 
+    /**
+     * exit
+     *
+     * Close the window
+     *
+     * @return void
+     */
     private void exit(){
-        parent.continueAfterAuthentication();
         this.setVisible( false );
         this.dispose();
     }
