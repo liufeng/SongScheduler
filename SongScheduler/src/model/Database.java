@@ -60,6 +60,21 @@ public abstract class Database {
     }
 
     /**
+     * Persists database by serializing schedule hash and writing to file
+     */
+    public static void serializeDB(){
+        try{
+            OutputStream os = new FileOutputStream(scheduleFile);
+            ObjectOutput oo = new ObjectOutputStream(os);
+            oo.writeObject(scheduleHash);
+            oo.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    /**
      * Changes the current holdings file.  If file does not exist,
      * creates new holdings file with specified name.  Saves changes to
      * previous holdings file.
@@ -87,66 +102,6 @@ public abstract class Database {
 
         catch(IOException e){
             e.printStackTrace();
-        }
-    }
-
-
-    public static void destroy(){
-        try{
-            OutputStream os = new FileOutputStream(scheduleFile);
-            ObjectOutput oo = new ObjectOutputStream(os);
-            oo.writeObject(scheduleHash);
-            oo.close();
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    private static void loadSongInfo(){
-        try{
-            Song currSong;
-            BufferedReader in = new BufferedReader(new FileReader(currHoldingsFile));
-            String line = in.readLine();
-            while (line != null) {
-                currSong = createSongFromLine(line);
-                if(!songHash.containsKey(currSong.getAccessNumber()))
-                    songHash.put(currSong.getAccessNumber(), currSong);
-
-                line = in.readLine();
-            }
-        }
-        catch(Exception e){e.printStackTrace();}
-    }
-
-    /**
-     * write the song list to disk.
-     *
-     */
-     private static void saveSongInfo(){
-        if(songHash != null){
-            Iterator<Song> songs = songHash.values().iterator();
-            try {
-                BufferedWriter out = new BufferedWriter(new FileWriter(currHoldingsFile, false));
-                while (songs.hasNext()) {
-                    Song song = songs.next();
-                    String line = song.getTitle() + ";"
-                            + song.getPerformer() + ";"
-                            + song.getRecordingTitle() + ";"
-                            + song.getRecordingType() + ";"
-                            + song.getYear() + ";"
-                            + song.getAccessNumber() + ";"
-                            + song.getAddedTime().toString() + ";"
-                            + song.getPopularity() + ";"
-                            + song.getLength() + ";" +
-                            + song.getNumberOfPlays()
-                            + song.getLastPlayed().toString() + "\n";
-                    out.write(line);
-                }
-                out.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 
@@ -214,7 +169,7 @@ public abstract class Database {
 
         candidate.updateSongsInSchedule();
 
-        destroy();
+        serializeDB();
     }
 
 
@@ -232,6 +187,53 @@ public abstract class Database {
             return scheduleHash.get(startTime.toString());
         else
             return new Schedule(startTime);
+    }
+
+    private static void loadSongInfo(){
+        try{
+            Song currSong;
+            BufferedReader in = new BufferedReader(new FileReader(currHoldingsFile));
+            String line = in.readLine();
+            while (line != null) {
+                currSong = createSongFromLine(line);
+                if(!songHash.containsKey(currSong.getAccessNumber()))
+                    songHash.put(currSong.getAccessNumber(), currSong);
+
+                line = in.readLine();
+            }
+        }
+        catch(Exception e){e.printStackTrace();}
+    }
+
+    /**
+     * write the song list to disk.
+     *
+     */
+     private static void saveSongInfo(){
+        if(songHash != null){
+            Iterator<Song> songs = songHash.values().iterator();
+            try {
+                BufferedWriter out = new BufferedWriter(new FileWriter(currHoldingsFile, false));
+                while (songs.hasNext()) {
+                    Song song = songs.next();
+                    String line = song.getTitle() + ";"
+                            + song.getPerformer() + ";"
+                            + song.getRecordingTitle() + ";"
+                            + song.getRecordingType() + ";"
+                            + song.getYear() + ";"
+                            + song.getAccessNumber() + ";"
+                            + song.getAddedTime().toString() + ";"
+                            + song.getPopularity() + ";"
+                            + song.getLength() + ";" +
+                            + song.getNumberOfPlays()
+                            + song.getLastPlayed().toString() + "\n";
+                    out.write(line);
+                }
+                out.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     /**
@@ -273,9 +275,9 @@ public abstract class Database {
             if(!(song1 instanceof Song) || !(song2 instanceof Song))
                 return 0;
             else{
-                if(((Song)song1).getPriority() > ((Song)song2).getPriority())
+                if(((Song)song1).getPriority() < ((Song)song2).getPriority())
                     return 1;
-                else if(((Song)song1).getPriority() < ((Song)song2).getPriority())
+                else if(((Song)song1).getPriority() > ((Song)song2).getPriority())
                     return -1;
                 else
                     return 0;
