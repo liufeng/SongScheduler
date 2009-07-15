@@ -210,7 +210,7 @@ public abstract class Database {
      * write the song list to disk.
      *
      */
-     private static void saveSongInfo(){
+     public static void saveSongInfo(){
         if(songHash != null){
             Iterator<Song> songs = songHash.values().iterator();
             try {

@@ -16,6 +16,7 @@ import javax.swing.*;
 import model.HoldingFiles;
 import model.Song;
 import model.Database;
+import model.Time;
 
 /**
  *
@@ -281,8 +282,9 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         String length     = songLengthDisplay.getText();
         String popularity = songPopularityDisplay.getText();
         //get the next access number
-        
+        int accessNumber = 1; //replace this with the real access number
         //get the current time
+        Time now = new Time();
 
         // title; artist; album; genre; year; access_number; datetime_added; popularity; length; play_count; last_played
 
@@ -292,15 +294,15 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
                     + album + ";"
                     + genre + ";"
                     + year + ";"
-                    + "" + ";"
-                    + "0000-00-00 00:00:00" + ";"
+                    + accessNumber + ";"
+                    + now.toString() + ";"
                     + popularity +";"
                     + length + ";"
                     + "0" + ";"
                     + "0";
         //write the song to the holdings file
         String holdingsFile = (String)jList1.getSelectedValue();
-        HoldingFiles.addSongToFile( holdingsFile, null);
+        HoldingFiles.addSongToFile( holdingsFile, song);
     }//GEN-LAST:event_addSongActionPerformed
 
     /**
@@ -364,6 +366,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         //update the songs info
         song.updatePopularity();
         song.updatePriority();
+        Database.saveSongInfo();
     }//GEN-LAST:event_saveSongActionPerformed
 
     /**
