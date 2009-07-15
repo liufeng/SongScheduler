@@ -9,6 +9,8 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  *
@@ -88,13 +90,37 @@ public abstract class Authentication {
     }
 
     /**
-     * To encrypt the string. May use MD5 algo. But it makes no
-     * sense if the any user can change the password file.
+     * To encrypt the string. Uses MD5 for encription.
      * 
      * @param pass
      * @return the encrypted password.
      */
     private static String encrypt(String pass) {
-        return pass;
+        String md5val = "";
+        MessageDigest algorithm = null;
+
+        try {
+            algorithm = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Cannot find digest algorithm");
+            e.printStackTrace();
+        }
+
+        byte[] defaultBytes = pass.getBytes();
+        algorithm.reset();
+        algorithm.update(defaultBytes);
+        byte messageDigest[] = algorithm.digest();
+        StringBuffer hexString = new StringBuffer();
+
+        for (int i = 0; i < messageDigest.length; i++) {
+            String hex = Integer.toHexString(0xFF & messageDigest[i]);
+            if (hex.length() == 1) {
+                hexString.append('0');
+            }
+            hexString.append(hex);
+        }
+        md5val = hexString.toString();
+
+        return md5val;
     }
 }
