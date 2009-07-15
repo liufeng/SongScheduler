@@ -27,10 +27,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     public SongSchedulerWindow () {
         songs = Database.getSongs();
         action = null;
-        Authentication.init();
-        
         initComponents();
-
         updateSongList();
     }
 
