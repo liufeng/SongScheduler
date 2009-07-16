@@ -20,7 +20,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.TreeMap;
 
 /**
  *
@@ -197,7 +199,8 @@ public abstract class Database {
      */
     private static void saveSongInfo(){
         if(songHash != null){
-            Iterator<Song> songs = songHash.values().iterator();
+            Map sortedSongHash = new TreeMap(songHash);
+            Iterator<Song> songs = sortedSongHash.values().iterator();
             try {
                 BufferedWriter out = new BufferedWriter(new FileWriter(currHoldingsFile, false));
                 while (songs.hasNext()) {

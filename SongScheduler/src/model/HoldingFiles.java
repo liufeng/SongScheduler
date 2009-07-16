@@ -35,13 +35,17 @@ public abstract class HoldingFiles {
             listFile = new File(HOLDING_FILE);
             if (!listFile.exists()) {
                 BufferedWriter out = new BufferedWriter(new FileWriter(listFile));
-                out.write("default.txt\n");
+                out.write("default.txt.default\n");
                 out.close();
             }
 
             BufferedReader in = new BufferedReader(new FileReader(listFile));
             String line = in.readLine();
             while (line != null) {
+                if(line.substring(line.length()-8).equals(".default")){
+                    line = line.substring(0, line.length()-8);
+                    defaultHoldingFile = line;
+                }
                 list.add(line);
                 line = in.readLine();
             }
@@ -50,7 +54,11 @@ public abstract class HoldingFiles {
             e.printStackTrace();
         }
 
-        defaultHoldingFile = "default.txt";
+        //Just in case!
+        if(defaultHoldingFile == null){
+            defaultHoldingFile = "default.txt";
+        }
+        
         currHoldingFile = defaultHoldingFile;
     }
 
@@ -90,7 +98,11 @@ public abstract class HoldingFiles {
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(listFile));
             while (iter.hasNext()) {
-                out.write(iter.next() + "\n");
+                String nextEntry = iter.next();
+                if(nextEntry.equals(defaultHoldingFile)){
+                    nextEntry += ".default";
+                }
+                out.write(nextEntry + "\n");
             }
             out.close();
         } catch (IOException e) {
@@ -104,6 +116,7 @@ public abstract class HoldingFiles {
      */
     public static void setDefault(String filename) {
         defaultHoldingFile = filename;
+        writeToDisk();
     }
 
     /**

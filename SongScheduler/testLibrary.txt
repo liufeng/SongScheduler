@@ -1,31 +1,31 @@
-Bones;Radiohead;The Bends;CD;1995;15;2009-6-6 20:28:32;50;189000;0;2009-7-15 14:48:23
-Power Doesn't Run On Nothing;The Thermals;The Body, The Blood, The Machine;CD;2006;30;2009-6-6 20:28:32;50;314435;0;2009-7-15 14:48:23
-If You See Her, Say Hello;Bob Dylan;Blood on the Tracks;CD;1975;8;2009-6-6 20:28:32;50;289515;0;2009-7-15 14:48:23
-I Might Need You To Kill;The Thermals;The Body, The Blood, The Machine;CD;2006;23;2009-6-6 20:28:32;50;147147;0;2009-7-15 14:48:23
-(Nice Dream);Radiohead;The Bends;CD;1995;16;2009-6-6 20:28:32;50;233226;0;2009-7-15 14:48:23
-I Hold The Sound;The Thermals;The Body, The Blood, The Machine;LP;2006;31;2009-6-6 20:28:32;50;278935;0;2009-7-15 14:48:23
-Lily, Rosemary and the Jack of Hearts;Bob Dylan;Blood on the Tracks;CD;1975;7;2009-6-6 20:28:32;50;533812;0;2009-7-15 14:48:23
-Street Spirit (Fade Out);Radiohead;The Bends;CD;1995;22;2009-6-6 20:28:32;50;252400;0;2009-7-15 14:48:23
-Shelter from the Storm;Bob Dylan;Blood on the Tracks;CD;1975;9;2009-6-6 20:28:32;50;302497;0;2009-7-15 14:48:23
-Sulk;Radiohead;The Bends;LP;1995;21;2009-6-6 20:28:32;50;222960;0;2009-7-15 14:48:23
-Meet Me in the Morning;Bob Dylan;Blood on the Tracks;CD;1975;6;2009-6-6 20:28:32;50;262295;0;2009-7-15 14:48:23
 Tangled Up in Blue;Bob Dylan;Blood on the Tracks;CD;1975;1;2009-6-6 20:28:32;50;342674;0;2009-7-15 14:48:23
-Back To The Sea;The Thermals;The Body, The Blood, The Machine;LP;2006;29;2009-6-6 20:28:32;50;287712;0;2009-7-15 14:48:23
-Fake Plastic Trees;Radiohead;The Bends;LP;1995;14;2009-6-6 20:28:32;50;290706;0;2009-7-15 14:48:23
-An Ear For Baby;The Thermals;The Body, The Blood, The Machine;LP;2006;24;2009-6-6 20:28:32;50;216450;0;2009-7-15 14:48:23
-Idiot Wind;Bob Dylan;Blood on the Tracks;CD;1975;4;2009-6-6 20:28:32;50;469629;0;2009-7-15 14:48:23
-Bullet Proof...I Wish I Was;Radiohead;The Bends;LP;1995;19;2009-6-6 20:28:32;50;208733;0;2009-7-15 14:48:23
-Returning To The Fold;The Thermals;The Body, The Blood, The Machine;LP;2006;26;2009-6-6 20:28:32;5;159268;0;2009-7-15 14:48:23
-Planet Telex;Radiohead;The Bends;CD;1995;11;2009-6-6 20:28:32;50;259200;0;2009-7-15 14:48:23
-My Iron Lung;Radiohead;The Bends;CD;1995;18;2009-6-6 20:28:32;50;276426;0;2009-7-15 14:48:23
-You're a Big Girl Now;Bob Dylan;Blood on the Tracks;LP;1975;3;2009-6-6 20:28:32;50;276088;0;2009-7-15 14:48:23
-The Bends;Radiohead;The Bends;LP;1995;12;2009-6-6 20:28:32;50;246200;0;2009-7-15 14:48:23
-Test Pattern;The Thermals;The Body, The Blood, The Machine;CD;2006;27;2009-6-6 20:28:32;70;207882;0;2009-7-15 14:48:23
-Just;Radiohead;The Bends;LP;1995;17;2009-6-6 20:28:32;50;234106;0;2009-7-15 14:48:23
 Simple Twist of Fate;Bob Dylan;Blood on the Tracks;CD;1975;2;2009-6-6 20:28:32;50;259213;0;2009-7-15 14:48:23
-High And Dry;Radiohead;The Bends;CD;1995;13;2009-6-6 20:28:32;50;257533;0;2009-7-15 14:48:23
-St. Rosa And The Swallows;The Thermals;The Body, The Blood, The Machine;LP;2006;28;2009-6-6 20:28:32;50;214935;0;2009-7-15 14:48:23
-Black Star;Radiohead;The Bends;LP;1995;20;2009-6-6 20:28:32;17;247040;0;2009-7-15 14:48:23
-A Pillar Of Salt;The Thermals;The Body, The Blood, The Machine;CD;2006;25;2009-6-6 20:28:32;50;177371;0;2009-7-15 14:48:23
-Buckets of Rain;Bob Dylan;Blood on the Tracks;CD;1975;10;2009-6-6 20:28:32;50;202657;0;2009-7-15 14:48:23
+You're a Big Girl Now;Bob Dylan;Blood on the Tracks;LP;1975;3;2009-6-6 20:28:32;50;276088;0;2009-7-15 14:48:23
+Idiot Wind;Bob Dylan;Blood on the Tracks;CD;1975;4;2009-6-6 20:28:32;50;469629;0;2009-7-15 14:48:23
 You're Gonna Make Me Lonesome When You Go;Bob Dylan;Blood on the Tracks;LP;1975;5;2009-6-6 20:28:32;82;175804;0;2009-7-15 14:48:23
+Meet Me in the Morning;Bob Dylan;Blood on the Tracks;CD;1975;6;2009-6-6 20:28:32;50;262295;0;2009-7-15 14:48:23
+Lily, Rosemary and the Jack of Hearts;Bob Dylan;Blood on the Tracks;CD;1975;7;2009-6-6 20:28:32;50;533812;0;2009-7-15 14:48:23
+If You See Her, Say Hello;Bob Dylan;Blood on the Tracks;CD;1975;8;2009-6-6 20:28:32;50;289515;0;2009-7-15 14:48:23
+Shelter from the Storm;Bob Dylan;Blood on the Tracks;CD;1975;9;2009-6-6 20:28:32;50;302497;0;2009-7-15 14:48:23
+Buckets of Rain;Bob Dylan;Blood on the Tracks;CD;1975;10;2009-6-6 20:28:32;50;202657;0;2009-7-15 14:48:23
+Planet Telex;Radiohead;The Bends;CD;1995;11;2009-6-6 20:28:32;50;259200;0;2009-7-15 14:48:23
+The Bends;Radiohead;The Bends;LP;1995;12;2009-6-6 20:28:32;50;246200;0;2009-7-15 14:48:23
+High And Dry;Radiohead;The Bends;CD;1995;13;2009-6-6 20:28:32;50;257533;0;2009-7-15 14:48:23
+Fake Plastic Trees;Radiohead;The Bends;LP;1995;14;2009-6-6 20:28:32;50;290706;0;2009-7-15 14:48:23
+Bones;Radiohead;The Bends;CD;1995;15;2009-6-6 20:28:32;50;189000;0;2009-7-15 14:48:23
+(Nice Dream);Radiohead;The Bends;CD;1995;16;2009-6-6 20:28:32;50;233226;0;2009-7-15 14:48:23
+Just;Radiohead;The Bends;LP;1995;17;2009-6-6 20:28:32;50;234106;0;2009-7-15 14:48:23
+My Iron Lung;Radiohead;The Bends;CD;1995;18;2009-6-6 20:28:32;50;276426;0;2009-7-15 14:48:23
+Bullet Proof...I Wish I Was;Radiohead;The Bends;LP;1995;19;2009-6-6 20:28:32;50;208733;0;2009-7-15 14:48:23
+Black Star;Radiohead;The Bends;LP;1995;20;2009-6-6 20:28:32;17;247040;0;2009-7-15 14:48:23
+Sulk;Radiohead;The Bends;LP;1995;21;2009-6-6 20:28:32;50;222960;0;2009-7-15 14:48:23
+Street Spirit (Fade Out);Radiohead;The Bends;CD;1995;22;2009-6-6 20:28:32;50;252400;0;2009-7-15 14:48:23
+I Might Need You To Kill;The Thermals;The Body, The Blood, The Machine;CD;2006;23;2009-6-6 20:28:32;50;147147;0;2009-7-15 14:48:23
+An Ear For Baby;The Thermals;The Body, The Blood, The Machine;LP;2006;24;2009-6-6 20:28:32;50;216450;0;2009-7-15 14:48:23
+A Pillar Of Salt;The Thermals;The Body, The Blood, The Machine;CD;2006;25;2009-6-6 20:28:32;50;177371;0;2009-7-15 14:48:23
+Returning To The Fold;The Thermals;The Body, The Blood, The Machine;LP;2006;26;2009-6-6 20:28:32;5;159268;0;2009-7-15 14:48:23
+Test Pattern;The Thermals;The Body, The Blood, The Machine;CD;2006;27;2009-6-6 20:28:32;70;207882;0;2009-7-15 14:48:23
+St. Rosa And The Swallows;The Thermals;The Body, The Blood, The Machine;LP;2006;28;2009-6-6 20:28:32;50;214935;0;2009-7-15 14:48:23
+Back To The Sea;The Thermals;The Body, The Blood, The Machine;LP;2006;29;2009-6-6 20:28:32;50;287712;0;2009-7-15 14:48:23
+Power Doesn't Run On Nothing;The Thermals;The Body, The Blood, The Machine;CD;2006;30;2009-6-6 20:28:32;50;314435;0;2009-7-15 14:48:23
+I Hold The Sound;The Thermals;The Body, The Blood, The Machine;LP;2006;31;2009-6-6 20:28:32;50;278935;0;2009-7-15 14:48:23
