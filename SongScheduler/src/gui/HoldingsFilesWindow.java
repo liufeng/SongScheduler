@@ -304,8 +304,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
                     + "0";
         //write the song to the holdings file
         String holdingsFile = (String)jList1.getSelectedValue();
-        HoldingFiles.addSongToFile( holdingsFile, song);
-        Database.addSongToDB(song);
+        Database.addSong(song);
         updateSongList();
     }//GEN-LAST:event_addSongActionPerformed
 

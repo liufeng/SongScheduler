@@ -134,17 +134,4 @@ public abstract class HoldingFiles {
     public static String getCurrent(){
         return currHoldingFile;
     }
-
-    public static void addSongToFile( String filename, String song )
-    {
-        try
-        {
-            if(song != null){
-                BufferedWriter out = new BufferedWriter(new FileWriter(filename, true));
-                out.write(song+"\n");
-                out.close();
-            }
-        }
-        catch( IOException ioe ){ ioe.printStackTrace(); }
-    }
 }

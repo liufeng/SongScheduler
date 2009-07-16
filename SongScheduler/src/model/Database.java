@@ -140,6 +140,21 @@ public abstract class Database {
         return getSongs("", null, null, null);
     }
 
+    
+    public static int getNextAccessNum()
+    {
+        return songHash.size() + 1;
+    }
+
+    public static void addSong(String song)
+    {
+        Song currSong = createSongFromLine(song);
+        if(!songHash.containsKey(currSong.getAccessNumber()))
+            songHash.put(currSong.getAccessNumber(), currSong);
+
+        saveSongInfo();
+    }
+
     /**
      * Commit the <code>candidate</code> schedule to the database.
      *
@@ -156,7 +171,7 @@ public abstract class Database {
 
         candidate.updateSongsInSchedule();
 
-        serializeDB();
+        saveScheduleInfo();
     }
 
 
@@ -194,6 +209,21 @@ public abstract class Database {
     }
 
     /**
+     * Persists database schedules by serializing schedule hash and writing to file
+     */
+    private static void saveScheduleInfo(){
+        try{
+            OutputStream os = new FileOutputStream(scheduleFile);
+            ObjectOutput oo = new ObjectOutputStream(os);
+            oo.writeObject(scheduleHash);
+            oo.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    /**
      * write the song list to disk.
      *
      */
@@ -222,33 +252,6 @@ public abstract class Database {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-    }
-    
-    public static int getNextAccessNum()
-    {
-        return songHash.size() + 1;
-    }
-
-    public static void addSongToDB(String song)
-    {
-        Song currSong = createSongFromLine(song);
-        if(!songHash.containsKey(currSong.getAccessNumber()))
-            songHash.put(currSong.getAccessNumber(), currSong);
-    }
-
-    /**
-     * Persists database by serializing schedule hash and writing to file
-     */
-    private static void serializeDB(){
-        try{
-            OutputStream os = new FileOutputStream(scheduleFile);
-            ObjectOutput oo = new ObjectOutputStream(os);
-            oo.writeObject(scheduleHash);
-            oo.close();
-        }
-        catch(Exception e){
-            e.printStackTrace();
         }
     }
 
