@@ -479,28 +479,30 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
      */
     private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
         //get the selected song
-        Song selection = (Song) songs.get( songList.getSelectedIndex() );
-        //conver the songs length
-        int milliseconds = selection.getLength();
-        int minutes = milliseconds / 60000;
-        int seconds = ( milliseconds - ( minutes * 60000 ) ) / 1000;
-        String length = minutes + ":";
-        if ( seconds < 10 ) {
-            length += "0" + seconds;
-        } else {
-            length += seconds;
-        }
+        if(songList.getSelectedIndex() >= 0){
+            Song selection = (Song) songs.get( songList.getSelectedIndex() );
+            //conver the songs length
+            int milliseconds = selection.getLength();
+            int minutes = milliseconds / 60000;
+            int seconds = ( milliseconds - ( minutes * 60000 ) ) / 1000;
+            String length = minutes + ":";
+            if ( seconds < 10 ) {
+                length += "0" + seconds;
+            } else {
+                length += seconds;
+            }
 
-        //set all of the forms fields
-        songLengthDisplay.setText( length );
-        songAlbumDisplay.setText( selection.getRecordingTitle() );
-        songArtistDisplay.setText( selection.getPerformer() );
-        songGenreDisplay.setText( selection.getRecordingType() );
-        songLastPlayedDisplay.setText( selection.getLastPlayed().toString() );
-        songNameDisplay.setText( selection.getTitle() );
-        songPlayCountDisplay.setText( selection.getNumberOfPlays() + "" );
-        songPopularityDisplay.setText( selection.getPopularity() + "" );
-        songYearDisplay.setText( selection.getYear() );
+            //set all of the forms fields
+            songLengthDisplay.setText( length );
+            songAlbumDisplay.setText( selection.getRecordingTitle() );
+            songArtistDisplay.setText( selection.getPerformer() );
+            songGenreDisplay.setText( selection.getRecordingType() );
+            songLastPlayedDisplay.setText( selection.getLastPlayed().toString() );
+            songNameDisplay.setText( selection.getTitle() );
+            songPlayCountDisplay.setText( selection.getNumberOfPlays() + "" );
+            songPopularityDisplay.setText( selection.getPopularity() + "" );
+            songYearDisplay.setText( selection.getYear() );
+        }
 }//GEN-LAST:event_songListValueChanged
 
     /**
@@ -644,6 +646,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
         //used the list model made
         songList.setModel( listModel );
+        songList.setSelectedIndex(0);
     }
 
     /**

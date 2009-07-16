@@ -119,10 +119,10 @@ public abstract class Database {
 
         for(Entry songEntry : songHash.entrySet()){
             Song currSong = (Song)songEntry.getValue();
-            if((title != null && currSong.getTitle().toLowerCase().contains(title.toLowerCase()))
-                || (performer != null && currSong.getPerformer().toLowerCase().contains(performer.toLowerCase()))
-                || (recTitle != null && currSong.getRecordingTitle().toLowerCase().contains(recTitle.toLowerCase()))
-                || (year != null && year.equals(currSong.getYear())))
+            if((title == null || currSong.getTitle().toLowerCase().contains(title.toLowerCase()))
+                && (performer == null || currSong.getPerformer().toLowerCase().contains(performer.toLowerCase()))
+                && (recTitle == null || currSong.getRecordingTitle().toLowerCase().contains(recTitle.toLowerCase()))
+                && (year == null || year.equals(currSong.getYear())))
                 songList.add((Song)songEntry.getValue());
         }
         Collections.sort(songList, new TitleComparator());
@@ -195,7 +195,7 @@ public abstract class Database {
      * write the song list to disk.
      *
      */
-    public static void saveSongInfo(){
+    private static void saveSongInfo(){
         if(songHash != null){
             Iterator<Song> songs = songHash.values().iterator();
             try {

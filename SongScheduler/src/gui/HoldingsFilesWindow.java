@@ -354,7 +354,7 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
     /**
      * saveSongActionPerformed
      *
-     * Save the info from the song selected in the JList to the holdings file
+     * Save the info from the song selected in the JList to the Database
      *
      * @param evt
      * @return void
@@ -371,7 +371,6 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         //update the songs info
         song.updatePopularity();
         song.updatePriority();
-        Database.saveSongInfo();
     }//GEN-LAST:event_saveSongActionPerformed
 
     /**
