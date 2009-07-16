@@ -367,8 +367,8 @@ public class HoldingsFilesWindow extends javax.swing.JFrame {
         song.setRecordingType(songGenreDisplay.getText());
         song.setTitle(songNameDisplay.getText());
         song.setYear(songYearDisplay.getText());
+        song.setPopularity(Integer.parseInt(songPopularityDisplay.getText()));
         //update the songs info
-        song.updatePopularity();
         song.updatePriority();
     }//GEN-LAST:event_saveSongActionPerformed
 

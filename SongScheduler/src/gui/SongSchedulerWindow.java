@@ -128,6 +128,12 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
 
         jLabel9.setText("Popularity:");
 
+        songPopularityDisplay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                songPopularityDisplayActionPerformed(evt);
+            }
+        });
+
         songSearchButton.setText("Search");
         songSearchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -621,6 +627,12 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
     private void fixAllButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fixAllButtonActionPerformed
         schedulePanel.fixAllSchedules();
     }//GEN-LAST:event_fixAllButtonActionPerformed
+
+    private void songPopularityDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_songPopularityDisplayActionPerformed
+        if( !songPopularityDisplay.getText().equals("") )
+            ((Song)songs.get(songList.getSelectedIndex())).setPopularity(Integer.parseInt(songPopularityDisplay.getText()));
+
+    }//GEN-LAST:event_songPopularityDisplayActionPerformed
 
 
 
