@@ -651,7 +651,6 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         //used the list model made
         songList.setSelectedIndex(-1);
         songList.setModel( listModel );
-        songList.setSelectedIndex(0);
     }
 
     /**
