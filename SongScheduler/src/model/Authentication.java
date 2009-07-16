@@ -29,7 +29,7 @@ public abstract class Authentication {
         password = "";
         try {
             BufferedReader in = new BufferedReader(new FileReader(PASS_FILE));
-            password = in.readLine();
+            password = encrypt(in.readLine());
             in.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -50,6 +50,8 @@ public abstract class Authentication {
      *          <strong>false</strong> otherwise.
      */
     public static boolean checkPassword(String word) {
+        System.out.println(encrypt(word));
+        System.out.println(password);
         if (password.equals(encrypt(word))) {
             isAuthenticated = true;
         } else {
