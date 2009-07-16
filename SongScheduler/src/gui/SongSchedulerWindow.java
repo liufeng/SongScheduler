@@ -453,7 +453,10 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         String album = songAlbumDisplay.getText();
         String year = songYearDisplay.getText();
 
-        //if the artist, ablum, or year are blank set them to null
+        //if the title, artist, ablum, or year are blank set them to null
+        if( title.equals(""))
+            title = null;
+
         if( artist.equals("") )
             artist = null;
 
@@ -478,8 +481,9 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
      * @return void
      */
     private void songListValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_songListValueChanged
-        //get the selected song
-        if(songList.getSelectedIndex() >= 0){
+        if(songList.getSelectedIndex() >= 0)
+        {
+            //get the selected song
             Song selection = (Song) songs.get( songList.getSelectedIndex() );
             //conver the songs length
             int milliseconds = selection.getLength();
@@ -645,6 +649,7 @@ public class SongSchedulerWindow extends javax.swing.JFrame {
         }
 
         //used the list model made
+        songList.setSelectedIndex(-1);
         songList.setModel( listModel );
         songList.setSelectedIndex(0);
     }
